@@ -76,7 +76,7 @@ Sample events with inner element descriptions:
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
  <region>Europe</region> 
- <externalid>3012</externalid>
+ <externalid>23412</externalid>
  </team>
 
 ;id: Team identifier
@@ -84,7 +84,7 @@ Sample events with inner element descriptions:
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
 ;region: super region name. 
-;externalid: id from registration system. 
+;externalid: team id from registration system. 
 
 Additional information may be provided.
 
