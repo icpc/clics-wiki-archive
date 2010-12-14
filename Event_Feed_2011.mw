@@ -47,11 +47,11 @@ Sample events with inner element descriptions:
 ;name: Language name.
 
  <region>
- <externalid>3012</externalid>
+ <external-id>3012</external-id>
  <name>Europe</name>
  </region>
 
-;externalid: Identidier from the registration system. 
+;external-id: Identidier from the registration system. 
 ;name: Super region name.
 
  <judgement>
@@ -76,7 +76,7 @@ Sample events with inner element descriptions:
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
  <region>Europe</region> 
- <externalid>23412</externalid>
+ <external-id>23412</external-id>
  </team>
 
 ;id: Team identifier
@@ -84,7 +84,7 @@ Sample events with inner element descriptions:
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
 ;region: super region name. 
-;externalid: team id from registration system. 
+;external-id: team id from registration system. 
 
 Additional information may be provided.
 
