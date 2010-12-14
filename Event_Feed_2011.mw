@@ -24,6 +24,8 @@ Events have time attributes identical to the timestamp element.
 
 Sample events with inner element descriptions:
 
+=== <info> ===
+
  <info>
  <length>05:00:00</length>
  <penalty>20</penalty>
@@ -38,6 +40,8 @@ Sample events with inner element descriptions:
 ;starttime: Starttime as a timestamp in decimal seconds.
 ;title: Contest title string.
 
+=== <language> ===
+
  <language>
  <id>1</id>
  <name>C++</name>
@@ -45,6 +49,8 @@ Sample events with inner element descriptions:
 
 ;id: Language identifier.
 ;name: Language name.
+
+=== <region> ===
 
  <region>
  <external-id>3012</external-id>
@@ -54,6 +60,8 @@ Sample events with inner element descriptions:
 ;external-id: Identidier from the registration system. 
 ;name: Super region name.
 
+=== <judgement> ===
+
  <judgement>
  <acronym>CE</acronym>
  <name>Compile Error</name>
@@ -62,6 +70,8 @@ Sample events with inner element descriptions:
 ;acronym: Short name
 ;name: descriptive name
 
+=== <problem> ===
+
  <problem>
  <id>1</id>
  <name>A - APL Lives!</name>
@@ -69,6 +79,8 @@ Sample events with inner element descriptions:
 
 ;id: Problem identifier
 ;name: descriptive name
+
+=== <team> ===
 
  <team>
  <id>1</id>
@@ -87,6 +99,8 @@ Sample events with inner element descriptions:
 ;external-id: team id from registration system. 
 
 Additional information may be provided.
+
+=== <clar> ===
 
  <clar time="1265335256740">
  <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
@@ -109,6 +123,8 @@ Additional information may be provided.
 ;time:
 ;timestamp:
 ;to-all: to-all flag
+
+=== <run> ===
 
  <run time="1265353100290">
  <id>1410</id>
@@ -133,6 +149,8 @@ Additional information may be provided.
 ;team: team ID
 ;time: official submission time used for scoring.
 ;timestamp:
+
+=== <testcase> ===
 
  <testcase time="1265336078010">
  <i>1</i>
