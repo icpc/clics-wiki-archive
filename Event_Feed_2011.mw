@@ -8,6 +8,7 @@ Event types are:
 
 ;info: contest information and updates
 ;language: submission language information
+;region: super region information
 ;judgement: judgement information
 ;problem: problem information
 ;team: team information
@@ -41,8 +42,16 @@ Sample events with inner element descriptions:
  <name>C++</name>
  </language>
 
-;id: Language identifier 
+;id: Language identifier.
 ;name: Language name.
+
+ <region>
+ <externalid>3012</externalid>
+ <name>Europe</name>
+ </region>
+
+;externalid: Identidier from the registration system. 
+;name: Super region name.
 
  <judgement>
  <acronym>CE</acronym>
@@ -65,12 +74,16 @@ Sample events with inner element descriptions:
  <name>American University of Beirut</name>
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
+ <region>Europe</region> 
+ <externalid>3012</externalid>
  </team>
 
 ;id: Team identifier
 ;name: Team name
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
+;region: super region name. 
+;externalid: id from registration system. 
 
 Additional information may be provided.
 
