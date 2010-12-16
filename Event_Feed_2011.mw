@@ -1,6 +1,6 @@
-== File format ==
-'''THIS SHOULD CORRESPOND TO THE 2011 WF FORMAT UNTIL ICPC WF 2011 IS OVER'''
+This page describes the event feed format that will be used at WF 2011
 
+== File format ==
 The event feed is structured as an xml document within the root element <contest>.
 
 All events are separate elements at the top level.
