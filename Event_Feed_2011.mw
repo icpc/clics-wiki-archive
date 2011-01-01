@@ -172,7 +172,7 @@ Additional information may be provided.
 ;time:
 ;timestamp:
 
-=== <testcase> ===
+=== <finalized> ===
  <finalized>
  <timestamp>1265336078.01</timestamp>
  <last-gold>4</last-gold>
