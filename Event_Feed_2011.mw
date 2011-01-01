@@ -153,7 +153,7 @@ Additional information may be provided.
 === <testcase> ===
 
  <testcase time="1265336078010">
- <i>1</i>
+ &lt;i&gt;1&lt;/i&gt;
  <judged>True</judged>
  <judgement>WA</judgement>
  <n>1</n>
@@ -171,3 +171,18 @@ Additional information may be provided.
 ;solved:
 ;time:
 ;timestamp:
+
+=== <testcase> ===
+<finalized>
+<timestamp>1265336078.01</timestamp>
+<last-gold>4</last-gold>
+<last-silver>8</last-silver>
+<last-bronze>12</last-bronze>
+<comment>Finalized by John Doe and Jane Doe</comment>
+</finalized>
+
+;timestamp:
+;last-gold:integer, last place to receive a gold
+;last-silver:integer, last place to receive a silver
+;last-bronze:integer, last place to receive a bronze
+;comment:text
