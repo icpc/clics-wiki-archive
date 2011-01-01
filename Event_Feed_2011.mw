@@ -173,13 +173,13 @@ Additional information may be provided.
 ;timestamp:
 
 === <testcase> ===
-<finalized>
-<timestamp>1265336078.01</timestamp>
-<last-gold>4</last-gold>
-<last-silver>8</last-silver>
-<last-bronze>12</last-bronze>
-<comment>Finalized by John Doe and Jane Doe</comment>
-</finalized>
+ <finalized>
+ <timestamp>1265336078.01</timestamp>
+ <last-gold>4</last-gold>
+ <last-silver>8</last-silver>
+ <last-bronze>12</last-bronze>
+ <comment>Finalized by John Doe and Jane Doe</comment>
+ </finalized>
 
 ;timestamp:
 ;last-gold:integer, last place to receive a gold
