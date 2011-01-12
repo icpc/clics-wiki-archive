@@ -1,5 +1,4 @@
 This page is used to document and discuss the ICPC Contest Analysis Tool (iCAT)
 
 iCAT is an event based tool for semi-automatic analysis of an ICPC style programming competition.
-An overview of the main components are given below.
-[[File:Example.jpg]]
+An overview of the main components [http://www.ida.liu.se/~frehe/icat/icat_overview.png iCAT overview].
