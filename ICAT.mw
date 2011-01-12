@@ -70,10 +70,12 @@ tidigare regionaler och världsfinaler.
 * Alla entries taggade för laget.
 
 = External frontends =
-== Contest view ==
-== Problem view ==
-== Region view ==
-== Team view ==
+Pages for the general public available on a public web server.
+When the internal frontends are almost finished we can start exporting some of the features to the external frontends.
+* Contest view
+* Problem view
+* Region view
+* Team view
 
 = Importers =
 * Event feed (CCS output)
