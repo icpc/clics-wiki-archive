@@ -2,3 +2,86 @@ This page is used to document and discuss the ICPC Contest Analysis Tool (iCAT)
 
 iCAT is an event based tool for semi-automatic analysis of an ICPC style programming competition.
 [http://www.ida.liu.se/~frehe/icat/icat_overview.png An overview of the main components.]
+
+= Database =
+Tables:
+* entries
+* tagnames
+* tags
+* users
+
+= Event processor =
+= PHP API =
+= Internal frontends =
+== Analysis view ==
+This is the main view were analysts work.
+* streams of inputs (one feed for each stream?)
+* create new entries
+* annotate existing entries: add/rm tags; +/- rank post; to twitter
+
+== Config view ==
+Everything related to the configuration of iCAT.
+* reset database
+* load contest
+* load groups
+* load teams
+* dump database
+
+== Contest view ==
+Give an overview of the contest.
+* scoreboard with slider to show the contest at any time point
+* highlight/only show region / country
+* highlight/only show teams that have solved a particular problem
+* show the changes in the last 10 minutes (show the current speed of the contest)
+
+== Problem view ==
+Information related to problems.
+* Graf som visar antal lag som löst problemet som funktion av tiden?
+(Och kanske alla andra problem, något mindre framträdande, eftersom
+man gärna vill göra jämförelser).
+* Alla entries taggade för problemet.
+
+
+== Producer view ==
+Information for the producers.
+An idea is to rank each entry to provide the producers with an indication about which team/view they should show.
+We could also tag entries which we believe are important for the producers.
+
+== Region view ==
+Information related to regions.
+* Scoreboard för regionen.
+* Alla entries taggade för lag i regionen.
+
+== Team view ==
+* Current score för laget (dvs. lagets rad på scoreboarden).
+* Hur lång tid har laget på sig att lösa nästa uppgift för att avancera i tävlingen?
+* Hur snabbt måste lagen efter lösa sina uppgifter för att putta ner det aktuella laget?
+* Vilken placering laget skulle få om det löste problem X nu (för alla
+problem, men man kan ju slå ihop de som ger samma placering, och det
+kommer att vara vanligt). Kanske också information om hur länge det
+kommer att vara sant (givet att ingen löser något).
+* Graf som visar lagets placering som funktion av tiden?
+* Graf som visar lagets score (antagligen bara antal lösta problem)
+som funktion av tiden?
+* Bakgrundsinfo om laget (och de tävlande) i den mån vi har fått det
+från ICPC DB eller annan källa. det är ju väsentligen bara en text som
+vi fått innan tävlingen. Specifikt skulle det innehålla resultat från
+tidigare regionaler och världsfinaler.
+* Alla entries taggade för laget.
+
+= External frontends =
+== Contest view ==
+== Problem view ==
+== Region view ==
+== Team view ==
+
+= Importers =
+* Event feed (CCS output)
+* Team directory feed (list of all files for each team account)
+* contest.tsv
+* groups.tsv
+* teams.tsv
+
+= Exporters =
+* Twitter
+* Kattis (?)
