@@ -13,6 +13,8 @@ Tables:
 = Event processor =
 = PHP API =
 = Internal frontends =
+These pages are only available within the ICPC network, nothing should be visible to the outside.
+
 == Analysis view ==
 This is the main view were analysts work.
 * streams of inputs (one feed for each stream?)
