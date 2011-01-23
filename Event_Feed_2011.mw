@@ -2,6 +2,10 @@ This page describes the event feed format that will be used at WF 2011
 
 == Getting the feed ==
 
+Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
+
+Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+
 == File format ==
 The event feed is structured as an xml document within the root element <contest>.
 
