@@ -73,7 +73,7 @@ Events have time attributes identical to the timestamp element.
  <name>Europe</name>
  </region>
 
-;external-id: Identidier from the registration system. 
+;external-id: Identifier (integer) from the ICPC CMS registration system. 
 ;name: Super region name.
 
 === <judgement> ===
