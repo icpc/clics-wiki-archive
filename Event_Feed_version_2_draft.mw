@@ -9,7 +9,7 @@ The event feed is structured as an XML document within the root element <contest
 
 All events are separate elements at the top level.
 
-{|border="1" cellpadding="2"
+{| class="wikitable"
 |+ Event types/tags
 ! Name !! Contains
 |-
