@@ -9,24 +9,36 @@ The event feed is structured as an XML document within the root element <contest
 
 All events are separate elements at the top level.
 
-Event types are:
+{|border="1" cellpadding="2"
+|+ Event types/tags
+! Name !! Contains
+|-
+|info|| contest information and updates
+|-
+|language|| submission language information
+|-
+|region|| super region information
+|-
+|judgement|| judgement information
+|-
+|problem|| problem information
+|-
+|team|| team information
+|-
+|clar|| submitted clarification information and updates
+|-
+|run|| submitted run information and updates
+|-
+|testcase|| judgement of individual test cases for a run
+|}
 
-;info: contest information and updates
-;language: submission language information
-;region: super region information
-;judgement: judgement information
-;problem: problem information
-;team: team information
-;clar: submitted clarification information and updates
-;run: submitted run information and updates
-;testcase: judgement of individual test cases for a run
+Most elements are identified by an id. 
 
-Most elements are identified by an id. Timestamped events all have a timestamp element in decimal seconds.
+Timestamped events all have a timestamp element in decimal seconds.
+
 Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
 
 Events have time attributes identical to the timestamp element.
-
-Sample events with inner element descriptions:
 
 === <info> ===
 
