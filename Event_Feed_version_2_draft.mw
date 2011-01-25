@@ -68,7 +68,7 @@ Events have time attributes identical to the timestamp element.
 ;id: Language identifier.
 ;name: Language name.
 
-=== <region> ===
+=== region ===
 
  <region>
  <external-id>3012</external-id>
