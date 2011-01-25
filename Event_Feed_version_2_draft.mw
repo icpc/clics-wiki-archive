@@ -168,7 +168,7 @@ Additional information may be provided.
 ;time: official submission time used for scoring.
 ;timestamp:
 
-=== <testcase> ===
+=== testcase ===
 
  <testcase time="1265336078010">
  &lt;i&gt;1&lt;/i&gt;
