@@ -118,7 +118,7 @@ Events have time attributes identical to the timestamp element.
 
 Additional information may be provided.
 
-=== <clar> ===
+=== clar ===
 
  <clar time="1265335256740">
  <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
