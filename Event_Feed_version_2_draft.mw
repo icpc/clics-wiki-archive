@@ -88,7 +88,7 @@ Events have time attributes identical to the timestamp element.
 ;acronym: Short name
 ;name: descriptive name
 
-=== <problem> ===
+=== problem ===
 
  <problem>
  <id>1</id>
