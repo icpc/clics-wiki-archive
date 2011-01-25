@@ -58,7 +58,7 @@ Events have time attributes identical to the timestamp element.
 ;starttime: Starttime as a timestamp in decimal seconds.
 ;title: Contest title string.
 
-=== <language> ===
+=== language ===
 
  <language>
  <id>1</id>
