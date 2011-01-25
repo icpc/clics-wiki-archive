@@ -78,7 +78,7 @@ Events have time attributes identical to the timestamp element.
 ;external-id: Identifier (integer) from the ICPC CMS registration system. 
 ;name: Super region name.
 
-=== <judgement> ===
+=== judgement ===
 
  <judgement>
  <acronym>CE</acronym>
