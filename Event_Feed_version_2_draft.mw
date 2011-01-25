@@ -98,7 +98,7 @@ Events have time attributes identical to the timestamp element.
 ;id: Problem identifier
 ;name: descriptive name
 
-=== <team> ===
+=== team ===
 
  <team>
  <id>1</id>
