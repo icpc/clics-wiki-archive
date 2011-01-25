@@ -42,7 +42,7 @@ Submission events have a time element in decimal seconds relative to the contest
 
 Events have time attributes identical to the timestamp element.
 
-=== <info> ===
+=== info ===
 
  <info>
  <length>05:00:00</length>
