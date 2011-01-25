@@ -1,3 +1,5 @@
+The event feed is a set of data output by the [[CCS|Contest Control System]].
+
 == Getting the feed ==
 
 Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
