@@ -171,8 +171,8 @@ Additional information may be provided.
 
 ;run-id:
 ;i: testcase number
-;n: Total number of testcases
-;judgement: Judgement acronym
+;n: total number of testcases
+;judgement: judgement acronym
 ;time:
 ;timestamp:
 
