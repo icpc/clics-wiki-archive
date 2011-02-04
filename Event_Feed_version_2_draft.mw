@@ -103,23 +103,19 @@ Events have time attributes identical to the timestamp element.
 
 === team ===
 
- <team>
- <id>1</id>
- <name>American University of Beirut</name>
- <nationality>LBN</nationality>
- <university>American University of Beirut</university> 
- <region>Europe</region> 
- <external-id>23412</external-id>
+ <team id="1" external-id="23412">
+   <name>American University of Beirut</name>
+   <nationality>LBN</nationality>
+   <university>American University of Beirut</university> 
+   <region>Europe</region> 
  </team>
 
-;id: Team identifier. Ranges from 1 to number of teams. Must be the same as the team number.
-;name: Team name
+;id: team identifier. ranges from 1 to number of teams and must be the same as the team number
+;external-id: team id from registration system 
+;name: team name
 ;nationality: nationality as ISO 3166-1 alpha-3
-;university: university affiliation. 
-;region: super region name. 
-;external-id: team id from registration system. 
-
-Additional information may be provided.
+;university: university affiliation
+;region: super region name
 
 === clar ===
 
