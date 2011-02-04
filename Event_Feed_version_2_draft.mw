@@ -162,7 +162,7 @@ Additional information may be provided.
 === testcase ===
 
  <testcase run-id="1">
-   <i>1</i>
+   &lt;i>1&lt;/i>
    <n>1</n>
    <judgement>WA</judgement>
    <time>939.751724958</time>
