@@ -145,7 +145,7 @@ Additional information may be provided.
  <run id="1410" team-id="74" problem-id="4">
    <language>C++</language>
    <penalty>true</penalty>
-   <result>WA</result>
+   <judgement>WA</judgement>
    <time>17960.749403</time>
    <timestamp>1265353100.29</timestamp>
  </run>
