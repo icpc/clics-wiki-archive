@@ -159,7 +159,7 @@ Events have time attributes identical to the timestamp element.
    &lt;i>1&lt;/i>
    <n>1</n>
    <judgement>WA</judgement>
-   <time>939.751724958</time>
+   <contest-time>939.75</contest-time>
    <timestamp>1265336078.01</timestamp>
  </testcase>
 
@@ -167,7 +167,7 @@ Events have time attributes identical to the timestamp element.
 ;i: testcase number
 ;n: total number of testcases
 ;judgement: judgement acronym
-;time:
+;contest-time:
 ;timestamp:
 
 === finalized ===
