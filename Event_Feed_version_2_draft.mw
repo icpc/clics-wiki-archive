@@ -143,20 +143,20 @@ Additional information may be provided.
 === run ===
 
  <run id="1410" team-id="74" problem-id="4">
- <language>C++</language>
- <penalty>true</penalty>
- <result>WA</result>
- <time>17960.749403</time>
- <timestamp>1265353100.29</timestamp>
+   <language>C++</language>
+   <penalty>true</penalty>
+   <result>WA</result>
+   <time>17960.749403</time>
+   <timestamp>1265353100.29</timestamp>
  </run>
 
-;id: Run identifier. Increases with timestamp.
+;id: run identifier, increases with timestamp
 ;team-id: team ID
 ;problem-id: problem ID
 ;language: language name
 ;penalty: penalty flag
 ;result: result short name
-;time: official submission time used for scoring.
+;time: official submission time used for scoring
 ;timestamp:
 
 === testcase ===
