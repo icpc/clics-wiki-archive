@@ -138,9 +138,9 @@ Events have time attributes identical to the timestamp element.
 
  <run id="1410" team-id="74" problem-id="4">
    <language>C++</language>
-   <penalty>true</penalty>
    <judgement>WA</judgement>
-   <time>17960.749403</time>
+   <penalty>true</penalty>
+   <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
  </run>
 
@@ -148,9 +148,9 @@ Events have time attributes identical to the timestamp element.
 ;team-id: team ID
 ;problem-id: problem ID
 ;language: language name
-;penalty: penalty flag
 ;judgement: judgement acronym
-;time: official submission time used for scoring
+;penalty: penalty flag
+;contest-time: official submission time used for scoring
 ;timestamp:
 
 === testcase ===
