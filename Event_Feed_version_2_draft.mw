@@ -161,23 +161,18 @@ Additional information may be provided.
 
 === testcase ===
 
- <testcase time="1265336078010">
- &lt;i&gt;1&lt;/i&gt;
- <judged>True</judged>
- <judgement>WA</judgement>
- <n>1</n>
- <run-id>1</run-id>
- <solved>False</solved>
- <time>939.751724958</time>
- <timestamp>1265336078.01</timestamp>
+ <testcase run-id="1">
+   <i>1</i>
+   <n>1</n>
+   <judgement>WA</judgement>
+   <time>939.751724958</time>
+   <timestamp>1265336078.01</timestamp>
  </testcase>
 
-;i: testcase number
-;judged:
-;judgement: Judgement acronym
-;n: Total number of testcases
 ;run-id:
-;solved:
+;i: testcase number
+;n: Total number of testcases
+;judgement: Judgement acronym
 ;time:
 ;timestamp:
 
