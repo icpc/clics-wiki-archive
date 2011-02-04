@@ -90,7 +90,7 @@ Events have time attributes identical to the timestamp element.
  <problem id="1">
    <label>A</label>
    <name>APL Lives!</name>
-   <balloon-color rgb=#ffff00>yellow</balloon-color>
+   <balloon-color rgb="#ffff00">yellow</balloon-color>
  </problem>
 
 ;id: problem identifier
