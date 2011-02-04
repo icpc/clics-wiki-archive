@@ -172,11 +172,11 @@ Events have time attributes identical to the timestamp element.
 
 === finalized ===
  <finalized>
-   <timestamp>1265336078.01</timestamp>
    <last-gold>4</last-gold>
    <last-silver>8</last-silver>
    <last-bronze>12</last-bronze>
    <comment>Finalized by John Doe and Jane Doe</comment>
+   <timestamp>1265336078.01</timestamp>
  </finalized>
 
 ;timestamp:
