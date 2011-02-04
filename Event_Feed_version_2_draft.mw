@@ -61,11 +61,9 @@ Events have time attributes identical to the timestamp element.
 === language ===
 
  <language>
- <id>1</id>
  <name>C++</name>
  </language>
 
-;id: Language identifier.
 ;name: Language name.
 
 === region ===
