@@ -131,11 +131,11 @@ Additional information may be provided.
  <to-all>true</to-all>
  </clar>
 
-;answer: 
 ;id: Clarification identifier. Increases with timestamp.
-;question:
 ;team-id: Team ID
 ;problem-id: Problem ID
+;question:
+;answer: 
 ;time:
 ;timestamp:
 ;to-all: to-all flag
