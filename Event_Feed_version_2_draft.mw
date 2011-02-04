@@ -61,10 +61,10 @@ Events have time attributes identical to the timestamp element.
 === language ===
 
  <language>
- <name>C++</name>
+   <name>C++</name>
  </language>
 
-;name: Language name.
+;name: language name
 
 === region ===
 
