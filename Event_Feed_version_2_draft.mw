@@ -123,24 +123,19 @@ Additional information may be provided.
 
 === clar ===
 
- <clar time="1265335256740">
+ <clar id="1" team-id="0" problem-id="1">
  <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
- <answered>True</answered>
- <id>1</id>
  <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
- <team>0</team>
- <problem>1</problem>
  <time>118.480356991</time>
  <timestamp>1265335256.74</timestamp>
- <to-all>True</to-all>
+ <to-all>true</to-all>
  </clar>
 
 ;answer: 
-;answered: Answered flag
 ;id: Clarification identifier. Increases with timestamp.
 ;question:
-;team: Team ID
-;problem: Problem ID
+;team-id: Team ID
+;problem-id: Problem ID
 ;time:
 ;timestamp:
 ;to-all: to-all flag
