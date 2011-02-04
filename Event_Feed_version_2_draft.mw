@@ -79,11 +79,11 @@ Events have time attributes identical to the timestamp element.
 === judgement ===
 
  <judgement>
- <acronym>CE</acronym>
- <name>Compile Error</name>
+   <acronym>CE</acronym>
+   <name>Compile Error</name>
  </judgement>
 
-;acronym: Short name
+;acronym: judgement acronym
 ;name: descriptive name
 
 === problem ===
