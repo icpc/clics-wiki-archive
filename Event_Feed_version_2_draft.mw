@@ -161,7 +161,7 @@ Additional information may be provided.
  <timestamp>1265353100.29</timestamp>
  </run>
 
-;id: Run identifier
+;id: Run identifier. Increases with timestamp.
 ;judged: Judged flag
 ;language: language name
 ;penalty: penalty flag
