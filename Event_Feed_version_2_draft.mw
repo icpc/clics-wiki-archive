@@ -155,7 +155,7 @@ Additional information may be provided.
 ;problem-id: problem ID
 ;language: language name
 ;penalty: penalty flag
-;result: result short name
+;judgement: judgement acronym
 ;time: official submission time used for scoring
 ;timestamp:
 
