@@ -45,18 +45,18 @@ Events have time attributes identical to the timestamp element.
 === info ===
 
  <info>
- <length>05:00:00</length>
- <penalty>20</penalty>
- <started>False</started>
- <starttime>1265335138.26</starttime>
- <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+   <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+   <length>05:00:00</length>
+   <penalty>20</penalty>
+   <started>false</started>
+   <starttime>1265335138.26</starttime>
  </info>
 
-;length: Length of contest in HH:MM:SS format.
-;penalty: Penalty time in minutes.
-;started: Started flag.
-;starttime: Starttime as a timestamp in decimal seconds.
-;title: Contest title string.
+;title: contest title string
+;length: length of contest in HH:MM:SS format
+;penalty: penalty time in minutes
+;started: started flag
+;starttime: starttime as a timestamp in decimal seconds
 
 === language ===
 
