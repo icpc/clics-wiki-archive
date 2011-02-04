@@ -92,15 +92,14 @@ Events have time attributes identical to the timestamp element.
  <id>1</id>
  <label>A</label>
  <name>APL Lives!</name>
- <balloon-color>yellow</balloon-color>
- <balloon-rgb>#ffff00</balloon-rgb>
+ <balloon-color rgb=#ffff00>yellow</balloon-color>
  </problem>
 
 ;id: Problem identifier
 ;label: one letter label
 ;name: descriptive name
 ;balloon-color: balloon color name
-;balloon-rgb: balloon color rgb value
+;rgb: balloon color rgb value
 
 === team ===
 
