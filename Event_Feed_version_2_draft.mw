@@ -124,21 +124,21 @@ Additional information may be provided.
 === clar ===
 
  <clar id="1" team-id="0" problem-id="1">
- <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
- <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
- <time>118.480356991</time>
- <timestamp>1265335256.74</timestamp>
- <to-all>true</to-all>
+   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
+   <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+   <to-all>true</to-all>
+   <time>118.480356991</time>
+   <timestamp>1265335256.74</timestamp>
  </clar>
 
-;id: Clarification identifier. Increases with timestamp.
-;team-id: Team ID
-;problem-id: Problem ID
+;id: clarification identifier, increases with timestamp
+;team-id: team ID
+;problem-id: problem ID
 ;question:
 ;answer: 
+;to-all: true if the clarification was sent to all teams
 ;time:
 ;timestamp:
-;to-all: to-all flag
 
 === run ===
 
