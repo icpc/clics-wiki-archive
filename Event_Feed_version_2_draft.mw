@@ -113,7 +113,7 @@ Events have time attributes identical to the timestamp element.
  <external-id>23412</external-id>
  </team>
 
-;id: Team identifier
+;id: Team identifier. Ranges from 1 to number of teams. Must be the same as the team number.
 ;name: Team name
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
