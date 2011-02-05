@@ -2,9 +2,15 @@ The event feed is a set of data output by the [[CCS|Contest Control System]].
 
 == Getting the feed ==
 
+:'''Comment:''' Should add a description of the login/password for this feed [[User:Douglas Lane|Douglas Lane]] 02:09, 5 February 2011 (CET)
+
 Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
 
 Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+
+:'''Comment:''' Should the cutoff time (1 hour) be configurable?  [[User:Douglas Lane|Douglas Lane]] 02:09, 5 February 2011 (CET)
+
+:'''Comment:''' Should a (filter) request be made to the CCS about which filtered event feed rather than using a different port number? [[User:Douglas Lane|Douglas Lane]] 02:09, 5 February 2011 (CET)
 
 == File format ==
 The event feed is structured as an XML document within the root element <contest>.
