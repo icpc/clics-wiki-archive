@@ -1,0 +1,67 @@
+A sample of a complete a [[Event Feed]].
+
+The event feed is a feed it is assumed that the reading program 
+will process each section as it is completed.
+
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- todo: add XML Schema name/location -->
+ <contest>
+ 	<info>
+ 		<title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+ 		<length>05:00:00</length>
+ 		<penalty>20</penalty>
+ 		<started>false</started>
+ 		<starttime>1265335138.26</starttime>
+ 	</info>
+ 	<language>
+ 		<name>C++</name>
+ 	</language>
+ 	<region external-id="3012">
+ 		<name>Europe</name>
+ 	</region>
+ 	<judgement>
+ 		<acronym>CE</acronym>
+ 		<name>Compile Error</name>
+ 	</judgement>
+ 	<problem id="1" state="enabled">
+ 		<label>A</label>
+ 		<name>APL Lives!</name>
+ 		<balloon-color rgb="#ffff00">yellow</balloon-color>
+ 	</problem>
+ 	<team id="1" external-id="23412">
+ 		<name>American University of Beirut</name>
+ 		<nationality>LBN</nationality>
+ 		<university>American University of Beirut</university>
+ 		<region>Europe</region>
+ 	</team>
+ 	<clar id="1" team-id="0" problem-id="1">
+ 		<answer>The number of pieces will fit in a signed 32-bit integer.
+ 		</answer>
+ 		<question>What is the upper limit on the number of pieces of chocolate
+ 			requested by the friends?</question>
+ 		<to-all>true</to-all>
+ 		<contest-time>118.48</contest-time>
+ 		<timestamp>1265335256.74</timestamp>
+ 	</clar>
+ 	<run id="1410" team-id="74" problem-id="4">
+ 		<language>C++</language>
+ 		<judgement>WA</judgement>
+ 		<penalty>true</penalty>
+ 		<contest-time>17960.74</contest-time>
+ 		<timestamp>1265353100.29</timestamp>
+ 	</run>
+ 	<testcase run-id="1">
+ 		&lt;i>1&lt;/i>
+ 		<n>1</n>
+ 		<judgement>WA</judgement>
+ 		<contest-time>939.75</contest-time>
+ 		<timestamp>1265336078.01</timestamp>
+ 	</testcase>
+ 	<finalized>
+ 		<last-gold>4</last-gold>
+ 		<last-silver>8</last-silver>
+ 		<last-bronze>12</last-bronze>
+ 		<comment>Finalized by John Doe and Jane Doe</comment>
+ 		<timestamp>1265336078.01</timestamp>
+ 	</finalized>
+ </contest>
