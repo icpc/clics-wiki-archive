@@ -1,0 +1,70 @@
+A Test Harness is an automated testing framework.
+
+This article contains information about the input, output and tests for
+systems implementing the [[CCS]]
+
+==Testing Configuration Changes==
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test initial configuration values || Load [[Problem format]] file || [[Event Feed]]
+|}
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test change configuration values || Load [[Problem format]] file || [[Event Feed]]
+|}
+
+==Testing Run Submissions==
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test run submission || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] runs || [[Event Feed]] 
+|-
+| Test run judgement || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] runs || [[Event Feed]] 
+|}
+
+==Testing Clarifications==
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test clar submission || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] clars || [[Event Feed]] 
+|-
+| Test clar answered || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] clars || [[Event Feed]] 
+|}
+
+:'''Comment''': There is currently no CCS-defined way to automatically answer a clarification [[User:Douglas Lane|Douglas Lane]] 03:57, 20 February 2011 (CET)
+
+==Testing Standings==
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test standings change || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] runs || [[Contest_Control_System#scoreboard.tsv | scoreboard.tsv]] 
+|}
+
+==Testing Notifications==
+
+{| class="wikitable"
+! Description
+! Input
+! Compare to
+|-
+| Test notification sent || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] runs || Not defined 
+|}
+
+:'''Comment''': There is no CCS-defined data within the [[Event Feed]] for notifications [[User:Douglas Lane|Douglas Lane]] 03:57, 20 February 2011 (CET)
