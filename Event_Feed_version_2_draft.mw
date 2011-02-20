@@ -19,7 +19,7 @@ Connect to port 4714 and the entire feed for the contest will be sent to you, wi
 :'''Comment:''' Should a (filter) request be made to the CCS about which filtered event feed rather than using a different port number? [[User:Douglas Lane|Douglas Lane]] 02:09, 5 February 2011 (CET)
 
 == File format ==
-The event feed is structured as an XML document within the root element <contest>.
+The event feed is an XML document within the root element <tt><contest></tt>.
 
 All events are separate elements at the top level.
 
