@@ -2,7 +2,13 @@ The event feed is a set of data output by the [[CCS|Contest Control System]].
 
 == Getting the feed ==
 
-:'''Comment:''' Should add a description of the login/password for this feed [[User:Douglas Lane|Douglas Lane]] 02:09, 5 February 2011 (CET)
+===Authentication===
+
+:'''Comment:''' Add a description of the login/password for this feed [[User:Douglas Lane|Douglas Lane]] 17:14, 20 February 2011 (CET)
+
+:'''Comment:''' Add a description of return data if authentication fails [[User:Douglas Lane|Douglas Lane]] 17:14, 20 February 2011 (CET)
+
+===Accessing the feed===
 
 Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
 
