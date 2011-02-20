@@ -9,16 +9,23 @@ systems implementing the [[CCS]]
 ! Description
 ! Input
 ! Compare to
+! Notes
 |-
-| Test initial configuration values || Load [[Problem format]] file || [[Event Feed]]
-|}
-
-{| class="wikitable"
-! Description
-! Input
-! Compare to
+| Test contest information || Load [[Contest_Control_System#contest.yaml | contest.yaml  ]] file || [[Event Feed]] || missing default-clars
 |-
-| Test change configuration values || Load [[Problem format]] file || [[Event Feed]]
+| Test problems configuration || Load [[Contest_Control_System#problemset.yaml | problemset.yaml ]] and [[Problem format]] files || [[Event Feed]] || missing everything except: <br> letter, name, balloon color, balloon color RGB
+|-
+| Test language configuration || Load [[Contest_Control_System#languages.yaml | languages.yaml ]] file || [[Event Feed]] || missing compiler, compiler-args, <br> runner, runner-args 
+|-
+| Test testcase configuration || Load [[Problem format]] file || [[Event Feed]] || [[TBD]]
+|-
+| Test group configuration || Load [[Contest_Control_System#group.tsv | group.tsv]] file || [[Event Feed]] || missing Group ID 
+|-
+| Test team configuration || Load [[Contest_Control_System#teams.tsv  | teams.tsv]] file || [[Event Feed]] || missing Reservation ID, Group ID, Country 
+|-
+| Test validator || Load [[Problem format]] file || [[TBD]] || [[TBD]]
+|-
+| Test judgement configuration || [[CCS]] specification || [[Event Feed]] || [[TBD]]
 |}
 
 ==Testing Run Submissions==
