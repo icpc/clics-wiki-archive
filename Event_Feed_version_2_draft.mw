@@ -25,7 +25,7 @@ All events are separate elements at the top level.
 
 {| class="wikitable"
 |+ Event types/tags
-! Name !! Contains
+! Event/Element !! Contains
 |-
 |info|| contest information and updates
 |-
@@ -44,15 +44,16 @@ All events are separate elements at the top level.
 |run|| submitted run information and updates
 |-
 |testcase|| judgement of individual test cases for a run
+|-
+|finalized|| the contest standings/medals are assigned, contest is over
 |}
 
-Most elements are identified by an id. 
-
-Timestamped events all have a timestamp element in decimal seconds.
-
-Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
-
-Events have time attributes identical to the timestamp element.
+''Notes''
+# Most elements are identified by an id. 
+# Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
+# Timestamped events all have a timestamp element in decimal seconds.
+# Timestamped time attributes are identical to the timestamp element
+# The <finalized> element is followed by a </contest> tag
 
 === info ===
 
