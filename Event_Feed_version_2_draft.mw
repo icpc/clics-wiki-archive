@@ -144,11 +144,11 @@ All events are separate elements at the top level.
 ;id: clarification identifier, increases with timestamp
 ;team-id: team ID
 ;problem-id: problem ID
-;question:
-;answer: 
+;question: [[TBD]]
+;answer: [[TBD]]
 ;to-all: true if the clarification was sent to all teams
-;contest-time:
-;timestamp:
+;contest-time: [[TBD]]
+;timestamp: [[TBD]]
 
 === run ===
 
