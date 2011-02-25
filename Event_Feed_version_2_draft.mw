@@ -200,7 +200,7 @@ Note that the finalized tag is followed immediately by a <tt></contest></tt> tag
    <timestamp>1265336078.01</timestamp>
  </finalized>
 
-;timestamp:
+;timestamp: [[TBD]]
 ;last-gold:integer, last place to receive a gold
 ;last-silver:integer, last place to receive a silver
 ;last-bronze:integer, last place to receive a bronze
