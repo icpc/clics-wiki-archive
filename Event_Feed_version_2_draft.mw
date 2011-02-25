@@ -125,11 +125,11 @@ All events are separate elements at the top level.
  </team>
 
 ;id: team identifier. ranges from 1 to number of teams and must be the same as the team number
-;external-id: team id from registration system 
-;name: team name
-;nationality: nationality as ISO 3166-1 alpha-3
-;university: university affiliation
-;region: super region name
+;external-id: team id from [[Contest_Control_System#teams.tsv|teams.tsv (Reservation ID)]] 
+;name: team name from [[Contest_Control_System#teams.tsv|teams.tsv]]
+;nationality: nationality as ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]]
+;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
+;region: super region name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
 === clar ===
 
