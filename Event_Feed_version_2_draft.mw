@@ -87,8 +87,8 @@ All events are separate elements at the top level.
    <name>Europe</name>
  </region>
 
-;external-id: identifier (integer) from the ICPC CMS registration system
-;name: super-region name
+;external-id: identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]]
+;name: super-region name from [[Contest_Control_System#groups.tsv|groups.tsv]]
 
 === judgement ===
 
