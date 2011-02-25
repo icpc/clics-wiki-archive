@@ -179,12 +179,12 @@ All events are separate elements at the top level.
    <timestamp>1265336078.01</timestamp>
  </testcase>
 
-;run-id:
+;run-id: [[TBD]]
 ;i: testcase number
 ;n: total number of testcases
 ;judgement: judgement acronym
-;contest-time:
-;timestamp:
+;contest-time: [[TBD]]
+;timestamp: [[TBD]]
 
 === finalized ===
 
