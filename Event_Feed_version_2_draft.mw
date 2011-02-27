@@ -160,14 +160,14 @@ All events are separate elements at the top level.
    <timestamp>1265353100.29</timestamp>
  </run>
 
-;id: run identifier, increases with timestamp
+;id: run identifier
 ;team-id: team ID
 ;problem-id: problem ID
 ;language: language name
 ;judgement: judgement acronym
 ;penalty: penalty flag
 ;contest-time: official submission time used for scoring
-;timestamp:
+;timestamp: the current computer time when this element was created
 
 === testcase ===
 
