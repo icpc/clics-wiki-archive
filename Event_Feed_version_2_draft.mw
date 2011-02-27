@@ -184,7 +184,9 @@ All events are separate elements at the top level.
 ;n: total number of testcases
 ;judgement: judgement acronym
 ;contest-time: [[TBD]]
-;timestamp: [[TBD]]
+;timestamp: the current computer time when this element was created
+
+:'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
 
 === finalized ===
 
