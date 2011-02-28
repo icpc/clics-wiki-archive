@@ -104,3 +104,17 @@ systems implementing the [[CCS]]
 |-
 | Sleeping  || Team's program tried to sleep but not dream
 |}
+
+==Testing [[Contest_Control_System#Validators|Validators]]==
+
+Per the [[Output validator]] article test validators to report proper results, esp. file format.
+
+:'''Comment''' TODO complete writing this section [[User:Douglas Lane|Douglas Lane]] 23:31, 28 February 2011 (CET)
+
+{| class="wikitable"
+! Test 
+|-
+| [[Output_validator#Reporting_a_judgment|Reporting a judgment]] [[TBD]]
+|-
+| [[Output_validator#Reporting_Additional_Feedback|Reporting Additional Feedback]] [[TBD]]
+|}
