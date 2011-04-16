@@ -15,9 +15,9 @@ List not prioritized, yet.
 # <s>Problem format - When a makefile is present, is there a naming standard for validators? for solutions?</s> (Per will do this)
 # <s>One hour before end of contest feeds/features.</s> (Fredrik will add a button)
 # Security issues
-## Requirements if any for data encryption on disk
-## Requirements if any for data encryption on over the network
-## Authentication/login for feeds
+## <s>Requirements if any for data encryption on disk (No) </s>
+## <s>Requirements if any for data encryption on over the network </s> John
+## <s>Authentication/login for feeds</s> Tim writes it all 
 # Complete the definition of activities involved in "Finalizing the Contest"
 # Identifying how the CCS is required to support Medal assignments 
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
