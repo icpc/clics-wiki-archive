@@ -18,7 +18,6 @@ List not prioritized, yet.
 ## Requirements if any for data encryption on disk
 ## Requirements if any for data encryption on over the network
 ## Authentication/login for feeds
-# Defining the schedule for releasing the CCS Standard
 # Complete the definition of activities involved in "Finalizing the Contest"
 # Identifying how the CCS is required to support Medal assignments 
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
@@ -26,4 +25,5 @@ List not prioritized, yet.
 # What auditing do we require (run changes, etc.) logging
 # Having CCS developer onsite for the finals
 # Look through that terminology is used consistently
+# Defining the schedule for releasing the CCS Standard
 # Go through all emails, check for items
