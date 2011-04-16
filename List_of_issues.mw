@@ -14,7 +14,7 @@ List not prioritized, yet.
 # <s>Multiplicity of file formats</s>
 # <s>Problem format - When a makefile is present, is there a naming standard for validators? for solutions?</s> (Per will do this)
 # <s>One hour before end of contest feeds/features.</s> (Fredrik will add a button)
-# Security issues
+# <s>Security issues</s?
 ## <s>Requirements if any for data encryption on disk (No) </s>
 ## <s>Requirements if any for data encryption on over the network </s> John
 ## <s>Authentication/login for feeds</s> Tim writes it all 
