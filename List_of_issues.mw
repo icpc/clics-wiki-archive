@@ -5,7 +5,7 @@ List not prioritized, yet.
 # Feeds
 ## <s>Requirements for, and handling of Balloon Notifications</s> (Mikael will do some changes)
 ## <s>Commentator feed how will they get access ?</s> (This will be folded into the Event Feed. Tim will do this)
-## Event Feed - different feeds (subsets of data)
+## <s>Event Feed - different feeds (subsets of data)</s> (Tim will do this to)
 ## <s>Merge Event Feed and Balloon Notification into one Feed ?</s>(Yes, Tim will do this)
 # requirements for timestamps
 # Determining the role (functions available to) human judges: ability to assign/override judgements, what data/status information is accessible to judges, etc.
