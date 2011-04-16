@@ -21,7 +21,6 @@ List not prioritized, yet.
 # <s>Complete the definition of activities involved in "Finalizing the Contest"</s> (Doug writes this)
 # <s>Identifying how the CCS is required to support Medal assignments</s> (Fredrik adds definition for medals)
 # <s>List of judgments and their effect</s>
-# Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # What auditing do we require (run changes, etc.) logging
 # contest.yaml what/where/how
 # Having CCS developer onsite for the finals
@@ -31,3 +30,4 @@ List not prioritized, yet.
 # Go through all emails, check for items
 # Go through all comments in the document.
 # A better name for Judging Error
+# Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
