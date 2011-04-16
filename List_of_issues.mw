@@ -10,7 +10,7 @@ List not prioritized, yet.
 # <s>Requirements for timestamps</s>
 # <s>Determining the role (functions available to) human judges: ability to assign/override judgements, what data/status information is accessible to judges, etc.</s>
 # <s>Requirements for generating "scoreboards"</s>
-# <s>Require that run ids increase with submission time</s> (Mikael add id to 5.1.3,5.1.4 then move to general)
+# <s>Require that run ids increase with submission time (Mikael add id to 5.1.3,5.2.3 then move to general)</s>
 # <s>Multiplicity of file formats</s>
 # <s>Problem format - When a makefile is present, is there a naming standard for validators? for solutions?</s> (Per will do this)
 # <s>One hour before end of contest feeds/features.</s> (<s>Fredrik will add a button</s>)
