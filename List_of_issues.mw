@@ -11,13 +11,13 @@ List not prioritized, yet.
 # Determining the role (functions available to) human judges: ability to assign/override judgements, what data/status information is accessible to judges, etc.
 # Requirements for generating "scoreboards"
 # Multiplicity of file formats
+# Problem format - When a makefile is present, is there a naming standard for validators? for solutions?
+# One hour before end of contest feeds/features.
 # Security issues
 ## Requirements if any for data encryption on disk
 ## Requirements if any for data encryption on over the network
 ## Authentication/login for feeds
-# Problem format - When a makefile is present, is there a naming standard for validators? for solutions?
 # Defining the schedule for releasing the CCS Standard
-# One hour before end of contest feeds/features.
 # Complete the definition of activities involved in "Finalizing the Contest"
 # Identifying how the CCS is required to support Medal assignments 
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
