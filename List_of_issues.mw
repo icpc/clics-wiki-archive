@@ -10,6 +10,7 @@ List not prioritized, yet.
 # <s>Requirements for timestamps</s>
 # <s>Determining the role (functions available to) human judges: ability to assign/override judgements, what data/status information is accessible to judges, etc.</s>
 # Requirements for generating "scoreboards"
+# Require that run ids increase with submission time
 # Multiplicity of file formats
 # Problem format - When a makefile is present, is there a naming standard for validators? for solutions?
 # One hour before end of contest feeds/features.
