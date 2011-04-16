@@ -11,7 +11,10 @@ List not prioritized, yet.
 ## Merge Event Feed and Balloon Notification into one Feed ?
 # Requirements for generating "scoreboards"
 # Multiplicity of file formats
-# Requirements if any for data encryption (on disk, over the network)
+# Security issues
+## Requirements if any for data encryption on disk
+## Requirements if any for data encryption on over the network
+## Authentication/login for feeds
 # Commentator feed how will they get access ?
 # Event Feed - different feeds (subsets of data)
 # Problem format - When a makefile is present, is there a naming standard for validators? for solutions?
