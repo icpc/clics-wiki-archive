@@ -1,0 +1,21 @@
+'''List of CLICCS items requiring resolution'''
+
+Last update:  16 April 2011
+
+- Definition of "Pausing the Contest" vs. "Stopping the Contest"
+
+- Complete the defintion of activities involved in "Finalizing the Contest"
+
+- Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness"
+
+- Identifying how the CCS is required to support Medal assignments 
+
+- Defining the schedule for releasing the CCS Standard
+
+- Determining the role (functions available to) human judges: ability to assign/override judgements, what data/status information is accessible to judges, etc.
+
+- Requirements for and handling of Balloon Notifications
+
+- Requirements for generating "scoreboards"
+
+- Requirements if any for data encryption (on disk, over the network)
