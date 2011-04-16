@@ -17,6 +17,7 @@ List not prioritized, yet.
 ## Authentication/login for feeds
 # Problem format - When a makefile is present, is there a naming standard for validators? for solutions?
 # Defining the schedule for releasing the CCS Standard
+# One hour before end of contest feeds/features.
 # Complete the definition of activities involved in "Finalizing the Contest"
 # Identifying how the CCS is required to support Medal assignments 
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
