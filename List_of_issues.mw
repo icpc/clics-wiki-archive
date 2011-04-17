@@ -33,3 +33,5 @@ List not prioritized, yet.
 # Go through all comments in the document.
 # A better name for Judging Error
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
+# Flesh out problem format description
+# Write input validator standard
