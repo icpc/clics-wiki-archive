@@ -22,7 +22,8 @@ List not prioritized, yet.
 # <s>Identifying how the CCS is required to support Medal assignments</s> (Fredrik adds definition for medals)
 # <s>List of judgments and their effect</s>
 # <s>What auditing do we require (run changes, etc.) logging</s> (Doug puts list of logged items and section)
-# contest.yaml what/where/how (John is working on this)
+# contest.yaml what/where/how 
+# Contest Configuration section needs to be reorganized (John is working on this)
 # Having CCS developer onsite for the finals
 # Add introductions to all interface sections
 # Regional winners info generated, How ?
