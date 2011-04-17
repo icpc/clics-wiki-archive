@@ -3,6 +3,8 @@ A Test Harness is an automated testing framework.
 This article contains information about the input, output and tests for
 systems implementing the [[CCS]]
 
+'''Comment''' This needs to be split into two articles, keep requirements in this one, and move other information to another article [[User:Douglas Lane|Douglas Lane]] 17:47, 17 April 2011 (CEST)
+
 ==Testing Configuration Changes==
 
 {| class="wikitable"
