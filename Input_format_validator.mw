@@ -1,0 +1,11 @@
+== Summary ==
+
+This document describes a standard for Input Validators.  
+
+== Overview ==
+
+A validator program must be an application (executable or interpreted) capable of being invoked with a command line call. The details of this invocation are described in Section 3 [[#Invocation|Invocation]]. 
+
+== Invocation ==
+
+[[TBD]]
