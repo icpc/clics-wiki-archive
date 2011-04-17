@@ -15,3 +15,4 @@
 # Automatic invocation of judging needs to be done on machines set aside for judging so that auto-judging runs on auto-judging the machines and apply an algorithm to avoid machine starvation
 # Changes in .tsv content and values, send note to Jeff and Mikael - Doug
 # Define Standard Scoreboard Disclaimer phrases for scoreboard on freeze and end of contest, see comment in [[Contest_Control_System#Freezing_the_Scoreboard|Freezing the Scoreboard]]
+# Update [[Event Feed]] including moving Balloon Notification into [[Event Feed]] - Tim
