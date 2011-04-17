@@ -208,9 +208,7 @@ Notes
 
 === finalized ===
 
-:'''Comment''' the finalized tag only appears once in the event feed, right? [[User:Douglas Lane|Douglas Lane]] 21:31, 25 February 2011 (CET)
-
-Note that the finalized tag is followed immediately by a <tt></contest></tt> tag.
+Note that the finalized element is followed immediately by a <tt></contest></tt> tag.
 
  <finalized>
    <last-gold>4</last-gold>
