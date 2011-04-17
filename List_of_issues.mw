@@ -37,3 +37,4 @@ List not prioritized, yet.
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
 # Write input validator standard
+# Create a more complete standardized format of the Output Validator Feedback file
