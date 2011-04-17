@@ -38,3 +38,4 @@ List not prioritized, yet.
 # Flesh out problem format description
 # Write input validator standard
 # Create a more complete standardized format of the Output Validator Feedback file
+# Automatic invocation of judging needs to be done on machines set aside for judging so that auto-judging runs on auto-judging the machines and apply an algorithm to avoid machine starvation
