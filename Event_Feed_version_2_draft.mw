@@ -124,7 +124,7 @@ All events are separate elements at the top level.
    <region>Europe</region> 
  </team>
 
-;id: team identifier. ranges from 1 to number of teams and must be the same as the team number
+;id: team identifier. from [[Contest_Control_System#teams.tsv|teams.tsv (team number)]] 
 ;external-id: team id from [[Contest_Control_System#teams.tsv|teams.tsv (Reservation ID)]] 
 ;name: team name from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;nationality: nationality as ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]]
