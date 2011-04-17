@@ -68,14 +68,12 @@ All events are separate elements at the top level.
 |finalized|| the contest standings/medals are assigned, contest is over
 |}
 
-''Notes''
-# Most elements are identified by an id. 
-# Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
+Notes
+# Submission events have a contest-time element in minutes 
 # Timestamped events all have a timestamp element in decimal seconds.
-# Timestamped time attributes are identical to the timestamp element
-# The <finalized> element is followed by a </contest> tag
+# The <tt><finalized></tt> element is followed by a <tt></contest></tt> tag
 
-: '''Comment''' Can we remove "Most elements... id" note, seems like extra un-needed info [[User:Douglas Lane|Douglas Lane]] 21:42, 25 February 2011 (CET)
+:'''Comment''' Every event should have a timestamp, right ? [[User:Douglas Lane|Douglas Lane]] 17:38, 17 April 2011 (CEST)
 
 === info ===
 
