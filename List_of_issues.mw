@@ -37,4 +37,3 @@ List not prioritized, yet.
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
 # Write input validator standard
-# Event Type, problem state = pending,enabled,disabled ?
