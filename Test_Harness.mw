@@ -78,7 +78,10 @@ systems implementing the [[CCS]]
 
 ==Testing [[Contest_Control_System#Prohibited_Operations|Prohibited Operations]]==
 
-:'''Comment''': TODO: standardized messages for prohibited operations [[User:Douglas Lane|Douglas Lane]] 03:51, 23 February 2011 (CET)
+In order to test each of the Prohibited Operation a set of standardized messages
+needs to be defined.
+
+:'''Comment''': [[TBD]] TODO: standardized messages for prohibited operations [[User:Douglas Lane|Douglas Lane]] 03:51, 23 February 2011 (CET)
 
 {| class="wikitable"
 ! Operation 
