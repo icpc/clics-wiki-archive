@@ -7,7 +7,7 @@
 # Go through all emails, check for items
 # Output validator standard
 # Go through all comments in the document.
-# A better name for '''Judging Error'''
+# A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
 # Write [[Input validator]] standard (stub created)
@@ -17,3 +17,5 @@
 # Define Standard Scoreboard Disclaimer phrases for scoreboard on freeze and end of contest, see comment in [[Contest_Control_System#Freezing_the_Scoreboard|Freezing the Scoreboard]]
 # Update [[Event Feed]] including moving Balloon Notification into [[Event Feed]] - Tim
 # Standardized output messages for prohibited operations, see [[Test_Harness#Testing_Prohibited_Operations]]
+# Loading/verifying the Problem ([[Problem format]]) needs to be obvious, it is too subtle in the document.
+# Input Validator Standard
