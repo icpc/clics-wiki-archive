@@ -19,3 +19,7 @@
 # Standardized output messages for prohibited operations, see [[Test_Harness#Testing_Prohibited_Operations]]
 # Loading/verifying the Problem ([[Problem format]]) needs to be obvious, it is too subtle in the document.
 # Input Validator Standard
+# Add requirement for built-in validator/diff into CCS.  If no custom validator specified, defaults to this built-in validator.
+# Specify which version of YAML should be used/is expected.
+# Validators read from stdin?
+# In CCS, write out of contest.yaml as a required operation (Doug to double check that it is in the CCS already)
