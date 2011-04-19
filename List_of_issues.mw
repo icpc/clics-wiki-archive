@@ -23,3 +23,4 @@
 # Specify which version of YAML should be used/is expected.
 # Validators read from stdin?
 # In CCS, write out of contest.yaml as a required operation (Doug to double check that it is in the CCS already)
+# Requirements for CCS to backup and recover contest data
