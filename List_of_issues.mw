@@ -8,6 +8,9 @@
 # Defining the schedule for releasing the CCS Standard
 # Go through all emails, check for items
 # Go through all comments in the document.
+## userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) 
+## The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. 
+## we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) 
 # A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
@@ -26,9 +29,4 @@
 # Requirements for CCS to backup and recover contest data
 # Viewing runs - should be able to sort the runs by at least one field
 # Handling clars - should be able to sort the clars by at least one field
-# Comments in CCS
-## userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) 
-## The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. 
-## we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) 
 # Test Harness needs to be completed - Doug
-#
