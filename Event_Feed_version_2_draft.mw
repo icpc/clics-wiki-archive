@@ -206,7 +206,7 @@ Notes
 
 :'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
 
-===Notification===
+===notification===
 
 A notification should be sent the first time a team solves a particular problem. If a previously accepted run is rejected due to rejudging, no notification is sent, nor is a notification sent if and when the team subsequently solves the problem.
 
