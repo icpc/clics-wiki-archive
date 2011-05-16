@@ -206,6 +206,62 @@ Notes
 
 :'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
 
+===Notification===
+
+A notification should be sent the first time a team solves a particular problem. If a previously accepted run is rejected due to rejudging, no notification is sent, nor is a notification sent if and when the team subsequently solves the problem.
+
+:'''Comment:''' Is the program that consumes the notifications responsible for tracking which have been send and which have not? [[User:Douglas Lane|Douglas Lane]] 17:06, 20 February 2011 (CET)
+
+ <notification>
+  <team-id>34</team-id>
+  <team>U Waterloo</team>
+  <time>132.04213</time>
+  <timestamp>1298733213.102</timestamp>
+  <nr>214</nr>
+  <balloon>
+    <problem-id>B</problem-id>
+    <problem>Bulls and bears</problem>
+    <rgb>ff0000</rgb>
+    <color>Red</color>
+  </balloon>
+  <first-by-team>true</first-by-team>
+  <balloons>
+    <!-- balloons that team already has -->
+    <balloon>
+      <problem-id>D</problem-id>
+      <problem>Down the hill</problem>
+      <rgb>33cc00</rgb>
+      <color>Green</color>
+    </balloon>
+    <balloon>
+      <problem-id>F</problem-id>
+      <problem>Failing to make the grade</problem>
+      <rgb>ffff00</rgb>
+      <color>Yellow</color>
+    </balloon>
+  </balloons>
+ </notification>
+
+Sent for each balloon to be printed. Contains:
+;team-id: Team's number in contest (1, 2, etc) (int)
+;team: Team name (same as or similar to team sign) (string)
+;time: minutes since contest started, contest time (float)
+;nr: id of notification, sequential starting at 1 (int)
+;balloon: balloon info, see balloon element below
+;first-in-contest: required only when true (bool)
+;first-for-problem: required only when true (bool)
+;first-by-team: required only when true (bool)
+;balloons: list of balloons team should have (including this balloon)
+
+:'''Comment''' "nr" name - should be spelled out (avoid using acronyms) [[User:Douglas Lane|Douglas Lane]] 20:05, 16 May 2011 (CEST)
+
+=====balloon=====
+Describes a balloon for a problem
+;problem-id : A, B, etc (character)
+;problem : name / title of problem (string)
+;rgb : 3-byte RGB value encoded in hex (string)
+;color : color name (string)
+
 === finalized ===
 
 Note that the finalized element is followed immediately by a <tt></contest></tt> tag.
