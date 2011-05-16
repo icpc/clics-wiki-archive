@@ -10,9 +10,13 @@ The event feed is a set of data output by the [[CCS|Contest Control System]].
 
 ===Accessing the feed===
 
+<s>
 Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
 
 Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+</s>
+
+:'''Comment''': The CCS will define the port(s) and the Account Type can be used to filter/determine which data is sent [[User:Douglas Lane|Douglas Lane]] 00:54, 17 May 2011 (CEST)
 
 ===Account Types===
 
