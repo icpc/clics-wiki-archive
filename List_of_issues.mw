@@ -5,10 +5,10 @@
 ## <s>Create a more complete standardized format of the Output Validator Feedback file</s>
 ## <s>Validators read from stdin?</s> <s>Per will do this</s>
 ## <s>stdout and stderr should be ignored</s> <s>Per will do this</s>
-# Go through all comments in the document.
-## userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) 
-## The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. 
-## we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) 
+# <s>Go through all comments in the document.</s>
+## <s>userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) </s>
+## <s>The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. </s>
+## <s>we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) </s>
 # Write [[Input validator]] standard (stub created)
 # Look through that terminology is used consistently
 # Defining the schedule for releasing the CCS Standard
