@@ -32,6 +32,7 @@
 # Event Feed - add support for request of file, request source file by analysts for example.
 # Problem Format - add validator option "newline_sensitive"
 # CLI Symposium Presentation
+# Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.
 
 == Todo ==
 
