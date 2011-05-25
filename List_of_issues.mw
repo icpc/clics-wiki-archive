@@ -1,10 +1,10 @@
 '''List of CLICCS items requiring resolution'''
 
 # <s>Contest Configuration section needs to be reorganized  - John </s>
-# Output validator 
-## Create a more complete standardized format of the Output Validator Feedback file
-## Validators read from stdin?
-## stdout and stderr should be ignored
+# <s>Output validator</s>
+## <s>Create a more complete standardized format of the Output Validator Feedback file</s>
+## <s>Validators read from stdin?</s> Per will do this
+## <s>stdout and stderr should be ignored</s> Per will do this
 # Look through that terminology is used consistently
 # Defining the schedule for releasing the CCS Standard
 # Go through all emails, check for items
