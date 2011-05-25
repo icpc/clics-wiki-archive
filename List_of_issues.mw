@@ -14,6 +14,7 @@
 # <s>Defining the schedule for releasing the CCS Standard</s>
 # <s>Go through all emails, check for items</s>
 # <s>A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)</s>
+# Runtime limits (time, memory) for validators needs to be included. 
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
 ## Loading/verifying the Problem ([[Problem format]]) needs to be obvious, it is too subtle in the document.
