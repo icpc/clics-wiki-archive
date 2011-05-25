@@ -14,8 +14,8 @@
 # <s>Defining the schedule for releasing the CCS Standard</s>
 # <s>Go through all emails, check for items</s>
 # <s>A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)</s>
-# Runtime limits (time, memory, file) for validators needs to be specified or added to the configuration. 
-# Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
+# <s>Runtime limits (time, memory, file) for validators needs to be specified or added to the configuration. </s>
+# <s>Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")</s>
 # Problem Format - add validator option "newline_sensitive"
 # Define Standard Scoreboard Disclaimer phrases for scoreboard on freeze and end of contest, see comment in [[Contest_Control_System#Freezing_the_Scoreboard|Freezing the Scoreboard]]
 # Flesh out problem format description
