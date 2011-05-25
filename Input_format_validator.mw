@@ -10,7 +10,7 @@ A validator program must be an application (executable or interpreted) capable o
 
 
 == Output ==
-The input format validator may output debug information on stdout and stderr. This information should be ignored by the CCS.
+The input format validator may output debug information on stdout and stderr. This information may be displayed to the user upon invocation of the validator.
 
 == Exit codes ==
 The input format validator must exit with code 42 on successful validation. Any other exit code is an error.
