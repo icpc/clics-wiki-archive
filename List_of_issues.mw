@@ -16,8 +16,8 @@
 # A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)
 # Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")
 # Flesh out problem format description
-# Should teams be able to see current state of a problem?
 ## Loading/verifying the Problem ([[Problem format]]) needs to be obvious, it is too subtle in the document.
+# Should teams be able to see current state of a problem?
 # Automatic invocation of judging needs to be done on machines set aside for judging so that auto-judging runs on auto-judging the machines and apply an algorithm to avoid machine starvation
 # Define Standard Scoreboard Disclaimer phrases for scoreboard on freeze and end of contest, see comment in [[Contest_Control_System#Freezing_the_Scoreboard|Freezing the Scoreboard]]
 # <s>Update [[Event Feed]] move Balloon Notification into [[Event Feed]] - Tim</s>
