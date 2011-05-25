@@ -33,10 +33,10 @@
 # <s>Requirements for CCS to backup and recover contest data</s>
 # <s>Viewing runs - should be able to sort the runs by at least one field</s>
 # <s>Handling clars - should be able to sort the clars by at least one field</s>
-# Event Feed - add a reference in 9.1 to the (separate) Event Feed standard
-# Event Feed - add support for request of file, request source file by analysts for example.
+# <s>Event Feed - add a reference in 9.1 to the (separate) Event Feed standard</s>
+# <s>Event Feed - add support for request of file, request source file by analysts for example.</s>
 # CLI Symposium Presentation (And schedule)
-# Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.
+# <s>Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.</s>
 # Testability: This section is under development and has yet to be written/completed [[User:Douglas Lane|Douglas Lane]] 20:39, 27 January 2011 (CET)
 # Testability: TODO: Incorporate or reference information from the [[Test Harness]] article [[User:Douglas Lane|Douglas Lane]] 23:26, 28 February 2011 (CET)
 # Event Feed Comments
