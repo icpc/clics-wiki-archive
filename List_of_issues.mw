@@ -29,7 +29,7 @@
 # Specify which version of YAML should be used/is expected.
 # In CCS, write out of contest.yaml as a required operation (Doug to double check that it is in the CCS already)
 #* Please fix language, I don't understand what is meant. -- Per
-#Judge's ability to view scoreboard (john)
+# <s>Judge's ability to view scoreboard (john)</s>
 #Sect 9.3: "sort by ranked if team is ranked" ?? (john)
 # Requirements for CCS to backup and recover contest data
 # Viewing runs - should be able to sort the runs by at least one field
