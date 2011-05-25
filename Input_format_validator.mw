@@ -7,7 +7,11 @@ This document describes a standard for Input Format Validators.
 A validator program must be an application (executable or interpreted) capable of being invoked with a command line call. The details of this invocation are described in Section 3 [[#Invocation|Invocation]]. 
 
 == Invocation ==
+The CCS will invoke the validator and passing it the input file on stdin.
 
+The usage of the validator is as follows:
+
+validator --commandline < inputfile
 
 == Output ==
 The input format validator may output debug information on stdout and stderr. This information may be displayed to the user upon invocation of the validator.
