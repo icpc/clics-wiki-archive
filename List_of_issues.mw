@@ -1,6 +1,6 @@
 '''List of CLICCS items requiring resolution'''
 
-# Contest Configuration section needs to be reorganized  - John 
+# <s>Contest Configuration section needs to be reorganized  - John </s>
 # Output validator 
 ## Create a more complete standardized format of the Output Validator Feedback file
 ## Validators read from stdin?
