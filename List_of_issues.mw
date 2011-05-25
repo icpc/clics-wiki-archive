@@ -30,9 +30,9 @@
 #* <s>Please fix language, I don't understand what is meant. -- Per</s>
 # <s>Judge's ability to view scoreboard (john)</s>
 #<s>Sect 9.3: "sort by ranked if team is ranked" ?? (john)</s>
-# Requirements for CCS to backup and recover contest data
-# Viewing runs - should be able to sort the runs by at least one field
-# Handling clars - should be able to sort the clars by at least one field
+# <s>Requirements for CCS to backup and recover contest data</s>
+# <s>Viewing runs - should be able to sort the runs by at least one field</s>
+# <s>Handling clars - should be able to sort the clars by at least one field</s>
 # Event Feed - add a reference in 9.1 to the (separate) Event Feed standard
 # Event Feed - add support for request of file, request source file by analysts for example.
 # CLI Symposium Presentation (And schedule)
