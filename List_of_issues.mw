@@ -39,7 +39,7 @@
 # <s>Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.</s>
 # Testability: This section is under development and has yet to be written/completed [[User:Douglas Lane|Douglas Lane]] 20:39, 27 January 2011 (CET)
 # Testability: TODO: Incorporate or reference information from the [[Test Harness]] article [[User:Douglas Lane|Douglas Lane]] 23:26, 28 February 2011 (CET)
-# Event Feed Comments
+# <s>Event Feed Comments</s>
 # CCS provides a "Test" run function on the Team machine
 
 == Todo ==
