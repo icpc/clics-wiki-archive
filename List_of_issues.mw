@@ -33,6 +33,7 @@
 # Requirements for CCS to backup and recover contest data
 # Viewing runs - should be able to sort the runs by at least one field
 # Handling clars - should be able to sort the clars by at least one field
+# Event Feed - add a reference in 9.1 to the (separate) Event Feed standard
 # Event Feed - add support for request of file, request source file by analysts for example.
 # CLI Symposium Presentation (And schedule)
 # Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.
