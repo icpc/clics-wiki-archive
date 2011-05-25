@@ -21,8 +21,8 @@
 # <s>Should teams be able to see current state of a problem?</s>
 # <s>Automatic invocation of judging needs to be done on machines set aside for judging so that auto-judging runs on auto-judging the machines and apply an algorithm to avoid machine starvation</s>
 # <s>Update [[Event Feed]] move Balloon Notification into [[Event Feed]] - Tim</s>
-# Standardized output messages for prohibited operations, see [[Test_Harness#Testing_Prohibited_Operations]]
-## How does the [[Test_Harness#Testing_Prohibited_Operations]] message get communicated/transferred to CCS.
+# <s>Standardized output messages for prohibited operations, see [[Test_Harness#Testing_Prohibited_Operations]]</s>
+## <s>How does the [[Test_Harness#Testing_Prohibited_Operations]] message get communicated/transferred to CCS.</s>
 # Add requirement for built-in validator/diff into CCS.  If no custom validator specified, defaults to this built-in validator.
 #* Such a requirement already exists -- Per.
 # Specify which version of YAML should be used/is expected.
