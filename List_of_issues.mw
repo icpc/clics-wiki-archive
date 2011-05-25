@@ -3,8 +3,8 @@
 # <s>Contest Configuration section needs to be reorganized  - John </s>
 # <s>Output validator</s>
 ## <s>Create a more complete standardized format of the Output Validator Feedback file</s>
-## <s>Validators read from stdin?</s> Per will do this
-## <s>stdout and stderr should be ignored</s> Per will do this
+## <s>Validators read from stdin?</s> <s>Per will do this</s>
+## <s>stdout and stderr should be ignored</s> <s>Per will do this</s>
 # Go through all comments in the document.
 ## userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) 
 ## The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. 
