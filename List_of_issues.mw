@@ -4,6 +4,7 @@
 # Output validator 
 ## Create a more complete standardized format of the Output Validator Feedback file
 ## Validators read from stdin?
+## stdout and stderr should be ignored
 # Look through that terminology is used consistently
 # Defining the schedule for releasing the CCS Standard
 # Go through all emails, check for items
