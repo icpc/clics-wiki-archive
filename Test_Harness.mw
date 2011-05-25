@@ -93,19 +93,17 @@ needs to be defined.
 |-
 | Creating new processes || Team's program tried to start new process
 |-
-| Creating new threads || Team's program attempted to create a threa
+| Creating new threads || Team's program attempted to create a thread
 |-
 | Reading any files  || Team's program tried to read file "c.in"
 |-
 | Creating files || Team's program tried to create file "c.in"
 |-
-| Sending signals to other programs || Team's program tried to use a signal
+| Sending signals to other programs || Team's program tried to use a signal N
 |-
-| Side-stepping time or memory limits || Team's program attempted to exceeded limit <br> Team's program attempted to exceed memory limit
+| Side-stepping time or memory limits || Team's program attempted to exceed limit <br> Team's program attempted to exceed memory limit
 |-
 | Sending or receiving network traffic ||  Team's program tried to write network output <br> Team's program tried to read network input
-|-
-| Sleeping  || Team's program tried to use sleep function
 |}
 
 ==Testing [[Contest_Control_System#Validators|Validators]]==
