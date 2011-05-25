@@ -9,7 +9,7 @@
 ## <s>userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) </s>
 ## <s>The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. </s>
 ## <s>we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) </s>
-# Write [[Input validator]] standard (stub created)
+# <s>Write [[Input validator]] standard (stub created)</s>
 # Look through that terminology is used consistently
 # Defining the schedule for releasing the CCS Standard
 # Go through all emails, check for items
@@ -40,3 +40,4 @@
 == Todo ==
 
 * Add list of referenced standards - Doug
+* Write the [[Input format validator]] - Per
