@@ -31,6 +31,7 @@
 # Handling clars - should be able to sort the clars by at least one field
 # Event Feed - add support for request of file, request source file by analysts for example.
 # Problem Format - add validator option "newline_sensitive"
+# CLI Symposium Presentation
 
 == Todo ==
 
