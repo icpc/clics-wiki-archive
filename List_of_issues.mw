@@ -25,7 +25,7 @@
 ## <s>How does the [[Test_Harness#Testing_Prohibited_Operations]] message get communicated/transferred to CCS.</s>
 # <s>Add requirement for built-in validator/diff into CCS.  If no custom validator specified, defaults to this built-in validator.</s>
 #* <s>Such a requirement already exists -- Per.</s>
-# Specify which version of YAML should be used/is expected.
+# <s>Specify which version of YAML should be used/is expected.</s>
 # In CCS, write out of contest.yaml as a required operation (Doug to double check that it is in the CCS already)
 #* Please fix language, I don't understand what is meant. -- Per
 # <s>Judge's ability to view scoreboard (john)</s>
