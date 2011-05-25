@@ -48,4 +48,4 @@
 * Write up the handling of languages and parameters - Gunnar and Doug
 * Flesh out problem format description -Pehr, Per, Niemelä
 ** Loading/verifying the Problem ([[Problem format]]) needs to be obvious, it is too subtle in the document.
-* Provide an interface for a command line program that will test a set of submissions with expected output. - Pehr, Gunnar, Dough
+* Provide an interface for a command line program that will test a set of submissions with expected output. - Pehr, Gunnar, Doug
