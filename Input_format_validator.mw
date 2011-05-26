@@ -1,6 +1,8 @@
 == Overview ==
 
-A validator program must be an application (executable or interpreted) capable of being invoked with a command line call. The details of this invocation are described in Section 3 [[#Invocation|Invocation]]. 
+An Input format validator is a program that tests the input data for correctness.  
+
+A validator program must be an application (executable or interpreted) capable of being invoked with a command line call. The details of this invocation are described in Section 3 [[#Invocation|Invocation]].
 
 == Invocation ==
 The CCS will invoke the validator and passing it the input file on stdin.
