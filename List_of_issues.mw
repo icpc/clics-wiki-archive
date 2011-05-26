@@ -53,8 +53,8 @@
 * Provide an interface for a command line program that will test a set of submissions with expected output. - Pehr, Gunnar, Doug
 * Event feed comments are taken by Mathias
 ** Event Feed - add support for request of file
-## Team submitted source code 
-## scoreboard.tsv
-## results.tsv
+*** Team submitted source code, e.g. source code for run-id 33
+*** scoreboard.tsv
+*** results.tsv
 ** Event Feed - add a reference in 9.1 to the (separate) Event Feed standard
 ** Event Feed, fix/address comments
