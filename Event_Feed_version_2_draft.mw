@@ -135,15 +135,15 @@ Notes
  <problem id="1" state="enabled">
    <label>A</label>
    <name>APL Lives!</name>
-   <balloon-color rgb="#ffff00">yellow</balloon-color>
+   <color rgb="#ffff00">yellow</color>
  </problem>
 
 ;id: problem identifier
 ;state: one of enabled, paused, disabled
 ;label: one letter label
 ;name: descriptive name
-;balloon-color: balloon color name
-;rgb: balloon color rgb value
+;color: color name, typically used for balloons
+;rgb: color rgb value
 
 === team ===
 
