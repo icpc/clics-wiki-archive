@@ -220,7 +220,7 @@ Notes
 
 ===notification===
 
-A notification should be sent the first time a team solves a particular problem.  A notification is not sent when the team subsequently solves the problem.  If a previously accepted run is rejected due to rejudging, no notification is sent.   
+A notification should be sent the first time a team solves a particular problem. It is not sent for rejected solutions, nor if the team submits another successful solution to the same problem. If a previously accepted run is rejected due to rejudging, no notification is sent.
 
 :'''Comment:''' If a team has solved a problem, then the judges determine that the team has not solved the problem what action is taken? [[User:Douglas Lane|Douglas Lane]] 20:10, 16 May 2011 (CEST)
 
