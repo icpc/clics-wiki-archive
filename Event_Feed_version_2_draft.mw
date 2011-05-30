@@ -45,6 +45,14 @@ receiving [[TBD]] events when contest is frozen.
 == File format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
 
+ <contest version="1.0">
+   <info ... />
+   <language ... />
+   ...
+ </contest>
+
+;version: the format version. Must be "1.0"
+
 All events are separate elements at the top level.
 
 {| class="wikitable"
