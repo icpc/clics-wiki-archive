@@ -77,6 +77,8 @@ All events are separate elements at the top level.
 |-
 |testcase|| judgement of individual test cases for a run
 |-
+|notification|| balloon notification
+|-
 |finalized|| the contest standings/medals are assigned, contest is over
 |}
 
