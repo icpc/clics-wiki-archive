@@ -24,27 +24,23 @@ Connect to port 4714 and the entire feed for the contest will be sent to you, wi
 
 ===Account Types===
 
-All events are sent to Admin and Resolver, all other types stop
-receiving [[TBD]] events when contest is frozen.
+All events (elements described in File format below) are sent to Admin and Resolver, all other types stop
+receiving judgement, clar, run, notification and testcase events when contest is frozen.
 
 {| class="wikitable"
 ! Type!! Description
 |-
-|Admin|| All events
-|-
-|Balloon|| Balloon Notifications only
-|-
-|Commentator|| [[TBD]], request team source code
-|-
-|Floor / Team|| [[TBD]]
-|-
-|Judge|| [[TBD]]
-|-
-|Public|| [[TBD]]
+|Admin|| All events, request team run files
 |-
 |Resolver|| All events
 |-
+|Balloon|| info, problem, notification events
+|-
+|Commentator|| All events,  request team run files
+|-
 |}
+
+Other Account Types can be created to deliver event feed information.
 
 == File format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
