@@ -76,8 +76,6 @@ systems implementing the [[CCS]]
 | Test notification sent || [[Contest_Control_System#Scriptable_Submissions | Scriptable Submissions]] runs || Not defined 
 |}
 
-:'''Comment''': There is no CCS-defined data within the [[Event Feed]] for notifications [[User:Douglas Lane|Douglas Lane]] 03:57, 20 February 2011 (CET)
-
 ==Testing [[Contest_Control_System#Prohibited_Operations|Prohibited Operations]]==
 
 In order to test each of the Prohibited Operation a set of standardized messages
