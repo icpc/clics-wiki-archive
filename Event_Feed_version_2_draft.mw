@@ -285,7 +285,7 @@ Note that the finalized element is followed immediately by a <tt></contest></tt>
    <timestamp>1265336078.01</timestamp>
  </finalized>
 
-;timestamp: [[TBD]]
+;timestamp: the current computer time when this element was created 
 ;last-gold:integer, last place to receive a gold
 ;last-silver:integer, last place to receive a silver
 ;last-bronze:integer, last place to receive a bronze
