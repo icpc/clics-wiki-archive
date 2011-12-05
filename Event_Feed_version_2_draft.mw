@@ -8,6 +8,10 @@ The event feed is a set of data output by the [[CCS|Contest Control System]].
 
 :'''Comment:''' Add a description of return data if authentication fails [[User:Douglas Lane|Douglas Lane]] 17:14, 20 February 2011 (CET)
 
+:'''Comment:''' Require that multiple logins of the same account and password ? [[User:Douglas Lane|Douglas Lane]] 05:54, 5 December 2011 (CET)
+
+:'''Comment:''' Require that the event feed can use a single port for all requests?  This will reduce firewall hole requirements. [[User:Douglas Lane|Douglas Lane]] 05:54, 5 December 2011 (CET)
+
 ===Accessing the feed===
 
 <s>
