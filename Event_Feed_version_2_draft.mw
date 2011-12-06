@@ -42,6 +42,9 @@ receiving judgement, clar, run, notification and testcase events when contest is
 
 Other Account Types can be created to deliver event feed information.
 
+== Updates of information ==
+Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) requires that the affected events be resent. Removal (or reinsertion) of a time interval resets the stream. See the <reset/> tag below. 
+
 == File format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
 
@@ -221,6 +224,7 @@ Notes
 :'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
 
 ===notification===
+'''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
 
 A notification should be sent the first time a team solves a particular problem. It is not sent for rejected solutions, nor if the team submits another successful solution to the same problem. If a previously accepted run is rejected due to rejudging, no notification is sent.
 
@@ -272,6 +276,9 @@ Describes a balloon for a problem
 ;name: name / title of problem (string)
 ;rgb: 3-byte RGB value encoded in hex (string)
 ;color: color name (string)
+
+=== reset ===
+Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for all events.
 
 === finalized ===
 
