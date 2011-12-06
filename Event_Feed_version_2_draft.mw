@@ -278,7 +278,7 @@ Describes a balloon for a problem
 ;color: color name (string)
 
 === reset ===
-Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for all events.
+Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for events already issued.
 
 === finalized ===
 
