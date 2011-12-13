@@ -1,0 +1,27 @@
+=== Overview ===
+
+Problem statements are
+written in LaTeX, containing only the actual problem statement, no sample data
+(the .tex file is included in a template that
+adds these).  A typical problem.tex looks as follows:
+
+ \problemtitle{Problem Name}
+ 
+ <Problem statement here>
+ 
+ \section*{Input}
+ 
+ <Input description here>
+ 
+ \section*{Output}
+ 
+ <Output description here>
+
+
+=== Additional options ===
+
+In case the problem title consists of special LaTeX code (for instance, math, or escaped characters), a "plain" version of the problem title can be specified by a comment of the form 
+
+ %% plainproblemtitle: Problem Name
+
+in the beginning of the file.
