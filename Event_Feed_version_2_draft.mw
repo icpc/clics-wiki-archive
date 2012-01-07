@@ -92,6 +92,8 @@ Notes
 
 :'''Comment''' Every event should have a timestamp, right ? [[User:Douglas Lane|Douglas Lane]] 17:38, 17 April 2011 (CEST)
 
+:'''Comment''' A comment from Roman (and me), is that using both xml attributes and element content is overly complicated. Even if we use XML, we could keep it simple using no attributes. [[User:Mattias de Zalenski|Mattias de Zalenski]] 18:57, 7 Jan 2012 (CET)
+
 === info ===
 
  <info>
