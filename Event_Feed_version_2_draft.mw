@@ -118,14 +118,14 @@ Notes
 
 ;name: language name
 
-=== region ===
+=== group ===
 
- <region external-id="3012">
+ <group external-id="3012">
    <name>Europe</name>
- </region>
+ </group>
 
 ;external-id: identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]]
-;name: super-region name from [[Contest_Control_System#groups.tsv|groups.tsv]]
+;name: group name from [[Contest_Control_System#groups.tsv|groups.tsv]]
 
 === judgement ===
 
