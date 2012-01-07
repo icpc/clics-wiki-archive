@@ -171,8 +171,8 @@ Notes
 === clar ===
 
  <clar id="1" team-id="0" problem-id="1">
-   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
    <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
    <to-all>true</to-all>
    <contest-time>118.48</contest-time>
    <timestamp>1265335256.74</timestamp>
