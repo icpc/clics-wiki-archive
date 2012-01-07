@@ -27,7 +27,9 @@ systems implementing the [[CCS]]
 |-
 | Test validator || Load [[Problem format]] file || [[TBD]] || [[TBD]]
 |-
-| Test judgement configuration || [[CCS]] specification || [[Event Feed]] || [[TBD]]
+| Test judgement names|| contest.yaml || [[Event Feed]] || [[TBD]]
+|-
+| Test notification || Judgement || [[Event Feed]] || [[TBD]]
 |}
 
 ==Testing Run Submissions==
