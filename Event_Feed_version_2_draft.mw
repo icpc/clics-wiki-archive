@@ -66,7 +66,7 @@ All events are separate elements at the top level.
 |-
 |language|| submission language information
 |-
-|region|| super region information
+|group|| group information
 |-
 |judgement|| judgement information
 |-
@@ -158,7 +158,7 @@ Notes
    <name>American University of Beirut</name>
    <nationality>LBN</nationality>
    <university>American University of Beirut</university> 
-   <region>Europe</region> 
+   <group>Europe</group> 
  </team>
 
 ;id: team identifier. from [[Contest_Control_System#teams.tsv|teams.tsv (team ID)]] 
@@ -166,7 +166,7 @@ Notes
 ;name: team name from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;nationality: nationality as ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
-;region: super region name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
+;group: group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
 === clar ===
 
