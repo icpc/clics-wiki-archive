@@ -130,7 +130,7 @@ Format:
 |-
 |length || Length of contest in HH:MM:SS format || xsd:string
 |-
-|penalty || Penalty time in minutes || xsd:int
+|penalty-time || Penalty time in minutes || xsd:int
 |-
 |started || True if the contest is started || xsd:boolean
 |-
@@ -142,7 +142,7 @@ Example:
  <info>
    <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
    <length>05:00:00</length>
-   <penalty>20</penalty>
+   <penalty-time>20</penalty-time>
    <started>false</started>
    <start-time>1265335138.26</start-time>
  </info>
