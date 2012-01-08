@@ -65,12 +65,12 @@ The event feed is an XML document within the root element <tt><contest></tt>. Th
 |-
 | version || The format version. Must be "1.0"
 |-
-| accountType || The type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
+| account-type || The type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
 |}
 
 Example:
 
- <contest version="1.0" accountType="floor">
+ <contest version="1.0" account-type="floor">
    <info ... />
    <language ... />
    ...
@@ -106,7 +106,7 @@ Event types & tags:
 |-
 |test-result|| judgement of individual input file for a run || Event
 |-
-|penalty|| adjusted penalty time || Event
+|team-penalty|| adjusted penalty time for a team || Event
 |-
 |finalized|| the contest standings/medals are assigned, contest is over || Event
 |-
