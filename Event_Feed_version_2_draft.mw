@@ -357,6 +357,32 @@ Example:
 
 '''TODO''': Tim doesn't like the i/n
 
+==== Penalty Event ====
+
+A penalty event is sent when an administrator adds or removes penalty time for a team.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|team-id || Team ID || xsd:int
+|-
+|time || The number of penalty minutes || xsd:int
+|-
+|contest-time || Contest (elapsed) time when the penalty was added || xsd:decimal
+|-
+|timestamp || Wall-clock time when the penalty was added || xsd:decimal
+|}
+
+Example:
+
+ <penalty team-id="74">
+   <time>15</time>
+   <contest-time>17960.74</contest-time>
+   <timestamp>1265353100.29</timestamp>
+ </penalty>
+
 ==== Notification Element ====
 '''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
 
