@@ -38,7 +38,7 @@ CCS may implement account types using another mechanism (e.g. permissions), as l
 == Updates of information ==
 Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) requires that the affected events be resent. Removal (or reinsertion) of a time interval resets the stream. See the <reset/> tag below. 
 
-== File format ==
+== File Format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
 
  <contest version="1.0" accountType="admin">
@@ -68,9 +68,11 @@ All events are separate elements at the top level.
 |-
 |team|| team information || Configuration
 |-
-|clar|| submitted clarification information and updates || Event
+|clar-request|| submitted clarification || Event
 |-
-|run|| submitted run information and updates || Event
+|clar-response|| clarification response || Event
+|-
+|run|| submitted run and updates || Event
 |-
 |run-judgement|| judgement of a run and updates || Event
 |-
@@ -78,17 +80,18 @@ All events are separate elements at the top level.
 |-
 |testcase|| judgement of individual test cases for a run || Event
 |-
+|penalty|| adjusted penalty time || Event
+|-
 |notification|| balloon notification || Event
 |-
 |finalized|| the contest standings/medals are assigned, contest is over || Event
+|-
+|reset|| reset notification || Event
 |}
 
 Notes
-# Submission events have a contest-time element in minutes 
-# Timestamped events all have a timestamp element in decimal seconds.
-# The <tt><finalized></tt> element is followed by a <tt></contest></tt> tag
-
-:'''Comment''' Every event should have a timestamp, right? [[User:Douglas Lane|Douglas Lane]] 17:38, 17 April 2011 (CEST)
+# contest-time elements are in minutes.
+# timestamp elements are in seconds since the epoch, Jan 1st, 1970 00:00:00 UTC.
 
 === Configuration Elements ===
 
