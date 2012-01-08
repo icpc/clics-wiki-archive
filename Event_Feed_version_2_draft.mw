@@ -9,7 +9,7 @@ The event feed is an externally-accessible XML feed of contest data supplied by 
 
 == Accessing the Event Feed ==
 
-Clients make use of the event feed by connecting to the event feed port provided by the CCS (event-feed-port in contest.yaml). All clients (regardless of feed account type) connect to this same port.
+Clients make use of the event feed by connecting to the event feed port provided by the CCS (event-feed-port in [[Contest_Control_System#contest.yaml|contest.yaml]]). All clients (regardless of feed account type) connect to this same port.
 
 Clients must use SSL to connect; any client connection that doesn't use SSL is dropped.
 
