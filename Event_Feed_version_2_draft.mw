@@ -4,8 +4,17 @@ The event feed is a set of data output by the [[CCS|Contest Control System]].
 
 ===Authentication===
 
-Authenticate by contacting the CCS and username and password using a TLS protocol.
+Authenticate by contacting the CCS and username and password using the TLS protocol.
 
+Client sends the following to log in:
+
+ <login>
+   <user>scoreboard1</user>
+   <password>test</password>
+ </login>
+
+;user: the account name
+;password: the account password
 
 :'''Comment:''' Add a description of return data if authentication fails [[User:Douglas Lane|Douglas Lane]] 17:14, 20 February 2011 (CET)
 
