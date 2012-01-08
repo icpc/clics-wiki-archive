@@ -438,9 +438,9 @@ Format:
 |-
 |run-id || Run ID || xsd:int
 |-
-|numTest || Input file index || xsd:int
+|num-test || Input file index || xsd:int
 |-
-|totalTests || Total number of input files || xsd:int
+|total-tests || Total number of input files || xsd:int
 |-
 |judgement-id || Judgement ID || xsd:int
 |-
@@ -453,7 +453,7 @@ Format:
 
 Example:
 
- <test-result run-id="1" numTest="2" totalTests="5" judgement-id="5">
+ <test-result run-id="1" num-test="2" total-tests="5" judgement-id="5">
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
    <timestamp>1265336078.01</timestamp>
