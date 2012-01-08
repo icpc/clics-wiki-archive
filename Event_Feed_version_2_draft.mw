@@ -41,13 +41,14 @@ Configuration changes to the CCS or changing the judgement of a run (through, e.
 == File format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
 
- <contest version="1.0">
+ <contest version="1.0" accountType="admin">
    <info ... />
    <language ... />
    ...
  </contest>
 
 ;version: the format version. Must be "1.0"
+;accountType: the type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
 
 All events are separate elements at the top level.
 
@@ -71,6 +72,10 @@ All events are separate elements at the top level.
 |-
 |run|| submitted run information and updates || Event
 |-
+|run-judgement|| judgement of a run and updates || Event
+|-
+|run-source|| source code submitted with a run and updates || Event
+|-
 |testcase|| judgement of individual test cases for a run || Event
 |-
 |notification|| balloon notification || Event
@@ -83,9 +88,7 @@ Notes
 # Timestamped events all have a timestamp element in decimal seconds.
 # The <tt><finalized></tt> element is followed by a <tt></contest></tt> tag
 
-:'''Comment''' Every event should have a timestamp, right ? [[User:Douglas Lane|Douglas Lane]] 17:38, 17 April 2011 (CEST)
-
-:'''Comment''' A comment from Roman (and me), is that using both xml attributes and element content is overly complicated. Even if we use XML, we could keep it simple using no attributes. [[User:Mattias de Zalenski|Mattias de Zalenski]] 18:57, 7 Jan 2012 (CET)
+:'''Comment''' Every event should have a timestamp, right? [[User:Douglas Lane|Douglas Lane]] 17:38, 17 April 2011 (CEST)
 
 === Configuration ===
 
@@ -174,14 +177,24 @@ Notes
    <timestamp>1265335256.74</timestamp>
  </clar>
 
-;id: clarification identifier
+;id: clarification ID
 ;team-id: team ID
 ;problem-id: problem ID
 ;question: A question, typically from a team.
 ;answer: The judges answer to the question
 ;to-all: true if the clarification was sent to all teams
-;contest-time: contest (elapsed) time in minutes
-;timestamp: the current computer time when this element was created, decimal seconds
+;contest-time: contest (elapsed) time in minutes when the clarification was submitted
+;timestamp: the current computer time when this element was submitted
+
+
+{| class="wikitable"
+|+ Event types/tags
+! Name !! Description !! Type
+|-
+|id || clarification ID || xsd:int
+|-
+|team-id || team ID || xsd:int
+|}
 
 === Run Element ===
 
@@ -203,6 +216,8 @@ Notes
  <run-judgement run-id="1410">
    <judgement>WA</judgement>
    <penalty>true</penalty>
+   <contest-time>179.74</contest-time>
+   <timestamp>1265353100.29</timestamp>
  </run-judgement>
 
 ;id: run identifier
@@ -214,6 +229,8 @@ Notes
  <run-source run-id="1410">
    '''TODO define encoding and format for source code, remember to specify main file and other files
  </run-source >
+
+;run-id: id of associated run element
 
 === Testcase Element ===
 
