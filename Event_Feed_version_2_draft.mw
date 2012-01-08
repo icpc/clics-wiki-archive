@@ -9,16 +9,16 @@ Clients must use SSL to connect; any client connection that doesn't use SSL is d
 
 === Authentication ===
 
-Once an SSL connection has been established, the client must send two lines (with carriage returns) to log in:
+Once an SSL connection has been established, the client must send two lines (each with carriage returns) to log in:
 
 Format:
 
 {| class="wikitable"
-! Attribute !! Description
+! Line !! Attribute !! Description
 |-
-|user ID || Account name
+| 1 || User ID || Account name
 |-
-|password || Account password
+| 2 || Password || Account password
 |}
 
 Example:
