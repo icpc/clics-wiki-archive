@@ -286,13 +286,27 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
 
-=== run-source ===
+=== Run Source Event ===
+
+A run source event is sent along with every submitted run event.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|run-id || Run ID || xsd:int
+|-
+|(element content) || Base 64 encoded content of file || xsd:base64Binary
+|}
+
+Example:
 
  <run-source run-id="1410">
-   '''TODO define encoding and format for source code, remember to specify main file and other files
- </run-source >
+   TUWuIGIzI345...
+ </run-source>
 
-;run-id: id of associated run element
+'''TODO''': multiple files, main file tag
 
 === Testcase Element ===
 
