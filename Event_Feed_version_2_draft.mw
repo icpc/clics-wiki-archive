@@ -104,11 +104,9 @@ Event types & tags:
 |-
 |run-source|| source code submitted with a run and updates || Event
 |-
-|testcase|| judgement of individual test cases for a run || Event
+|test-result|| judgement of individual input file for a run || Event
 |-
 |penalty|| adjusted penalty time || Event
-|-
-|notification|| balloon notification || Event
 |-
 |finalized|| the contest standings/medals are assigned, contest is over || Event
 |-
