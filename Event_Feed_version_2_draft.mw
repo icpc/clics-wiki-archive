@@ -57,7 +57,18 @@ CCS may implement account types using another mechanism (e.g. permissions), as l
 
 == Information Updates ==
 
-Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) must require that the affected event(s) be resent. Removal (or reinsertion) of a time interval resets the stream - see the <reset/> tag below.
+CCSs will typically send all configuration elements, followed by a set of events. The time of each new event must be in increasing contest and wall-clock time so that clients know they have the complete state up to the time of the most recently received element.
+
+The event feed must be consistent at any given time; elements that refer to other elements must be sent after the element they refer to. For instance <run> must be sent before the corresponding <run-source> or <run-judgement>.
+
+Changes may cause any configuration or event element to be resent. These changes include but are not limited to:
+* Changing the state of a problem
+* Rejudgements of runs
+* Fixing typos in names
+
+Removal (or reinsertion) of a time interval resets the stream - see the <reset/> tag below.
+
+Different clients (or reconnecting clients) will receive a semantically identical event feed, but are not guaranteed to receive a syntactically identical event feed. For instance, if a typo was fixed in a problem name any new clients may simply receive a single configuration element with the fixed name.
 
 == File Format ==
 The event feed is an XML document within the root element <tt><contest></tt>. The root contest element is as follows:
