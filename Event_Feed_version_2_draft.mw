@@ -472,62 +472,6 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </penalty>
 
-==== Notification Element ====
-'''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
-
-A notification should be sent the first time a team solves a particular problem. It is not sent for rejected solutions, nor if the team submits another successful solution to the same problem. If a previously accepted run is rejected due to rejudging, no notification is sent.
-
-:'''Comment:''' If a team has solved a problem, then the judges determine that the team has not solved the problem what action is taken? [[User:Douglas Lane|Douglas Lane]] 20:10, 16 May 2011 (CEST)
-
-:'''Comment:''' Is the program that consumes the notifications responsible for tracking which have been send and which have not? [[User:Douglas Lane|Douglas Lane]] 17:06, 20 February 2011 (CET)
-
- <notification id="214" team-id="34">
-  <team>U Waterloo</team>
-  <contest-time>132.04</contest-time>
-  <timestamp>1298733213.10</timestamp>
-  <balloon problem-id="2">
-    <label>B</label>
-    <name>Bulls and bears</name>
-    <color rgb="ff0000">red</color>
-  </balloon>
-  <first-by-team>true</first-by-team>
-  <balloons>
-    <!-- balloons that team already has -->
-    <balloon problem-id="4">
-      <label>D</label>
-      <name>Down the hill</name>
-      <color rgb="33cc00">green</color>
-    </balloon>
-    <balloon problem-id="6">
-      <label>F</label>
-      <name>Failing to make the grade</name>
-      <color rgb="ffff00">yellow</color>
-    </balloon>
-  </balloons>
- </notification>
-
-Sent for each balloon to be printed. Contains:
-;id: id of notification, sequential starting at 1 (int)
-;team-id: Team's number in contest (1, 2, etc) (int)
-;team: Team name (same as or similar to team sign) (string)
-;contest-time: minutes since contest started, contest time (float)
-;timestamp: the current computer time when this element was created, decimal seconds 
-;balloon: balloon info, see balloon element below
-;first-in-contest: required only when true (bool)
-;first-for-problem: required only when true (bool)
-;first-by-team: required only when true (bool)
-;balloons: list of balloons team should have (including this balloon)
-
-===== Balloon Element =====
-Describes a balloon for a problem
-;problem-id: the id of the problem
-;label: A, B, etc (character)
-;name: name / title of problem (string)
-;rgb: 3-byte RGB value encoded in hex (string)
-;color: color name (string)
-
-'''TODO''' notification section hasn't been reviewed. Tim doesn't like including the word 'balloon'. Tim doesn't like the repeated balloon list each time.
-
 ==== Finalized Event ====
 
 The finalized event is sent when the contest is finalized. It must be the last event and will be followed immediately by the <tt></contest></tt> tag.
