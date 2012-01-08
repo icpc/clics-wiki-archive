@@ -32,11 +32,7 @@ Example:
  scoreboard1
  test
 
-If the login succeeds, the server will start responding with the contest element (defined below). If the login is unsuccessful, the connection is dropped. Each user ID may only be used by a single client at any given time.
-
-TODO: need to specify explicitly what the CCS is required to do if a second valid login is attempted when a previous login of that same account exists (deny the second? drop the first? Issue a warning and hang?)  Related issue: does the CCS standard have any specification as to allowing (or disallowing) multiple logins?  Should it?
-
-Comment: do we really need to disallow multiple logins from the same account?
+If the login succeeds, the server will start responding with the contest element (defined below). If the login is unsuccessful, the connection is dropped. Each user ID may be used by multiple clients if required.
 
 === Account Types ===
 
