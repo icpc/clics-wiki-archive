@@ -9,18 +9,22 @@ Clients must use SSL to connect; any client connection that doesn't use SSL is d
 
 === Authentication ===
 
-Once an SSL connection has been established, the client must send two lines (with a carriage return) to log in:
+Once an SSL connection has been established, the client must send two lines (with carriage returns) to log in:
 
 Format:
 
-;user ID (scoreboard1): the account name
-;password (test): the account password
+{| class="wikitable"
+! Attribute !! Description
+|-
+|user ID || Account name
+|-
+|password || Account password
+|}
 
 Example:
 
  scoreboard1
  test
-
 
 If the login succeeds, the server will start responding with the contest element (defined below). If the login is unsuccessful, the connection is dropped. Each user ID may only be used by a single client at any given time.
 
