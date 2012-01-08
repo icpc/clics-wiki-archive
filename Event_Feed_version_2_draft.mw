@@ -134,7 +134,7 @@ Format:
 |-
 |started || True if the contest is started || xsd:boolean
 |-
-|starttime || Wall-clock start time of the contest || xsd:string
+|start-time || Wall-clock start time of the contest || xsd:string
 |}
 
 Example:
@@ -144,7 +144,7 @@ Example:
    <length>05:00:00</length>
    <penalty>20</penalty>
    <started>false</started>
-   <starttime>1265335138.26</starttime>
+   <start-time>1265335138.26</start-time>
  </info>
 
 ==== Language Element ====
