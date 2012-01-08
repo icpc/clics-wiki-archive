@@ -127,13 +127,27 @@ Notes
 
 ==== Judgement Element ====
 
- <judgement>
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|id || Judgement ID || xsd:int
+|-
+|acronym || Judgement acronym || xsd:string
+|-
+|name || Judgement name || xsd:string
+|-
+|penalty || True if this judgement is a failure that causes penalty time || xsd:boolean
+|}
+
+Example:
+
+ <judgement id="3">
    <acronym>CE</acronym>
    <name>Compile Error</name>
+   <penalty>true</penalty>
  </judgement>
-
-;acronym: judgement acronym
-;name: descriptive name
 
 ==== Problem Element ====
 
