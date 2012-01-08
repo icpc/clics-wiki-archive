@@ -396,27 +396,14 @@ Format:
 |-
 |run-id || Run ID || xsd:int
 |-
-|main-file-id || The ID of the main file || xsd:int
-|-
-|total-files || The total number of files || xsd:int
-|-
-|id || The file ID || xsd:int
-|-
 |name || File name || xsd:string
+|-
+|main || True if the file is the primary file (optional, typically only marked when true) || xsd:boolean
 |-
 |(element content) || Base 64 encoded content of the file || xsd:base64Binary
 |}
 
 Example:
-
- <run-source run-id="1410" main-file-id="1" total-files="2">
-   <file id="1" name="hello.st">
-     J0hlbGxvIFdvcmxkLicu
-   </file>
-   <file id="2" name="hello2.st">
-     J0Fub3RoZXIgZmlsZScu
-   </file>
- </run-source>
 
  <run-source run-id="1410">
    <file name="hello.st" main="true">
