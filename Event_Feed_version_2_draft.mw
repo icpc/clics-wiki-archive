@@ -134,7 +134,7 @@ Format:
 |-
 |started || True if the contest is started || xsd:boolean
 |-
-|start-time || Wall-clock start time of the contest || xsd:string
+|start-time || Wall-clock start time of the contest || xsd:decimal
 |}
 
 Example:
