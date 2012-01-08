@@ -45,7 +45,7 @@ The CCS must allow multiple user IDs to be configured for accessing the event fe
 |-
 |floor || Used for clients that may display data visible to contest contestants  || run-source, clars not sent to all || testcases, run-judgements, notifications
 |-
-|public || Used for public clients || None || test cases, run-judgements, notifications
+|public || Used for public clients || None || testcases, run-judgements, notifications
 |-
 |all|| Used for internal/sysop clients || None || None
 |-
