@@ -308,24 +308,39 @@ Example:
 
 '''TODO''': multiple files, main file tag
 
-=== Testcase Element ===
+=== Testcase Event ===
+
+A testcase event is sent when a run is judged against an input file.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|run-id || Run ID || xsd:int
+|-
+|i|| Testcase number || xsd:int
+|-
+|n|| Total number of testcases || xsd:int
+|-
+|judgement || Judgement acronym || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the testcase was judged || xsd:decimal
+|-
+|timestamp || Wall-clock time when the testcase was judged || xsd:decimal
+|}
+
+Example:
 
  <testcase run-id="1">
-   &lt;i>1&lt;/i>
+   <i>1</i>
    <n>1</n>
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
    <timestamp>1265336078.01</timestamp>
  </testcase>
 
-;run-id: matches id in run element
-;i: testcase number
-;n: total number of testcases
-;judgement: judgement acronym
-;contest-time: contest (elapsed) time in minutes 
-;timestamp: the current computer time when this element was created
-
-:'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
+'''TODO''': Tim doesn't like the i/n
 
 === Notification Element ===
 '''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
