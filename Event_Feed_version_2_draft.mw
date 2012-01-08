@@ -270,9 +270,9 @@ Format:
 |-
 |run-id || Run ID || xsd:int
 |-
-|judgement || Judgement acronym || xsd:string
+|judgement-id || Judgement ID || xsd:int
 |-
-|solved|| True if solved || xsd:boolean
+|judgement|| Judgement acronym || xsd:string
 |-
 |contest-time || Contest (elapsed) time when the judgement was assigned || xsd:decimal
 |-
@@ -281,9 +281,8 @@ Format:
 
 Example:
 
- <run-judgement run-id="1410">
+ <run-judgement run-id="1410" judgement-id="3">
    <judgement>WA</judgement>
-   <solved>false</solved>
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
