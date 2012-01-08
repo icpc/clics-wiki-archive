@@ -149,7 +149,8 @@ Notes
 
 ==== Problem Element ====
 
- <problem id="1" state="enabled">
+ <problem id="1">
+   <state>enabled</state>
    <label>A</label>
    <name>APL Lives!</name>
    <color rgb="#ffff00">yellow</color>
