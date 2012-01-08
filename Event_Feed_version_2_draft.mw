@@ -209,9 +209,9 @@ Format:
 Example:
 
  <judgement id="3">
-   <acronym>CE</acronym>
-   <name>Compile Error</name>
-   <penalty>false</penalty>
+   <acronym>WA</acronym>
+   <name>Wrong Answer</name>
+   <penalty>true</penalty>
  </judgement>
 
 ==== Problem Element ====
