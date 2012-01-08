@@ -405,9 +405,9 @@ Example:
 
 '''TODO''': multiple files, main file tag, need to maintain filenames
 
-==== Testcase Event ====
+==== Test Result Event ====
 
-A testcase event is sent when a run is judged against an input file.
+A test result event is sent when a run is judged against an input file.
 
 Format:
 
@@ -416,28 +416,26 @@ Format:
 |-
 |run-id || Run ID || xsd:int
 |-
-|i|| Testcase number || xsd:int
+|numTest || Input file index || xsd:int
 |-
-|n|| Total number of testcases || xsd:int
+|totalTests || Total number of input files || xsd:int
+|-
+|judgement-id || Judgement ID || xsd:int
 |-
 |judgement || Judgement acronym || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the testcase was judged || xsd:decimal
+|contest-time || Contest (elapsed) time when the test was judged || xsd:decimal
 |-
-|timestamp || Wall-clock time when the testcase was judged || xsd:decimal
+|timestamp || Wall-clock time when the test was judged || xsd:decimal
 |}
 
 Example:
 
- <testcase run-id="1">
-   &lt;i>1&lt;/i>
-   <n>1</n>
+ <test-result run-id="1" numTest="2" totalTests="5" judgement-id="5">
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
    <timestamp>1265336078.01</timestamp>
- </testcase>
-
-'''TODO''': Tim doesn't like the i/n
+ </test-result>
 
 ==== Penalty Event ====
 
