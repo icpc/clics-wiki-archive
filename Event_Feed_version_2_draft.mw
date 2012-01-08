@@ -68,29 +68,29 @@ All events are separate elements at the top level.
 
 {| class="wikitable"
 |+ Event types/tags
-! Event/Element !! Contains
+! Element !! Contains !! Type
 |-
-|info|| contest information and updates
+|info|| contest information and updates || Configuration
 |-
-|language|| submission language information
+|language|| submission language information || Configuration
 |-
-|group|| group information
+|group|| group information || Configuration
 |-
-|judgement|| judgement information
+|judgement|| judgement information || Configuration
 |-
-|problem|| problem information
+|problem|| problem information || Configuration
 |-
-|team|| team information
+|team|| team information || Configuration
 |-
-|clar|| submitted clarification information and updates
+|clar|| submitted clarification information and updates || Event
 |-
-|run|| submitted run information and updates
+|run|| submitted run information and updates || Event
 |-
-|testcase|| judgement of individual test cases for a run
+|testcase|| judgement of individual test cases for a run || Event
 |-
-|notification|| balloon notification
+|notification|| balloon notification || Event
 |-
-|finalized|| the contest standings/medals are assigned, contest is over
+|finalized|| the contest standings/medals are assigned, contest is over || Event
 |}
 
 Notes
