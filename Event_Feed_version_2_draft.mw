@@ -444,9 +444,9 @@ Example:
    <timestamp>1265336078.01</timestamp>
  </test-result>
 
-==== Penalty Event ====
+==== Team Penalty Event ====
 
-A penalty event is sent when an administrator adds or removes penalty time for a team.
+A team penalty event is sent when an administrator adds or removes penalty time for a team.
 
 Format:
 
@@ -455,7 +455,7 @@ Format:
 |-
 |team-id || Team ID || xsd:int
 |-
-|time || The number of penalty minutes || xsd:int
+|time || The number of added penalty minutes, may be negative || xsd:int
 |-
 |contest-time || Contest (elapsed) time when the penalty was added || xsd:decimal
 |-
@@ -464,11 +464,11 @@ Format:
 
 Example:
 
- <penalty team-id="74">
+ <team-penalty team-id="74">
    <time>15</time>
    <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
- </penalty>
+ </team-penalty>
 
 ==== Finalized Event ====
 
