@@ -51,8 +51,9 @@ The CCS must allow multiple user IDs to be configured for accessing the event fe
 
 CCS may implement account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
 
-== Updates of information ==
-Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) requires that the affected events be resent. Removal (or reinsertion) of a time interval resets the stream. See the <reset/> tag below. 
+== Information Updates ==
+
+Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) must require that the affected event(s) be resent. Removal (or reinsertion) of a time interval resets the stream - see the <reset/> tag below.
 
 == File Format ==
 The event feed is an XML document within the root element <tt><contest></tt>. The root contest element is as follows:
