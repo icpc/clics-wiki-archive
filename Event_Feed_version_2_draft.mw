@@ -171,7 +171,7 @@ Notes
 
 ==== Clar Request Event====
 
-The clar-request event is output when a team submits a clarification request.
+The clar-request event is sent when a team submits a clarification request.
 
 Format:
 
