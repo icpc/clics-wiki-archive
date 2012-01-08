@@ -120,7 +120,7 @@ Notes
 ;started: started flag
 ;starttime: starttime as a timestamp in decimal seconds
 
-==== <language> ====
+==== Language Element ====
 
  <language>
    <name>C++</name>
@@ -128,7 +128,7 @@ Notes
 
 ;name: language name
 
-==== <group> ====
+==== Group Element ====
 
  <group external-id="3012">
    <name>Europe</name>
@@ -137,7 +137,7 @@ Notes
 ;external-id: identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]]
 ;name: group name from [[Contest_Control_System#groups.tsv|groups.tsv]]
 
-==== <judgement> ====
+==== Judgement Element ====
 
  <judgement>
    <acronym>CE</acronym>
@@ -147,7 +147,7 @@ Notes
 ;acronym: judgement acronym
 ;name: descriptive name
 
-==== <problem> ====
+==== Problem Element ====
 
  <problem id="1" state="enabled">
    <label>A</label>
@@ -162,7 +162,7 @@ Notes
 ;color: color name, typically used for balloons
 ;rgb: color rgb value
 
-==== <team> ====
+==== Team Element ====
 
  <team id="1" external-id="23412">
    <name>American University of Beirut</name>
