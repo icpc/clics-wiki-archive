@@ -94,6 +94,24 @@ Notes
 
 ==== Info Element ====
 
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|title || Contest title || xsd:string
+|-
+|length || Length of contest in HH:MM:SS format || xsd:string
+|-
+|penalty || Penalty time in minutes || xsd:int
+|-
+|started || Language name || xsd:boolean
+|-
+|starttime || Wall-clock start time of the contest || xsd:string
+|}
+
+Example:
+
  <info>
    <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
    <length>05:00:00</length>
@@ -102,28 +120,39 @@ Notes
    <starttime>1265335138.26</starttime>
  </info>
 
-;title: contest title string
-;length: length of contest in HH:MM:SS format
-;penalty: penalty time in minutes
-;started: started flag
-;starttime: starttime as a timestamp in decimal seconds
-
 ==== Language Element ====
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|name || Language name || xsd:string
+|}
+
+Example:
 
  <language>
    <name>C++</name>
  </language>
 
-;name: language name
-
 ==== Group Element ====
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || xsd:int
+|-
+|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || xsd:string
+|}
+
+Example:
 
  <group external-id="3012">
    <name>Europe</name>
  </group>
-
-;external-id: identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]]
-;name: group name from [[Contest_Control_System#groups.tsv|groups.tsv]]
 
 ==== Judgement Element ====
 
@@ -151,35 +180,61 @@ Example:
 
 ==== Problem Element ====
 
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|id || Problem ID || xsd:int
+|-
+|state || One of enabled, paused, disabled || xsd:string
+|-
+|letter || Single letter problem label || xsd:string
+|-
+|name || Problem name || xsd:string
+|-
+|color || Color name || xsd:string
+|-
+|rgb || Color RGB value || xsd:string
+|}
+
+Example:
+
  <problem id="1">
    <state>enabled</state>
-   <label>A</label>
+   <letter>A</letter>
    <name>APL Lives!</name>
    <color rgb="#ffff00">yellow</color>
  </problem>
 
-;id: problem identifier
-;state: one of enabled, paused, disabled
-;label: one letter label
-;name: descriptive name
-;color: color name, typically used for balloons
-;rgb: color rgb value
-
 ==== Team Element ====
 
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|id || Team ID. From [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || xsd:int
+|-
+|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || xsd:int
+|-
+|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|-
+|country || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|-
+|institution || Institution name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|-
+|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|}
+
+Example:
+
  <team id="1" external-id="23412">
-   <name>American University of Beirut</name>
-   <nationality>LBN</nationality>
-   <university>American University of Beirut</university> 
+   <name>The Winners</name>
+   <country>LBN</country>
+   <institution>American University of Beirut</institution> 
    <group>Europe</group> 
  </team>
-
-;id: team identifier. from [[Contest_Control_System#teams.tsv|teams.tsv (team ID)]] 
-;external-id: external team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID)]] 
-;name: team name from [[Contest_Control_System#teams.tsv|teams.tsv]]
-;nationality: nationality as ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]]
-;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
-;group: group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
 === Event Elements ===
 
