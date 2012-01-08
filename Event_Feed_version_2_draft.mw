@@ -39,7 +39,7 @@ If the login succeeds, the server will start responding with the contest element
 The CCS must allow multiple user IDs to be configured for accessing the event feed. Each user ID belongs to a single feed account type, as defined below:
 
 {| class="wikitable"
-! Fee Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
+! Feed Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
 |-
 |floor || Used for clients that may display data visible to contest contestants || run-source, clars not sent to all || test-result, run-judgements
 |-
