@@ -8,8 +8,8 @@ Authenticate by contacting the CCS and username and password using the TLS proto
 
 The client sends the following two lines to log in:
 
-scoreboard1
-test
+ scoreboard1
+ test
 
 ;user (scoreboard1): the account name
 ;password (test): the account password
