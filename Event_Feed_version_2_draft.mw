@@ -45,7 +45,17 @@ CCS may implement account types using another mechanism (e.g. permissions), as l
 Configuration changes to the CCS or changing the judgement of a run (through, e.g., rejudging) requires that the affected events be resent. Removal (or reinsertion) of a time interval resets the stream. See the <reset/> tag below. 
 
 == File Format ==
-The event feed is an XML document within the root element <tt><contest></tt>.
+The event feed is an XML document within the root element <tt><contest></tt>. The root contest element is as follows:
+
+{| class="wikitable"
+! Attribute !! Description
+|-
+| version || The format version. Must be "1.0"
+|-
+| accountType || The type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
+|}
+
+Example:
 
  <contest version="1.0" accountType="floor">
    <info ... />
@@ -53,13 +63,10 @@ The event feed is an XML document within the root element <tt><contest></tt>.
    ...
  </contest>
 
-;version: the format version. Must be "1.0"
-;accountType: the type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
+Within the contest element are a number of configuration items and events, each of which are separate top-level elements:
 
-All events are separate elements at the top level.
-
+Event types & tags:
 {| class="wikitable"
-|+ Event types/tags
 ! Element !! Contains !! Type
 |-
 |info|| contest information and updates || Configuration
