@@ -318,7 +318,7 @@ Format:
 
 Example:
 
- <clar-response clar-id="1">
+ <clar-response clar-request-id="1">
    <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
    <to-all>true</to-all>
    <contest-time>118.48</contest-time>
