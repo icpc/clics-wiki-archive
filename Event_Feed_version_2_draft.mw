@@ -132,7 +132,7 @@ Format:
 |-
 |penalty || Penalty time in minutes || xsd:int
 |-
-|started || Language name || xsd:boolean
+|started || True if the contest is started || xsd:boolean
 |-
 |starttime || Wall-clock start time of the contest || xsd:string
 |}
