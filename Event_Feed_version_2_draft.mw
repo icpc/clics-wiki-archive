@@ -34,12 +34,12 @@ Example:
 
 If the login succeeds, the server will start responding with the contest element (defined below). If the login is unsuccessful, the connection is dropped. Each user ID may be used by multiple clients if required.
 
-=== Account Types ===
+=== Feed Account Types ===
 
-The CCS must allow multiple user IDs to be configured for accessing the event feed. Each user ID belongs to a single account type, as defined below:
+The CCS must allow multiple user IDs to be configured for accessing the event feed. Each user ID belongs to a single feed account type, as defined below:
 
 {| class="wikitable"
-! Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
+! Fee Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
 |-
 |floor || Used for clients that may display data visible to contest contestants || run-source, clars not sent to all || test-result, run-judgements
 |-
@@ -48,7 +48,7 @@ The CCS must allow multiple user IDs to be configured for accessing the event fe
 |all|| Used for internal/sysop clients || None || None
 |}
 
-CCS may implement account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
+CCS may implement feed account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
 
 == Information Updates ==
 
