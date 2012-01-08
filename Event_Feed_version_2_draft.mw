@@ -227,20 +227,35 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-=== Run Element ===
+=== Run Event ===
+
+A run event is sent whenever a team submits a run.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|id || Run ID || xsd:int
+|-
+|team-id || Team ID || xsd:int
+|-
+|problem-id || Problem ID || xsd:int
+|-
+|language || Language name || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the run was submitted || xsd:decimal
+|-
+|timestamp || Wall-clock time when the run was submitted || xsd:decimal
+|}
+
+Example:
 
  <run id="1410" team-id="74" problem-id="4">
    <language>C++</language>
    <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
  </run>
-
-;id: run identifier
-;team-id: team ID
-;problem-id: problem ID
-;language: language name
-;contest-time: official submission time used for scoring
-;timestamp: the current computer time when this element was created
 
 === run-judgement ===
 
