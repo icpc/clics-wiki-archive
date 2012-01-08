@@ -61,7 +61,7 @@ Changes may cause any configuration or event element to be resent. These changes
 * Rejudgements of runs
 * Fixing typos in names
 
-Removal (or reinsertion) of a time interval resets the stream - see the <reset/> tag below.
+Removal (or reinsertion) of a time interval resets the stream - see the [[#Reset Element|<reset/>]] tag below.
 
 Different clients (or reconnecting clients) will receive a semantically identical event feed, but are not guaranteed to receive a syntactically identical event feed. For instance, if a typo was fixed in a problem name any new clients may simply receive a single configuration element with the fixed name.
 
