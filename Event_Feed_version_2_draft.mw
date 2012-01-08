@@ -257,7 +257,27 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run>
 
-=== run-judgement ===
+=== Run Judgement Event ===
+
+A run judgement event is sent whenever a judgement has been assigned to a run.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|run-id || Run ID || xsd:int
+|-
+|judgement || Judgement acronym || xsd:string
+|-
+|penalty || Penalty flag || xsd:boolean
+|-
+|contest-time || Contest (elapsed) time when the judgement was assigned || xsd:decimal
+|-
+|timestamp || Wall-clock time when the judgement was assigned || xsd:decimal
+|}
+
+Example:
 
  <run-judgement run-id="1410">
    <judgement>WA</judgement>
@@ -265,10 +285,6 @@ Example:
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
-
-;id: run identifier
-;judgement: judgement acronym
-;penalty: penalty flag
 
 === run-source ===
 
