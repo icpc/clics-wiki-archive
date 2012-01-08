@@ -225,7 +225,7 @@ Example:
    <to-all>true</to-all>
    <contest-time>118.48</contest-time>
    <timestamp>1265335256.74</timestamp>
- </clar>
+ </clar-response>
 
 === Run Element ===
 
