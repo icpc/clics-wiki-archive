@@ -495,6 +495,8 @@ Describes a balloon for a problem
 ;rgb: 3-byte RGB value encoded in hex (string)
 ;color: color name (string)
 
+'''TODO''' notification section hasn't been reviewed. Tim doesn't like including the word 'balloon'. Tim doesn't like the repeated balloon list each time.
+
 ==== Finalized Event ====
 
 The finalized event is sent when the contest is finalized. It must be the last event and will be followed immediately by the <tt></contest></tt> tag.
