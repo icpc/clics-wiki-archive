@@ -335,7 +335,7 @@ Format:
 Example:
 
  <testcase run-id="1">
-   &amp;i>1&amp;/i>
+   &lt;i>1&lt;/i>
    <n>1</n>
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
