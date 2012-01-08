@@ -248,7 +248,7 @@ Notes
 
 :'''Comment''' Is contest-time when the run was submitted or when the testcase was run ? [[User:Douglas Lane|Douglas Lane]] 19:50, 27 February 2011 (CET)
 
-===notification===
+=== Notification Element ===
 '''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
 
 A notification should be sent the first time a team solves a particular problem. It is not sent for rejected solutions, nor if the team submits another successful solution to the same problem. If a previously accepted run is rejected due to rejudging, no notification is sent.
@@ -294,7 +294,7 @@ Sent for each balloon to be printed. Contains:
 ;first-by-team: required only when true (bool)
 ;balloons: list of balloons team should have (including this balloon)
 
-=====balloon=====
+===== Balloon Element =====
 Describes a balloon for a problem
 ;problem-id: the id of the problem
 ;label: A, B, etc (character)
