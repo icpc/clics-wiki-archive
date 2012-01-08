@@ -379,7 +379,7 @@ Example:
    TUWuIGIzI345...
  </run-source>
 
-'''TODO''': multiple files, main file tag
+'''TODO''': multiple files, main file tag, need to maintain filenames
 
 ==== Testcase Event ====
 
