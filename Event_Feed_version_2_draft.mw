@@ -167,7 +167,9 @@ Notes
 ;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;group: group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
-=== Clar Request Event===
+=== Configuration ===
+
+==== Clar Request Event====
 
 The clar-request event is output when a team submits a clarification request.
 
@@ -198,7 +200,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-request>
 
-=== Clar Response Event===
+==== Clar Response Event ====
 
 The clar response event is sent when a clar request has been answered.
 
@@ -227,7 +229,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-=== Run Event ===
+==== Run Event ====
 
 A run event is sent whenever a team submits a run.
 
@@ -257,7 +259,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run>
 
-=== Run Judgement Event ===
+==== Run Judgement Event ====
 
 A run judgement event is sent whenever a judgement has been assigned to a run.
 
@@ -286,7 +288,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
 
-=== Run Source Event ===
+==== Run Source Event ====
 
 A run source event is sent along with every submitted run event.
 
@@ -308,7 +310,7 @@ Example:
 
 '''TODO''': multiple files, main file tag
 
-=== Testcase Event ===
+==== Testcase Event ====
 
 A testcase event is sent when a run is judged against an input file.
 
@@ -333,7 +335,7 @@ Format:
 Example:
 
  <testcase run-id="1">
-   <i>1</i>
+   &amp;i>1&amp;/i>
    <n>1</n>
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
@@ -342,7 +344,7 @@ Example:
 
 '''TODO''': Tim doesn't like the i/n
 
-=== Notification Element ===
+==== Notification Element ====
 '''TODO''': What is supposed to happen if rejudging changes the state of a run from Accepted to Rejected? What is supposed to happen if rejudging changes which run was ''first to solve''.
 
 A notification should be sent the first time a team solves a particular problem. It is not sent for rejected solutions, nor if the team submits another successful solution to the same problem. If a previously accepted run is rejected due to rejudging, no notification is sent.
@@ -396,12 +398,27 @@ Describes a balloon for a problem
 ;rgb: 3-byte RGB value encoded in hex (string)
 ;color: color name (string)
 
-=== reset ===
-Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for events already issued.
+==== Finalized Event ====
 
-=== Finalized Element ===
+The finalized event is sent when the contest is finalized. It must be the last event and will be followed immediately by the <tt></contest></tt> tag.
 
-Note that the finalized element is followed immediately by a <tt></contest></tt> tag.
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|last-gold|| The last place to receive a gold || xsd:int
+|-
+|last-silver|| The last place to receive a silver || xsd:int
+|-
+|last-bronze|| The last place to receive a bronze || xsd:int
+|-
+|comment|| A comment provided during the finalization || xsd:string
+|-
+|timestamp || Wall-clock time when the contest was finalized || xsd:decimal
+|}
+
+Example:
 
  <finalized>
    <last-gold>4</last-gold>
@@ -411,8 +428,6 @@ Note that the finalized element is followed immediately by a <tt></contest></tt>
    <timestamp>1265336078.01</timestamp>
  </finalized>
 
-;timestamp: the current computer time when this element was created 
-;last-gold:integer, last place to receive a gold
-;last-silver:integer, last place to receive a silver
-;last-bronze:integer, last place to receive a bronze
-;comment:text
+==== Reset Event ====
+
+Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for events already issued.
