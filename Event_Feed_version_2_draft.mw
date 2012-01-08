@@ -186,7 +186,6 @@ Notes
 ;contest-time: contest (elapsed) time in minutes when the clarification was submitted
 ;timestamp: the current computer time when this element was submitted
 
-
 {| class="wikitable"
 |+ Event types/tags
 ! Name !! Description !! Type
@@ -194,6 +193,18 @@ Notes
 |id || clarification ID || xsd:int
 |-
 |team-id || team ID || xsd:int
+|-
+|problem-id || problem ID || xsd:int
+|-
+|question || A question, typically from a team || xsd:string
+|-
+|answer || Judge's answer to the question || xsd:string
+|-
+|to-all || True if the clarification was sent to all teams || xsd:boolean
+|-
+|contest-time || Contest (elapsed) time when the clarification was submitted || xsd:decimal
+|-
+|timestamp || Wall-clock time when the clarification was submitted || xsd:decimal
 |}
 
 === Run Element ===
