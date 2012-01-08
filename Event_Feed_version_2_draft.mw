@@ -1,5 +1,11 @@
-The event feed is a 
-set of data output by the [[CCS|Contest Control System]].
+The event feed is an externally-accessible XML feed of contest data supplied by a [[CCS|Contest Control System]]. The event feed is the primary way that 'external' clients can get the state of a running content. Typical clients include:
+
+* ICPC Live, video coverage of the event.
+* Contest-floor scoreboards.
+* The "resolver", a graphical program showing what happened during the contest freeze.
+* A balloon printer.
+* Supporting 'shadow' CCSs, e.g. running a second non-active CCS for verification purposes.
+* Post-contest testing by replaying contests.
 
 == Accessing the Event Feed ==
 
