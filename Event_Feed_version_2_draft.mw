@@ -167,45 +167,65 @@ Notes
 ;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;group: group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
-=== Clar Element ===
+=== Clar Request Event===
 
- <clar id="1" team-id="0" problem-id="1">
-   <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
-   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
-   <to-all>true</to-all>
-   <contest-time>118.48</contest-time>
-   <timestamp>1265335256.74</timestamp>
- </clar>
+The clar-request event is output when a team submits a clarification request.
 
-;id: clarification ID
-;team-id: team ID
-;problem-id: problem ID
-;question: A question, typically from a team.
-;answer: The judges answer to the question
-;to-all: true if the clarification was sent to all teams
-;contest-time: contest (elapsed) time in minutes when the clarification was submitted
-;timestamp: the current computer time when this element was submitted
+Format:
 
 {| class="wikitable"
-|+ Event types/tags
 ! Name !! Description !! Type
 |-
-|id || clarification ID || xsd:int
+|id || Clarification Request ID || xsd:int
 |-
-|team-id || team ID || xsd:int
-|-
-|problem-id || problem ID || xsd:int
+|team-id || Team ID || xsd:int
 |-
 |question || A question, typically from a team || xsd:string
 |-
-|answer || Judge's answer to the question || xsd:string
-|-
-|to-all || True if the clarification was sent to all teams || xsd:boolean
+|category || Clarification category || xsd:string
 |-
 |contest-time || Contest (elapsed) time when the clarification was submitted || xsd:decimal
 |-
 |timestamp || Wall-clock time when the clarification was submitted || xsd:decimal
 |}
+
+Example:
+
+ <clar-request id="1" team-id="0" problem-id="1">
+   <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+   <category>Problem C</category>
+   <contest-time>118.48</contest-time>
+   <timestamp>1265335256.74</timestamp>
+ </clar>
+
+=== Clar Response Event===
+
+The clar response event is sent when a clar request has been answered.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+|clar-request-id || Clarification Request ID || xsd:int
+|-
+|answer || Judge's answer to the question || xsd:string
+|-
+|to-all || True if the response was sent to all teams || xsd:boolean
+|-
+|contest-time || Contest (elapsed) time when the response was submitted || xsd:decimal
+|-
+|timestamp || Wall-clock time when the response was submitted || xsd:decimal
+|}
+
+Example:
+
+ <clar-response clar-id="1">
+   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
+   <to-all>true</to-all>
+   <contest-time>118.48</contest-time>
+   <timestamp>1265335256.74</timestamp>
+ </clar>
 
 === Run Element ===
 
