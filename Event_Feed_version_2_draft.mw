@@ -48,7 +48,7 @@ The CCS must allow multiple user IDs to be configured for accessing the event fe
 |all|| Used for internal/sysop clients || None || None
 |}
 
-CCS may implement feed account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
+The CCS may implement feed account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
 
 == Information Updates ==
 
