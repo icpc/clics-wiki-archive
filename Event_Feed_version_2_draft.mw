@@ -305,7 +305,7 @@ Describes a balloon for a problem
 === reset ===
 Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for events already issued.
 
-=== finalized ===
+=== Finalized Element ===
 
 Note that the finalized element is followed immediately by a <tt></contest></tt> tag.
 
