@@ -201,19 +201,18 @@ Notes
 
  <run id="1410" team-id="74" problem-id="4">
    <language>C++</language>
-   <judgement>WA</judgement>
-   <penalty>true</penalty>
    <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
  </run>
 
-change to:
+;id: run identifier
+;team-id: team ID
+;problem-id: problem ID
+;language: language name
+;contest-time: official submission time used for scoring
+;timestamp: the current computer time when this element was created
 
- <run id="1410" team-id="74" problem-id="4">
-   <language>C++</language>
-   <contest-time>17960.74</contest-time>
-   <timestamp>1265353100.29</timestamp>
- </run>
+=== run-judgement ===
 
  <run-judgement run-id="1410">
    <judgement>WA</judgement>
@@ -221,13 +220,14 @@ change to:
  </run-judgement>
 
 ;id: run identifier
-;team-id: team ID
-;problem-id: problem ID
-;language: language name
 ;judgement: judgement acronym
 ;penalty: penalty flag
-;contest-time: official submission time used for scoring
-;timestamp: the current computer time when this element was created
+
+=== run-source ===
+
+ <run-source run-id="1410">
+   '''TODO define encoding and format for source code, remember to specify main file and other files
+ </run-source >
 
 === testcase ===
 
