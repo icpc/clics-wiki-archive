@@ -207,6 +207,17 @@ Notes
    <timestamp>1265353100.29</timestamp>
  </run>
 
+change to:
+
+ <run id="1410" team-id="74" problem-id="4">
+   <language>C++</language>
+   <penalty>true</penalty>
+   <contest-time>17960.74</contest-time>
+   <timestamp>1265353100.29</timestamp>
+ </run>
+
+ <run-judgement run-id="1410">WA</run-judgement>
+
 ;id: run identifier
 ;team-id: team ID
 ;problem-id: problem ID
