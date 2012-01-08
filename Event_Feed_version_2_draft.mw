@@ -41,7 +41,7 @@ Configuration changes to the CCS or changing the judgement of a run (through, e.
 == File Format ==
 The event feed is an XML document within the root element <tt><contest></tt>.
 
- <contest version="1.0" accountType="admin">
+ <contest version="1.0" accountType="floor">
    <info ... />
    <language ... />
    ...
