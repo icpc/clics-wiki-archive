@@ -25,11 +25,11 @@ The CCS must allow multiple user IDs to be configured for accessing the event fe
 {| class="wikitable"
 ! Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
 |-
-|ContestFloor || Used for clients that may display data visible to contest contestants  || testcases, run-source, clars not sent to all || run-judgements, notifications
+|Floor || Used for clients that may display data visible to contest contestants  || testcases, run-source, clars not sent to all || run-judgements, notifications
 |-
 |Public || Used for public clients || testcases || run-judgements, notifications
 |-
-|Admin || Used for internal/sysop clients || None || None
+|All|| Used for internal/sysop clients || None || None
 |-
 |}
 
