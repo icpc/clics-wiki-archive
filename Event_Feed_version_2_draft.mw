@@ -243,7 +243,7 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Type
 |-
-|id || Team ID. From [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || xsd:int
+|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || xsd:int
 |-
 |external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || xsd:int
 |-
