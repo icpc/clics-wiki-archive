@@ -210,7 +210,7 @@ Example:
  <judgement id="3">
    <acronym>CE</acronym>
    <name>Compile Error</name>
-   <penalty>true</penalty>
+   <penalty>false</penalty>
  </judgement>
 
 ==== Problem Element ====
