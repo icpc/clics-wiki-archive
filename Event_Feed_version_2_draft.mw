@@ -9,9 +9,7 @@ Clients must use SSL to connect; any client connection that doesn't use SSL is d
 
 === Authentication ===
 
-Once an SSL connection has been established, the client must send the following two lines to log in:
-
-TODO: is this REALLY correct?  A client must send exactly the following two lines?
+Once an SSL connection has been established, the client must send two lines (with a carriage return) to log in:
 
 Format:
 
