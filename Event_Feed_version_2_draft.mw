@@ -178,7 +178,7 @@ Notes
 ;university: university affiliation, from [[Contest_Control_System#teams.tsv|teams.tsv]]
 ;group: group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]]
 
-=== clar ===
+=== Clar Element ===
 
  <clar id="1" team-id="0" problem-id="1">
    <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
