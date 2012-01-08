@@ -395,8 +395,6 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
 
-;comment:I'd like to keep an explicit penalty flag, so an event feed reader does not have to keep track of CE explicitly (and also be future-proof for similar rulings). Mattias de Zalenski 2012-01-08
-
 ==== Run Source Event ====
 
 A run source event is sent along with every submitted run event.
