@@ -447,7 +447,7 @@ Format:
 
 Example:
 
- <test-result run-id="1" num-test="2" total-tests="5" judgement-id="5">
+ <test-result run-id="1" num-test="2" total-tests="5" judgement-id="3">
    <judgement>WA</judgement>
    <contest-time>939.75</contest-time>
    <timestamp>1265336078.01</timestamp>
