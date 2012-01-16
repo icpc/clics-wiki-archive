@@ -133,17 +133,17 @@ Notes
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Element/Attribute !! Type
 |-
-|title || Contest title || xsd:string
+|title || Contest title || element || xsd:string
 |-
-|length || Length of contest in HH:MM:SS format || xsd:string
+|length || Length of contest in HH:MM:SS format || element || xsd:string
 |-
-|penalty-time || Penalty time in minutes || xsd:int
+|penalty-time || Penalty time in minutes || element || xsd:int
 |-
-|started || True if the contest is started || xsd:boolean
+|started || True if the contest is started || element || xsd:boolean
 |-
-|start-time || Wall-clock start time of the contest || xsd:decimal
+|start-time || Wall-clock start time of the contest || element || xsd:decimal
 |}
 
 Example:
