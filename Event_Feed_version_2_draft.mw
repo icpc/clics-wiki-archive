@@ -133,7 +133,7 @@ Notes
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Element/Attribute !! Type
+! Name !! Description !! Child Element/Attribute !! Type
 |-
 |title || Contest title || element || xsd:string
 |-
@@ -161,9 +161,9 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Child Element/Attribute !! Type
 |-
-|name || Language name || xsd:string
+|name || Language name || element || xsd:string
 |}
 
 Example:
@@ -177,11 +177,11 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Child Element/Attribute !! Type
 |-
-|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || xsd:int
+|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || attribute || xsd:int
 |-
-|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || xsd:string
+|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || element || xsd:string
 |}
 
 Example:
@@ -195,15 +195,15 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Child element/attribute !! Type
 |-
-|id || Judgement ID || xsd:int
+|id || Judgement ID || attribute || xsd:int
 |-
-|acronym || Judgement acronym || xsd:string
+|acronym || Judgement acronym || element || xsd:string
 |-
-|name || Judgement name || xsd:string
+|name || Judgement name || element || xsd:string
 |-
-|penalty || True if this judgement is a failure that causes penalty time || xsd:boolean
+|penalty || True if this judgement is a failure that causes penalty time || element || xsd:boolean
 |}
 
 Example:
@@ -219,19 +219,19 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Problem ID || xsd:int
+|id || Problem ID || attribute || xsd:int
 |-
-|state || One of enabled, paused, disabled || xsd:string
+|state || One of enabled, paused, disabled || element || xsd:string
 |-
-|letter || Single letter problem label || xsd:string
+|letter || Single letter problem label || element || xsd:string
 |-
-|name || Problem name || xsd:string
+|name || Problem name || element || xsd:string
 |-
-|color || Color name || xsd:string
+|color || Color name || element || xsd:string
 |-
-|rgb || Color RGB value || xsd:string
+|rgb || Color RGB value || attribute of color element || xsd:string
 |}
 
 Example:
@@ -248,19 +248,19 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Type
+! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || xsd:int
+|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || attribute|| xsd:int
 |-
-|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || xsd:int
+|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || attribute || xsd:int
 |-
-|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
 |-
-|country || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|country || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
 |-
-|institution || Institution name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|institution || Institution name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
 |-
-|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
 |}
 
 Example:
