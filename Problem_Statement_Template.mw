@@ -5,7 +5,7 @@ written in LaTeX, containing only the actual problem statement, no sample data
 (the .tex file is included in a template that
 adds these).  A typical problem.tex looks as follows:
 
- \problemtitle{Problem Name}
+ \problemname{Problem Name}
  
  <Problem statement here>
  
@@ -20,8 +20,8 @@ adds these).  A typical problem.tex looks as follows:
 
 === Additional options ===
 
-In case the problem title consists of special LaTeX code (for instance, math, or escaped characters), a "plain" version of the problem title can be specified by a comment of the form 
+In case the problem name consists of special LaTeX code (for instance, math, or escaped characters), a "plain" version of the problem name can be specified by a comment of the form 
 
- %% plainproblemtitle: Problem Name
+ %% plainproblemname: Problem Name
 
 in the beginning of the file.
