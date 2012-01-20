@@ -20,7 +20,7 @@ adds these).  A typical problem.tex looks as follows:
 
 === Additional options ===
 
-In case the problem name consists of special LaTeX code (for instance, math, or escaped characters), a "plain" version of the problem name can be specified by a comment of the form 
+In case the problem name consists of special LaTeX code (for instance, math, or escaped characters), a "plain" version of the problem name must be specified by a comment of the form 
 
  %% plainproblemname: Problem Name
 
