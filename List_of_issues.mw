@@ -2,51 +2,6 @@
 
 # Add version date and CLI web site location in Introduction
 
-== List of CLICCS items requiring resolution ==
-
-# <s>Contest Configuration section needs to be reorganized  - John </s>
-# <s>Output validator</s>
-## <s>Create a more complete standardized format of the Output Validator Feedback file</s>
-## <s>Validators read from stdin?</s> <s>Per will do this</s>
-## <s>stdout and stderr should be ignored</s> <s>Per will do this</s>
-# <s>Go through all comments in the document.</s>
-## <s>userdata.tsv does not quite fit other users than teams, some small change needed here. Austrin 03:46, 9 March 2011 (CET) </s>
-## <s>The details of the required mechanism for the external event feed API are currently under development; see Event Feed for additional information. </s>
-## <s>we need to add some sample values for languages in the example. Fredrik Niemelä 04:30, 10 February 2011 (CET) </s>
-# <s>Write [[Input validator]] standard (stub created)</s>
-# <s>Look through that terminology is used consistently</s>
-# <s>Defining the schedule for releasing the CCS Standard</s>
-# <s>Go through all emails, check for items</s>
-# <s>A better name for '''Judging Error''' (makes it sound like the CCS/validator was not tested)</s>
-# <s>Runtime limits (time, memory, file) for validators needs to be specified or added to the configuration. </s>
-# <s>Defining the procedure for verifying candidate CCS systems (i.e., scope and process for a "Test Harness")</s>
-# <s>Problem Format - add validator option "newline_sensitive"</s>
-# <s>Define Standard Scoreboard Disclaimer phrases for scoreboard on freeze and end of contest, see comment in [[Contest_Control_System#Freezing_the_Scoreboard|Freezing the Scoreboard]]</s>
-# <s>Should teams be able to see current state of a problem?</s>
-# <s>Automatic invocation of judging needs to be done on machines set aside for judging so that auto-judging runs on auto-judging the machines and apply an algorithm to avoid machine starvation</s>
-# <s>Update [[Event Feed]] move Balloon Notification into [[Event Feed]] - Tim</s>
-# <s>Standardized output messages for prohibited operations, see [[Test_Harness#Testing_Prohibited_Operations]]</s>
-## <s>How does the [[Test_Harness#Testing_Prohibited_Operations]] message get communicated/transferred to CCS.</s>
-# <s>Add requirement for built-in validator/diff into CCS.  If no custom validator specified, defaults to this built-in validator.</s>
-#* <s>Such a requirement already exists -- Per.</s>
-# <s>Specify which version of YAML should be used/is expected.</s>
-# <s>In CCS, write out of contest.yaml as a required operation (Doug to double check that it is in the CCS already)</s>
-#* <s>Please fix language, I don't understand what is meant. -- Per</s>
-# <s>Judge's ability to view scoreboard (john)</s>
-#<s>Sect 9.3: "sort by ranked if team is ranked" ?? (john)</s>
-# <s>Requirements for CCS to backup and recover contest data</s>
-# <s>Viewing runs - should be able to sort the runs by at least one field</s>
-# <s>Handling clars - should be able to sort the clars by at least one field</s>
-# <s>Event Feed - add a reference in 9.1 to the (separate) Event Feed standard</s>
-# <s>Event Feed - add support for request of file, request source file by analysts for example.</s>
-# <s>CLI Symposium Presentation (And schedule)</s>
-# <s>Event feed: The details of the required mechanism for the external event feed API are currently under development; see [[Event Feed|Event Feed]] for additional information.</s>
-# <s>Testability: This section is under development and has yet to be written/completed [[User:Douglas Lane|Douglas Lane]] 20:39, 27 January 2011 (CET)</s>
-# <s>Testability: TODO: Incorporate or reference information from the [[Test Harness]] article [[User:Douglas Lane|Douglas Lane]] 23:26, 28 February 2011 (CET)</s>
-# <s>Event Feed Comments</s>
-# <s>CCS provides a "Test" run function on the Team machine</s>
-# <s>There is still a TODO in balloon notification</s>
-
 == Todo ==
 
 * <s>Add list of referenced standards/article names - Doug</s>
