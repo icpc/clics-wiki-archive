@@ -7,6 +7,22 @@ systems implementing the [[CCS]]
 
 ==Input to the Test Harness==
 
+
+{| class="wikitable"
+! File name
+|-
+| [[Contest_Control_System#contest.yaml | contest.yaml ]] file
+|-
+| [[Contest_Control_System#problemset.yaml | problemset.yaml ]] file(s)
+|-
+| [[Contest_Control_System#group.tsv | group.tsv]] file 
+|-
+| [[Contest_Control_System#teams.tsv  | teams.tsv]] file 
+|-
+|}
+
+All files described in the Problem format article
+
 ==Testing Configuration Changes==
 
 {| class="wikitable"
