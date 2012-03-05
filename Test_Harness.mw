@@ -13,15 +13,15 @@ systems implementing the [[CCS]]
 |-
 | [[Contest_Control_System#contest.yaml | contest.yaml ]] file
 |-
-| [[Contest_Control_System#problemset.yaml | problemset.yaml ]] file(s)
+| [[Problem_format#Configuration_file_format | problem.yaml]] and all associated files 
 |-
 | [[Contest_Control_System#group.tsv | group.tsv]] file 
 |-
 | [[Contest_Control_System#teams.tsv  | teams.tsv]] file 
 |-
+| [[Contest_Control_System#userdata.tsv | userdata.tsv ]] file
+|-
 |}
-
-All files described in the Problem format article
 
 ==Testing Configuration Changes==
 
