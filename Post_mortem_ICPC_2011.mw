@@ -1,0 +1,84 @@
+Post Mortem ICPC Live Analysis Team 2011
+
+What went well:
+- the katalyzer worked great
+- Mikael Renström provided great support by giving us statistics over 
+the contestants and the history of icpc
+- Amanda Sturgill and Lisa Donahue collected fascinating facts about the 
+contestants
+- two new analysts who did a great job especially considering their 
+limited experience
+- two-way communication with Fredrik in the studio was great
+- the interface worked pretty well and supported the tv hosts
+- We got the problems well in advance and Per Austrin was very helpful 
+in explaining the problems (but his assessment of the difficulty was 
+quite incorrect 
+- Presenting the problems in the show worked well
+- our placement in the production room worked well and we had the 
+equipment we needed
+- the interactions with sysop, icpc live, and DMT worked pretty well
+- Skype with everyone, worked ok, audio would have been much better
+
+What didn't go well:
+- the fact that three analysts were sitting in Stockholm hadn't been 
+sorted out in advance so much time was spent on finding a solution and 
+the uncertainty caused many delays sine we weren't sure what was most 
+important to fix; without the support from the three guys in Stockholm 
+we wouldn't have been able to do our job properly. The final solution 
+using vnc work well and Sam did a great job fixing it for us.
+- the team interface was too slow, especially in the beginning before we 
+created a work around (local copy of the score board)
+- the code analyzer wasn't ready
+- it was unclear if I had authority to request things from sysops, since 
+I knew the kattis people this wasn't a real problem, except partially in 
+the beginning during the discussions about the analysts in Stockholm
+- not much communication among analysts before the contest
+- We didn't have access to kattis analyst accounts last hour so we 
+couldn't do much then, and we couldn't even access old submissions which 
+we need to prepare problem presentations
+- the interaction with the ICPC community, they had a "representative" 
+that came to us and wanted to be more involved. They suggested we should 
+follow the chat on CodeForces for example. I did this, but it was had to 
+really get useful information from it. This is an unused resource which 
+could be very useful.
+- the schedule was very tight we had to work around the clock to get 
+ready, yes we should have done more at home
+
+What should we do next year as well:
+- Get statistics from the registration (from Mikael Renström?); specify 
+exactly what information we would like and in what format, then add it 
+to the ICPC standards
+- Continue the collaboration with DMT (get fun facts and maybe more). 
+What would they like from us? What could we provide them with?
+- Everything that worked well we should continue doing 
+
+What should we do differently next year:
+- Improve iCAT interface and make it faster
+- Finish the automatic code analyzer to deduce what the teams might be 
+working on (with live analysis we can only check the top teams but 
+Fredrik will talk about other teams as well)
+- More analysis support from Kattis, for example by tagging the test 
+cases with the cause (border case, large input, common bug, ...) and 
+providing us with that information
+- More integration with Kattis, for example to give Fredrik access to 
+the source code in the study (would you really have time to look at it?)
+- More aggregated information about the status in the contest, we also 
+produced graphs which could have been interesting
+- Access to kattis analyst accounts last hour
+- Clearer roles among the analysts so that everyone knows what they 
+should do
+- Improve interaction with production, if we know what is going to 
+happen ahead of time then we could prepare more. Are there typical 
+things we could prepare?
+- Clearer agreement with Fredrik about what he wants to know, ie what 
+should communicated how
+- Involve the larger ICPC community somehow. Have a special analysis 
+room / chat where coaches and other people can interact with us and 
+provide feedback. Have polls about different things such as expected 
+winners, hardest problem. Three levels: contest, region and team. Ask 
+Pablo about feedback. Maybe even give them the iCAT interface so they 
+can add their inputs directly.
+- Run the automatic analysis during NCPC and NWERC to practice
+- More realistic practice during orientation and dress rehearsal, do 
+system checks during orientation session and analyze during the dress 
+rehearsal
