@@ -7,11 +7,14 @@ What went well:
 * two new analysts who did a great job especially considering their limited experience
 * two-way communication with Fredrik in the studio was great
 * the interface worked pretty well and supported the tv hosts
-* We got the problems well in advance and Per Austrin was very helpful in explaining the problems (but his assessment of the difficulty was quite incorrect 
+* We got the problems well in advance and Per Austrin was very helpful in explaining the problems (but his assessment of the difficulty was quite incorrect). The more time we can get for discussing the problems the better (40 minutes was good but we could have used more).
 * Presenting the problems in the show worked well
 * our placement in the production room worked well and we had the equipment we needed
 * the interactions with sysop, icpc live, and DMT worked pretty well
 * Skype with everyone, worked ok, audio would have been much better
+* It actually worked out fine sitting in Stockholm.
+* VNC tunneled over SSH worked surprisingly well. We managed to resolve the shift-key issue ourselves. Actually, we could technically also tunnel the video streams from the teams, although we were not explicitly allowed to do so. We should work on getting such a permission next year.
+* The broadcast quality was excellent, in Stockholm, at least.
 
 What didn't go well:
 * the fact that three analysts were sitting in Stockholm hadn't been  sorted out in advance so much time was spent on finding a solution and the uncertainty caused many delays sine we weren't sure what was most important to fix; without the support from the three guys in Stockholm we wouldn't have been able to do our job properly. The final solution using vnc work well and Sam did a great job fixing it for us.
@@ -41,3 +44,13 @@ What should we do differently next year:
 * Involve the larger ICPC community somehow. Have a special analysis room / chat where coaches and other people can interact with us and provide feedback. Have polls about different things such as expected winners, hardest problem. Three levels: contest, region and team. Ask Pablo about feedback. Maybe even give them the iCAT interface so they can add their inputs directly.
 * Run the automatic analysis during NCPC and NWERC to practice
 * More realistic practice during orientation and dress rehearsal, do system checks during orientation session and analyze during the dress rehearsal
+* Have a poll regarding the problem difficulty to see how early we can crowd source the correct difficulty
+* More time with the judges to explain the problems, 40 minutes was more than last year but still a bit short. They could also have prepared an analysis for predicted problem difficulty.
+* More than one chalk board to prepare presentations of multiple problems
+* Confusing that we had two separate channels of communications, internally among the analysts as well as with Fredrik N. Next year, we should try to stick to only one solution. iCat only? If so, we'll need to improve the real-time properties of it.
+* We should tell the producers of the broadcast that the scoreboard is actually quite relevant and significantly more interesting than the people during the resolution after the end of the contest. It was truly annoying to only see people's reactions - not the scoreboard itself.
+* It seems like the Kattis stream we were listening to still contained info about judgements after 240 minutes of the contest. No real problem, as we just switched it off manually. But if we are to introduce some graphs or stats for next year, we have to look into what happened.
+* Maybe we can use some of the graphs or stats in the video production? Or even publish them for public consumption?
+* More interaction with the ICPC community. We probably need to make it clearer that there are analysts with inside information. Would be nice if the audience, perhaps in a community chat, could ask questions like "what is team X working on?"
+* I really like the idea of tagging test cases, so we can say on what types of input the contestants were wrong on. This could be automatic, but all we need really is a list for each problem what each test cases tests.
+* From our point of view, it would really helpful if _all_ test cases were run for a submission, even after the first fails. Perhaps this doesn't have to be default, but for the top ten teams or so maybe? Or that we could rejudge something with a special flag etc.
