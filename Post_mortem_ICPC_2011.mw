@@ -54,3 +54,5 @@ What should we do differently next year:
 * More interaction with the ICPC community. We probably need to make it clearer that there are analysts with inside information. Would be nice if the audience, perhaps in a community chat, could ask questions like "what is team X working on?"
 * I really like the idea of tagging test cases, so we can say on what types of input the contestants were wrong on. This could be automatic, but all we need really is a list for each problem what each test cases tests.
 * From our point of view, it would really helpful if _all_ test cases were run for a submission, even after the first fails. Perhaps this doesn't have to be default, but for the top ten teams or so maybe? Or that we could rejudge something with a special flag etc.
+* Add links from the iCAT interface to Kattis, e.g. from a team to their submissions in Kattis
+* Use Google Moderator (http://www.google.com/moderator/) to let the public ask questions and vote which questions should be answered.
