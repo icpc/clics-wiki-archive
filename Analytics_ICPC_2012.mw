@@ -8,7 +8,11 @@
 ** Load problems.tsv (?)
 ** Save flags.tar.gz
 ** Save logos.tar.gz
+** Get Top Coder rankings
+** Configure iCAT
+*** Scoreboard
 ** Configure Katalyzer
+*** Kattis event feed
 ** Configure Codalyzer
 * Make sure that the Katalyzer works on the current event feed format
 * Make sure that accessing the contestants files works
