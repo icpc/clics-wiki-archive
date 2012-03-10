@@ -1,0 +1,32 @@
+= WF Full Scale Test, March 16-18 =
+* [https://cm.baylor.edu/operations2012/Wiki.jsp?page=Finals%20Test%20Plan]
+* Document how to set up a new contest
+** Backup database
+** Reset database
+** Load team.tsv
+** Load groups.tsv (?)
+** Load problems.tsv (?)
+** Save flags.tar.gz
+** Save logos.tar.gz
+** Configure Katalyzer
+** Configure Codalyzer
+* Make sure that the Katalyzer works on the current event feed format
+* Make sure that accessing the contestants files works
+* Make a rudimentary implementation of the Codalyzer
+** Create a Python script which scans the contestants directories for new files
+** for each new file check it against a set of rules
+** if a rule is triggered it can either save the file to a special directory and/or generate an iCAT message
+* Discuss with the Kattis people about annotating test cases and running all test cases
+* Discuss with Fredrik about improvements he would like to see to the interface
+* Discuss iCAT setup, ok to use webserver in Sweden?
+* Discuss access to scoreboard, need fast access to a local copy
+* Discuss interactions with spectators and the general public
+
+
+= Preparations before Warsaw =
+
+= Preparations in Warsaw, May 13-16 =
+* [http://cm.baylor.edu/ICPCWiki/Wiki.jsp?page=World%20Final%20Schedule%20of%20Events]
+
+
+= ICPC WF 2012, May 17 =
