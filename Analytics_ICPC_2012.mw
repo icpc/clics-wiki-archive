@@ -1,6 +1,6 @@
 = WF Full Scale Test, March 16-18 =
 * [https://cm.baylor.edu/operations2012/Wiki.jsp?page=Finals%20Test%20Plan Finals Test Plan]
-* Document how to set up a new contest
+* Document how to set up a new contest, '''partly done'''
 ** Backup database
 ** Reset database
 ** Load team.tsv
@@ -14,17 +14,17 @@
 ** Configure Katalyzer
 *** Kattis event feed
 ** Configure Codalyzer
-* Make sure that the Katalyzer works on the current event feed format
-* Make sure that accessing the contestants files works
-* Make a rudimentary implementation of the Codalyzer
+* Make sure that the Katalyzer works on the current event feed format '''done'''
+* Make sure that accessing the contestants files works '''done'''
+* Make a rudimentary implementation of the Codalyzer '''not done'''
 ** Create a Python script which scans the contestants directories for new files
 ** for each new file check it against a set of rules
 ** if a rule is triggered it can either save the file to a special directory and/or generate an iCAT message
-* Discuss with the Kattis people about annotating test cases and running all test cases
-* Discuss with Fredrik about improvements he would like to see to the interface
-* Discuss iCAT setup, ok to use webserver in Sweden?
-* Discuss access to scoreboard, need fast access to a local copy
-* Discuss interactions with spectators and the general public
+* Discuss with the Kattis people about annotating test cases and running all test cases '''done'''
+* Discuss with Fredrik about improvements he would like to see to the interface '''not done'''
+* Discuss iCAT setup, ok to use webserver in Sweden? '''done, ok'''
+* Discuss access to scoreboard, need fast access to a local copy '''done, use Contest Model provided by Mattias'''
+* Discuss interactions with spectators and the general public '''not done'''
 
 = Preparations before Warsaw =
 * General issues
