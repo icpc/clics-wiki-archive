@@ -27,6 +27,63 @@
 * Discuss interactions with spectators and the general public
 
 = Preparations before Warsaw =
+* General issues
+** Clean up and write down the iCAT installation and configuration process on the iCAT wiki (Fredrik)
+** Store the Contest Model in a database? Then many programs can update and analyze it using different languages.
+** Which program ought to generate data for graphs and statistics? Kattalyzer could do most of it, however it does not have access to the contestant files analysis. With a central Contest Model this could be done by any program with access to the DB.
+** Wiki for internal communication
+** Get flag logos from ICPC Live (country_code.png)
+* Things to estimate
+** How many problems will the best solve?
+** How many will solve a problem?
+** Correlate time of Xth submission with how many will solve it by the end of the contest
+** Incorrect submissions indicate harder problems 
+** See the time between solved
+** See time from first code to solved
+** Predict which problems are easy/hard, start from initial guess then improve with data from contest
+** log files from 2008 should exist, definitely from 2010 forward
+** Estimate a difficulty measure of the problem set relative to this years teams
+** See statistic for each region over time to see improvement (since number of submissions and solved is linear the slope of the curve indicates the relation to previous years' competitions and between region
+** Finns det en korrelation mellan lösta problem/poäng och hur mycket tid som spenderas vid tangentbordet? Låt oss definiera att tangentbordet är övergivet om inget skrivits på 5 sekunder, då borde ni kunna läsa av hur mycket dödtid som finns. Vilket lag är mest aktivt?
+* Kattalyzer
+** Integrate Mattias' Contest Model with Stein's Kattalyzer (Stein)
+** Rename Katalyzer to Kattalyzer (Stein/Fredrik)
+** Integrate hypotethetical solutions (Stein/Mattias)
+* Codalyzer
+** Find a suitable keylogger and ask SysOp to install it on the team machines (Fredrik)
+** Write initial version of the Codalyzer for analyzing the contestant's files (David)
+** For each team, find out which problems they have begun on, when they last changed it, and the edit frequency
+** List with unknown file names to improve matching during contest
+** Template detection
+** Compute intensity of work, time since last save, 
+** Keylogger - count typing speed (characters per minute), count number of runs of eclipse (shift+f5)
+** How much erasing are the teams doing (backspace or remove the whole line)? Is there a correlation to their rank?
+** How long are the programs? Do the best teams write shorter or longer programs than the others? Compute average length per problem, language and team. Normalize relative to problem and language.
+** How many times do the teams run their programs with test data before submissions? (shift+F5 i Eclipse)
+** Aggregate information over regions and the contest
+** Keep track of which language(s) a team is using (part of Kattalyzer?) Correlate to results? 
+** Check if a team is using more than one language and correlate to results.
+* iCAT
+** Generate static names of teams and problems from Kattis feed; store in database instead of PHP? (Fredrik/Stein)
+** Create a scoreboard table where Kattalyzer can store the current scoreboard, including the hypothetical submissions (Fredrik/Stein)
+** Organize the iCAT code as widgets that can be implemented in different ways and then put together to create UIs (Fredrik/Greg)
+** Design a proper MVC architecture for iCAT, create a PHP Contest Model Wrapper for the Contest Model in the DB, restructure the iCAT code according to the new design (Fredrik)
+** Include links to VNC, VLC and Kattis if possible to iCAT (Fredrik)
+* iCAT Contest Model
+** Import TopCoder stats for the teams (how useful is this?)
+* Interfacing with ICPC Live Graphics
+** Coordinate regarding what statistics and facts to display (Fredrik)
+** Total number of submissions and total number of solved linear
+** Contest map, region map to display who solves problems
+** A graph with time on one axis and teams/probles on the other and display a point when each problem is updated or team updates something (in the color of the problem)
+* Interfacing with the judges
+** Provide Fredrik N with a list of requests from the judges (annotated test cases, presentations of problems and solutions in a as TV friendly format as possible, access to the problems, solutions and a preliminary order of difficulty preferably at least two hours in advance
+* Interfacing with ICPC HQ
+** Ask Mikael R for updated contest attendees (for 2012) and updated contest results (for 2011)
+* Interfacing with ICPC DMT
+** Ask them to collect interesting facts about the teams
+** Import collected facts
+** Create a separate interface for them?
 
 = Preparations in Warsaw, May 13-16 =
 * [http://cm.baylor.edu/ICPCWiki/Wiki.jsp?page=World%20Final%20Schedule%20of%20Events WF Schedule]
