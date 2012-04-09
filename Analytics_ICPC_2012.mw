@@ -62,7 +62,6 @@
 ** Which program ought to generate data for graphs and statistics? Kattalyzer could do most of it, however it does not have access to the contestant files analysis. With a central Contest Model this could be done by any program with access to the DB.
 ** Wiki for internal communication
 ** Get flag logos from ICPC Live (country_code.png)
-* Statistics to collect
 * Things to estimate
 ** How many problems will the best solve?
 ** How many will solve a problem?
