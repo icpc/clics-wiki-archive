@@ -1,7 +1,7 @@
 Generellt sätt gick analysarbetet bra, trots att det var lite kaotiskt
 emellanåt. Nedan följer detaljerade kommentarer och förbättringsförslag.
 
-= Förberedelserna innan tävlingsdagen
+== Förberedelserna innan tävlingsdagen ==
 * Installation av datorer fungerade bra. Det vi behövde fanns
 tillgängligt via nätet.
 
@@ -53,7 +53,7 @@ som sägs under sändningen.
 i lämpliga fora.
 
 
-= Förberedelser på tävlingsdagen
+== Förberedelser på tävlingsdagen ==
 * Genomgång av körschemat så att alla vet ungefär vad som ska hända när,
 även om det bör finnas stora möjligheter att anpassa sig till vad som
 händer.
@@ -76,7 +76,7 @@ information om ett sådant fall i år vilket sedan visades i TV).
 * Testa att vi kan få realtid ljud och helst även bild från studion.
 
 
-= Under tävlingen
+== Under tävlingen ==
 * Kommunikation med Kattis och tillgång till data från henne fungerade
 utmärkt. Att vi kan granska koden är ett stort plus.
 
@@ -84,13 +84,13 @@ utmärkt. Att vi kan granska koden är ett stort plus.
 desktop. Vi hade en del problem med nätverket vilket gjorde att vi inte
 kunde se särskilt många lag samtidigt. Här finns en hel del
 förbättringspotential:
-  - Automatiskt spela in webcam från det att ett lag skickar in en
+** Automatiskt spela in webcam från det att ett lag skickar in en
 lösning till 30 sekunder efter svaret har presenterats eller så.
 Kombinerat med ett smidigt system för oss och producenten att titta
 igenom dessa för att hitta bra reaktioner skulle kunna ge kul klipp.
-  - Spela in strömmarna för att ge till de tävlande efteråt så att de
+** Spela in strömmarna för att ge till de tävlande efteråt så att de
 kan analysera sin taktik.
-  - Ge världen tillgång till strömmarna via Internet för att kunna följa
+** Ge världen tillgång till strömmarna via Internet för att kunna följa
 sitt favoritlag.
 
 * "Rink-side commentators" hade varit intressant och kul. Kanske kan de
