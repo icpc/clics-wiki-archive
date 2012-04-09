@@ -62,6 +62,7 @@
 ** Which program ought to generate data for graphs and statistics? Kattalyzer could do most of it, however it does not have access to the contestant files analysis. With a central Contest Model this could be done by any program with access to the DB.
 ** Wiki for internal communication
 ** Get flag logos from ICPC Live (country_code.png)
+* Statistics to collect
 * Things to estimate
 ** How many problems will the best solve?
 ** How many will solve a problem?
@@ -109,7 +110,7 @@
 ** Provide Fredrik N with a list of requests from the judges (annotated test cases, presentations of problems and solutions in a as TV friendly format as possible, access to the problems, solutions and a preliminary order of difficulty preferably at least two hours in advance
 * Interfacing with ICPC HQ
 ** Ask Mikael R for updated contest attendees (for 2012) and updated contest results (for 2011)
-* Interfacing with ICPC DMT
+* Interfacing with ICPC Digital
 ** Ask them to collect interesting facts about the teams
 ** Import collected facts
 ** Create a separate interface for them?
