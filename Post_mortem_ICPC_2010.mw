@@ -1,0 +1,173 @@
+Generellt sätt gick analysarbetet bra, trots att det var lite kaotiskt
+emellanåt. Nedan följer detaljerade kommentarer och förbättringsförslag.
+
+= Förberedelserna innan tävlingsdagen
+* Installation av datorer fungerade bra. Det vi behövde fanns
+tillgängligt via nätet.
+
+* Kommunikation till/från studion och tv-produktionen är viktig men nu
+fixades den i sista minuten vilket var ett onödigt stressmoment.
+IRC-kanalen funkade bra mumble likaså.
+
+* För att vi ska kunna diskutera ostört så behöver vi ett eget rum.
+Förra året pratade vi mycket emellan oss, medan vi i år pratade mycket
+mindre eftersom vi satt så nära studion (åtminstone drog jag mig för att
+säga saker då jag inte ville störa sändningen).
+
+* Synkroniseringen med studio och vad som skulle tas upp i programmet
+funkade ganska bra i år (då det mesta skedde reaktivt) så hade det
+kunnat fungera ännu bättre om vi på ett tidigare stadium hade haft en
+översikt över vad som skulle tas upp, t.ex. när vi ska presentera
+uppgifter och vilken typ av information som är intressant vid olika
+tillfällen som vid lagpresentationen eller när en domare intervjuas
+(visa dennes problem, hur många som löst den, vanliga fel, hur många lag
+som håller på med den just nu, osv). Att ta fram ett antal use-case på
+information som hade varit lämplig vid olika tillfällen och mallar för
+vilken information Fredrik vill ha studion beroende på vad som
+rapporteras hade antagligen varit bra. Om vi har mallar för information
+skulle lämplig grafik kunna göras. Vi fyller i detaljerna och sedan
+finns en färdig overlay att visas i sändningen om producenten vill.
+
+* Definiera tydliga roller för hur vi ska kommunicera med studion. Även
+om det funkade ganska bra i år så tyckte jag det fungerade ännu bättre
+förra året då vi hade tydliga roller med en person som skötte
+kommunikationen med studion och övriga som analyserade tävlingen och
+rapporterade till mig. Nu hände det ett par gånger att jag inte visste
+om jag skulle meddela en sak eller om någon annan precis var på väg att
+göra det. En stor anledning till att det fungerade bättre förra året var
+antagligen att då behövde jag inte gå in i studion och presentera
+uppgifterna och vi kunde prata ostört mellan oss.
+
+* Ta fram en lista på potentiella top-lag. Underlag kan komma från
+tidigare framgångar, imponerande resultat i regionsfinalerna samt top
+coder-rating. Listan med toplag kan dels användas för att se vilka lag
+vi borde följa och dels som diskussionsmaterial i sändningen.
+
+* Ta fram ett faktablad med allmän information och statistik som kan
+användas som underlag i sändningen. Hur många regioner, hur många lag
+från olika regioner, hur har det ändrats över tiden osv. Om det är
+viktiga intressanta fakta så borde grafik göras så att vi kan visa det
+som sägs under sändningen.
+
+* Annonsera länkar till sändning/epost/twitter m.m. Tydligt och god tid
+i lämpliga fora.
+
+
+= Förberedelser på tävlingsdagen
+* Genomgång av körschemat så att alla vet ungefär vad som ska hända när,
+även om det bör finnas stora möjligheter att anpassa sig till vad som
+händer.
+
+* Gå igenom uppgifterna med domarna. Det var superbra att Per gick
+igenom problemen med oss och att vi fick tillgång till dem c:a en timme
+före tävlingen. Trots det finns här en stor förbättringspotential. Ju
+mer vi vet om problemen desto bättre kan vi presentera dem i sändningen,
+t.ex. att få veta krångliga specialfall, vilka algoritmer som domarna
+har tänkt ska fungera/inte fungera, gränser som gör problemet svårare,
+m.m. När jag presenterade problemen försökte jag använda historien kring
+uppgiften för att göra den intressant och relevant, vilket jag tyckte
+fungerade bra. Om domarna är medvetna om att bakgrunden kommer att
+användas kanske de lägger lite mer tid på att få den "tv-vänlig".
+Eftersom domarna kan problemen utan och innan hade det varit underbart
+om de kunde vara behjälpliga under tävlingen t.ex. genom att svara på
+frågor om problemet, att påpeka fel i inskickade lösningar (vi fick
+information om ett sådant fall i år vilket sedan visades i TV).
+
+* Testa att vi kan få realtid ljud och helst även bild från studion.
+
+
+= Under tävlingen
+* Kommunikation med Kattis och tillgång till data från henne fungerade
+utmärkt. Att vi kan granska koden är ett stort plus.
+
+* Cam + vnc, två bra verktyg särskilt tillgången till de tävlandes
+desktop. Vi hade en del problem med nätverket vilket gjorde att vi inte
+kunde se särskilt många lag samtidigt. Här finns en hel del
+förbättringspotential:
+  - Automatiskt spela in webcam från det att ett lag skickar in en
+lösning till 30 sekunder efter svaret har presenterats eller så.
+Kombinerat med ett smidigt system för oss och producenten att titta
+igenom dessa för att hitta bra reaktioner skulle kunna ge kul klipp.
+  - Spela in strömmarna för att ge till de tävlande efteråt så att de
+kan analysera sin taktik.
+  - Ge världen tillgång till strömmarna via Internet för att kunna följa
+sitt favoritlag.
+
+* "Rink-side commentators" hade varit intressant och kul. Kanske kan de
+rapportera till oss eller producenten så att webcam/kameror kan användas
+för att visa vad de hittat. I år tror jag de hade kunnat säga vilka lag
+som gett upp och vilka som satsat 100% genom att visa vem som äter och
+vem som låter bli, samt att visa vilka lag som fastnat i ett
+socker-race. Kanske hade de även kunnat säga något om olika taktiker,
+använder de par-programmering eller sitter bara en och skriver?
+Diskuterar de mycket eller har de delat upp uppgifterna helt mellan sig?
+Skriver något lag ut koden för att kunna debugga medan en lagkamrat
+knappar in nästa uppgift? Kanske vore det intressant att få se print-kön?
+
+* Att både förbereda uppgiftspresentationer och analysera tävlingen
+samtidigt är svårt, men båda uppgifterna är roliga och viktiga för
+tv-sändningen. Ju mer som kan förberedas inför tävlingen desto bättre.
+Hänger till stor del på domarna. Kanske borde en person vara dedikerad
+till att presentera uppgifter och endast analysera i mån av tid?
+
+* En hel del tid användes för att analysera vad lagen höll på med, det
+skulle kunna automatiseras genom att övervaka vilka filer som har
+ändrats. Helst skulle den här informationen komma in i Kattis
+scoreboard, åtminstone i vår analys-version.
+
+* Epost/Twitter borde presenteras tydligare så att vi kan få
+återkoppling med publiken. Twitter kanske funkar för att höra vad folk
+pratar om tävlingen, men det tillför antagligen inte så mycket att
+skicka ut vem som löst vad. Kanske om man gör det mer begränsat, t.ex.
+ny ledare osv. Fast den informationen finns redan på scoreboarden. Att
+höra vad andra säger om tävlingen är antagligen mer intressant. Om det
+finns en ICPC-kanal (hashtag) så kan vi följa den för att kolla vad
+allmänheten pratar om.
+
+* Bättre verktyg för att analysera inskickad kod, t ex diffa två
+submissions, diff output från två olika submissions, tydlig färgkodning
+vilka testfall som skiljde sig från domarnas, mm. Helst ska diffar kunna
+visas på ett snygg sätt i sändningen. Nu skapade vi skärmdumpar som vi
+visade, men de var inte särskilt tydliga.
+
+* Statistik som samlats in borde integreras i Kattis så att man enkelt
+kan få upp relevant statistik för ett lag/land/region. Det hade
+antagligen underlättat både i sändningen och i vårt arbete. Vi borde
+kunna utnyttja registreringssystemet för att automatiskt få ut den
+statistik vi önskar.
+
+* Samla in mer statistik om tävlingen, t.ex. vanligaste ordningen som
+uppgifter löses, moving-average på antalet inskickningar till Kattis för
+att mäta "hastigheten" på tävlingen, genomsnittlig tid mellan
+inskickningar/lösta problem, histogram över hur många uppgifter som
+historiskt brukar lösas i respektive timme jämfört med hur många som har
+lösts i den här tävlingen. En intressant sak vore att visa hur lång tid
+ett lag har på sig för att lösa nästa uppgift för att avancera en
+position. Genom att koppla det här till vilken uppgift den håller på att
+jobba med kan man kanske t o m ta hänsyn till att de har en felaktig
+inskickning.
+
+* Scoreboarden borde anpassas till de priser som delas ut, dvs bästa
+regionslag och första lag att lösa en viss uppgift. Det skulle kunna
+lösas genom att markera varje region med en färg samt ha ett
+regionsfilter och det lag som först löst en uppgift ringas in eller
+markeras på annat sätt.
+
+* Vi hade en tanke om att samla in information under tävlingen i ett
+gemensamt dokument, men det användes inte alls under tävlingen.
+Antagligen tar det för lång tid att uppdatera och är inte relevant.
+IRC-kanalen är vårt kontinuerligt uppdaterade dokument.
+
+* Augmented reality enligt Fredrik Ns beskrivning, att visualisera
+scoreboarden ovanpå en kamerabild av tävlingsområdet (området kring ett
+lag blinkar till när de skickar in en uppgift, övrig tid visas en stapel
+över hur många problem som lösts).
+
+* Det vore toppen att automatiskt få notifieringar om uppenbara breaking
+news. Exempelvis: Nytt tar ledningen eller för all del upp på n:te plats
+(n <= 5, förslagsvis), Ny uppgift löst för första gången, Alla uppgifter
+är nu lösta.
+
+* Förse greasemonkey-scoreboarden med information om hur många uppgifter
+som behöver lösas, och på vilken tid det behövs, för att varje lag ska
+kunna vinna, förutsatt att de andra lagen inte löser fler uppgifter.
