@@ -62,6 +62,8 @@
 ** Which program ought to generate data for graphs and statistics? Kattalyzer could do most of it, however it does not have access to the contestant files analysis. With a central Contest Model this could be done by any program with access to the DB.
 ** Wiki for internal communication
 ** Get flag logos from ICPC Live (country_code.png)
+** Create an IRC channel for communicating with the external ICPC/programming community. This could also provide feedback on solutions to problems.
+** Try to visualize tricky corner cases that can be shown in the stream - here it would be good to get some input from the judges, which problems can be easily visualized. We then can use DOMjudge to find the interesting cases.
 * Things to estimate
 ** How many problems will the best solve?
 ** How many will solve a problem?
@@ -74,10 +76,13 @@
 ** Estimate a difficulty measure of the problem set relative to this years teams
 ** See statistic for each region over time to see improvement (since number of submissions and solved is linear the slope of the curve indicates the relation to previous years' competitions and between region
 ** Finns det en korrelation mellan lösta problem/poäng och hur mycket tid som spenderas vid tangentbordet? Låt oss definiera att tangentbordet är övergivet om inget skrivits på 5 sekunder, då borde ni kunna läsa av hur mycket dödtid som finns. Vilket lag är mest aktivt?
+** Analyze how many teams use the same header for each problem, how many use FOR (or similar) macros to shorten their code. Do these habits correlate to the number of solved problems? Difficult: how often do teams change the person that is currently coding?
+** Show graphs on icpclive.come
 * Kattalyzer
 ** Integrate Mattias' Contest Model with Stein's Kattalyzer (Stein)
 ** Rename Katalyzer to Kattalyzer (Stein/Fredrik)
 ** Integrate hypotethetical solutions (Stein/Mattias)
+** The currently generated graphs are images (which are generated somewhat slowly at least on my machine). I would recommend to use a JS library, e.g. http://code.google.com/p/flot/ for that task instead. Nice example; http://people.iola.dk/olau/flot/examples/visitors.html
 * Codalyzer
 ** Find a suitable keylogger and ask SysOp to install it on the team machines (Fredrik)
 ** Write initial version of the Codalyzer for analyzing the contestant's files (David)
@@ -95,6 +100,7 @@
 * iCAT
 ** Generate static names of teams and problems from Kattis feed; store in database instead of PHP? (Fredrik/Stein)
 ** Create a scoreboard table where Kattalyzer can store the current scoreboard, including the hypothetical submissions (Fredrik/Stein)
+** Create a scoreboard (for ICPC-live internal use) with additional color(s) to encode that a team is actively working on a problem. This provides a quick graphical overview.
 ** Organize the iCAT code as widgets that can be implemented in different ways and then put together to create UIs (Fredrik/Greg)
 ** Design a proper MVC architecture for iCAT, create a PHP Contest Model Wrapper for the Contest Model in the DB, restructure the iCAT code according to the new design (Fredrik)
 ** Include links to VNC, VLC and Kattis if possible to iCAT (Fredrik)
@@ -105,6 +111,7 @@
 ** Total number of submissions and total number of solved linear
 ** Contest map, region map to display who solves problems
 ** A graph with time on one axis and teams/probles on the other and display a point when each problem is updated or team updates something (in the color of the problem)
+** It would be useful to have some way to provide the audience and/or the ICPC-live team with contestants' code, with lines highlighted and annotated with remarks. What would be the best way to fit this into the current data structures and communication with Fredrik Niemelä (assuming he is the commentator) and the ICPC-live team? The same infrastructure could be used to present fun facts about submissions to the public.
 * Interfacing with the judges
 ** Provide Fredrik N with a list of requests from the judges (annotated test cases, presentations of problems and solutions in a as TV friendly format as possible, access to the problems, solutions and a preliminary order of difficulty preferably at least two hours in advance
 * Interfacing with ICPC HQ
