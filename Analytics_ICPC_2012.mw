@@ -106,8 +106,7 @@
 * iCAT
 ** Generate static names of teams and problems from Kattis feed; store in database instead of PHP? (Fredrik/Stein)
 ** Create a scoreboard table where Kattalyzer can store the current scoreboard, including the hypothetical submissions (Fredrik/Stein)
-*** Include information like "if team X solves problem Y within Z minutes (seconds?) they will gain W positions in the ranking"
-(for all X, Y). Also, the data presentation is simplified by the fact that for a given X many Ys will give the same Z and W as the only relevant property of the problem for this purpose is how many incorrect submissions the team have already sent.
+*** Include information like "if team X solves problem Y within Z minutes (seconds?) they will gain W positions in the ranking" (for all X, Y). Also, the data presentation is simplified by the fact that for a given X many Ys will give the same Z and W as the only relevant property of the problem for this purpose is how many incorrect submissions the team have already sent.
 *** This could be extended to a list of rankings they would get depending on how fast they solve the problem (0-10: 23 (+10); 11-32 30 (+3); ...).
 ** Create a scoreboard (for ICPC-live internal use) with additional color(s) to encode that a team is actively working on a problem. This provides a quick graphical overview.
 ** Organize the iCAT code as widgets that can be implemented in different ways and then put together to create UIs (Fredrik/Greg)
