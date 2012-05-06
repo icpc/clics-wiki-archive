@@ -1,0 +1,23 @@
+This page describes the way that ICPC-live is storing the contestants' home directories.
+
+We store the home directories in a Revision Control System.
+By committing changes at regular intervals, an (almost) complete history of the home
+directories is created, which can also be queried for changes between different times.
+We use [http://git-scm.com/ Git] as RCS system, since it handles large amounts of data well.
+
+= <tt>gitcommit.sh</tt> script =
+
+The script <tt>gitcommit.sh</tt> can be called with two different arguments:
+# '''init''' initializes a new Git repository at the <tt>BASEDIR</tt> as configured in the script. This can take a few minutes if the directory is already populated with files, because it also deltifies and compresses the Git database.
+# '''commit''' automatically commits any changes in the repository. The commit is tagged as <tt>Tag_HH_MM</tt> with HH:MM the time of the commit. This command is meant to be called at regular intervals from a looping script or Cron job.
+
+The script also creates two files <tt>listing.txt</tt> and <tt>listing_full.txt</tt> in <tt>BASEDIR</tt> that contain a listing of all files with metadata such as permissions and modification times, which are not stored by Git. The second lists all files; the first excludes dot-files. These files are also versioned, so their diffs also provide a quick overview of which files have changed.
+
+= Gitweb =
+
+The plan is to setup [https://git.wiki.kernel.org/index.php/Gitweb Gitweb] on a local webserver as an interface to query the Git repository.
+
+
+= Alternative access =
+
+Alternatively to the Gitweb interface, since Git is a distributed RCS, it is easy to clone it to another computer or account (e.g. over SSH) and use your favourite tools to browse the repository, such as <tt>gitk</tt>.
