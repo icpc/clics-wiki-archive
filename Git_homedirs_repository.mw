@@ -17,6 +17,23 @@ The script also creates two files <tt>listing.txt</tt> and <tt>listing_full.txt<
 
 The plan is to setup [https://git.wiki.kernel.org/index.php/Gitweb Gitweb] on a local webserver as an interface to query the Git repository.
 
+This web interface can be browsed manually, but also be queried by passing parameters via the URL.
+The following parameters are most relevant:
+* '''a'''=<action>    action to perform, see list below.
+* '''f'''=<filename>  file name (with full path from base of repository)
+* '''hb'''=<tag>      tag (or commit SHA1 hash) to apply to, unspecified means most recent (i.e. HEAD)
+* '''hbp'''=<tag>     parent tag, can be used to specify original for diffs
+
+Actions that can be specified (those most useful for automated queries):
+* '''blob_plain'''        returns file at specified commit
+* '''blobdiff_plain'''    returns diff of a file between two revisions (tags)
+* '''commitdiff_plain'''  returns a diff of all changes between two revisions
+* '''tree'''              browse repository tree (optionally specify subdirectory)
+
+For example, to show the differences between a file at times 10:52 and now, use
+    http://localhost/gitweb/?p=icpc-homes/.git;a=blobdiff_plain;f=team03/probA.java;hb=HEAD;hpb=Tag_10_52
+The precise base URL prefix will probably change.
+
 
 = Alternative access =
 
