@@ -15,8 +15,8 @@ What can be improved:
 * The interaction with the production can be improved, when we had videos and graphs to show we had to deliver them by USB stick even though we had set up a NFS share with the information.
 * The computer assignment was a bit unclear, mainly due to the fact that we became twice as many as originally intended.
 * We would like a printed copy of the problems for each analyst.
-* The IRC channel had almost no activity, better interaction with the viewers would be nice.
-
+* The IRC channel had almost no activity, better interaction with the viewers would be nice. ICPCStudio had a separate twitter account, but questions there were nearly all "can you show $myteam?"
+* Publishing the problem set was ad hoc and took a while. Someone should have the task of doing that first-thing in the contest, because there's a lot of demand for it.
 
 What are important things to do for next year:
 * Develop a ticker with breaking news that can be shown even during interviews and pre recorded segments. Develop a separate iCAT feed for this.
@@ -51,3 +51,4 @@ What are important things to do for next year:
 * Larger blackboard with colored chalks
 * Prepare complete images to computers (Jaap: I suggested this, but maybe this is not feasible in an unknown environment; alternative: document a list of system setup actions)
 * More integration to watch team files in a single interface
+* More structural feeding of content to others than studio (twitter, irc, ...). We did post a smnall and rather random selection of things to these channels. Does studio want some kind of 'exclusive' or 'first right'?
