@@ -1,0 +1,47 @@
+What went well:
+* We got access to the problem set and the test data about 2 hours before the contest and Per Austrin guided us through the problems which was great.
+* Assigning the problems to specific analysts who also presented them in the broadcast.
+* Our tools (Kattalyzer, Codealyzer, iCAT, twitter export, KATTIS and DOMjudge) worked very well and gave us much better information than last year. The activity graph, especially for teams, was a gold mine. 
+* The new analysts were great! Now we had enough people to really cover the contest and present all the problems.
+* Everything was ready for the dress rehearsal so everything was running as if it was the real contest.
+* The automatic recording of the webcam when top teams submitted a problem worked really well and was fun to watch.
+* Presenting three problems every our hour worked well.
+
+What can be improved:
+* The interaction with the studio was not tested before the broadcast started.
+* The wired network did not work properly until Monday afternoon which delayed our work.
+* The wireless network did not work properly at all, even though there were several available networks.
+* We should have prepared the list of expected top teams well in advance, not on the morning of the contest.
+* The interaction with the production can be improved, when we had videos and graphs to show we had to deliver them by USB stick even though we had set up a NFS share with the information.
+* The computer assignment was a bit unclear, mainly due to the fact that we became twice as many as originally intended.
+* We would like a printed copy of the problems for each analyst.
+
+
+What are important things to do for next year:
+* Develop a ticker with breaking news that can be shown even during interviews and pre recorded segments.
+* Get annotated test cases from the judges to provide even more detailed automated information to the studio.
+* Get support from the official CCS to run all test cases even if some fail.
+* Import all the background data directly from the registration system without manual work.
+* It would be very interesting to make a public version of the iCAT interface since it would allow the coaches to follow their teams in detail.
+* (Semi-)automatically create a queue of interesting submissions to be manually inspected by an analyst (based on rank and potentially judge output), this might best be integrated in an automated judge. If new submissions arrive for the same problem only the latest submission is relevant.
+* Automate as much as possible of the work we did manually: 
+** Adding events when teams start working on a new problem (need to handle teams with template code)
+** Give failed submissions for top teams a higher priority since this information is very interesting
+* Redesign the iCAT database
+* Support restarting the feed
+
+Unedited notes
+* Timed comments and clock in iCAT, age rather than time
+* Prepare complete images to computers
+* Better blackboard
+* Inconsistent and incorrect data that needs to be changed
+* More integration to watch team files in a single interface
+* Better use of external channels
+* Gen queue with interesting submissions 
+* Overview role, problem role, server role, tool fix role, studio role overview/breaking news/team overview
+* Separate feed for breaking news
+* More information about teams like who are expected and unexpected
+* Average coding time
+* Average order of problems, separate top10 from top20?
+* Check how many teams have good test cases, check if they are correct
+* Average number of parallel active problems
