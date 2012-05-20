@@ -45,3 +45,9 @@ Unedited notes
 * Average order of problems, separate top10 from top20?
 * Check how many teams have good test cases, check if they are correct
 * Average number of parallel active problems
+* Have one configuration file for iCAT and related software that covers all static data relevant to a particular contest (contest start time, balloon colors, problem names, number of problems, possibly team information, etc.). By the end of the actual WF we had config information in several places despite trying to have one file. This was made more difficult because we had many disparate languages: PHP, Javascript, Java, Python, etc. Perhaps a JSON or YAML configuration file would be the best format.
+* Have one notion of time to unify events that occur during a contest. I (Greg) think it should be wall-clock time UTC, because that is always unambiguous (as opposed to contest time, which repeats itself each time we hold a contest).
+* The feed viewer in iCAT is somewhat restricted in the types of events it can display -- i.e. each event is expected to be a single row from a single table; it would be nice to be more flexible to be able to join tables. However, we have to balance flexibility with security of the database (SQL queries sent over http can be a vulnerability).
+* Add a way to view the entire directory structure of a team from iCAT?
+* Allow Codalyzer to detect editing events, but perhaps reserve judgment on which problem each file goes with until display time. This way we can refine our idea of which edits go with which problems on the fly, including edits that occurred in the past.
+* Have a web-based interface for creating Codalyzer rules, evaluating them, adding them to the active set of rules, and discovering conflicting rules.
