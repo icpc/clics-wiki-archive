@@ -18,9 +18,9 @@ What can be improved:
 
 
 What are important things to do for next year:
-* Develop a ticker with breaking news that can be shown even during interviews and pre recorded segments.
+* Develop a ticker with breaking news that can be shown even during interviews and pre recorded segments. Develop a separate iCAT feed for this.
 * Get annotated test cases from the judges to provide even more detailed automated information to the studio.
-* Get support from the official CCS to run all test cases even if some fail.
+* Get support from the official CCS to run all test cases even if some fail. (Jaap: I can imagine that sysops/Kattis doesn't like this. Furthermore, we did set this in DOMjudge; did this not work as hoped?)
 * Import all the background data directly from the registration system without manual work.
 * It would be very interesting to make a public version of the iCAT interface since it would allow the coaches to follow their teams in detail.
 * (Semi-)automatically create a queue of interesting submissions to be manually inspected by an analyst (based on rank and potentially judge output), this might best be integrated in an automated judge. If new submissions arrive for the same problem only the latest submission is relevant.
@@ -29,17 +29,17 @@ What are important things to do for next year:
 ** Give failed submissions for top teams a higher priority since this information is very interesting
 * Redesign the iCAT database
 * Support restarting the feed
+* Make a flexible interface in iCAT to refer to an external judging system for more information.
 
 Unedited notes
 * Timed comments and clock in iCAT, age rather than time
-* Prepare complete images to computers
+* Prepare complete images to computers (Jaap: I suggested this, but maybe this is not feasible in an unknown environment; alternative: document a list of system setup actions)
 * Better blackboard
 * Inconsistent and incorrect data that needs to be changed
 * More integration to watch team files in a single interface
 * Better use of external channels
 * Gen queue with interesting submissions 
 * Overview role, problem role, server role, tool fix role, studio role overview/breaking news/team overview
-* Separate feed for breaking news
 * More information about teams like who are expected and unexpected
 * Average coding time
 * Average order of problems, separate top10 from top20?
