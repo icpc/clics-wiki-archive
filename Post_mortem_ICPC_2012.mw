@@ -20,6 +20,7 @@ What can be improved:
 * Contest feed had to be restarted, and this caused some manual work. We should ensure that rejudged problems are handled properly, by the contest control system as well as all of our tools.
 * Twitter feed worked. But unfortunately not too many seem to have known  about it.
 
+
 What are important things to do for next year:
 * Develop a ticker with breaking news that can be shown even during interviews and pre recorded segments. Develop a separate iCAT feed for this.
 * Get annotated test cases from the judges to provide even more detailed automated information to the studio.
@@ -55,5 +56,4 @@ What are important things to do for next year:
 * More integration to watch team files in a single interface
 * More structural feeding of content to others than studio (twitter, irc, ...). We did post a smnall and rather random selection of things to these channels. Does studio want some kind of 'exclusive' or 'first right'?
 * The idea of recording teams that submit solutions that - if correct - will get among the top n teams is great, and can definitely be developed further. This year, we had no simple way of sending a good clip to the video production, and they had no obvious way either of showing it.
-* More graphs or interesting stuff to show to the studio. Perhaps a way of providing a screenshot/graph along with a summary on what it shows. 
-And some measurement on how interesting we think it is. If we prepare a queue of, say, 8 graphs, we give the people in the studio something to talk about whenever there is an awkward delay... For instance when waiting for the scoreboard resolution to be fixed.
+* More graphs or interesting stuff to show to the studio. Perhaps a way of providing a screenshot/graph along with a summary on what it shows. And some measurement on how interesting we think it is. If we prepare a queue of, say, 8 graphs, we give the people in the studio something to talk about whenever there is an awkward delay... For instance when waiting for the scoreboard resolution to be fixed.
