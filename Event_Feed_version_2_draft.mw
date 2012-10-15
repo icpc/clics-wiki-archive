@@ -250,7 +250,7 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team ID)]] || attribute|| xsd:int
+|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team Number)]] || attribute|| xsd:int
 |-
 |external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || attribute || xsd:int
 |-
