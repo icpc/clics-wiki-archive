@@ -65,7 +65,7 @@ The ''touched'' field specifies, in contest-minutes, when the team last touched 
 The full standings document is returned regardless of whether the user wants to see all teams or just one. This simplifies caching. Furthermore, the footprint of the full document will still be quite small thanks to the compression.
 
 ====HTTP GET /TeamNotifications/<teamid>====
-Returns a json document containing all AutoAnalyst notifications relevant to this team, ordered chronologically
+Returns a json document containing all AutoAnalyst notifications relevant to this team, ordered chronologically. These are exactly the same notifications that have been published in the event stream, but made available in a query API and in json format.
 
  {"team": {"id":56,"tag":"#t56","name":"Shanghai Jiao Tong University"},
   "messages": [{
