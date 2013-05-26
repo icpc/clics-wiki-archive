@@ -1,0 +1,82 @@
+
+===Augmented event stream===
+The stream produced by the AutoAnalyst contains all tags produced by Kattis, but adds analystmsg tags to the stream. The stream will initially be provided as a file that is appended to as the competition proceeds, that can be read by other processes. Other means of interfacing can also be provided, for instance a TCP connection similar to the one provided by the Contest Control System.
+
+Example:
+ <analystmsg>
+ <id>24</id>
+ <team>39</team>
+ <problem>7</problem>
+ <time>118.480356991</time>
+ <message>St. Petersburg State University of IT, Mechanics and Optics extends its lead by solving G - Minimum Cost Flow. It has now solved 8 problems</message>
+ </analystmsg>
+
+id
+	Sequencial identifier of this message. All notifications get a unique and strictly increasing id.
+team
+	Identifier of the team that trigged the event (typically by submitting a solution)
+problem
+	Problem that the message is relevant to
+time
+	Time in contest when this event occurred
+message
+	Message from analyzer, in plain text
+
+===Query interfaces===
+These interfaces provide current information through http access. Content is sent using gzip compression, and the Content-Encoding http header will therefore always be set to gzip. Repetitive json documents compress very well, and all modern browsers handle the decompression transparently.
+
+====HTTP GET /Standings====
+Returns a json-document describing the current state of the scoreboard. It contains the information usually present in a scoreboard, along with additional data on what the teams are working on and what rank teams would get when the next problem is solved. It is intended to be queried by ajax directly from the browser, but can of course also be fetched by a server process.
+
+ { "scoreboard": [teamScore1, teamscore2, teamscore3, ...],
+   "contestInfo": {
+     "length": 300,
+     "problems": 12,
+     "submissions": 1640
+   }
+ }
+
+Sample teamscore structure
+ { "rank":7,
+   "team":{"id":56,"tag":"#t56","name":"Shanghai Jiao Tong University"},
+   "nSolved":4,
+   "totalTime":302,
+   "problems":[
+     {"id":"A","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}, ”touched”:23},
+     {"id":"B","solved":true,"attempts":1,"time":20},
+     {"id":"C","solved":true,"attempts":1,"time":104},
+     {"id":"D","solved":true,"attempts":1,"time":66},
+     {"id":"E","solved":true,"attempts":1,"time":112},
+     {"id":"F","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"id":"G","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"id":"H","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"id":"I","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"id":"J","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"id":"K","solved":false,"attempts":3,"time":0,"potential":{"rank":6}, ”touched”: 92},
+     {"id":"L","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}}
+   ]
+ }
+
+
+The ''potential'' field might need some extra explanation. If this field exists, it means that if the team solves this problem within the number of minutes specified by the ”before” field, the team would reach a particular ranking. Of course this is under the assumption that no other teams solves any problems meanwhile... If the ”before” field is missing, the team will become the slowest team to solve this number of problems anyways, which means that there is no specific limit, apart from the contest itself ending.
+
+The ''touched'' field specifies, in contest-minutes, when the team last touched this problem. This information is estimated based on backups of the contestants' directories. It is guessed from the names and timestamps of the files in the teams' directories. If this is not known, the field is omitted. It is also omitted whenever the problem is solved already.
+
+The full standings document is returned regardless of whether the user wants to see all teams or just one. This simplifies caching. Furthermore, the footprint of the full document will still be quite small thanks to the compression.
+
+====HTTP GET /TeamNotifications/<teamid>====
+Returns a json document containing all AutoAnalyst notifications relevant to this team, ordered chronologically
+
+ {"team": {"id":56,"tag":"#t56","name":"Shanghai Jiao Tong University"},
+  "messages": [{
+    "id": 79,
+    "time": 20,
+    "problem": 2, 
+    "message": "Team Shanghai Jiao Tong University submitted solution for B - Curvy Little Bottles. If correct, they will get rank 5 (7)"
+  },{ 
+    "id": 80,
+    "time": 20,
+    "problem": 2, 
+    "message": "Shanghai Jiao Tong University solves its first problem: B - Curvy Little Bottles"
+  }]
+ }
