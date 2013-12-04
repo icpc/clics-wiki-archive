@@ -9,46 +9,9 @@ The ''Event Feed'' is an externally-accessible XML feed of contest data supplied
 
 == Accessing the Event Feed ==
 
-Clients make use of the event feed by connecting to the event feed port provided by the CCS (event-feed-port in [[Contest_Control_System#contest.yaml|contest.yaml]]). All clients (regardless of feed account type) connect to this same port.
+Clients make use of the event feed by connecting to the event feed port provided by the CCS (event-feed-port in [[Contest_Control_System#contest.yaml|contest.yaml]]). All clients connect to this same port.
 
 Clients must use SSL to connect; any client connection that doesn't use SSL is dropped.
-
-=== Authentication ===
-
-Once an SSL connection has been established, the client must send two lines (each with carriage returns) to log in:
-
-Format:
-
-{| class="wikitable"
-! Line !! Attribute !! Description
-|-
-| 1 || User ID || Account name
-|-
-| 2 || Password || Account password
-|}
-
-Example:
-
- scoreboard1
- test
-
-If the login succeeds, the server will start responding with the contest element (defined below). If the login is unsuccessful, the connection is dropped. Each user ID may be used by multiple clients if required.
-
-=== Feed Account Types ===
-
-The CCS must allow multiple user IDs to be configured for accessing the event feed. Each user ID belongs to a single feed account type, as defined below:
-
-{| class="wikitable"
-! Feed Account Type !! Description !! Events not Included in Feed !! Events not Included in Feed after Scoreboard Freeze
-|-
-|floor || Used for clients that may display data visible to contest contestants || run-source, clars not sent to all || test-result, run-judgements
-|-
-|public || Used for public clients || None || test-result, run-judgements
-|-
-|all|| Used for internal/sysop clients || None || None
-|}
-
-The CCS may implement feed account types using another mechanism (e.g. permissions), as long as the externally visible behaviour is the same.
 
 == Information Updates ==
 
@@ -61,9 +24,9 @@ Changes may cause any configuration or event element to be resent. These changes
 * Rejudgements of runs
 * Fixing typos in names
 
-Removal (or reinsertion) of a time interval resets the stream - see the [[#Reset Element|<reset/>]] tag below.
+Removal (or reinsertion) of a time interval will cause the connection to be dropped.
 
-Different clients (or reconnecting clients) will receive a semantically identical event feed, but are not guaranteed to receive a syntactically identical event feed. For instance, if a typo was fixed in a problem name any new clients may simply receive a single configuration element with the fixed name.
+Different clients (or reconnecting clients) must receive a semantically identical event feed, but are not guaranteed to receive a syntactically identical event feed. For instance, if a typo was fixed in a problem name that causes the element to be reset, new clients might simply receive a single configuration element with the fixed name.
 
 == File Format ==
 The event feed is an XML document within the root element <tt><contest></tt>. The root contest element is as follows:
@@ -72,13 +35,11 @@ The event feed is an XML document within the root element <tt><contest></tt>. Th
 ! Attribute !! Description
 |-
 | version || The format version. Must be "1.0"
-|-
-| account-type || The type of account that was logged in. Allows clients to confirm that their user ID had the priviledges they expected
 |}
 
 Example:
 
- <contest version="1.0" account-type="floor">
+ <contest version="1.0">
    <info ... />
    <language ... />
    ...
@@ -516,11 +477,3 @@ Example:
    <comment>Finalized by John Doe and Jane Doe</comment>
    <timestamp>1265336078.01</timestamp>
  </finalized>
-
-==== Reset Event ====
-
-Sending a <reset/> tells the client to disconnect and reconnect to read the stream from the beginning. A typical reason to send a reset would be the removal of a time interval, requiring update of the contest time for events already issued.
-
-Example:
-
- <reset/>
