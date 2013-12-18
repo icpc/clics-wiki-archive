@@ -65,7 +65,7 @@ Fields and examples for sequence, team and problem JSON members.
 |-
 |Problem_letter ||(N/A)|| letter for problem || D || upper case char [A-Z]
 |-
-|Attempts ||a|| number of attempts for problem || 3 || Integer
+|Attempts ||a|| number of judged attempts for problem (thus not those pending judgement)|| 3 || Integer
 |-
 |Elapsed_time  ||t|| time when solved || 143 || Integer
 |-
