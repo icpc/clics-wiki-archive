@@ -37,12 +37,15 @@ the actual JSON does not need to include line breaks. The example is truncated a
     ....
   ]
 
-====General Format for problem members====
+====General Format for row objects====
+The format of a scoreboard row object is
 
  {"id":"<team_id>","rank":<Rank>,"solved":<problems_solved>,"score":<team_score>"name":"<University_name>","group":"<Group_name>"
- 	,"<Problem_letter>":{"a":<Attempts>,"p":<Pending>,"t":<Elapsed_time>,"s":"<Results_phase>"}},
+ 	(,"<Problem_letter>":{"a":<Attempts>,"p":<Pending>,"t":<Elapsed_time>,"s":"<Results_phase>"})*}
 
-Fields and examples for sequence, team and problem JSON members.
+where (...)* implies zero or more occurances.
+
+=====Fields and examples for sequence, team and problem JSON members=====
 
 {| class="wikitable"
 ! Name
