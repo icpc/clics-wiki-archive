@@ -194,5 +194,5 @@ Additional information may be provided.
 ;timestamp:
 ;last-gold:integer, last rank to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
 ;last-silver:integer, last rank to receive a silver (should always be 8 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
-;last-bronze:integer, last rank to receive a bronze
+;last-bronze:integer, last rank to receive a bronze (should often be 12 but could very possibly be something else)
 ;comment:text
