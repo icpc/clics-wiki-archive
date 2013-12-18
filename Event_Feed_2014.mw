@@ -1,0 +1,196 @@
+This page describes the event feed format that will be used at WF 2014
+
+== Getting the feed ==
+
+Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
+
+Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+
+== File format ==
+The event feed is structured as an xml document within the root element <contest>.
+
+All events are separate elements at the top level.
+
+Some extra tags beyond what is documented here may also be sent, these should be ignored.
+
+Event types are:
+
+;info: contest information and updates
+;language: submission language information
+;region: super region information
+;judgement: judgement information
+;problem: problem information
+;team: team information
+;clar: submitted clarification information and updates
+;run: submitted run information and updates
+;testcase: judgement of individual test cases for a run
+
+Most elements are identified by an id. Timestamped events all have a timestamp element in decimal seconds.
+Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
+
+Events have time attributes identical to the timestamp element.
+
+Sample events with inner element descriptions:
+
+=== <info> ===
+
+ <info>
+ <length>05:00:00</length>
+ <penalty>20</penalty>
+ <started>False</started>
+ <starttime>1265335138.26</starttime>
+ <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+ </info>
+
+;length: Length of contest in HH:MM:SS format.
+;penalty: Penalty time in minutes.
+;started: Started flag.
+;starttime: Starttime as a timestamp in decimal seconds.
+;title: Contest title string.
+
+=== <language> ===
+
+ <language>
+ <id>1</id>
+ <name>C++</name>
+ </language>
+
+;id: Language identifier.
+;name: Language name.
+
+=== <region> ===
+
+ <region>
+ <external-id>3012</external-id>
+ <name>Europe</name>
+ </region>
+
+;external-id: Identidier from the registration system. 
+;name: Super region name.
+
+=== <judgement> ===
+
+ <judgement>
+ <acronym>CE</acronym>
+ <name>Compile Error</name>
+ </judgement>
+
+;acronym: Short name
+;name: descriptive name
+
+=== <problem> ===
+
+ <problem>
+ <id>1</id>
+ <name>A - APL Lives!</name>
+ </problem>
+
+;id: Problem identifier
+;name: descriptive name
+
+=== <team> ===
+
+ <team>
+ <id>1</id>
+ <name>American University of Beirut</name>
+ <nationality>LBN</nationality>
+ <university>American University of Beirut</university> 
+ <region>Europe</region> 
+ <external-id>23412</external-id>
+ </team>
+
+;id: Team identifier
+;name: Team name
+;nationality: nationality as ISO 3166-1 alpha-3
+;university: university affiliation. 
+;region: super region name. 
+;external-id: team id from registration system. 
+
+Additional information may be provided.
+
+=== <clar> ===
+
+ <clar>
+ <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
+ <answered>True</answered>
+ <id>1</id>
+ <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+ <team>0</team>
+ <problem>1</problem>
+ <time>118.480356991</time>
+ <timestamp>1265335256.74</timestamp>
+ <to-all>True</to-all>
+ </clar>
+
+;answer: 
+;answered: Answered flag
+;id: Clarification identifier
+;question:
+;team: Team ID
+;problem: Problem ID
+;time:
+;timestamp:
+;to-all: to-all flag
+
+=== <run> ===
+
+ <run>
+ <id>1410</id>
+ <judged>True</judged>
+ <language>C++</language>
+ <penalty>True</penalty>
+ <problem>4</problem>
+ <result>WA</result>
+ <solved>False</solved>
+ <team>74</team>
+ <time>17960.749403</time>
+ <timestamp>1265353100.29</timestamp>
+ </run>
+
+;id: Run identifier
+;judged: Judged flag
+;language: language name
+;penalty: penalty flag
+;problem: problem ID
+;result: result short name
+;solved: solved flag
+;team: team ID
+;time: official submission time used for scoring.
+;timestamp:
+
+=== <testcase> ===
+
+ <testcase>
+ &lt;i&gt;1&lt;/i&gt;
+ <judged>True</judged>
+ <judgement>WA</judgement>
+ <n>1</n>
+ <run-id>1</run-id>
+ <solved>False</solved>
+ <time>939.751724958</time>
+ <timestamp>1265336078.01</timestamp>
+ </testcase>
+
+;i: testcase number
+;judged:
+;judgement: Judgement acronym
+;n: Total number of testcases
+;run-id:
+;solved:
+;time:
+;timestamp:
+
+=== <finalized> ===
+ <finalized>
+ <timestamp>1265336078.01</timestamp>
+ <last-gold>4</last-gold>
+ <last-silver>8</last-silver>
+ <last-bronze>12</last-bronze>
+ <comment>Finalized by John Doe and Jane Doe</comment>
+ </finalized>
+
+;timestamp:
+;last-gold:integer, last place to receive a gold
+;last-silver:integer, last place to receive a silver
+;last-bronze:integer, last place to receive a bronze
+;comment:text
