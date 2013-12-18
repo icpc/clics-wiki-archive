@@ -3,32 +3,39 @@
 ====Format====
 
 Each JSON output is created is an JSON array with zero or 
-more JSON members.  The output will be in a single long JSON
+more JSON objects. Each object in the array corresponds to a scoreboard row.  The output will be in a single long JSON
 string.
 
 Sample JSON if no teams defined
  []
 
-Each JSON Member is composed of a team member with optional problem members
-for example.  This example is formatted in order to better show the example,
-the actual JSON will be a single line of JSON.
+Each row object includes information about the team, the problems they have submitted on and scoring information.  The rows are ordered by the teams' positions according to the ICPC WF scoring rules.
+This example is formatted in order to better show the example,
+the actual JSON does not need to include line breaks. The example is truncated and shows just the top two teams.
 
-  [ {"id":"1","name":"University of Brevia","group":"Pangea"
- 	,"B":{"a":1,"t":20,"s":"solved"}
- 	,"D":{"a":1,"t":66,"s":"first"}
- 	,"E":{"a":1,"t":112,"s":"solved"}
- 	,"F":{"a":3,"s":"tried"}
- 	,"L":{"a":3,"t":152,"s":"solved"}},
-  {"id":"2","name":"University of Fondu","group":"North America"
- 	,"B":{"a":1,"t":10,"s":"first"}
- 	,"D":{"a":1,"t":68,"s":"solved"}
- 	,"E":{"a":1,"t":122,"s":"solved"}
- 	,"F":{"a":2,"s":"tried"}
- 	,"L":{"a":3,"t":192,"s":"solved"}}
- ]
-
-This same JSON example will be output as a single line, for example:
- [{"id":"1","name":"University of Brevia","group":"Pangea","B":{"a":1,"t":20,"s":"solved"},"D":{"a":1,"t":66,"s":"first"},"E":{"a":1,"t":112,"s":"solved"},"F":{"a":3,"s":"tried"},"L":{"a":3,"t":152,"s":"solved"}},{"id":"2","name":"University of Fondu","group":"North America","B":{"a":1,"t":10,"s":"first"},"D":{"a":1,"t":68,"s":"solved"},"E":{"a":1,"t":122,"s":"solved"},"F":{"a":2,"s":"tried"},"L":{"a":3,"t":192,"s":"solved"}}]
+  [ {"id":"61","rank":1,"solved":9,"score":1170,"name":"St. Petersburg State University of IT, Mechanics and Optics","group":"Europe",
+        "B":{"a":1,"t":18,"s":"solved"},
+        "C":{"a":1,"t":79,"s":"solved"},
+        "D":{"a":2,"t":42,"s":"solved"},
+        "E":{"a":2,"t":165,"s":"solved"},
+        "F":{"a":2,"t":142,"s":"first"},
+        "G":{"a":1,"t":208,"s":"solved"},
+        "I":{"a":2,"t":125,"s":"solved"},
+        "K":{"a":1,"t":49,"s":"solved"},
+        "L":{"a":1,"t":262,"s":"solved"}},
+    {"id":"103","rank":2,"solved":9,"score":1547,"name":"University of Warsaw","group":"Europe",
+        "A":{"a":5,"t":291,"s":"solved"},
+        "B":{"a":1,"t":32,"s":"solved"},
+        "C":{"a":2,"t":60,"s":"solved"},
+        "D":{"a":1,"t":19,"s":"solved"},
+        "E":{"a":1,"t":187,"s":"solved"},
+        "F":{"a":1,"s":"tried"},
+        "G":{"a":3,"t":234,"s":"solved"},
+        "I":{"a":2,"t":147,"s":"solved"},
+        "K":{"a":5,"t":128,"s":"solved"},
+        "L":{"a":3,"t":169,"s":"solved"}},
+    ....
+  ]
 
 ====General Format for problem members====
 
