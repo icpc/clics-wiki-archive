@@ -190,7 +190,7 @@ Additional information may be provided.
  </finalized>
 
 ;timestamp:
-;last-gold:integer, last place to receive a gold
-;last-silver:integer, last place to receive a silver
-;last-bronze:integer, last place to receive a bronze
+;last-gold:integer, last rank to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
+;last-silver:integer, last rank to receive a silver (should always be 8 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
+;last-bronze:integer, last rank to receive a bronze
 ;comment:text
