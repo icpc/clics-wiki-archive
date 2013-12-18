@@ -36,6 +36,7 @@ Sample events with inner element descriptions:
 
  <info>
  <length>05:00:00</length>
+ <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
  <penalty>20</penalty>
  <started>False</started>
  <starttime>1265335138.26</starttime>
@@ -43,6 +44,7 @@ Sample events with inner element descriptions:
  </info>
 
 ;length: Length of contest in HH:MM:SS format.
+;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
 ;penalty: Penalty time in minutes.
 ;started: Started flag.
 ;starttime: Starttime as a timestamp in decimal seconds.
