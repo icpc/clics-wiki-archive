@@ -74,4 +74,4 @@ Fields and examples for sequence, team and problem JSON members.
 |Results_phase  ||s|| results/info about run  || solved || String: "tried", "solved", "first", "pend"
 |}
 
-The following keys are optional: t, p
+The key "p" is only present if Result_phase is "pend" and the key "t" is only present if the Result_phase is "solved".
