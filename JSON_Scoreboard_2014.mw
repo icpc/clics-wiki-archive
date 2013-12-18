@@ -1,4 +1,6 @@
 ===Scoreboard JSON File===
+====Background====
+Since 2012 a JSON version of the scoreboard has been provided using an ad-hoc format. This scoreboard is not yet officially supported. It will most likely be provided in 2014. The format may change. This page describes the current version.
 
 ====Format====
 
