@@ -85,7 +85,7 @@ Event types & tags:
 Notes
 # All child-elements and attributes are required unless otherwise documented.
 # All contest-time elements are in minutes.
-# All timestamp elements are in seconds since the epoch, Jan 1st, 1970 00:00:00 UTC.
+# All timestamp elements are in seconds since the Unix epoch, Jan 1st, 1970 00:00:00 UTC.
 
 === Configuration Elements ===
 
