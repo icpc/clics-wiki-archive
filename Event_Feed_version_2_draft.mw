@@ -184,8 +184,6 @@ Format:
 |-
 |id || Problem ID || attribute || xsd:int
 |-
-|state || One of enabled, paused, disabled || element || xsd:string
-|-
 |letter || Single letter problem label || element || xsd:string
 |-
 |name || Problem name || element || xsd:string
@@ -198,7 +196,6 @@ Format:
 Example:
 
  <problem id="1">
-   <state>enabled</state>
    <letter>A</letter>
    <name>APL Lives!</name>
    <color rgb="#ffff00">yellow</color>
