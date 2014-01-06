@@ -41,7 +41,7 @@ Caching is used internally to reduce load on the CCS.
 
 === Contest Control System JSON Scoreboard ===
 
- URL: http://cds/2014/standings
+ <nowiki>URL: http://cds/2014/standings</nowiki>
 
 Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
