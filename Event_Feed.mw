@@ -133,15 +133,24 @@ Example:
    <penalty>true</penalty>
  </judgement>
 
-=== <problem> ===
+=== Problem Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|id || Problem ID || element || xsd:int
+|-
+|name || Problem name || element || xsd:string
+|}
+
+Example:
 
  <problem>
- <id>1</id>
- <name>A - APL Lives!</name>
+   <id>1</id>
+   <name>APL Lives!</name>
  </problem>
-
-;id: Problem identifier
-;name: descriptive name
 
 === <team> ===
 
