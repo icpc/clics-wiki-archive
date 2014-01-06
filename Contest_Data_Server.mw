@@ -52,21 +52,10 @@ This command provides a combined video and audio stream with the following chara
 
 == Team Desktop Stream ==
 
- URL: http://cds/video/screen/[teamNum]
+ <nowiki>URL: http://cds/video/screen/[teamNum]
  
  teamNum - the number (index) of the team screen you want to connect to.
 
+ Content type: application/octet</nowiki>
+
 Returns a video feed containing the given team's screen.
-
-temp:
-
-{| class="wikitable"
-! URL!! Contains !! Type
-|-
-|/video/screen/[teamNum]|| video || Configuration
-|-
-|language|| submission language information || Configuration
-|-
-|region|| superregion information || Configuration
-|-
-|}
