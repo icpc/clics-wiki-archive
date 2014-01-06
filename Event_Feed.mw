@@ -76,15 +76,21 @@ Example:
    <start-time>1265335138.26</starttime>
  </info>
 
-=== <language> ===
+=== Language Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|name || Language name || element || xsd:string
+|}
+
+Example:
 
  <language>
- <id>1</id>
- <name>C++</name>
+   <name>C++</name>
  </language>
-
-;id: Language identifier.
-;name: Language name.
 
 === <region> ===
 
