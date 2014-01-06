@@ -45,23 +45,36 @@ Notes
 # All contest-time elements are in decimal seconds.
 # All timestamp elements are in decimal seconds since the Unix epoch, Jan 1st, 1970 00:00:00 UTC.
 
-=== <info> ===
+=== Info Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|title || Contest title || element || xsd:string
+|-
+|length || Length of contest in HH:MM:SS format || element || xsd:string
+|-
+|scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format || element || xsd:string
+|-
+|penalty|| Penalty time in minutes || element || xsd:int
+|-
+|started || True if the contest is started || element || xsd:boolean
+|-
+|start-time || Wall-clock start time of the contest || element || xsd:decimal timestamp
+|}
+
+Example:
 
  <info>
- <length>05:00:00</length>
- <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
- <penalty>20</penalty>
- <started>False</started>
- <starttime>1265335138.26</starttime>
- <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+   <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
+   <length>05:00:00</length>
+   <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
+   <penalty>20</penalty>
+   <started>False</started>
+   <start-time>1265335138.26</starttime>
  </info>
-
-;length: Length of contest in HH:MM:SS format.
-;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
-;penalty: Penalty time in minutes.
-;started: Started flag.
-;starttime: Starttime as a timestamp in decimal seconds.
-;title: Contest title string.
 
 === <language> ===
 
