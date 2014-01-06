@@ -2,7 +2,7 @@
 
 The Contest Data Server (or CDS) is a single place for clients of any kind to request contest data via URL. This document contains information on what services (URLs) are available from the CDS, what content is returned, and links to specs for the format of some files.
 
-Internally, the CDS may be implemented using multiple servers, pull data from the contest control system or other servers, or even aggregate. From a client perspective the important thing is that *none of this matters*: the CDS is a one-stop shop for all contest information. Clients only need to know one URL and the ability to use HTTP.
+Internally, the CDS may be implemented using multiple servers, pull data from the contest control system or other servers, or even aggregate. From a client perspective the important thing is that ''none of this matters'': the CDS is a one-stop shop for all contest information. Clients only need to know how to connect to URLs.
 
 Notes:
 # URLs below are in the format "http://cds/xyz". The exact hostname or IP address for 'cds' each year will be provided once the network is setup onsite.
