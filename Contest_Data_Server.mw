@@ -54,12 +54,8 @@ Returns a video stream from the camera at the given team's workstation.
 * Video container: FLV
 * Video format: H.264
 
-== Team Desktop Stream ==
+=== Team Desktop Stream ===
 
- <nowiki>URL: http://cds/video/screen/[teamNum]
- 
- teamNum - the number (index) of the team screen you want to connect to.
-
- Content type: application/octet</nowiki>
+ <nowiki>URL: http://cds/video/screen/[teamNum]</nowiki>
 
 Returns a video feed containing the given team's screen.
