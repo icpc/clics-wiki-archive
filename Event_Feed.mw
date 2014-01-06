@@ -92,15 +92,24 @@ Example:
    <name>C++</name>
  </language>
 
-=== <region> ===
+=== Region Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || element || xsd:int
+|-
+|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || element || xsd:string
+|}
+
+Example:
 
  <region>
- <external-id>3012</external-id>
- <name>Europe</name>
+   <external-id>3012</external-id>
+   <name>Europe</name>
  </region>
-
-;external-id: Identidier from the registration system. 
-;name: Super region name.
 
 === <judgement> ===
 
