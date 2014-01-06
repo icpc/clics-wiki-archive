@@ -58,4 +58,7 @@ Returns a video stream from the camera at the given team's workstation.
 
  <nowiki>URL: http://cds/video/screen/[teamNum]</nowiki>
 
-Returns a video feed containing the given team's screen.
+Returns a video stream of the given team's desktop.
+
+* Video container: FLV
+* Video format: H.264
