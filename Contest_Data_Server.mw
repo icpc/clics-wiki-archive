@@ -10,13 +10,15 @@ Notes:
 
 == Access & Authentication ==
 
-Requests for access to the CDS must be made through the world finals technical director (John Clevenger) and must include information on contact who will be onsite at the finals. Many of the services will contain non-public information, so each client will be given a unique user id & password and must connect to the CDS over HTTPS. (HTTP access will be redirected)
+Requests for access to the CDS must be made through the world finals technical director (John Clevenger) and must include contact information for during the finals. Many of the services will contain private information, so each client will be given a unique user id & password to connect to the CDS. Access to all secure services is via HTTPS. (HTTP access will be redirected)
 
-To simplify access rules, there are three main zones that will have access to different content:
+To simplify security, access is provided via roles that each have access to different content. The defined roles are as follows:
 
-* Blue = The contest network. Clients on this network have unrestricted access to all services.
-* Green = The onsite contest.
-* Public = The public internet.
+* Internal = Internal users (typically on the contest network) that have access to all content.
+* Trusted = Clients that have access to some contest information that should not be shared publically.
+* Public = All other users that have access only to public information.
+
+Services will be marked with what access role is required.
 
 == Contest Configuration ==
 
