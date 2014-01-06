@@ -20,10 +20,10 @@ To simplify access rules, there are three main zones that will have access to di
 
 == Contest Configuration ==
 
-URL: http://cds/config/contest.yaml
-URL: http://cds/config/problemset.yaml
+ URL: http://cds/config/contest.yaml
+ URL: http://cds/config/problemset.yaml
 
-
+Access to two of the contest configuration files as specified in the CCS spec (https://clics.ecs.baylor.edu/index.php/Contest_Control_System).
 
 == Contest Control System Event Feed ==
 
