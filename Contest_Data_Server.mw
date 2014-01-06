@@ -45,20 +45,14 @@ Caching is used internally to reduce load on the CCS.
 
 Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
-== Team Webcam Stream == 
+=== Team Webcam Stream ===
 
-URL: http://cds/video/camera/[teamNum]
+ URL: http://cds/video/camera/[teamNum]
 
-This command provides a combined video and audio stream with the following characteristics:
+Returns a video stream from the camera at the given team's workstation.
 
-    Unicast Feed via HTTP
-    Encapsulation method : MPEG TS
-    Video Resolution : 1280 x 720
-    Video Frame Rate : 30 fps
-    Video Encoding : H.264
-    Audio Bitrate : 128 Kbps
-    Audio Channels : 2
-    Audio Encoding : MPEG Audio 
+* Video container: FLV
+* Video format: H.264
 
 == Team Desktop Stream ==
 
