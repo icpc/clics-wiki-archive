@@ -39,10 +39,11 @@ A straight http pass-through of the 2014 event feed from the CCS. Caching is use
 
 Contest specification: https://clics.ecs.baylor.edu/index.php/Event_Feed_2014
 
-== Contest Control System JSON Scoreboard ==
+=== Contest Control System JSON Scoreboard ===
 
-URL: http://cds/standings
+ URL: http://cds/2014/standings
 
+Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
 == Team Webcam Stream == 
 
