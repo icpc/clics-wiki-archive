@@ -31,10 +31,13 @@ The following section describes all the services that are available through the 
 
 Access to two of the contest configuration files as specified in the CCS spec (https://clics.ecs.baylor.edu/index.php/Contest_Control_System).
 
-== Contest Control System Event Feed ==
+=== Contest Control System Event Feed ===
 
-URL: http://cds/2014/events
+ URL: http://cds/2014/events
 
+A straight http pass-through of the 2014 event feed from the CCS. Caching is used internally to reduce load on the CCS.
+
+Contest specification: https://clics.ecs.baylor.edu/index.php/Event_Feed_2014
 
 == Contest Control System JSON Scoreboard ==
 
