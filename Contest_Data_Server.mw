@@ -1,38 +1,43 @@
+== Introduction ==
+
+The Contest Data Server (or CDS) is a single place for clients of any kind to request contest data via URL. This document contains information on what services (URLs) are available from the CDS, what content is returned, and links to specs for the format of some files.
+
+Internally, the CDS may be implemented using multiple servers, pull data from the contest control system or other servers, or even aggregate. From a client perspective the important thing is that *none of this matters*: the CDS is a one-stop shop for all contest information. Clients only need to know one URL and the ability to use HTTP.
+
+Notes:
+# URLs below are in the format "http://cds/xyz". The exact hostname or IP address for 'cds' each year will be provided once the network is setup onsite.
+# Some of the URL contain a year (e.g. http://cds/2014/xyz") to indicate that these are temporary formats that may change over the coming year.
+
+== Access & Authentication ==
+
+Requests for access to the CDS must be made through the world finals technical director (John Clevenger) and must include information on contact who will be onsite at the finals. Many of the services will contain non-public information, so each client will be given a unique user id & password and must connect to the CDS over HTTPS. (HTTP access will be redirected)
+
+To simplify access rules, there are three main zones that will have access to different content:
+
+# Blue = The contest network. Clients on this network have unrestricted access to all services.
+# Green = The onsite contest.
+# Public = The public internet.
+
+== Contest Configuration ==
+
+URL: http://cds/config/contest.yaml
+URL: http://cds/config/problemset.yaml
 
 
-General Information
-There has been discussion of multiple cds servers and potentially assigning individual CDS servers to each client. (Doug note: couldn't we give clients a IP then redirect that traffic to a CDS server implementing a crude ability to switch clients without requiring any effort on their part?)
 
-TODO: describe authentication for each data item.
+== Contest Control System Event Feed ==
 
-Every feed, stream and data request will require the following general information for each machine requiring access, there may be additional or different requirements with certain feeds (more below).
+URL: http://cds/2014/events
 
 
-Required from Client:
-	MAC 
-	IP address
-	Client Name
-	Client Contact
-
-Supplied to Client:
-	- login
-	- password
-	- URL
-
-Contest Control System Event Feed
-
-
-URL: http://cds/eventfeed
-
-Contest Control System Event JSON data
-
+== Contest Control System JSON Scoreboard ==
 
 URL: http://cds/standings
 
-Team Webcam Stream
 
+== Team Webcam Stream == 
 
-URL: http://cds/team1/camera
+URL: http://cds/video/camera/[teamNum]
 
 This command provides a combined video and audio stream with the following characteristics:
 
@@ -45,7 +50,20 @@ This command provides a combined video and audio stream with the following chara
     Audio Channels : 2
     Audio Encoding : MPEG Audio 
 
-Team Desktop Stream
+== Team Desktop Stream ==
+
+URL: http://cds/video/screen/[teamNum]
 
 
-URL: http://cds/team1/screen
+temp:
+
+{| class="wikitable"
+! Element !! Contains !! Type
+|-
+|info|| contest information and updates || Configuration
+|-
+|language|| submission language information || Configuration
+|-
+|region|| superregion information || Configuration
+|-
+|}
