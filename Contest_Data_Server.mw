@@ -20,7 +20,11 @@ To simplify security, access is provided via roles that each have access to diff
 
 Services will be marked with what access role is required.
 
-== Contest Configuration ==
+== Services ==
+
+The following section describes all the services that are available through the CDS.
+
+=== Contest Configuration ===
 
  URL: http://cds/config/contest.yaml
  URL: http://cds/config/problemset.yaml
