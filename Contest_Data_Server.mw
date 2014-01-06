@@ -1,0 +1,51 @@
+
+
+General Information
+There has been discussion of multiple cds servers and potentially assigning individual CDS servers to each client. (Doug note: couldn't we give clients a IP then redirect that traffic to a CDS server implementing a crude ability to switch clients without requiring any effort on their part?)
+
+TODO: describe authentication for each data item.
+
+Every feed, stream and data request will require the following general information for each machine requiring access, there may be additional or different requirements with certain feeds (more below).
+
+
+Required from Client:
+	MAC 
+	IP address
+	Client Name
+	Client Contact
+
+Supplied to Client:
+	- login
+	- password
+	- URL
+
+Contest Control System Event Feed
+
+
+URL: http://cds/eventfeed
+
+Contest Control System Event JSON data
+
+
+URL: http://cds/standings
+
+Team Webcam Stream
+
+
+URL: http://cds/team1/camera
+
+This command provides a combined video and audio stream with the following characteristics:
+
+    Unicast Feed via HTTP
+    Encapsulation method : MPEG TS
+    Video Resolution : 1280 x 720
+    Video Frame Rate : 30 fps
+    Video Encoding : H.264
+    Audio Bitrate : 128 Kbps
+    Audio Channels : 2
+    Audio Encoding : MPEG Audio 
+
+Team Desktop Stream
+
+
+URL: http://cds/team1/screen
