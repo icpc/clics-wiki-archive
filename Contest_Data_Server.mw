@@ -53,9 +53,8 @@ This command provides a combined video and audio stream with the following chara
 == Team Desktop Stream ==
 
  URL: http://cds/video/screen/[teamNum]
-
- ; teamNum
- : the number (index) of the team screen you want to connect to.
+ 
+ teamNum - the number (index) of the team screen you want to connect to.
 
 Returns a video feed containing the given team's screen.
 
