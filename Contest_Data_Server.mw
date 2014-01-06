@@ -14,9 +14,9 @@ Requests for access to the CDS must be made through the world finals technical d
 
 To simplify access rules, there are three main zones that will have access to different content:
 
-# Blue = The contest network. Clients on this network have unrestricted access to all services.
-# Green = The onsite contest.
-# Public = The public internet.
+* Blue = The contest network. Clients on this network have unrestricted access to all services.
+* Green = The onsite contest.
+* Public = The public internet.
 
 == Contest Configuration ==
 
