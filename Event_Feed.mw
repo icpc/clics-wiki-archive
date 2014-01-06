@@ -111,15 +111,27 @@ Example:
    <name>Europe</name>
  </region>
 
-=== <judgement> ===
+=== Judgement Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child element/attribute !! Type
+|-
+|acronym || Judgement acronym || element || xsd:string
+|-
+|name || Judgement name || element || xsd:string
+|-
+|penalty || True if this judgement is a failure that causes penalty time || element || xsd:boolean
+|}
+
+Example:
 
  <judgement>
- <acronym>CE</acronym>
- <name>Compile Error</name>
+   <acronym>WA</acronym>
+   <name>Wrong Answer</name>
+   <penalty>true</penalty>
  </judgement>
-
-;acronym: Short name
-;name: descriptive name
 
 === <problem> ===
 
