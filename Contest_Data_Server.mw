@@ -47,7 +47,7 @@ Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
 === Team Webcam Stream ===
 
- URL: http://cds/video/camera/[teamNum]
+ <nowiki>URL: http://cds/video/camera/[teamNum]</nowiki>
 
 Returns a video stream from the camera at the given team's workstation.
 
