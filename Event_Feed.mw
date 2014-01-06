@@ -152,25 +152,36 @@ Example:
    <name>APL Lives!</name>
  </problem>
 
-=== <team> ===
+=== Team Element ===
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team Number)]] || attribute|| xsd:int
+|-
+|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || attribute || xsd:int
+|-
+|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|-
+|nationality || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|-
+|university || University name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|-
+|region || Super region name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|}
+
+Example:
 
  <team>
- <id>1</id>
- <name>American University of Beirut</name>
- <nationality>LBN</nationality>
- <university>American University of Beirut</university> 
- <region>Europe</region> 
- <external-id>23412</external-id>
+   <id>1</id>
+   <external-id>23412</external-id>
+   <name>American University of Beirut</name>
+   <nationality>LBN</nationality>
+   <university>American University of Beirut</university> 
+   <region>Europe</region> 
  </team>
-
-;id: Team identifier
-;name: Team name
-;nationality: nationality as ISO 3166-1 alpha-3
-;university: university affiliation. 
-;region: super region name. 
-;external-id: team id from registration system. 
-
-Additional information may be provided.
 
 === <clar> ===
 
