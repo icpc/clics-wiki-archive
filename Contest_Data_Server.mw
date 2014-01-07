@@ -23,7 +23,6 @@ There are also some benefits we can take advantage of in the future:
 * '''Scale''': Architecture allows us to use an HTTP server and scale out to handle load.
 * '''Robustness''': Fail-over with multiple CDS servers. Handle DOS attacks.
 
-
 === Implementation Notes ===
 
 * URLs below are in the format "http://cds/xyz". The exact hostname or IP address for 'cds' each year will be provided once the network is setup onsite.
