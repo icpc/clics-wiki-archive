@@ -7,7 +7,24 @@ The Contest Data Server (or CDS) is a single place for clients of any kind to re
 
 Internally, the CDS may be implemented using multiple servers, pull data from the contest control system or other servers, or even aggregate. From a client perspective the important thing is that ''none of this matters'': the CDS is a one-stop shop for all contest information. Clients only need to know how to connect to URLs.
 
-Notes:
+=== Why do we need a CDS? ===
+
+We've run many finals without a CDS, so why do we need one now? Using a CDS has several advantages:
+
+* '''Standard-based''': Regular HTTP access to everything.
+* '''Consistency''': Similar URLs and formats where it makes sense.
+* '''Simplicity''': A one stop shop for clients. A single URL and access request for multiple services.
+* '''Data''': Access to new data like team logos & pictures, contest images, etc.
+* '''Security''': HTTPS and single point of control.
+* '''Caching''': Reduced load on contest control system.
+* '''Robustness''': Clients no longer connect directly to critical contest systems.
+
+There are also some benefits we can take advantage of in the future:
+* '''Scale''': Architecture allows us to use an HTTP server and scale out to handle load.
+* '''Robustness''': Fail-over with multiple CDS servers. Handle DOS attacks.
+
+=== Implementation Notes ===
+
 * URLs below are in the format "http://cds/xyz". The exact hostname or IP address for 'cds' each year will be provided once the network is setup onsite.
 * Some of the URL contain a year (e.g. http://cds/2014/xyz") to indicate that these are temporary formats that will almost definitely change over the following year.
 * Invalid URLs, parameters (e.g. teamNum=500), or missing images will return the standard HTTP status code 404.
