@@ -9,7 +9,7 @@ Internally, the CDS may be implemented using multiple servers, pull data from th
 
 Notes:
 * URLs below are in the format "http://cds/xyz". The exact hostname or IP address for 'cds' each year will be provided once the network is setup onsite.
-* Some of the URL contain a year (e.g. http://cds/2014/xyz") to indicate that these are temporary formats that may change over the coming year.
+* Some of the URL contain a year (e.g. http://cds/2014/xyz") to indicate that these are temporary formats that will almost definitely change over the following year.
 * Invalid URLs, parameters (e.g. teamNum=500), or missing images will return the standard HTTP status code 404.
 
 == Access & Authentication ==
