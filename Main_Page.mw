@@ -18,6 +18,10 @@
 == Run Submission Interface ==
 * [[Run Submission Interface 2014]]
 
+== Contest Data Server ==
+
+Draft [[CDS]] specification
+
 == ICPC Contest Analysis Tool (iCAT) ==
 * [[iCAT]]
 * [[AutoAnalyst API]]
