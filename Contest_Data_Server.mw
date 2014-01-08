@@ -116,5 +116,7 @@ Returns one of several ICPC graphics images for use by TV Production
 
 === Team backup files ===
 
+Returns an archive (.zip) with files from a Team's machine.
+
  <nowiki>URL: http://cds/backups/[teamId]</nowiki>
  <nowiki>URL: http://cds/backups/md5/[teamId]</nowiki>
