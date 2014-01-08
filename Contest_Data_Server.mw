@@ -100,6 +100,6 @@ Returns a video stream of the given team's desktop.
 * Video container: FLV
 * Video format: H.264
 
-=== Graphics  ===
+=== ICPC Graphics  ===
 
-Returns a graphics for use by TV Production
+Returns one of several ICPC graphics images for use by TV Production
