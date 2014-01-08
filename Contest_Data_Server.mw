@@ -99,3 +99,7 @@ Returns a video stream of the given team's desktop.
 
 * Video container: FLV
 * Video format: H.264
+
+=== Graphics  ===
+
+Returns a graphics for use by TV Production
