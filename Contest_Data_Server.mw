@@ -113,3 +113,8 @@ Returns one of several ICPC graphics images for use by TV Production
 === Run submission source ===
 
  <nowiki>URL: http://cds/runsource/[runId]</nowiki>
+
+=== Team backup files ===
+
+ <nowiki>URL: http://cds/backups/[teamId]</nowiki>
+ <nowiki>URL: http://cds/backups/md5/[teamId]</nowiki>
