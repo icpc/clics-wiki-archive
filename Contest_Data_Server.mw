@@ -7,6 +7,8 @@ The Contest Data Server (or CDS) is a single place for clients of any kind to re
 
 Internally, the CDS may be implemented using multiple servers, pull data from the contest control system or other servers, or even aggregate. From a client perspective the important thing is that ''none of this matters'': the CDS is a one-stop shop for all contest information. Clients only need to know how to connect to URLs.
 
+It's best to think of the CDS as an aggregator and gate keeper. There will be extensions that plug onto the CDS and provide new content or convert formats, but these are more like applications hosted by/within the CDS.
+
 === Why do we need a CDS? ===
 
 We've run many finals without a CDS, so why do we need one now? Using a CDS has several advantages:
