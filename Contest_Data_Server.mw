@@ -112,6 +112,8 @@ Returns one of several ICPC graphics images for use by TV Production
 
 === Run submission source ===
 
+Returns the source files for a team submission given a run id.
+
  <nowiki>URL: http://cds/runsource/[runId]</nowiki>
 
 === Team backup files ===
