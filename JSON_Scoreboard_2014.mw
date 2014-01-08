@@ -42,7 +42,7 @@ the actual JSON does not need to include line breaks. The example is truncated a
 ====General Format for row objects====
 The format of a scoreboard row object is
 
- {"id":"<team_id>","rank":<Rank>,"solved":<problems_solved>,"score":<team_score>"name":"<University_name>","group":"<Group_name>"
+ {"id":"<team_id>","rank":<Rank>,"solved":<problems_solved>,"score":<team_score>,"name":"<University_name>","group":"<Group_name>"
  	(,"<Problem_letter>":{"a":<Attempts>(,"p":<Pending>)?(,"t":<Elapsed_time>)?,"s":"<Results_phase>"})*}
 
 where (...)* implies zero or more occurances and (...)? implies zero or one occurance.
