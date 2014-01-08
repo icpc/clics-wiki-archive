@@ -50,7 +50,9 @@ The following section describes all of the services that are available through t
 === Contest Configuration ===
 
  <nowiki>URL: http://cds/config/contest.yaml
-URL: http://cds/config/problemset.yaml</nowiki>
+URL: http://cds/config/problemset.yaml
+URL: http://cds/config/groups.tsv
+URL: http://cds/config/teams.tsv</nowiki>
 
 Access to two of the contest configuration files as specified in the CCS spec [[Contest Control System]].
 
