@@ -56,7 +56,7 @@ Access to two of the contest configuration files as specified in the CCS spec [[
 
  <nowiki>URL: http://cds/images/logo/[teamNum]</nowiki>
 
-Returns a png image 600x600 or smaller of the given team's logo.
+Returns a png image 600x600 or smaller of the given team's University logo.
 
 === Team Images ===
 
