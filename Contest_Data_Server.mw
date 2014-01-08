@@ -103,3 +103,7 @@ Returns a video stream of the given team's desktop.
 === ICPC Graphics  ===
 
 Returns one of several ICPC graphics images for use by TV Production
+
+=== Run submission source ===
+
+ <nowiki>URL: http://cds/runsource//[teamNum]</nowiki>
