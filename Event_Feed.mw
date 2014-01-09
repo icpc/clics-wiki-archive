@@ -258,19 +258,19 @@ An event sent whenever a team makes a submission.
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|id || Submission ID || element || xsd:int
+|id || Submission ID || xsd:int
 |-
-|team-id || Team ID || element || xsd:int
+|team-id || Team ID || xsd:int
 |-
-|problem-id || Problem ID || element || xsd:int
+|problem-id || Problem ID || xsd:int
 |-
-|language || Language name || element || xsd:string
+|language || Language name || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the run was submitted || element || xsd:decimal
+|contest-time || Contest (elapsed) time when the run was submitted || xsd:decimal
 |-
-|timestamp || Wall-clock time when the run was submitted || element || xsd:decimal
+|timestamp || Wall-clock time when the run was submitted || xsd:decimal
 |}
 
 Example:
