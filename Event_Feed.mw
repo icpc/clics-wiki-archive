@@ -304,7 +304,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </submission-judgement>
 
-==== <test> ====
+==== Test Event ====
 
  <test>
  &lt;i&gt;1&lt;/i&gt;
