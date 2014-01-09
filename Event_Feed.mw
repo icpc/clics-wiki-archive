@@ -229,17 +229,17 @@ The clar response event is sent when a clar request has been answered.
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|clar-request-id || Clarification Request ID || attribute || xsd:int
+|clar-request-id || Clarification Request ID || xsd:int
 |-
-|answer || Judge's answer to the question || element || xsd:string
+|answer || Judge's answer to the question || xsd:string
 |-
-|to-all || True if the response was sent to all teams || element || xsd:boolean
+|to-all || True if the response was sent to all teams || xsd:boolean
 |-
-|contest-time || Contest (elapsed) time when the response was submitted || element || xsd:decimal
+|contest-time || Contest (elapsed) time when the response was submitted || xsd:decimal
 |-
-|timestamp || Wall-clock time when the response was submitted || element || xsd:decimal
+|timestamp || Wall-clock time when the response was submitted || xsd:decimal
 |}
 
 Example:
