@@ -30,9 +30,9 @@ Event types & tags:
 |-
 |clar|| clarifications || Event
 |-
-|run|| submitted run and updates || Event
+|submission|| submitted run and updates || Event
 |-
-|test|| judgement of individual input file for a run || Event
+|run|| judgement of individual input file for a run || Event
 |-
 |finalized|| the contest standings/medals are assigned, contest is over || Event
 |-
