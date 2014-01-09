@@ -47,6 +47,11 @@ Notes
 
 === Configuration Elements ===
 
+Configuration elements will generally be sent in the beginning of the feed. There are two exceptions.
+
+* If the contest has already started events may be sent while there are still configuration elements remaining.
+* If the data in a configuration element is changed it will be resent.
+
 ==== Info Element ====
 
 Format:
