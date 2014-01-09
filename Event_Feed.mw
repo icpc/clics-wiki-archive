@@ -240,31 +240,63 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-=== <run> ===
+=== Submission Event ===
 
- <run>
- <id>1410</id>
- <judged>True</judged>
- <language>C++</language>
- <penalty>True</penalty>
- <problem>4</problem>
- <result>WA</result>
- <solved>False</solved>
- <team>74</team>
- <time>17960.749403</time>
- <timestamp>1265353100.29</timestamp>
+A run event is sent whenever a team submits a run.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|id || Run ID || attribute || xsd:int
+|-
+|team-id || Team ID || attribute || xsd:int
+|-
+|problem-id || Problem ID || attribute || xsd:int
+|-
+|language || Language name || element || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the run was submitted || element || xsd:decimal
+|-
+|timestamp || Wall-clock time when the run was submitted || element || xsd:decimal
+|}
+
+Example:
+
+ <run id="1410" team-id="74" problem-id="4">
+   <language>C++</language>
+   <contest-time>17960.74</contest-time>
+   <timestamp>1265353100.29</timestamp>
  </run>
 
-;id: Run identifier
-;judged: Judged flag
-;language: language name
-;penalty: penalty flag
-;problem: problem ID
-;result: result short name
-;solved: solved flag
-;team: team ID
-;time: official submission time used for scoring.
-;timestamp:
+=== Submission Judgement Event ===
+
+A run judgement event is sent whenever a judgement has been assigned to a run.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|run-id || Run ID || attribute || xsd:int
+|-
+|judgement-id || Judgement ID || attribute || xsd:int
+|-
+|judgement|| Judgement acronym || element || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the judgement was assigned || element || xsd:decimal
+|-
+|timestamp || Wall-clock time when the judgement was assigned || element || xsd:decimal
+|}
+
+Example:
+
+ <run-judgement run-id="1410" judgement-id="3">
+   <judgement>WA</judgement>
+   <contest-time>179.74</contest-time>
+   <timestamp>1265353100.29</timestamp>
+ </run-judgement>
 
 === <testcase> ===
 
