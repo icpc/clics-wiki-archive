@@ -340,17 +340,17 @@ The finalized event is sent when the contest is finalized.
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|timestamp || Wall-clock time when the contest was finalized || element || xsd:decimal
+|timestamp || Wall-clock time when the contest was finalized || xsd:decimal
 |-
-|last-gold|| The last place to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]]) || element || xsd:int
+|last-gold|| The last place to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]]) || xsd:int
 |-
-|last-silver|| The last place to receive a silver (should always be 8 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])|| element || xsd:int
+|last-silver|| The last place to receive a silver (should always be 8 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]]) || xsd:int
 |-
-|last-bronze|| The last place to receive a bronze (should often be 12 but could very possibly be something else)|| element || xsd:int
+|last-bronze|| The last place to receive a bronze (should often be 12 but could very possibly be something else) || xsd:int
 |-
-|comment|| A comment provided during the finalization || element || xsd:string
+|comment|| A comment provided during the finalization || xsd:string
 |}
 
 Example:
