@@ -367,4 +367,5 @@ The following is a list of behavioural changes from the 2014 event feed:
 
 * Removed <started> boolean from <info>
 * Removed <id> from <language>
-* Renamed
+* Renamed <run> to <submission>
+* Renamed <testcase> to <run>
