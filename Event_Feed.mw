@@ -163,7 +163,7 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Team ID from [[Contest_Control_System#teams.tsv|teams.tsv (Team Number)]] || attribute|| xsd:int
+|n || Team number || attribute|| xsd:int
 |-
 |external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || attribute || xsd:int
 |-
@@ -179,7 +179,7 @@ Format:
 Example:
 
  <team>
-   <id>1</id>
+   <n>1</n>
    <external-id>23412</external-id>
    <name>American University of Beirut</name>
    <nationality>LBN</nationality>
