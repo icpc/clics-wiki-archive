@@ -3,11 +3,15 @@
 '''This article is DRAFT!!'''   
 
 That means that at any time anything, especially in the details, in
-this article could change and likely will.   At this point this document is being updated by
+this article could change and likely will.   
+
+At this point this document is being updated by
 the SysOps CDS workgroup and is likely to change.
 
-Change include but are not limited to URLs, which of the following services will and will not
-be serviced by the 2013 version of the CDS.
+Change include but are not limited to:
+# the URLs
+# which services will and will not be serviced by the 2013 version of the CDS.
+# everything else
 
 The CDS (Services) Specification 1.0 will be formally published and distributed and this article is
 not that specification.
