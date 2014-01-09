@@ -32,7 +32,7 @@ Event types & tags:
 |-
 |run|| submitted run and updates || Event
 |-
-|testcase|| judgement of individual input file for a run || Event
+|test|| judgement of individual input file for a run || Event
 |-
 |finalized|| the contest standings/medals are assigned, contest is over || Event
 |-
