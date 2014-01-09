@@ -337,6 +337,7 @@ Format:
 
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
+|-
 |timestamp || Wall-clock time when the contest was finalized || element || xsd:decimal
 |-
 |last-gold|| The last place to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]]) || element || xsd:int
