@@ -124,7 +124,7 @@ Format:
 |-
 |acronym || Judgement acronym || element || xsd:string
 |-
-|name || Judgement name || element || xsd:string
+|name || Judgement full name || element || xsd:string
 |-
 |penalty || True if this judgement is a failure that causes penalty time || element || xsd:boolean
 |}
