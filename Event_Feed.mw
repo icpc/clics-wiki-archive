@@ -101,11 +101,11 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || element || xsd:int
+|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || xsd:int
 |-
-|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || element || xsd:string
+|name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || xsd:string
 |}
 
 Example:
