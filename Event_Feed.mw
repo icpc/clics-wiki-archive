@@ -72,7 +72,7 @@ Example:
    <length>05:00:00</length>
    <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
    <penalty>20</penalty>
-   <start-time>1265335138.26</starttime>
+   <start-time>1265335138.26</start-time>
  </info>
 
 ==== Language Element ====
