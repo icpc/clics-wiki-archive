@@ -325,7 +325,7 @@ Example:
 ;i: test number
 ;judged:
 ;judgement: Judgement acronym
-;n: Total number of runs
+;n: Total number of tests
 ;run-id:
 ;solved:
 ;time:
