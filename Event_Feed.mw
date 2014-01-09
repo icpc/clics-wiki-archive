@@ -57,17 +57,17 @@ Configuration elements will generally be sent in the beginning of the feed. Ther
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|title || Contest title || element || xsd:string
+|title || Contest title || xsd:string
 |-
-|length || Length of contest in HH:MM:SS format || element || xsd:string
+|length || Length of contest in HH:MM:SS format || xsd:string
 |-
-|scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format || element || xsd:string
+|scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format || xsd:string
 |-
-|penalty|| Penalty time in minutes || element || xsd:int
+|penalty|| Penalty time in minutes || xsd:int
 |-
-|start-time || Wall-clock start time of the contest || element || xsd:decimal timestamp
+|start-time || Wall-clock start time of the contest || xsd:decimal timestamp
 |}
 
 Example:
