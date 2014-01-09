@@ -246,18 +246,18 @@ Example:
 
 ==== Submission Event ====
 
-A run event is sent whenever a team submits a run.
+An event sent whenever a team makes a submission.
 
 Format:
 
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Run ID || attribute || xsd:int
+|id || Submission ID || element || xsd:int
 |-
-|team-id || Team ID || attribute || xsd:int
+|team-id || Team ID || element || xsd:int
 |-
-|problem-id || Problem ID || attribute || xsd:int
+|problem-id || Problem ID || element || xsd:int
 |-
 |language || Language name || element || xsd:string
 |-
@@ -268,11 +268,14 @@ Format:
 
 Example:
 
- <run id="1410" team-id="74" problem-id="4">
+ <submission>
+   <id>1410</id>
+   <team-id>74</team-id>
+   <problem-id>4</problem-id>
    <language>C++</language>
    <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
- </run>
+ </submission>
 
 ==== Submission Judgement Event ====
 
