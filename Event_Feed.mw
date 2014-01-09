@@ -180,29 +180,65 @@ Example:
    <region>Europe</region> 
  </team>
 
-=== <clar> ===
+=== Clarification Request Event ===
 
- <clar>
- <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
- <answered>True</answered>
- <id>1</id>
- <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
- <team>0</team>
- <problem>1</problem>
- <time>118.480356991</time>
- <timestamp>1265335256.74</timestamp>
- <to-all>True</to-all>
- </clar>
+The clar-request event is sent when a team submits a clarification request.
 
-;answer: 
-;answered: Answered flag
-;id: Clarification identifier
-;question:
-;team: Team ID
-;problem: Problem ID
-;time:
-;timestamp:
-;to-all: to-all flag
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|id || Clarification Request ID || attribute || xsd:int
+|-
+|team-id || Team ID || attribute || xsd:int
+|-
+|question || A question, typically from a team || element || xsd:string
+|-
+|category || Clarification category || element || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the clarification was submitted || element || xsd:decimal
+|-
+|timestamp || Wall-clock time when the clarification was submitted || element || xsd:decimal
+|}
+
+Example:
+
+ <clar-request id="1" team-id="0">
+   <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+   <category>Problem C</category>
+   <contest-time>118.48</contest-time>
+   <timestamp>1265335256.74</timestamp>
+ </clar-request>
+
+=== Clarification Response Event ===
+
+The clar response event is sent when a clar request has been answered.
+
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|clar-request-id || Clarification Request ID || attribute || xsd:int
+|-
+|answer || Judge's answer to the question || element || xsd:string
+|-
+|to-all || True if the response was sent to all teams || element || xsd:boolean
+|-
+|contest-time || Contest (elapsed) time when the response was submitted || element || xsd:decimal
+|-
+|timestamp || Wall-clock time when the response was submitted || element || xsd:decimal
+|}
+
+Example:
+
+ <clar-response clar-request-id="1">
+   <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
+   <to-all>true</to-all>
+   <contest-time>118.48</contest-time>
+   <timestamp>1265335256.74</timestamp>
+ </clar-response>
 
 === <run> ===
 
