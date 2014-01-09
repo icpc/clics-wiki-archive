@@ -286,7 +286,7 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|submission-id || Run ID || element || xsd:int
+|submission-id || Submission ID || element || xsd:int
 |-
 |judgement|| Judgement acronym || element || xsd:string
 |-
