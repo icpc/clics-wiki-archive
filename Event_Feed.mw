@@ -288,8 +288,6 @@ Format:
 |-
 |submission-id || Run ID || element || xsd:int
 |-
-|judgement-id || Judgement ID || element || xsd:int
-|-
 |judgement|| Judgement acronym || element || xsd:string
 |-
 |contest-time || Contest (elapsed) time when the judgement was assigned || element || xsd:decimal
@@ -301,7 +299,6 @@ Example:
 
  <submission-judgement>
    <run-id>1410</run-id>
-   <judgement-id>3</judgement-id>
    <judgement>WA</judgement>
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
