@@ -85,9 +85,9 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|name || Language name || element || xsd:string
+|name || Language name || xsd:string
 |}
 
 Example:
