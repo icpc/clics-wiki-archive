@@ -38,7 +38,7 @@ Event types & tags:
 |-
 |}
 
-Other elements beyond what is documented here may also be sent, these should be ignored.
+Other elements beyond what is documented here may also be sent, these should be ignored. This applies both at the top level and within the top-level elements.
 
 Notes
 # All child-elements are required unless otherwise documented.
