@@ -291,15 +291,15 @@ A run judgement event is sent whenever a judgement has been assigned to a run.
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|submission-id || Submission ID || element || xsd:int
+|submission-id || Submission ID || xsd:int
 |-
-|judgement|| Judgement acronym || element || xsd:string
+|judgement|| Judgement acronym || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the judgement was assigned || element || xsd:decimal
+|contest-time || Contest (elapsed) time when the judgement was assigned || xsd:decimal
 |-
-|timestamp || Wall-clock time when the judgement was assigned || element || xsd:decimal
+|timestamp || Wall-clock time when the judgement was assigned || xsd:decimal
 |}
 
 Example:
