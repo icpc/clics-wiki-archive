@@ -161,19 +161,19 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child Element/Attribute !! Type
+! Name !! Description !! Type
 |-
-|n || Team number || attribute|| xsd:int
+|n || Team number|| xsd:int
 |-
-|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || attribute || xsd:int
+|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || xsd:int
 |-
-|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |-
-|nationality || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|nationality || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |-
-|university || University name from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|university || University name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |-
-|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || element || xsd:string
+|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |}
 
 Example:
