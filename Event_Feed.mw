@@ -309,9 +309,9 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </submission-judgement>
 
-==== Test Event ====
+==== Run Event ====
 
- <test>
+ <run>
  &lt;i&gt;1&lt;/i&gt;
  <judged>True</judged>
  <judgement>WA</judgement>
@@ -320,12 +320,12 @@ Example:
  <solved>False</solved>
  <time>939.751724958</time>
  <timestamp>1265336078.01</timestamp>
- </test>
+ </run>
 
 ;i: test number
 ;judged:
 ;judgement: Judgement acronym
-;n: Total number of tests
+;n: Total number of runs
 ;run-id:
 ;solved:
 ;time:
