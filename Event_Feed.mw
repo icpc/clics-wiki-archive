@@ -96,7 +96,7 @@ Example:
    <name>C++</name>
  </language>
 
-==== Region Element ====
+==== Group Element ====
 
 Format:
 
@@ -110,10 +110,10 @@ Format:
 
 Example:
 
- <region>
+ <group>
    <external-id>3012</external-id>
    <name>Europe</name>
- </region>
+ </group>
 
 ==== Judgement Element ====
 
