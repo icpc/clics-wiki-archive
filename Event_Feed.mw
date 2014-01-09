@@ -45,7 +45,9 @@ Notes
 # All contest-time elements are in decimal seconds.
 # All timestamp elements are in decimal seconds since the Unix epoch, Jan 1st, 1970 00:00:00 UTC.
 
-=== Info Element ===
+=== Configuration Elements ===
+
+==== Info Element ====
 
 Format:
 
@@ -73,7 +75,7 @@ Example:
    <start-time>1265335138.26</starttime>
  </info>
 
-=== Language Element ===
+==== Language Element ====
 
 Format:
 
@@ -89,7 +91,7 @@ Example:
    <name>C++</name>
  </language>
 
-=== Region Element ===
+==== Region Element ====
 
 Format:
 
@@ -108,7 +110,7 @@ Example:
    <name>Europe</name>
  </region>
 
-=== Judgement Element ===
+==== Judgement Element ====
 
 Format:
 
@@ -130,7 +132,7 @@ Example:
    <penalty>true</penalty>
  </judgement>
 
-=== Problem Element ===
+==== Problem Element ====
 
 Format:
 
@@ -149,7 +151,7 @@ Example:
    <name>APL Lives!</name>
  </problem>
 
-=== Team Element ===
+==== Team Element ====
 
 Format:
 
@@ -180,7 +182,9 @@ Example:
    <region>Europe</region> 
  </team>
 
-=== Clarification Request Event ===
+=== Event Elements ===
+
+==== Clarification Request Event ====
 
 The clar-request event is sent when a team submits a clarification request.
 
@@ -211,7 +215,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-request>
 
-=== Clarification Response Event ===
+==== Clarification Response Event ====
 
 The clar response event is sent when a clar request has been answered.
 
@@ -240,7 +244,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-=== Submission Event ===
+==== Submission Event ====
 
 A run event is sent whenever a team submits a run.
 
@@ -270,7 +274,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run>
 
-=== Submission Judgement Event ===
+==== Submission Judgement Event ====
 
 A run judgement event is sent whenever a judgement has been assigned to a run.
 
@@ -298,7 +302,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </run-judgement>
 
-=== <testcase> ===
+==== <testcase> ====
 
  <testcase>
  &lt;i&gt;1&lt;/i&gt;
@@ -320,7 +324,7 @@ Example:
 ;time:
 ;timestamp:
 
-=== Finalized Event ===
+==== Finalized Event ====
 
 The finalized event is sent when the contest is finalized. 
 
