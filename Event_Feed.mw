@@ -286,9 +286,9 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|run-id || Run ID || attribute || xsd:int
+|submission-id || Run ID || element || xsd:int
 |-
-|judgement-id || Judgement ID || attribute || xsd:int
+|judgement-id || Judgement ID || element || xsd:int
 |-
 |judgement|| Judgement acronym || element || xsd:string
 |-
@@ -299,11 +299,13 @@ Format:
 
 Example:
 
- <run-judgement run-id="1410" judgement-id="3">
+ <submission-judgement>
+   <run-id>1410</run-id>
+   <judgement-id>3</judgement-id>
    <judgement>WA</judgement>
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
- </run-judgement>
+ </submission-judgement>
 
 ==== <testcase> ====
 
