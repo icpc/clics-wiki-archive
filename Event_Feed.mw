@@ -120,13 +120,13 @@ Example:
 Format:
 
 {| class="wikitable"
-! Name !! Description !! Child element/attribute !! Type
+! Name !! Description !! Type
 |-
-|acronym || Judgement acronym || element || xsd:string
+|acronym || Judgement acronym || xsd:string
 |-
-|name || Judgement full name || element || xsd:string
+|name || Judgement full name || xsd:string
 |-
-|penalty || True if this judgement is a failure that causes penalty time || element || xsd:boolean
+|penalty || True if this judgement is a failure that causes penalty time || xsd:boolean
 |}
 
 Example:
