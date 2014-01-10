@@ -84,12 +84,11 @@ todo: potentially figure out how to pack up all problem files in archive and ser
 
 Returns a png image 600x600 or smaller of the given team's University logo.
 
-==== Team Images ====
+==== Team Photos ====
 
  <nowiki>URL: http://cds/images/team/[teamNum]</nowiki>
 
-Returns a full HD jpeg image (1920x1080) of the given team, typically taken during registration.
-
+Returns a full HD (1920x1080) jpeg photo of the given team, typically taken during registration.
 
 === Data Feeds ===
 
