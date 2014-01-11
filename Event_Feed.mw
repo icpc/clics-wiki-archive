@@ -6,7 +6,7 @@ Connect to port 4713 and the entire feed for the contest will be sent to you. Wh
 
 Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
 
-== File format ==
+== Top level structure ==
 
 The event feed is an XML document within the root element <tt><contest></tt>. 
 
@@ -49,14 +49,14 @@ Notes
 # All contest-time elements are in decimal seconds.
 # All timestamp elements are in decimal seconds since the Unix epoch, Jan 1st, 1970 00:00:00 UTC.
 
-=== Configuration Elements ===
+== Configuration Elements ==
 
 Configuration elements will generally be sent in the beginning of the feed. There are two exceptions.
 
 * If the contest has already started events may be sent while there are still configuration elements remaining.
 * If the data in a configuration element is changed it will be resent.
 
-==== Info Element ====
+=== Info Element ===
 
 Format:
 
@@ -84,7 +84,7 @@ Example:
    <start-time>1265335138.26</start-time>
  </info>
 
-==== Language Element ====
+=== Language Element ===
 
 Format:
 
@@ -100,7 +100,7 @@ Example:
    <name>C++</name>
  </language>
 
-==== Group Element ====
+=== Group Element ===
 
 Format:
 
@@ -116,7 +116,7 @@ Example:
    <name>Europe</name>
  </group>
 
-==== Judgement Element ====
+=== Judgement Element ===
 
 Format:
 
@@ -138,7 +138,7 @@ Example:
    <penalty>true</penalty>
  </judgement>
 
-==== Problem Element ====
+=== Problem Element ===
 
 Format:
 
@@ -157,7 +157,7 @@ Example:
    <name>APL Lives!</name>
  </problem>
 
-==== Team Element ====
+=== Team Element ===
 
 Format:
 
@@ -188,9 +188,9 @@ Example:
    <group>Europe</group> 
  </team>
 
-=== Event Elements ===
+== Event Elements ==
 
-==== Clarification Request Event ====
+=== Clarification Request Event ===
 
 The clar-request event is sent when a team submits a clarification request.
 
@@ -223,7 +223,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-request>
 
-==== Clarification Response Event ====
+=== Clarification Response Event ===
 
 The clar response event is sent when a clar request has been answered.
 
@@ -252,7 +252,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-==== Submission Event ====
+=== Submission Event ===
 
 An event sent whenever a team makes a submission.
 
@@ -285,7 +285,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </submission>
 
-==== Submission Judgement Event ====
+=== Submission Judgement Event ===
 
 A run judgement event is sent whenever a judgement has been assigned to a run.
 
@@ -312,7 +312,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </submission-judgement>
 
-==== Run Event ====
+=== Run Event ===
 
  <run>
  &lt;i&gt;1&lt;/i&gt;
@@ -334,7 +334,7 @@ Example:
 ;time:
 ;timestamp:
 
-==== Finalized Event ====
+=== Finalized Event ===
 
 The finalized event is sent when the contest is finalized. 
 
