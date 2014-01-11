@@ -159,6 +159,8 @@ Example:
 
 === Team Element ===
 
+A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
+
 Format:
 
 {| class="wikitable"
