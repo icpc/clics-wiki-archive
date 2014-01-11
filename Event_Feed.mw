@@ -28,9 +28,13 @@ Event types & tags:
 |-
 |team|| team information || Configuration
 |-
-|clar|| clarifications || Event
+|clar-request|| clarification request || Event
 |-
-|submission|| submitted run and updates || Event
+|clar-response|| clarification (answers to clarification requests) or broadcast messages|| Event
+|-
+|submission|| submission from a team || Event
+|-
+|submission-judgement|| result of submission from a team || Event
 |-
 |run|| judgement of individual input file for a run || Event
 |-
