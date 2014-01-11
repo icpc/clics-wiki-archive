@@ -103,15 +103,12 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Type
 |-
-|external-id || Identifier (integer) from [[Contest_Control_System#groups.tsv|groups.tsv (Group ID)]] || xsd:int
-|-
 |name || Group name from [[Contest_Control_System#groups.tsv|groups.tsv]] || xsd:string
 |}
 
 Example:
 
  <group>
-   <external-id>3012</external-id>
    <name>Europe</name>
  </group>
 
