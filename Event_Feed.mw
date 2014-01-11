@@ -140,6 +140,8 @@ Example:
 
 === Problem Element ===
 
+A problem element is identified by it's label. If a team element with the same label as an earlier element arrives the latter overwrites the former.
+
 Format:
 
 {| class="wikitable"
