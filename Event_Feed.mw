@@ -162,7 +162,7 @@ Format:
 |-
 |n || Team number|| xsd:int
 |-
-|external-id || External team id from [[Contest_Control_System#teams.tsv|teams.tsv (External ID) || xsd:int
+|icpc-id || ID from ICPC registration system. Used to match this team to other resources, such as university logos or team pictures || xsd:int
 |-
 |name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |-
