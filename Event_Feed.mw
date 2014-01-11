@@ -145,7 +145,7 @@ Format:
 {| class="wikitable"
 ! Name !! Description !! Child Element/Attribute !! Type
 |-
-|id || Problem ID || element || xsd:int
+|label || Problem label, typically a single upper case letter || element || xsd:string
 |-
 |name || Problem name || element || xsd:string
 |}
@@ -153,7 +153,7 @@ Format:
 Example:
 
  <problem>
-   <id>1</id>
+   <label>A</label>
    <name>APL Lives!</name>
  </problem>
 
