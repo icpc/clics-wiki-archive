@@ -314,25 +314,35 @@ Example:
 
 === Run Event ===
 
- <run>
- &lt;i&gt;1&lt;/i&gt;
- <judged>True</judged>
- <judgement>WA</judgement>
- <n>1</n>
- <run-id>1</run-id>
- <solved>False</solved>
- <time>939.751724958</time>
- <timestamp>1265336078.01</timestamp>
- </run>
+A test result event is sent when a run is judged against an input file.
 
-;i: test number
-;judged:
-;judgement: Judgement acronym
-;n: Total number of tests
-;run-id:
-;solved:
-;time:
-;timestamp:
+Format:
+
+{| class="wikitable"
+! Name !! Description !! Child Element/Attribute !! Type
+|-
+|submission-id || Submission ID of submission that this run is part of|| attribute || xsd:int
+|-
+|i || Input file index (1-based) || attribute || xsd:int
+|-
+|n || Total number of input files || attribute || xsd:int
+|-
+|judgement || Judgement acronym. Must match an acronym given in some earlier judgement element || element || xsd:string
+|-
+|contest-time || Contest (elapsed) time when the test was judged || element || xsd:decimal
+|-
+|timestamp || Wall-clock time when the test was judged || element || xsd:decimal
+|}
+
+Example:
+ <run>
+   <submission-id>1</run-id>
+   <i>1</i>
+   <judgement>WA</judgement>
+   <n>1</n>
+   <time>939.751724958</time>
+   <timestamp>1265336078.01</timestamp>
+ </run>
 
 === Finalized Event ===
 
