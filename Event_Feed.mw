@@ -58,6 +58,8 @@ Configuration elements will generally be sent in the beginning of the feed. Ther
 
 === Info Element ===
 
+Any new info element overwrites earlier elements.
+
 Format:
 
 {| class="wikitable"
