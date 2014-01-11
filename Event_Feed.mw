@@ -350,6 +350,8 @@ Example:
    <timestamp>1265336078.01</timestamp>
  </run>
 
+=== Scoreboard Update Event ===
+
 === Finalized Event ===
 
 The finalized event is sent when the contest is finalized. 
