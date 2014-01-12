@@ -355,7 +355,7 @@ Example:
 This is very much work in progress... even more than the rest.
 
  <scoreboard-update>
-   <sort-key>90825.12345</sort-key>
+   <sort-key>12345</sort-key>
    <team>23</team>
    <solved>9</solved>
    <time>825</time>
