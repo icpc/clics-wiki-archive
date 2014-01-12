@@ -383,9 +383,9 @@ Format:
 |-
 |submission-id || Submission ID of submission that this run is part of|| attribute || xsd:int
 |-
-|i || Input file index (1-based) || attribute || xsd:int
+|idx || Input file index (1-based) || attribute || xsd:int
 |-
-|n || Total number of input files || attribute || xsd:int
+|count || Total number of input files || attribute || xsd:int
 |-
 |judgement || Judgement acronym. Must match an acronym given in some earlier judgement element || element || xsd:string
 |-
@@ -397,9 +397,9 @@ Format:
 Example:
  <run>
    <submission-id>1</run-id>
-   <i>1</i>
+   <idx>1</idx>
    <judgement>WA</judgement>
-   <n>1</n>
+   <count>1</count>
    <time>939.751724958</time>
    <timestamp>1265336078.01</timestamp>
  </run>
