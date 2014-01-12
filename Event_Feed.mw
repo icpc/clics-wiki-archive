@@ -73,7 +73,7 @@ Format:
 |-
 |penalty|| Penalty time in minutes || xsd:int
 |-
-|start-time || Wall-clock start time of the contest || xsd:decimal timestamp
+|start-time || Wall-clock start time of the contest || xsd:decimal seconds (timestamp)
 |}
 
 Example:
