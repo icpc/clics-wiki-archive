@@ -357,12 +357,23 @@ This is very much work in progress... even more than the rest.
  <scoreboard-update>
    <sort-key>12345</sort-key>
    <team>23</team>
-   <solved>9</solved>
+   <solved-count>9</solved-count>
    <time>825</time>
-   <as>true</as><ac>1</ac><am>10</am>
-   <bs>true</bs><bc>1</bc><bm>10</bm>
-   <cs>true</cs><cc>1</cc><cm>10</cm>
-   <ds>true</ds><dc>1</dc><dm>10</dm>
+   <problem>
+     <label>A</label><solved>true</solved><subs>3</subs><time>123</time>
+   </problem>
+   <problem>
+     <label>B</label><solved>true</solved><subs>3</subs><time>123</time>
+   </problem>
+   <problem>
+     <label>C</label><solved>true</solved><subs>3</subs><time>123</time>
+   </problem>
+   <problem>
+     <label>D</label><solved>true</solved><subs>3</subs><time>123</time>
+   </problem>
+   <problem>
+     <label>E</label><solved>true</solved><subs>3</subs><time>123</time>
+   </problem>
  </scoreboard-update>
 
 === Finalized Event ===
