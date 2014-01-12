@@ -307,7 +307,40 @@ Format:
 |contest-time || Contest (elapsed) time when the judgement was assigned || xsd:decimal
 |-
 |timestamp || Wall-clock time when the judgement was assigned || xsd:decimal
+|-
+|scoreboard-update || Information about scoreboard row updated as a result of this judgement || element
 |}
+
+Format of element scoreboard-update:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+| sort-key || ||
+|-
+| team || ||
+|-
+| solved-count || ||
+|-
+| time || ||
+|-
+| problem || ||
+|}
+
+Format of element problem:
+
+{| class="wikitable"
+! Name !! Description !! Type
+|-
+| label || ||
+|-
+| solved || ||
+|-
+| subs || ||
+|-
+| time || ||
+|}
+
 
 Example:
 
@@ -316,6 +349,27 @@ Example:
    <judgement>WA</judgement>
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
+   <scoreboard-update>
+     <sort-key>12345</sort-key>
+     <team>23</team>
+     <solved-count>9</solved-count>
+     <time>825</time>
+     <problem>
+       <label>A</label><solved>true</solved><subs>3</subs><time>123</time>
+     </problem>
+     <problem>
+       <label>B</label><solved>true</solved><subs>3</subs><time>123</time>
+     </problem>
+     <problem>
+       <label>C</label><solved>true</solved><subs>3</subs><time>123</time>
+     </problem>
+     <problem>
+       <label>D</label><solved>true</solved><subs>3</subs><time>123</time>
+     </problem>
+     <problem>
+       <label>E</label><solved>true</solved><subs>3</subs><time>123</time>
+     </problem>
+   </scoreboard-update>
  </submission-judgement>
 
 === Run Event ===
@@ -349,32 +403,6 @@ Example:
    <time>939.751724958</time>
    <timestamp>1265336078.01</timestamp>
  </run>
-
-=== Scoreboard Update Event ===
-
-This is very much work in progress... even more than the rest.
-
- <scoreboard-update>
-   <sort-key>12345</sort-key>
-   <team>23</team>
-   <solved-count>9</solved-count>
-   <time>825</time>
-   <problem>
-     <label>A</label><solved>true</solved><subs>3</subs><time>123</time>
-   </problem>
-   <problem>
-     <label>B</label><solved>true</solved><subs>3</subs><time>123</time>
-   </problem>
-   <problem>
-     <label>C</label><solved>true</solved><subs>3</subs><time>123</time>
-   </problem>
-   <problem>
-     <label>D</label><solved>true</solved><subs>3</subs><time>123</time>
-   </problem>
-   <problem>
-     <label>E</label><solved>true</solved><subs>3</subs><time>123</time>
-   </problem>
- </scoreboard-update>
 
 === Finalized Event ===
 
