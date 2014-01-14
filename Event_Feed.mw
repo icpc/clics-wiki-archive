@@ -288,9 +288,9 @@ Format:
 |-
 |id || Submission ID || xsd:int
 |-
-|team-id || Team ID || xsd:int
+|team-number || Team Number || xsd:int
 |-
-|problem-id || Problem ID || xsd:int
+|problem-label || Problem label || xsd:string
 |-
 |language || Language name || xsd:string
 |-
@@ -303,8 +303,8 @@ Example:
 
  <submission>
    <id>1410</id>
-   <team-id>74</team-id>
-   <problem-id>4</problem-id>
+   <team-number>74</team-number>
+   <problem-label>D</problem-label>
    <language>C++</language>
    <contest-time>17960.74</contest-time>
    <timestamp>1265353100.29</timestamp>
