@@ -71,8 +71,6 @@ Configuration elements will be sent in the beginning of the feed. The exception 
 
 === Info ===
 
-Any new info element overwrites earlier elements.
-
 Format:
 
 {| class="wikitable"
@@ -80,14 +78,16 @@ Format:
 |-
 |title || Contest title || xsd:string
 |-
-|length || Length of contest in HH:MM:SS format || xsd:string
+|length || Length of contest || xsd:string HH:MM:SS
 |-
-|scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format || xsd:string
+|scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen || xsd:string HH:MM:SS
 |-
 |penalty|| Penalty time in minutes || xsd:int
 |-
 |start-time || Wall-clock start time of the contest || xsd:decimal seconds (timestamp)
 |}
+
+Any new info element overwrites earlier elements.
 
 Example:
 
