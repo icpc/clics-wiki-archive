@@ -82,7 +82,7 @@ Format:
 |-
 |scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen || xsd:string HH:MM:SS
 |-
-|penalty|| Penalty time || xsd:int minutes
+|penalty-amount|| Penalty time || xsd:int minutes
 |-
 |start-time || Wall-clock start time of the contest || xsd:decimal seconds (timestamp)
 |}
@@ -95,7 +95,7 @@ Example:
    <title>The 2010 World Finals of the ACM International Collegiate Programming Contest</title>
    <length>05:00:00</length>
    <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
-   <penalty>20</penalty>
+   <penalty-amount>20</penalty>
    <start-time>1265335138.26</start-time>
  </info>
 
