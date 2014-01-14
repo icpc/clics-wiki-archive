@@ -72,7 +72,7 @@ Configuration elements will generally be sent in the beginning of the feed. Ther
 * If the contest has already started events may be sent while there are still configuration elements remaining.
 * If the data in a configuration element is changed it will be resent.
 
-=== Info element ===
+=== Info ===
 
 Any new info element overwrites earlier elements.
 
@@ -102,7 +102,7 @@ Example:
    <start-time>1265335138.26</start-time>
  </info>
 
-=== Language element ===
+=== Language ===
 
 Format:
 
@@ -118,7 +118,7 @@ Example:
    <name>C++</name>
  </language>
 
-=== Group element ===
+=== Group ===
 
 Format:
 
@@ -134,7 +134,7 @@ Example:
    <name>Europe</name>
  </group>
 
-=== Judgement element ===
+=== Judgement ===
 
 Format:
 
@@ -156,7 +156,7 @@ Example:
    <penalty>true</penalty>
  </judgement>
 
-=== Problem element ===
+=== Problem ===
 
 A problem element is identified by it's label. If a team element with the same label as an earlier element arrives the latter overwrites the former.
 
@@ -177,7 +177,7 @@ Example:
    <name>APL Lives!</name>
  </problem>
 
-=== Team element ===
+=== Team ===
 
 A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
 
