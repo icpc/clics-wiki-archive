@@ -290,7 +290,7 @@ Format:
 |-
 |language || Language name || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the run was submitted || xsd:decimal
+|contest-time || Contest time when the run was submitted || xsd:decimal
 |-
 |timestamp || Wall-clock time when the submission was made || xsd:decimal
 |}
