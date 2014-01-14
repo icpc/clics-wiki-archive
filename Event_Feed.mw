@@ -361,7 +361,7 @@ Format of element problem:
 Example:
 
  <submission-judgement>
-   <run-id>1410</run-id>
+   <submission-id>1410</submission-id>
    <judgement>WA</judgement>
    <contest-time>179.74</contest-time>
    <timestamp>1265353100.29</timestamp>
