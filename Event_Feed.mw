@@ -222,7 +222,7 @@ Format:
 |-
 |id || Clarification Request ID || xsd:int
 |-
-|team-id || Team ID || xsd:int
+|team-number || Team ID || xsd:int
 |-
 |question || A question, typically from a team || xsd:string
 |-
@@ -237,7 +237,7 @@ Example:
 
  <clar-request>
    <id>1</id>
-   <team-id>0</team-id>
+   <team-number>0</team-number>
    <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
    <category>Problem C</category>
    <contest-time>118.48</contest-time>
