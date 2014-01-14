@@ -65,14 +65,14 @@ Notes
 # All contest-time elements are in decimal seconds.
 # All timestamp elements are in decimal seconds since the Unix epoch, Jan 1st, 1970 00:00:00 UTC.
 
-== Configuration Elements ==
+== Configuration elements ==
 
 Configuration elements will generally be sent in the beginning of the feed. There are two exceptions.
 
 * If the contest has already started events may be sent while there are still configuration elements remaining.
 * If the data in a configuration element is changed it will be resent.
 
-=== Info Element ===
+=== Info element ===
 
 Any new info element overwrites earlier elements.
 
@@ -102,7 +102,7 @@ Example:
    <start-time>1265335138.26</start-time>
  </info>
 
-=== Language Element ===
+=== Language element ===
 
 Format:
 
@@ -118,7 +118,7 @@ Example:
    <name>C++</name>
  </language>
 
-=== Group Element ===
+=== Group element ===
 
 Format:
 
@@ -134,7 +134,7 @@ Example:
    <name>Europe</name>
  </group>
 
-=== Judgement Element ===
+=== Judgement element ===
 
 Format:
 
@@ -156,7 +156,7 @@ Example:
    <penalty>true</penalty>
  </judgement>
 
-=== Problem Element ===
+=== Problem element ===
 
 A problem element is identified by it's label. If a team element with the same label as an earlier element arrives the latter overwrites the former.
 
@@ -177,7 +177,7 @@ Example:
    <name>APL Lives!</name>
  </problem>
 
-=== Team Element ===
+=== Team element ===
 
 A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
 
