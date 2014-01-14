@@ -142,7 +142,7 @@ Format:
 |-
 |name || Judgement full name || xsd:string
 |-
-|penalty || True if this judgement is a failure that causes penalty time || xsd:boolean
+|penalty || True if this judgement is a failure that causes penalty time to be added || xsd:boolean
 |}
 
 Example:
