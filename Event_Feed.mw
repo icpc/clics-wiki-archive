@@ -228,7 +228,7 @@ Format:
 |-
 |category || Clarification category || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the clarification was submitted || xsd:decimal
+|contest-time || Contest-time when the clarification was submitted || xsd:decimal
 |-
 |timestamp || Wall-clock time when the clarification was submitted || xsd:decimal
 |}
