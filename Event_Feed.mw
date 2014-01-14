@@ -10,14 +10,17 @@ Connect to port 4714 and the entire feed for the contest will be sent to you, wi
 
 CCSs will typically send all configuration elements, followed by a set of events.
 
-Changes may cause any configuration or event element to be resent. These changes include but are not limited to:
+Under some circumstances configuration or event elements may be resent. These circumstances include but are not limited to:
 * Changing some contest configuration, such as the start time
 * Rejudgements of runs
 * Fixing typos in names
 
-Removal (or reinsertion) of a time interval will cause the connection to be dropped.
+Under some circumstances the connection may be dropped. These circumstances include but are not limited to:
+* Removal (or reinsertion) of a time interval
 
-Different clients (or reconnecting clients) must receive a semantically identical event feed, but are not guaranteed to receive a syntactically identical event feed. For instance, if a typo was fixed in a problem name that causes the element to be reset, new clients might simply receive a single configuration element with the fixed name and not the an element with the incorrect name followed by an element with the corrected name.
+When reconnecting, all elements will 
+
+If a client reconnects to the event feed it will get all configuration and events from the beginning. The client cannot assume that it will see the exact same elements after a reconnect and should discard any state constructed from the event feed prior to reconnecting.
 
 == Top level structure ==
 
