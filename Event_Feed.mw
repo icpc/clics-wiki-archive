@@ -87,7 +87,7 @@ Format:
 |start-time || Wall-clock start time of the contest || xsd:decimal seconds (timestamp)
 |}
 
-Any new info element overwrites earlier elements.
+Any new info element overrides earlier elements.
 
 Example:
 
