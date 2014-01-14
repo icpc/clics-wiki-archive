@@ -289,7 +289,7 @@ Format:
 |-
 |contest-time || Contest (elapsed) time when the run was submitted || xsd:decimal
 |-
-|timestamp || Wall-clock time when the run was submitted || xsd:decimal
+|timestamp || Wall-clock time when the submission was made || xsd:decimal
 |}
 
 Example:
