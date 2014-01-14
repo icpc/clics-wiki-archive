@@ -255,6 +255,8 @@ Format:
 |-
 |clar-request-id || Clarification Request ID || xsd:int
 |-
+|question || A question, typically from a team || xsd:string
+|-
 |answer || Judge's answer to the question || xsd:string
 |-
 |to-all || True if the response was sent to all teams || xsd:boolean
@@ -268,6 +270,7 @@ Example:
 
  <clar-response>
    <clar-request-id>1</clar-request-id>
+   <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
    <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
    <to-all>true</to-all>
    <contest-time>118.48</contest-time>
