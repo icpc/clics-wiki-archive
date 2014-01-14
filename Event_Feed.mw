@@ -404,7 +404,7 @@ Format:
 |-
 |judgement || Judgement acronym. Must match an acronym given in some earlier judgement element || element || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the test was judged || element || xsd:decimal
+|contest-time || Contest time when the test was judged || element || xsd:decimal
 |-
 |timestamp || Wall-clock time when the test was judged || element || xsd:decimal
 |}
