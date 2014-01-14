@@ -11,6 +11,7 @@ Connect to port 4714 and the entire feed for the contest will be sent to you, wi
 CCSs will typically send all configuration elements, followed by a set of events.
 
 Changes may cause any configuration or event element to be resent. These changes include but are not limited to:
+* Changing some contest configuration, such as the start time
 * Rejudgements of runs
 * Fixing typos in names
 
