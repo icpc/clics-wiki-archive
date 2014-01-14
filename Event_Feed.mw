@@ -337,7 +337,7 @@ Format of element scoreboard-update:
 |-
 | sort-key || Sort key that represents the scoreboard in descending order. I.e. the row with the highest sort key represents the team currently in the lead. Sort keys are equal if and only if position is tied. Sort key for rows not yet seen (i.e. representing teams with no judgements so far) is zero.|| xsd:integer
 |-
-| team || Team ID. Must always be the same as the team id for the submission event with submission id as in the parent element. Is repeated here for simplicity for clients|| xsd:int
+| team || Team number. Must always be the same as the team number for the submission event with submission id as in the parent element. Is repeated here for simplicity for clients|| xsd:int
 |-
 | solved-count || Number of solved problems || xsd:int
 |-
