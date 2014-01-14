@@ -389,7 +389,7 @@ Example:
 
 === Run ===
 
-A test result event is sent when a run is judged against an input file.
+A run event is sent when a submission is judged against an input file.
 
 Format:
 
