@@ -210,9 +210,9 @@ Example:
    <group>Europe</group> 
  </team>
 
-== Event Elements ==
+== Event elements ==
 
-=== Clarification Request Event ===
+=== Clarification request ===
 
 The clar-request event is sent when a team submits a clarification request.
 
@@ -245,7 +245,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-request>
 
-=== Clarification Response Event ===
+=== Clarification response ===
 
 The clar response event is sent when a clar request has been answered.
 
@@ -274,7 +274,7 @@ Example:
    <timestamp>1265335256.74</timestamp>
  </clar-response>
 
-=== Submission Event ===
+=== Submission ===
 
 An event sent whenever a team makes a submission.
 
@@ -307,7 +307,7 @@ Example:
    <timestamp>1265353100.29</timestamp>
  </submission>
 
-=== Submission Judgement Event ===
+=== Submission judgement ===
 
 A run judgement event is sent whenever a judgement has been assigned to a run.
 
@@ -388,7 +388,7 @@ Example:
    </scoreboard-update>
  </submission-judgement>
 
-=== Run Event ===
+=== Run ===
 
 A test result event is sent when a run is judged against an input file.
 
@@ -420,7 +420,7 @@ Example:
    <timestamp>1265336078.01</timestamp>
  </run>
 
-=== Finalized Event ===
+=== Finalized ===
 
 The finalized event is sent when the contest is finalized. 
 
