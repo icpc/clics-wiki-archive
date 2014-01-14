@@ -176,8 +176,6 @@ Example:
 
 === Team ===
 
-A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
-
 Format:
 
 {| class="wikitable"
@@ -195,6 +193,8 @@ Format:
 |-
 |group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
 |}
+
+A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
 
 Example:
 
