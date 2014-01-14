@@ -259,7 +259,7 @@ Format:
 |-
 |to-all || True if the response was sent to all teams || xsd:boolean
 |-
-|contest-time || Contest (elapsed) time when the response was submitted || xsd:decimal
+|contest-time || Contest time when the response was submitted || xsd:decimal
 |-
 |timestamp || Wall-clock time when the response was submitted || xsd:decimal
 |}
