@@ -82,7 +82,7 @@ Format:
 |-
 |scoreboard-freeze-length || Length of time at the end of the contest when scoreboard is frozen || xsd:string HH:MM:SS
 |-
-|penalty|| Penalty time in minutes || xsd:int
+|penalty|| Penalty time || xsd:int minutes
 |-
 |start-time || Wall-clock start time of the contest || xsd:decimal seconds (timestamp)
 |}
