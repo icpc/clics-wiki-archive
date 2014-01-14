@@ -319,7 +319,7 @@ Format:
 |-
 |judgement|| Judgement acronym || xsd:string
 |-
-|contest-time || Contest (elapsed) time when the judgement was assigned || xsd:decimal
+|contest-time || Contest time when the judgement was assigned || xsd:decimal
 |-
 |timestamp || Wall-clock time when the judgement was assigned || xsd:decimal
 |-
