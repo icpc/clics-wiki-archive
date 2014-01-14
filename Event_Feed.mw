@@ -185,13 +185,13 @@ Format:
 |-
 |icpc-id || ID from ICPC registration system. Used to match this team to other resources, such as university logos or team pictures || xsd:int
 |-
-|name || Team name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|name || Team name || xsd:string
 |-
-|nationality || Country code, ISO 3166-1 alpha-3, from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|nationality || Country code, ISO 3166-1 alpha-3 || xsd:string
 |-
-|university || University name from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|university || University name || xsd:string
 |-
-|group || Group name [[Contest_Control_System#groups.tsv | groups.tsv]] from [[Contest_Control_System#teams.tsv|teams.tsv]] || xsd:string
+|group || Group name  || xsd:string
 |}
 
 A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
@@ -200,7 +200,7 @@ Example:
 
  <team>
    <n>1</n>
-   <external-id>23412</external-id>
+   <icpc-id>23412</icpc-id>
    <name>American University of Beirut</name>
    <nationality>LBN</nationality>
    <university>American University of Beirut</university> 
