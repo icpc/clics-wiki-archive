@@ -183,7 +183,7 @@ Format:
 |-
 |n || Team number|| xsd:int
 |-
-|icpc-id || ID from ICPC registration system. Used to match this team to other resources, such as university logos or team pictures || xsd:int
+|icpc-id || ID from ICPC registration system. Used to match this team to other resources, such as university logos or team pictures || optional xsd:int
 |-
 |name || Team name || xsd:string
 |-
@@ -191,8 +191,10 @@ Format:
 |-
 |university || University name || xsd:string
 |-
-|group || Group name, must match some name given in a group element || xsd:string
+|group || Group name, must match some name given in a group element || optional xsd:string
 |}
+
+:WF CCS must include icpc-id and group
 
 A team element is identified by it's team number. If a team element with the same team number as an earlier element arrives the latter overwrites the former.
 
