@@ -1,4 +1,4 @@
-The ''Event Feed'' is an externally-accessible XML feed of contest data supplied by a [[CCS|Contest Control System]]. The event feed is the primary way that 'external' clients can get the state of a running contest. 
+The ''Event Feed'' is an externally-accessible XML feed of contest data supplied by a [[CCS|Contest Control System]]. The event feed is the primary way that external clients can get the state of a running contest. 
 
 == Getting the feed ==
 
