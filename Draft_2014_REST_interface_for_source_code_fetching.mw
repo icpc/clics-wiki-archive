@@ -1,1 +1,50 @@
-== TBD ==
+== Introduction ==
+
+This page describes a '''draft''' interface for fetching contestants' source code, and is intented to be used by e.g. shadow CCS's to obtain a complete state from the main [[Contest_Control_System|CCS]], possibly through a [[CDS|Contest Data Server]].
+
+== General design principles ==
+
+The interface is implemented as a HTTP REST interface that outputs information in [https://en.wikipedia.org/wiki/JSON JSON] format. The specific base URL will be dependent on the server (main CCS or CDS) providing the service and will be indicated as <tt>baseurl</tt>.
+
+Query parameters are passed as variables in the URL instead of encoded in the URL path, e.g.
+  GET http://example.com/team?id=10
+instead of
+  GET http://example.com/team/10
+
+Rationale: this allows for more flexibility to later extend/generalize the interface, e.g. to return results depending on a filter:
+  http://example.com/team?group=europe
+
+
+== Interface specification ==
+
+=== GET baseurl/submission_files ===
+
+This provides the file(s) of a specific submission.
+
+Parameters:
+* '''id''' required identifier of the submission
+
+Returns a JSON array, with each element an object describing a file, with the following elements:
+{| class="wikitable"
+|-
+! Name
+! Type
+! Description
+|-
+| filename
+| string
+| filename of this file (without path? any disallowed characters?)
+|-
+| content
+| string
+| base64 encoded contents of the file
+|}
+
+'''To be added''': how to encode encode for Java submissions which file contains the main class, and/or what the main class name is?
+
+==== Example ====
+
+Request:
+  GET http://example.com/submission_files?id=223
+Returned data:
+  [{"filename":"a.java","content":"&lt;base64_string&gt;"}]
