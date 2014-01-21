@@ -1,0 +1,21 @@
+Post Mortem for the ICPC Live Analysts ICPC WF 2013
+
+This Post Mortem only considers the interactions between the ICPC Live Analysts and the rest of the ICPC organization.
+
+The ICPC Live Analysts mainly interact with the Sysop team, the Kattis team, the ICPC Judges, the ICPC News team and the rest of the ICPC Live team.
+
+This year ICPC Live was organized by Yandex which worked well. Yandex was very professional and provided all the support we needed.
+
+A general issue is our space. This year we had an open, unlocked space which had the consequences that we had to eat lunch in shifts. rebuild our environment every morning and move all the equipment to a storeroom every night. This caused unnecessary extra work. We would very much like to have a locked/guarded space, like previous years, in the future where we can leave equipment.
+
+Access to the CCS event feed, the teams' submissions, the team backups, etc is necessary for us. We got this in the same way as last year, which worked well, but the final green light was given very late. This caused unnecessary uncertainty.
+
+To prepare for analyzing the contest some of the analysts were invited to the judges who presented the problems to them about 1 hour before the contest. This is very valuable, especially the first hectic hour of the contest and to prepare the presentation of the problems in the ICPC Live broadcast.
+
+Like last year we provided the ICPC News team with reaction videos of the teams successfully submitting solutions to problems.
+
+To increase the value of the ICPC Live team to the ICPC World Finals, to simplify our work and to increase the security we suggest to make the ICPC Live Analysts team part of the larger ICPC Technical Team. The ICPC Live Analysts could then provide a filtered and enhanced event feed for other teams to use, such as ICPC Live, ICPC News and myICPC, and at the same reducing the number of services/systems that needs to be exposed outside the sysops room. The ICPC Live Analytics team has 5 years of experience working with this and has proven to be both reliable and capable. This would be a safe and sound improvement to the ICPC organization.
+
+We also suggest that a new title ICPC Live Analysts Director is created for the person in charge of the ICPC Live Analysts team. This makes it clear in the ICPC organization who is responsible for the team which simplifies communication.
+
+Finally we suggest that we improve the sharing of information between ICPC Live Analysts, ICPC News and myICPC. We have been providing reaction videos for ICPC News the last two years. This can easily be extended. As part of the ICPC AutoAnalyst project we would be more than happy to provide a standardized API/interface to the information we provide. This would also reduce the duplication of work currently being done by different groups. To make future ICPC World Finals even more exciting these and other relevant groups should discuss the possibilities further.
