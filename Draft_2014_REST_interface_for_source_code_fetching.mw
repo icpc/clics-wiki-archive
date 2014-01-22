@@ -42,6 +42,10 @@ Returns a JSON array, with each element an object describing a file, with the fo
 
 '''To be added''': how to encode encode for Java submissions which file contains the main class, and/or what the main class name is?
 
+==== Rationale ====
+
+Since additional metadata has to be provided together with the file contents, we use base64 encoding to provide the file within the same JSON output. Otherwise, we'd get multiple different output formats, which require different code to handle.
+
 ==== Example ====
 
 Request:
