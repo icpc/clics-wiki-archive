@@ -51,4 +51,4 @@ Since additional metadata has to be provided together with the file contents, we
 Request:
   GET http://example.com/submission_files?id=223
 Returned data:
-  [{"filename":"a.java","content":"&lt;base64_string&gt;"}]
+  [{"filename":"a.java","content":"&lt;base64_string&gt;"},{"filename":"helper.java","content":"&lt;base64_string&gt;"}]
