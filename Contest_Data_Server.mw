@@ -141,6 +141,12 @@ Returns a video stream of the given team's desktop.
 
 Returns one of several ICPC graphics images for use by TV Production
 
+==== Team Overlay Images ====
+
+ <nowiki>URL: http://cds/images/teamOverlay/[teamNum]</nowiki>
+
+Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
+
 ==== Submission Source ====
 
 Returns the source files for a team submission given a submission id.
