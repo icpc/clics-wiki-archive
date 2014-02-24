@@ -117,10 +117,8 @@ Clients without sufficient access rights will received a filtered scoreboard tha
 === Video Streams ===
 
 ==== Team Webcam Stream ====
-
-''Access: Public''
-
  <nowiki>https://cds/video/camera/[teamNum]</nowiki>
+''Access: Public''
 
 Returns a video stream from the camera at the given team's workstation.
 
@@ -128,16 +126,13 @@ Returns a video stream from the camera at the given team's workstation.
 * Video format: H.264
 
 ==== Team Desktop Stream ====
-
-''Access: Public''
-
  <nowiki>http://cds/video/screen/[teamNum]</nowiki>
+''Access: Public''
 
 Returns a video stream of the given team's desktop.
 
 * Video container: FLV
 * Video format: H.264
-
 
 === Other ===
 
