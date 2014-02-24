@@ -67,6 +67,8 @@ The following section describes all of the services that are available through t
 
 ==== Contest Configuration ====
 
+''Access: Public''
+
  <nowiki>URL: http://cds/config/contest.yaml
 URL: http://cds/config/problemset.yaml
 URL: http://cds/config/groups.tsv
@@ -75,7 +77,6 @@ URL: http://cds/config/teams.tsv</nowiki>
 Access to contest configuration files as specified in the CCS spec [[Contest Control System]].
 
 todo: potentially figure out how to pack up all problem files in archive and serve that to a client
-
 
 === Images ===
 
