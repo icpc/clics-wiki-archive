@@ -52,9 +52,10 @@ Requests for access to the CDS must be made through the world finals technical d
 
 To simplify security, access is provided via roles that each have access to different content. The defined roles are as follows:
 
-* Internal = Internal users (typically on the contest network) that have access to all content.
-* Trusted = Clients that have access to some contest information that should not be shared publically.
-* Public = All other users that have access only to public information.
+* Public - Access only to data/services that are public contest info and can be shared externally at any time.
+* Analyst - Public + access to team backups and submission source.
+* Blue - Full access to all data/services. (e.g. results during final hour)
+* Admin - Full access + control authority.
 
 Services will be marked with what access role is required.
 
