@@ -141,20 +141,19 @@ Returns a video stream of the given team's desktop.
 Returns one of several ICPC graphics images for use by TV Production
 
 ==== Team Overlay Images ====
-''Access: Public''
-
  <nowiki>https://cds/images/teamOverlay/[teamNum]</nowiki>
+''Access: Public''
 
 Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
 
 ==== Submission Source ====
-''Access: Analyst''
  <nowiki>https://cds/submissionsource/[submissionId]</nowiki>
+''Access: Analyst''
 
 Returns the source files for a team submission given a submission id.
 
 ==== Team backup files ====
-''Access: Analyst''
  <nowiki>https://cds/backups/[teamId]</nowiki>
+''Access: Analyst''
 
 Returns an archive (.tar.gz) with backup files from a Team's machine.
