@@ -107,7 +107,7 @@ Clients without Blue access rights will receive a filtered event feed not contai
 Returns a stream similar to the event feed, but merged with contest data from multiple sources: yamls, tsv, etc. Also supports filters/queries & JSON. Use at your own risk - this feed is being used to test future options.
 
 ==== Contest Control System JSON Scoreboard ====
- <nowiki>https://cds/2014/standings</nowiki>
+ <nowiki>https://cds/scoreboard</nowiki>
 ''Access: Public''
 
 Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
