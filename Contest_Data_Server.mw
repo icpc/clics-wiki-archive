@@ -147,7 +147,7 @@ Returns one of several ICPC graphics images for use by TV Production
 Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
 
 ==== Submission Source ====
- <nowiki>https://cds/submissionsource/[submissionId]</nowiki>
+ <nowiki>https://cds/submissionFiles/[submissionId]</nowiki>
 ''Access: Analyst''
 
 Returns the source files for a team submission given a submission id.
