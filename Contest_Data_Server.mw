@@ -114,7 +114,7 @@ Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
 Clients without sufficient access rights will received a filtered scoreboard that does not contain submission judgments from the final hour.
 
-=== Video Streams ===
+=== Video ===
 
 ==== Team Webcam Stream ====
  <nowiki>https://cds/video/camera/[teamNum]</nowiki>
@@ -122,8 +122,8 @@ Clients without sufficient access rights will received a filtered scoreboard tha
 
 Returns a video stream from the camera at the given team's workstation.
 
-* Video container: FLV
-* Video format: H.264
+* Video container: MPEG-TS
+* Video codec: H.264
 
 ==== Team Desktop Stream ====
  <nowiki>http://cds/video/screen/[teamNum]</nowiki>
@@ -131,8 +131,18 @@ Returns a video stream from the camera at the given team's workstation.
 
 Returns a video stream of the given team's desktop.
 
-* Video container: FLV
-* Video format: H.264
+* Video container: MPEG-TS
+* Video codec: H.264
+
+==== Draft: Reaction Videos ====
+ <nowiki>http://cds/video/reaction/[submissionId]</nowiki>
+''Access: Public''
+
+Returns a camera recording of the team for the given submission. Each video is X seconds long.
+Returns a 404 if the submission id is invalid or the video was not finished recording.
+
+* Video container: MPEG-TS
+* Video codec: H.264
 
 === Other ===
 
