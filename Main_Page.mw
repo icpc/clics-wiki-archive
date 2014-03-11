@@ -23,6 +23,9 @@ Draft 2014 [[CDS]] specification
 == Submission Source Code REST interface ==
 [[Draft 2014 REST interface for source code fetching]]
 
+== Contest Start REST interface ==
+[[Contest Start Interface|Draft 2014 REST interface for contest start]]
+
 == ICPC Contest Analysis Tool (iCAT) ==
 * [[iCAT]]
 * [[AutoAnalyst API]]
