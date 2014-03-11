@@ -1,0 +1,41 @@
+== Introduction ==
+
+DRAFT - Being edited!
+
+This page describes a '''draft''' interface for controlling the contest start time in a CCS. It is initially intended to be used by the [[CDS|Contest Data Server]] to allow an admin to control the start of a contest, but is meant to be reusable for other clients as well.
+
+Usage notes:
+* The interface is implemented as an HTTP REST interface.
+* Basic authentication and HTTPS are required. User id/password is provided by the CCS and should be the same as the [[source code fetching interface|Draft 2014 REST interface for source code fetching]]
+* The specific base URL will be dependent on the server providing the service and will be indicated as <tt>baseurl</tt>.
+* Absolute times are always in milliseconds since the Unix epoch: Jan 1, 1970 UTC.
+
+== Interface specification ==
+
+=== Interface (Option A) ===
+
+ <nowiki>PUT https://baseurl/starttime</nowiki>
+
+HTTP body is one of:
+* "absolute=x"
+* "relative=y"
+* "undefined"
+
+Future:
+ <nowiki>GET https://baseurl/starttime</nowiki>
+
+Returns JSON payload with:
+* { "absolute": 1324246345, "remaining": 167 }
+or:
+* {"undefined": ""}
+
+=== Interface (Option B) ===
+
+ <nowiki>PUT https://baseurl/starttime</nowiki>
+
+HTTP body is either an absolute time or "undefined".
+
+Future:
+ <nowiki>GET https://baseurl/starttime</nowiki>
+
+Returns either an absolute time or "undefined".
