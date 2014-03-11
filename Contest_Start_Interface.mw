@@ -43,3 +43,19 @@ Future: GET HTTP body returns application/json:
 * { "starttime":"1324246345" }
 or:
 * { "starttime":"undefined" }
+
+=== Interface (Option D) ===
+
+Use Json both ways (like C) but make future support for setting remaining time fit nicely.
+
+PUT HTTP body is application/json:
+* { "absolute": <int value> }  (to allow future "remaining" and also so value is int rather than string)
+* { "undefined":"" } (so value above is string)
+
+Future PUT HTTP (nice for "resuming" countdown from specific time)
+* { "absolute": <int value> }
+
+Future: GET HTTP body returns application/json:
+* { "absolute":"1324246345", "remaining": 67 }
+or:
+* { "undefined": "" }
