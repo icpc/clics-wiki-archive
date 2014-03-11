@@ -1,7 +1,5 @@
 == Introduction ==
 
-DRAFT - Being edited!
-
 This page describes a '''draft''' interface for controlling the contest start time in a CCS. It is initially intended to be used by the [[CDS|Contest Data Server]] to allow an admin to control the start of a contest, but is meant to be reusable for other clients as well.
 
 Usage notes:
