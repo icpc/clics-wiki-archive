@@ -15,7 +15,7 @@ Usage notes:
 The URL for controlling the contest start time is always the same:
  <nowiki>https://baseurl/starttime</nowiki>
 
-Changing the start time is always done via PUT, and options for a future GET interface are outlined below. The difference between the options is purely the payload and content type:
+Changing the start time is always done via PUT, which is the only operation being implemented for 2014. Options for a future GET interface are also listed. The difference between the options is purely the payload/content type:
 
 === Interface (Option A) ===
 
@@ -24,9 +24,7 @@ PUT HTTP body is text/plain with one of:
 * "relative=y"
 * "undefined"
 
-==== Future GET ====
-
-GET HTTP body returns application/json with:
+Future: GET HTTP body returns application/json:
 * { "absolute":"1324246345", "remaining":"167" }
 or:
 * { "undefined":"" }
@@ -35,9 +33,7 @@ or:
 
 PUT HTTP body is text/plain with either an absolute time or "undefined".
 
-==== Future ====
-
-GET HTTP body returns text/plain with either an absolute time or "undefined".
+Future: GET HTTP body returns text/plain with either an absolute time or "undefined".
 
 === Interface (Option C) ===
 
@@ -45,9 +41,7 @@ PUT HTTP body is application/json:
 * { "starttime":"<absolute value>" }
 * { "starttime":"undefined" }
 
-==== Future ====
-
-GET HTTP body returns application/json:
+Future: GET HTTP body returns application/json:
 * { "starttime":"1324246345" }
 or:
 * { "starttime":"undefined" }
