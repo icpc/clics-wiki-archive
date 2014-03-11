@@ -53,7 +53,7 @@ PUT HTTP body is application/json:
 * { "undefined":"" } or {"absolute": null} or just {}
 
 Future PUT HTTP (nice for "resuming" countdown from specific time)
-* { "absolute": <int value> }
+* { "remaining": <int value> }
 
 Future: GET HTTP body returns application/json:
 * { "absolute": 1324246345, "remaining": 67 }
