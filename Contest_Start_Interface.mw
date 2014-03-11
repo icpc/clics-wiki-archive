@@ -50,7 +50,7 @@ Use Json both ways (like C) but make future support for setting remaining time f
 
 PUT HTTP body is application/json:
 * { "absolute": <int value> }  (to allow future "remaining" and also so value is int rather than string)
-* { "undefined":"" } or {"absolute": null} or just {}
+* { "undefined":"" } or {"absolute": null} or just {}  (I'm actually liking simply {})
 
 Future PUT HTTP (nice for "resuming" countdown from specific time)
 * { "remaining": <int value> }
