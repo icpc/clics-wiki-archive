@@ -6,7 +6,7 @@ Usage notes:
 * The interface is implemented as an HTTP REST interface.
 * Basic authentication and HTTPS are required. User id/password is provided by the CCS and should be the same as the [[source code fetching interface|Draft 2014 REST interface for source code fetching]]
 * The specific base URL will be dependent on the server providing the service and will be indicated as <tt>baseurl</tt>.
-* Absolute times are always in milliseconds since the Unix epoch: Jan 1, 1970 UTC.
+* Absolute times are always in decimal seconds since the Unix epoch: Jan 1, 1970 UTC.
 
 == Interface specification ==
 
