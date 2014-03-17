@@ -23,7 +23,7 @@ PUT HTTP body is text/plain with one of:
 * "undefined"
 
 Future: GET HTTP body returns application/json:
-* { "absolute":"1324246345", "remaining":"167" }
+* { "absolute":"1265335138.26", "remaining":"167.26" }
 or:
 * { "undefined":"" }
 
@@ -40,7 +40,7 @@ PUT HTTP body is application/json:
 * { "starttime":"undefined" }
 
 Future: GET HTTP body returns application/json:
-* { "starttime":"1324246345" }
+* { "starttime":"1265335138.26" }
 or:
 * { "starttime":"undefined" }
 
@@ -56,6 +56,6 @@ Future PUT HTTP (nice for "resuming" countdown from specific time)
 * { "remaining": <int value> }
 
 Future: GET HTTP body returns application/json:
-* { "absolute": 1324246345, "remaining": 67 }
+* { "absolute": 1265335138.26, "remaining": 67.26 }
 or:
 * { "undefined": "" } or { "absolute": null, "remaining": null } or just {}
