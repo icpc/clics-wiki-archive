@@ -47,7 +47,7 @@ Sample events with inner element descriptions:
 ;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
 ;penalty: Penalty time in minutes.
 ;started: Started flag.
-;starttime: Starttime as a timestamp in decimal seconds.
+;starttime: Starttime as a timestamp in decimal seconds, or <starttime>undefined</starttime> if the start time is not defined.
 ;title: Contest title string.
 
 === <language> ===
