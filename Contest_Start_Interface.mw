@@ -24,7 +24,9 @@ PUT HTTP body is application/json:
 or:
 * { "starttime":"undefined" }
 
-Future: GET HTTP body returns application/json:
+==== Future ====
+
+GET HTTP body returns application/json:
 * { "starttime":1265335138.26 }
 or:
 * { "starttime":"undefined" }
