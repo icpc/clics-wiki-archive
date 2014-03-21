@@ -24,6 +24,13 @@ PUT HTTP body is application/json:
 or:
 * { "starttime":"undefined" }
 
+HTTP response is:
+* 200: if successful.
+* 400: if the payload is invalid json, start time is invalid, etc.
+* 401: if authentication failed.
+* 403: if contest is already started or within 10s of starting.
+* 403: if the new start time is less than 30s from now.
+
 ==== Future ====
 
 GET HTTP body returns application/json:
