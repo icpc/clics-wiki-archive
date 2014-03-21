@@ -13,49 +13,16 @@ Usage notes:
 The URL for controlling the contest start time is always the same:
  <nowiki>https://baseurl/starttime</nowiki>
 
-Changing the start time is always done via PUT, which is the only operation being implemented for 2014. Options for a future GET interface are also listed. The difference between the options is purely the payload/content type:
+Changing the start time is always done via PUT, which is the only operation implemented for 2014. Options for a future GET interface are also listed.
 
-=== Interface (Option A) ===
-
-PUT HTTP body is text/plain with one of:
-* "absolute=x"
-* "relative=y"
-* "undefined"
-
-Future: GET HTTP body returns application/json:
-* { "absolute":"1265335138.26", "remaining":"167.26" }
-or:
-* { "undefined":"" }
-
-=== Interface (Option B) ===
-
-PUT HTTP body is text/plain with either an absolute time or "undefined".
-
-Future: GET HTTP body returns text/plain with either an absolute time or "undefined".
-
-=== Interface (Option C) ===
+=== Interface ===
 
 PUT HTTP body is application/json:
-* { "starttime":"<absolute value>" }
+* { "starttime":1265335138.26 }
+or:
 * { "starttime":"undefined" }
 
 Future: GET HTTP body returns application/json:
-* { "starttime":"1265335138.26" }
+* { "starttime":1265335138.26 }
 or:
 * { "starttime":"undefined" }
-
-=== Interface (Option D) ===
-
-Use Json both ways (like C) but make future support for setting remaining time fit nicely.
-
-PUT HTTP body is application/json:
-* { "absolute": <decimal value> }  (to allow future "remaining" and also so value is int rather than string)
-* { "undefined":"" } or {"absolute": null} or just {}  (I'm actually liking simply {})
-
-Future PUT HTTP (nice for "resuming" countdown from specific time)
-* { "remaining": < decimal value> }
-
-Future: GET HTTP body returns application/json:
-* { "absolute": 1265335138.26, "remaining": 67.26 }
-or:
-* { "undefined": "" } or { "absolute": null, "remaining": null } or just {}
