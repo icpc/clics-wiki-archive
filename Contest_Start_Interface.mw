@@ -15,6 +15,8 @@ The URL for controlling the contest start time is always the same:
 
 Changing the start time is always done via PUT, which is the only operation implemented for 2014. Options for a future GET interface are also listed.
 
+When a PUT changes the value, the CCS must output a new <info> element to the event feed.
+
 === Interface ===
 
 PUT HTTP body is application/json:
