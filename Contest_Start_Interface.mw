@@ -28,7 +28,9 @@ HTTP response is:
 * 200: if successful.
 * 400: if the payload is invalid json, start time is invalid, etc.
 * 401: if authentication failed.
-* 403: if contest is already started or within 10s of starting.
+* 403: if contest is already started
+* 403: if setting to 'undefined' with less than 10s left to previous start time.
+* 403: if setting to new (defined) start time with less than 30s left to previous start time.
 * 403: if the new start time is less than 30s from now.
 
 ==== Future ====
