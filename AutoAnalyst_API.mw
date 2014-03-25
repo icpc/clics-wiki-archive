@@ -86,3 +86,11 @@ Returns a json document containing all AutoAnalyst notifications relevant to thi
     "message": "Shanghai Jiao Tong University solves its first problem: B - Curvy Little Bottles"
   }]
  }
+
+====HTTP GET /EditActivity/<minutes>====
+Returns a json document containing all edit activities detected in the last <i>minutes</i> minutes ordered chronologically.
+
+ { "id":213, "modify_time": 83, 
+   "team_id":56, "problem_id": "A", 
+   "language":"C++", "line_count": 49, "file_size_bytes": 4277
+ }
