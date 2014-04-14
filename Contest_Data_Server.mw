@@ -134,7 +134,22 @@ Returns a video stream of the given team's desktop.
 * Video container: MPEG-TS
 * Video codec: H.264
 
-==== Draft: Reaction Videos ====
+==== Channels ====
+
+Channels are a paired camera & screen video that can be changed on demand. It allows a client to use a fixed url for the duration of the contest, and for another user (typically an analyst) to switch which team the client is watching.
+
+ <nowiki>http://cds/video/camera/channel/[channelNum]</nowiki>
+ <nowiki>http://cds/video/screen/channel/[channelNum]</nowiki>
+''Access: Public''
+
+Returns video streams of the given channel, with content and format identical to the team webcam and desktop streams above.
+
+ <nowiki>http://cds/video/channel/[channelNum]/[teamNum]</nowiki>
+''Access: Public''
+
+Changes the given channel to output from the given team.
+
+==== Reaction Videos ====
  <nowiki>http://cds/video/reaction/[submissionId]</nowiki>
 ''Access: Public''
 
