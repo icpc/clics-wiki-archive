@@ -92,5 +92,5 @@ Returns a json document containing all edit activities detected in the last <i>m
 
  { "id": 213, "modify_time": 83, 
    "team_id": 56, "problem_id": "A", 
-   "language": "C++", "line_count": 49, "file_size_bytes": 4277
+   "language": "C++", "line_count": 49, "diff_line_count": 10, "file_size_bytes": 4277
  }
