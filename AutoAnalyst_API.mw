@@ -90,13 +90,13 @@ Returns a json document containing all AutoAnalyst notifications relevant to thi
 ====HTTP GET /EditActivity/<minutes>====
 Returns a json document containing all edit activities detected in the last <i>minutes</i> minutes ordered chronologically in an array.
 
-[
- { "id": "213", "modify_time": "83", 
-   "team_id": "56", "problem_id": "A", 
-   "language": "C++", "line_count": "49", "diff_line_count": "10", "file_size_bytes": "4277"
- },
- { "id": "214", "modify_time": "96", 
-   "team_id": "84", "problem_id": "B", 
-   "language": "C++", "line_count": "23", "diff_line_count": "15", "file_size_bytes": "1547"
- }
-]
+ [
+  { "id": "213", "modify_time": "83", 
+    "team_id": "56", "problem_id": "A", 
+    "language": "C++", "line_count": "49", "diff_line_count": "10", "file_size_bytes": "4277"
+  },
+  { "id": "214", "modify_time": "96", 
+    "team_id": "84", "problem_id": "B", 
+    "language": "C++", "line_count": "23", "diff_line_count": "15", "file_size_bytes": "1547"
+  }
+ ]
