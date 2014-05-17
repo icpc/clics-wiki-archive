@@ -88,10 +88,11 @@ Returns a json document containing all AutoAnalyst notifications relevant to thi
  }
 
 ====HTTP GET /EditActivity?from=FROM&to=TO====
-Returns a json document containing all edit activities detected in the open interval <i>FROM</i> to <i>TO</i> ordered chronologically in an array.
+Returns a json document containing all edit activities detected in the open interval <i>FROM</i>-<i>TO</i> (contest time in minutes) ordered chronologically in an array.
 
+ EditActivity?from=80&to=85 could for example return
  [
-  { "id": "213", "modify_time": "83", 
+  { "id": "213", "modify_time": "80", 
     "team_id": "56", "problem_id": "A", 
     "language": "C++", "line_count": "49", "diff_line_count": "10", "file_size_bytes": "4277"
   },
@@ -99,7 +100,7 @@ Returns a json document containing all edit activities detected in the open inte
     "team_id": "84", "problem_id": "B", 
     "language": "C++", "line_count": "23", "diff_line_count": "15", "file_size_bytes": "1547"
   }
-  { "id": "215", "modify_time": "86",
+  { "id": "215", "modify_time": "85",
    "team_id": "56", "problem_id": "A",
    "language": "C++", "line_count": "55", "diff_line_count": "6", "file_size_bytes": "4444"
   }
