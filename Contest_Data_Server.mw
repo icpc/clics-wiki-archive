@@ -114,6 +114,14 @@ Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
 
 Clients without sufficient access rights will received a filtered scoreboard that does not contain submission judgments from the final hour.
 
+==== Contest RSS Feed (Draft) ====
+ <nowiki>https://cds/rss</nowiki>
+''Access: Public''
+
+Returns an RSS feed of significant contest events, e.g. teams solving runs.
+
+Clients without sufficient access rights will received a filtered RSS feed that does not contain submission judgments from the final hour.
+
 === Video ===
 
 ==== Team Webcam Stream ====
