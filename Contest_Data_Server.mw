@@ -118,7 +118,7 @@ Clients without sufficient access rights will received a filtered scoreboard tha
  <nowiki>https://cds/rss</nowiki>
 ''Access: Public''
 
-Returns an RSS feed of significant contest events, e.g. teams solving runs.
+Returns an RSS feed of solved submissions, e.g. "University of X solved problem Y!"
 
 Clients without sufficient access rights will received a filtered RSS feed that does not contain submission judgments from the final hour.
 
