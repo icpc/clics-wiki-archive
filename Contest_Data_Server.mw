@@ -125,7 +125,7 @@ Clients without sufficient access rights will received a filtered RSS feed that 
 === Video ===
 
 ==== Team Webcam Stream ====
- <nowiki>https://cds/video/camera/[teamNum]</nowiki>
+ <nowiki>http://cds/video/camera/[teamNum]</nowiki>
 ''Access: Public''
 
 Returns a video stream from the camera at the given team's workstation.
