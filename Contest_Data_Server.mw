@@ -59,6 +59,8 @@ To simplify security, access is provided via roles that each have access to diff
 
 Services will be marked with what access role is required.
 
+[[Contest Security]]
+
 == Services ==
 
 The following section describes all of the services that are available through the CDS.
