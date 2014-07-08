@@ -1,0 +1,26 @@
+= Contest Security =
+
+This document is a first pass (draft!) at documenting ICPC contest security: who should have access to what information (data), and when.
+
+== Terms ==
+
+ - Contest freeze is the time (typically 1h before the end of a contest) after which the contest scoreboard is frozen and submission judgments are no longer public.
+
+== Roles ==
+
+To keep things simple, access to contest information is provided via roles. Each person (user id) is granted access by being associated with one or more roles. The roles are:
+
+ - Blue - Access to all information inside the blue network: videos, submissions, etc. from all teams, even after contest freeze.
+ - Green - What a person could see onsite at the finals
+ - Public - Unsecured information with full public access. Potentially available via http over the internet.
+
+
+== Access ==
+
+Images & logos - 
+
+Event feed - 
+
+Images - Green
+
+Video - Public
