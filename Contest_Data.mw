@@ -18,9 +18,9 @@ After which this header should be rewritten. :)
 |-
 | start-time ||  || string || 2014-06-25 10:00 (or 1404998551?)
 |-
-| duration (or length) ||  || string || 5:00:00
+| duration (or length) ||  || string HH:MM:SS || 5:00:00
 |-
-| scoreboard-freeze-length ||  || string || 01:00:00
+| scoreboard-freeze-length ||  || string HH:MM:SS || 01:00:00
 |-
 | penalty ||  || string || 20
 |}
@@ -68,6 +68,8 @@ clar-categories:
 | rgb || the color value in hex || string #FFFFFF || #60008C
 |}
 
+Problem information is not available outside of blue until the contest has started.
+
 === Regions ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
@@ -97,6 +99,17 @@ clar-categories:
 === Submissions ===
 To-do
 
+<run>
+   <id>187</id>
+   <judged>False</judged>
+   <language>C++</language>
+   <problem>4</problem>
+   <status>fresh</status>
+   <team>19</team>
+   <time>5042.406224</time>
+   <timestamp>1403673842.41</timestamp>
+</run>
+
 === Judgements ===
 To-do
 
@@ -106,5 +119,29 @@ To-do
    <name>Presentation Error</name>
 </judgement>
 
+=== Submission Judgements ===
+To-do
+
+Judgements are not visible outside of blue zone during the freeze.
+Judgements sent to balloons are currently different.
+
 === Clarifications ===
 To-do
+
+<clar>
+   <answer></answer>
+   <answered>False</answered>
+   <id>5</id>
+   <question>Problem H: Does bouncing up means bounce to the grid above the current one?</question>
+   <status>fresh</status>
+   <team>60</team>
+   <time>5043.942061</time>
+   <timestamp>1403673843.94</timestamp>
+   <to-all>False</to-all>
+</clar>
+
+
+=== Testcases ===
+To-do
+
+Testcase information is not visible to contest floor
