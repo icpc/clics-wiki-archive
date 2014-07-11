@@ -9,13 +9,23 @@ After which this header should be rewritten. :)
 == Contest ==
 
 === Info ===
-name:              38th Annual World Finals of the ACM International Collegiate Programming Contest
-short-name:        ACM-ICPC World Finals
-start-time:        2014-06-25 10:00
-duration:          5:00:00
-scoreboard-freeze: 4:00:00
-event-feed-port:   4713
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| name || the name || string || 38th Annual World Finals of the ACM International Collegiate Programming Contest
+|-
+| short-name || a shorter name || string || ACM-ICPC World Finals
+|-
+| start-time ||  || string || 2014-06-25 10:00 (or 1404998551?)
+|-
+| duration (or length) ||  || string || 5:00:00
+|-
+| scoreboard-freeze-length ||  || string || 01:00:00
+|-
+| penalty ||  || string || 20
+|}
 
+Todo:
 default-clars:
   - No comment, read problem statement.
 
@@ -56,6 +66,15 @@ clar-categories:
 | color || a color name || string || purple
 |-
 | rgb || the color value in hex || string #FFFFFF || #60008C
+|}
+
+=== Regions ===
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| external-id || an external id for the team || string || 7593
+|-
+| name || the region name || string || Africa and the Middle East
 |}
 
 === Teams ===
