@@ -1,0 +1,85 @@
+= Contest Data =
+
+DRAFT
+
+On this wiki there are several overlapping documents (e.g. CCS spec, event feed, and REST proposal) that have overlapping and sometimes conflicting ideas of what contest data is. They often have different names, different formats, or different data types. This page is an attempt to list all of the data in one place and create an ontology of contest data. Once we have a full list and agreement here, we'll need to go back and update any conflicting info in the other documents to match.
+
+After which this header should be rewritten. :)
+
+== Contest ==
+
+=== Info ===
+name:              38th Annual World Finals of the ACM International Collegiate Programming Contest
+short-name:        ACM-ICPC World Finals
+start-time:        2014-06-25 10:00
+duration:          5:00:00
+scoreboard-freeze: 4:00:00
+event-feed-port:   4713
+
+default-clars:
+  - No comment, read problem statement.
+
+clar-categories:
+  - General
+  - SysOps
+  - Operations
+
+=== Languages ===
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id || language id || string || 1
+|-
+| name || language name || string || Java
+|-
+| compiler ||  || string || /user/bin/javac
+|-
+| compiler-args ||  || string || -encoding UTF-8 -sourcepath . -d . {files}
+|-
+| runner ||  || string || /user/bin/java
+|-
+| runner-args ||  || string || -client -Xss8m
+|}
+
+=== Problems ===
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id || problem id || string || 1
+|-
+| letter || problem identifier || string || A
+|-
+| name || problem name || string || The baggage problem
+|-
+| short-name || a short name || string || baggage
+|-
+| color || a color name || string || purple
+|-
+| rgb || the color value in hex || string #FFFFFF || #60008C
+|}
+
+=== Teams ===
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id || team identifier || string || 72
+|-
+| external-id || an external id for the team || string || 201433
+|-
+| name || the team name || string || Tokyo Titans
+|-
+| university || the team's university || string || The University of Tokyo
+|-
+| region || the team's region || string || Asia
+|-
+| nationality || the team's nationality || string, 3 letter ISO || JPN
+|}
+
+=== Submissions ===
+To-do
+
+=== Judgements ===
+To-do
+
+=== Clarifications ===
+To-do
