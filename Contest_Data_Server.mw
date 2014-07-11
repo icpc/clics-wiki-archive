@@ -60,6 +60,7 @@ To simplify security, access is provided via roles that each have access to diff
 Services will be marked with what access role is required.
 
 [[Contest Security]]
+[[Contest Data]]
 
 == Services ==
 
