@@ -17,10 +17,11 @@ To keep things simple, access to contest information is provided via roles. Each
 
 == Access ==
 
-Images & logos - 
+Problems
+ - only visible after contest start
 
-Event feed - 
+Submissions
+ - after contest freeze, ***
 
-Images - Green
-
-Video - Public
+Video (desktop & webcam)
+ - not visible after contest freeze
