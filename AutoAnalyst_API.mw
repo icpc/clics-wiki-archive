@@ -11,22 +11,13 @@ Example:
  <message>St. Petersburg State University of IT, Mechanics and Optics extends its lead by solving G - Minimum Cost Flow. It has now solved 8 problems</message>
  </analystmsg>
 
-id
-	Sequential identifier of this message. All notifications get a unique and strictly increasing id.
-team
-	Identifier of the team that triggered the event (typically by submitting a solution)
-problem
-	Problem that the message is relevant to
-time
-	Time in contest when this event occurred
-message
-	Message from analyzer, in plain text
+id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.
+team: Identifier of the team that triggered the event (typically by submitting a solution)
+problem: Problem that the message is relevant to
+time: Time in contest when this event occurred
+message: Message from analyzer, in plain text
 
-Expected changes for WF2015:
-priority
-        A number indicating the priority of the message, 1 is the highest priority
-submission
-        Identifier of the submission that the message is related to, if any. If no submission then the value is -1.
+Expected changes for WF2015: Add two fields priority, a number indicating the priority of the message where 1 is the highest priority, and submission, an identifier of the submission that the message is related to, if any. If no submission then the value is -1.
 
 ===Query interfaces===
 These interfaces provide current information through http access. Content is sent using gzip compression, and the Content-Encoding http header will therefore always be set to gzip. Repetitive json documents compress very well, and all modern browsers handle the decompression transparently.
