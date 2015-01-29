@@ -19,6 +19,8 @@ message: Message from analyzer, in plain text
 
 Expected changes for WF2015: Add two fields priority, a number indicating the priority of the message where 1 is the highest priority, and submission, an identifier of the submission that the message is related to, if any. If no submission then the value is -1.
 
+Question: How is the time stamp generated?
+
 ===Query interfaces===
 These interfaces provide current information through http access. Content is sent using gzip compression, and the Content-Encoding http header will therefore always be set to gzip. Repetitive json documents compress very well, and all modern browsers handle the decompression transparently.
 
