@@ -16,6 +16,7 @@ This example is formatted in order to better show the example,
 the actual JSON does not need to include line breaks. The example is truncated and shows just the top two teams.
 
   [ {"id":"61","rank":1,"solved":9,"score":1170,"name":"St. Petersburg State University of IT, Mechanics and Optics","group":"Europe",
+        "A":{"a":0,"p":3,"s":"pend"},
         "B":{"a":1,"t":18,"s":"solved"},
         "C":{"a":1,"t":79,"s":"solved"},
         "D":{"a":2,"t":42,"s":"solved"},
@@ -25,8 +26,8 @@ the actual JSON does not need to include line breaks. The example is truncated a
         "I":{"a":2,"t":125,"s":"solved"},
         "K":{"a":1,"t":49,"s":"solved"},
         "L":{"a":1,"t":262,"s":"solved"}},
-    {"id":"103","rank":2,"solved":9,"score":1547,"name":"University of Warsaw","group":"Europe",
-        "A":{"a":5,"t":291,"s":"solved"},
+    {"id":"103","rank":2,"solved":8,"score":1176,"name":"University of Warsaw","group":"Europe",
+        "A":{"a":5,"p":1,"s":"pend"},
         "B":{"a":1,"t":32,"s":"solved"},
         "C":{"a":2,"t":60,"s":"solved"},
         "D":{"a":1,"t":19,"s":"solved"},
