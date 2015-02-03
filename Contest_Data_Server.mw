@@ -92,6 +92,12 @@ Returns a png image 600x600 or smaller of the given team's University logo.
 
 Returns a full HD (1920x1080) jpeg photo of the given team, typically taken during registration.
 
+==== Team Overlay Images ====
+ <nowiki>https://cds/images/teamOverlay/[teamNum]</nowiki>
+''Access: Authorized''
+
+Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
+
 === Data Feeds ===
 
 ==== Contest Control System Event Feed ====
@@ -154,13 +160,13 @@ Channels are a paired camera & screen video that can be changed on demand. It al
 
 Returns video streams of the given channel, with content and format identical to the team webcam and desktop streams above.
 
- <nowiki>http://cds/video/channel/[channelNum]/[teamNum]</nowiki>
+ <nowiki>https://cds/video/channel/[channelNum]/[teamNum]</nowiki>
 ''Access: Analyst''
 
 Changes the given channel to output from the given team.
 
 ==== Reaction Videos ====
- <nowiki>http://cds/video/reaction/[submissionId]</nowiki>
+ <nowiki>https://cds/video/reaction/[submissionId]</nowiki>
 ''Access: Authorized''
 
 Returns a camera recording of the team for the given submission. Each video is X seconds long.
@@ -170,16 +176,6 @@ Returns a 404 if the submission id is invalid or the video was not finished reco
 * Video codec: H.264
 
 === Other ===
-
-==== ICPC Graphics ====
-
-Returns one of several ICPC graphics images for use by TV Production
-
-==== Team Overlay Images ====
- <nowiki>https://cds/images/teamOverlay/[teamNum]</nowiki>
-''Access: Authorized''
-
-Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
 
 ==== Submission Source ====
  <nowiki>https://cds/submissionFiles/[submissionId]</nowiki>
@@ -192,3 +188,9 @@ Returns the source files for a team submission given a submission id.
 ''Access: Analyst''
 
 Returns an archive (.tar.gz) with backup files from a Team's machine.
+
+==== Start Time ====
+ <nowiki>https://cds/countdown</nowiki>
+''Access: Admin, Blue''
+
+Allows the contest director to control the contest start time.
