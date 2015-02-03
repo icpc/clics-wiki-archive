@@ -191,6 +191,6 @@ Returns an archive (.tar.gz) with backup files from a Team's machine.
 
 ==== Start Time ====
  <nowiki>https://cds/countdown</nowiki>
-''Access: Admin, Blue''
+''Access: Blue''
 
 Allows the contest director to control the contest start time.
