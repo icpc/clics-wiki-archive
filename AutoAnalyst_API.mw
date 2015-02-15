@@ -17,7 +17,7 @@ problem: Problem that the message is relevant to
 time: Time in contest when this event occurred
 message: Message from analyzer, in plain text
 
-Expected changes for WF2015: Add two fields priority, a number indicating the priority of the message where 1 is the highest priority, and submission, an identifier of the submission that the message is related to, if any. If no submission then the value is -1.
+Changes for WF2015: Add three fields ''priority'', a number indicating the priority of the message where 1 is the highest priority, ''type'', a string either human or auto depending on who produced the message, and ''submission'', an identifier of the submission that the message is related to, if any. If no submission then the value is -1.
 
 Question: How is the time stamp generated?
 
