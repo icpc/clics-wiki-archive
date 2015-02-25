@@ -123,3 +123,28 @@ Returns a json document containing all edit activities detected in the last <i>M
    "language": "C++", "line_count": "55", "diff_line_count": "6", "file_size_bytes": "4444"
   }
  ]
+
+====HTTP GET /CodeActivity?team_id=<tid1,tid2,...>&problem_id=<pid1,pid2,...>&granularity=MIN====
+Returns a JSON document with a summary of edit and submission activity, intended for generating a graph showing which problems the teams are spending their time on. A few minutes into the contest, a possible response could be
+
+ { "granularity": 5,
+   "problems": [
+     { "problem_id": "F",
+       "edit_summary": [
+         { "contest_time": 0, "edits": 2 },
+         { "contest_time": 5, "edits": 4 }
+       ],
+       "submissions": {
+         "AC": [
+           { "contest_time": 8, "team_id": 47, "lang_id": "C++", "submission_id": "6" },
+           { "contest_time": 9, "team_id": 71, "lang_id": "C++", "submission_id": "12" }
+         ],
+         "WA": [
+           { "contest_time": 9, "team_id": 71, "lang_id": "C++", "submission_id": "7" }
+         ]
+       }
+     }
+   ]
+ }
+
+All arguments are optional. <code>"granularity"</code> is important to note when interpreting the edit summary, since it describes the length of the "bins" in the edit summary. In the example, there are two edits between minutes 0 and 5, and four edits between minutes 5 and 10. A granularity of 1 would have meant two edits between 0 and 1, and four edits between 5 and 6.
