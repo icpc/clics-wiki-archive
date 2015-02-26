@@ -131,8 +131,8 @@ Returns a JSON document with a summary of edit and submission activity, intended
    "problems": [
      { "problem_id": "F",
        "edit_summary": [
-         { "contest_time": 0, "edits": 2 },
-         { "contest_time": 5, "edits": 4 }
+         { "contest_time": 0, "num_edited_lines": 2 },
+         { "contest_time": 5, "num_edited_lines": 4 }
        ],
        "submissions": {
          "AC": [
