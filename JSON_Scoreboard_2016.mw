@@ -87,10 +87,10 @@ Returns a JSON array, with each element an object describing a team, with the fo
 | yes for WF
 | [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 ISO 3-letter code] of the team's nationality
 |-
-| region
+| group
 | string
 | yes for WF
-| region this team is from (in ICPC WFs these are the super-regions, such as Europe)
+| group this team is part of (in ICPC WFs these are the super-regions, such as Europe)
 |}
 
 ==== Example ====
@@ -98,8 +98,8 @@ Returns a JSON array, with each element an object describing a team, with the fo
 Request:
   GET http://example.com/teams
 Returned data:
-  [{"number":42,"name":"Shanghai Jiao Tong University","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","region":"Asia",},
-   {"number":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","region":"North America"},
+  [{"number":42,"name":"Shanghai Jiao Tong University","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
+   {"number":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","group":"North America"},
    ...
   ]
 
