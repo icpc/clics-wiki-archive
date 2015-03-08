@@ -1,0 +1,61 @@
+DRAFT
+
+A taxonomy of all objects and attributes in the contest
+
+Object: problem
+{| class="wikitable"
+! Attribute !! Example !! Type !! Description !! ID field !! Access Control
+|-
+| label || A || char || a 1-2 char label || ID || public
+|-
+| short_name || asteroids || string || a short name for the problem || || public
+|-
+| name || Asteroid Rangers || string || the full problem name || || public
+|-
+| color || Blue || string|| the name of the problem color || || public
+|-
+| rgb || #0000FF || RGB || the RGB color for the problem || || public
+|-
+|}
+
+Object: team
+{| class="wikitable"
+! Attribute !! Example !! Type !! Description !! ID field !! Access Control
+|-
+| id || 54 || int || an id || ID || public
+|-
+| nationality || CHN || string || the three char ISO country code || || public
+|-
+| name || Shanghai Jiao Tong University || string || the name of the team || || public
+|-
+| university || Shanghai Jiao Tong University || string || the name of the university || || public
+|-
+| group || Asia || string || the group || || public
+|-
+|}
+
+Object: language
+{| class="wikitable"
+! Attribute !! Example !! Type !! Description !! ID field !! Access Control
+|-
+| name || Java || string || the language name || ID || public
+|-
+| compiler || /user/bin || string || || || blue
+|-
+| compiler-args || || string || || || blue
+|-
+| runner || || string || || || blue
+|-
+| runner-args || || string || || || blue
+|-
+|}
+
+Object: group
+{| class="wikitable"
+! Attribute !! Example !! Type !! Description !! ID field !! Access Control
+|-
+| name || North America || string || the name of the group || ID || public
+|-
+| external-id || 7596 || string || || || blue
+|-
+|}
