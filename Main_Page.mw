@@ -18,8 +18,9 @@
 
 == Contest Data Server ==
 
-Draft 2014 [[CDS]] specification
-[[Contest taxonomy]]
+* Draft 2014 [[CDS]] specification
+
+* Draft [[Contest taxonomy]]
 
 == Submission Source Code REST interface ==
 [[Draft 2014 REST interface for source code fetching]]
