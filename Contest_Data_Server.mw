@@ -93,7 +93,7 @@ Returns a png image 600x600 or smaller of the given team's University logo.
 Returns a full HD (1920x1080) jpeg photo of the given team, typically taken during registration.
 
 ==== Team Overlay Images ====
- <nowiki>https://cds/images/teamOverlay/[teamNum]</nowiki>
+ <nowiki>https://cds/images/overlay/[teamNum]</nowiki>
 ''Access: Authorized''
 
 Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
