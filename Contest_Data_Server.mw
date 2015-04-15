@@ -100,7 +100,7 @@ Returns a full HD (1920x1080) png containing the team logo and name, for use as 
 
 The logo is in a rectangle that is 230x230 pixels, with the upper left corner of the rectangle located at 95 pixels from the left side and 795 pixels down from the top of the PNG image. The team name is in the ICPC font (Helvetica) in a rectangle that is 1275x230 pixels (width x height), with the upper left corner of the rectangle at 370 pixels from the left side and 795 pixels down from the top of the PNG image. Either graphic may or may not fill its entire rectangle.
 
-A sample overlay file is provided here: [[28.png]].
+A sample overlay file is provided here: [[Media:28.png]].
 
 === Data Feeds ===
 
