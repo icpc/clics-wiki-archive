@@ -2,7 +2,7 @@
 ===Augmented event stream===
 The stream produced by the AutoAnalyst contains all tags produced by Kattis, but adds analystmsg tags to the stream. The stream will initially be provided as a file that is appended to as the competition proceeds, that can be read by other processes. Other means of interfacing can also be provided, for instance a TCP connection similar to the one provided by the Contest Control System.
 
-Example:
+Examples:
  <analystmsg>
  <id>24</id>
  <team>39</team>
@@ -14,6 +14,19 @@ Example:
  <category>auto</category>
  <message>St. Petersburg State University of IT, Mechanics and Optics now leads the competition after solving G - Minimum Cost Flow. It has now solved 3 problems.</message>
  </analystmsg>
+
+ <analystmsg>
+ <id>24</id>
+ <team>39</team>
+ <time>67</time>
+ <priority>0</priority>
+ <problem>7</problem>
+ <run_id>122</run_id>
+ <submission>122</submission>
+ <category>auto</category>
+ <message>St. Petersburg State University of IT, Mechanics and Optics now leads the competition after solving G - Minimum Cost Flow. It has now solved 3 problems.</message>
+ </analystmsg>
+
 
 id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.<br>
 team: Identifier of the team that triggered the event (typically by submitting a solution)<br>
