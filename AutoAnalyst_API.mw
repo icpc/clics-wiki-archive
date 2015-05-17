@@ -104,7 +104,7 @@ Returns a json document containing all AutoAnalyst notifications relevant to thi
   }]
  }
 
-====HTTP GET /EditActivity?from=FROM&to=TO====
+====HTTP GET /icat/api/EditActivity?from=FROM&to=TO====
 Returns a json document containing all edit activities detected in the open interval <i>FROM</i>-<i>TO</i> (contest time in minutes) ordered chronologically in an array.
 
  EditActivity?from=80&to=85 could for example return
