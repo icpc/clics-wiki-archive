@@ -16,15 +16,12 @@ Examples:
  </analystmsg>
 
  <analystmsg>
- <id>24</id>
- <team>39</team>
- <time>67</time>
- <priority>0</priority>
- <problem>7</problem>
- <run_id>122</run_id>
- <submission>122</submission>
- <category>auto</category>
- <message>St. Petersburg State University of IT, Mechanics and Optics now leads the competition after solving G - Minimum Cost Flow. It has now solved 3 problems.</message>
+ <id>15</id>
+ <time>30</time>
+ <priority>1</priority>
+ <submission>-1</submission>
+ <category>human</category>
+ <message>K and D are promising to be the most popular problems on the first hour. Many teams are working on them at the moment.</message>
  </analystmsg>
 
 
