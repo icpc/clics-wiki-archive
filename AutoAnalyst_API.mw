@@ -23,10 +23,10 @@ priority: Number indicating the priority of the message where 0 is the highest p
           1 Default priority human analyst messages
           2 High priority katalyzer messages
           3 Default priority katalyzer messages
-problem: Problem that the message is relevant to
-run_id: Identifier of the submission that the message is related to, if any
-submission: Identifier of the submission that the message is related to, if any. If no submission then the value is -1.
-category: String describing the category of message such as 'human' or 'auto' depending on who produced the message
+problem: Problem that the message is relevant to<br>
+run_id: Identifier of the submission that the message is related to, if any<br>
+submission: Identifier of the submission that the message is related to, if any. If no submission then the value is -1.<br>
+category: String describing the category of message such as 'human' or 'auto' depending on who produced the message<br>
 message: Message from analyzer, in plain text
 
 ===Query interfaces===
