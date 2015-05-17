@@ -142,7 +142,7 @@ Returns a json document containing all edit activities detected in the last <i>M
   }
  ]
 
-====HTTP GET /CodeActivity?team_id=<tid1,tid2,...>&problem_id=<pid1,pid2,...>&granularity=MIN====
+====HTTP GET /icat/api/CodeActivity?team_id=<tid1,tid2,...>&problem_id=<pid1,pid2,...>&granularity=MIN====
 Returns a JSON document with a summary of edit and submission activity, intended for generating a graph showing which problems the teams are spending their time on. A few minutes into the contest, a possible response could be
 
  { "granularity": 5,
