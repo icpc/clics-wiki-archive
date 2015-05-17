@@ -16,15 +16,16 @@ Example:
  </analystmsg>
 
 id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.<br>
-team: Identifier of the team that triggered the event (typically by submitting a solution)
-time: Time in contest when this event occurred
-priority: 0 All very important messages
+team: Identifier of the team that triggered the event (typically by submitting a solution)<br>
+time: Time in contest when this event occurred<br>
+priority: Number indicating the priority of the message where 0 is the highest priority. For WF 2015 we will have:
+          0 All very important messages
           1 Default priority human analyst messages
           2 High priority katalyzer messages
           3 Default priority katalyzer messages
 problem: Problem that the message is relevant to
-run_id: Identifier of the submission that the messqge is related to, if any
-submission: Identifier of the submission that the messqge is related to, if any. If no submission then the value is -1.
+run_id: Identifier of the submission that the message is related to, if any
+submission: Identifier of the submission that the message is related to, if any. If no submission then the value is -1.
 category: String describing the category of message such as 'human' or 'auto' depending on who produced the message
 message: Message from analyzer, in plain text
 
