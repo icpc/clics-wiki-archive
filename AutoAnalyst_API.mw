@@ -6,9 +6,13 @@ Example:
  <analystmsg>
  <id>24</id>
  <team>39</team>
- <time>118.480356991</time>
+ <time>67</time>
+ <priority>0</priority>
  <problem>7</problem>
- <message>St. Petersburg State University of IT, Mechanics and Optics extends its lead by solving G - Minimum Cost Flow. It has now solved 8 problems</message>
+ <run_id>122</run_id>
+ <submission>122</submission>
+ <category>auto</category>
+ <message>St. Petersburg State University of IT, Mechanics and Optics now leads the competition after solving G - Minimum Cost Flow. It has now solved 3 problems.</message>
  </analystmsg>
 
 id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.
