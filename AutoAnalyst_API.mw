@@ -42,7 +42,7 @@ message: Message from analyzer, in plain text
 ===Query interfaces===
 These interfaces provide current information through http access. Content is sent using gzip compression, and the Content-Encoding http header will therefore always be set to gzip. Repetitive json documents compress very well, and all modern browsers handle the decompression transparently.
 
-====HTTP GET https://URL/icat/api/Standings====
+====HTTP GET /icat/api/Standings====
 Returns a json-document describing the current state of the scoreboard. It contains the information usually present in a scoreboard, along with additional data on what the teams are working on and what rank teams would get when the next problem is solved. It is intended to be queried by ajax directly from the browser, but can of course also be fetched by a server process.
 
  { "scoreboard": [teamScore1, teamscore2, teamscore3, ...],
