@@ -15,7 +15,7 @@ Example:
  <message>St. Petersburg State University of IT, Mechanics and Optics now leads the competition after solving G - Minimum Cost Flow. It has now solved 3 problems.</message>
  </analystmsg>
 
-id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.
+id: Sequential identifier of this message. All notifications get a unique and strictly increasing id.<br>
 team: Identifier of the team that triggered the event (typically by submitting a solution)
 time: Time in contest when this event occurred
 priority: 0 All very important messages
