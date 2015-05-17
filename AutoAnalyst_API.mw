@@ -166,3 +166,15 @@ Returns a JSON document with a summary of edit and submission activity, intended
  }
 
 All arguments are optional. <code>"granularity"</code> is important to note when interpreting the edit summary, since it describes the length of the "bins" in the edit summary. In the example, there are two edits between minutes 0 and 5, and four edits between minutes 5 and 10. A granularity of 1 would have meant two edits between 0 and 1, and four edits between 5 and 6.
+
+====HTTP GET /icat/api/LastEditedNotSolvedProblem?team_id=<teamid>====
+Returns a JSON document with the problem a team worked on last, along with the contest time when the problem was last edited. The time of submission is not regarded as an edit in this context, and as soon as a submission has been accepted that problem is excluded altogether. This might mean that a problem that was edited prior to the last one might be returned, and hence it's important to take how <tt>"last_edit_time"</tt> compares to the current contest time into account when deciding on the relevance of the information.
+
+ { "team_id": 29,
+   "problem_id": [
+     "E"
+   ],
+   "last_edit_time": 155
+ }
+
+A <tt>team_id</tt> query parameter needs to be provided, and only one integer is accepted. If no ''unsolved'' problem has been edited yet, the <tt>"problem_id"</tt> array is empty and <tt>"last_edit_time"</tt> set to <tt>null</tt>. In the case where more than one problem was edited during the same minute, all of these problems will be listed in alphabetical order in the <tt>"problem_id"</tt> array.
