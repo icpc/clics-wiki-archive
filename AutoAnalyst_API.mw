@@ -178,3 +178,5 @@ Returns a JSON document with the problem a team worked on last, along with the c
  }
 
 A <tt>team_id</tt> query parameter needs to be provided, and only one integer is accepted. If no ''unsolved'' problem has been edited yet, the <tt>"problem_id"</tt> array is empty and <tt>"last_edit_time"</tt> set to <tt>null</tt>. In the case where more than one problem was edited during the same minute, all of these problems will be listed in alphabetical order in the <tt>"problem_id"</tt> array.
+
+Note that only submissions accepted up until scoreboard freeze will be removed from the result. For example, if a team (regardless of the contest time) last edited problem A, then this endpoint will return A as the last edited problem if and only if the team did not solve problem A before scoreboard freeze. After freeze, the endpoint will keep saying that they edited problem A until the teams starts to work on another problem that was not already solved before the freeze.
