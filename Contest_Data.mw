@@ -34,7 +34,7 @@ Info is a singleton (i.e. no id field)
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || language id || integer || 1
+| id (ID) || a unique id || integer || 1
 |-
 | name || language name || string || Java
 |}
@@ -43,7 +43,7 @@ Info is a singleton (i.e. no id field)
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || problem id || integer || 1
+| id (ID) || a unique id || integer || 1
 |-
 | label || a 1-2 char label || string || A
 |-
@@ -62,9 +62,9 @@ Problem information is not available until the contest has started.
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || an id for the group || integer || 7
+| id (ID) || a unique id || integer || 7
 |-
-| external-id || an external id for the group || string || 7593
+| external-id || an external id for the group || integer || 7593
 |-
 | name || the group name || string || Africa and the Middle East
 |}
@@ -73,9 +73,9 @@ Problem information is not available until the contest has started.
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || team identifier || integer || 72
+| id (ID) || a unique id || integer || 72
 |-
-| external-id || an external id for the team || string || 201433
+| external-id || an external id for the team || integer || 201433
 |-
 | name || the team name || string || Shanghai Jiao Tong University
 |-
@@ -91,7 +91,7 @@ Problem information is not available until the contest has started.
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || an id for the judgement || integer || 15
+| id (ID) || a unique id || integer || 15
 |-
 | acronym || a short acronym for the judgement || string || PE
 |-
@@ -104,13 +104,13 @@ Problem information is not available until the contest has started.
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id (ID) || an unique id || integer || 187
+| id (ID) || a unique id || integer || 187
 |-
 | language || the language used in the submission || string || C++
 |-
 | problem || the problem id || integer || 4
 |-
-| team || the team id that made the submission || integer|| 19
+| team || the team id that made the submission || integer || 19
 |-
 | time || the contest time of this submission || double || 5042.406224
 |-
