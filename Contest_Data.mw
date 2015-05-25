@@ -8,6 +8,9 @@ After which this header should be rewritten. :)
 
 == Contest ==
 
+Notes:
+ - (ID) indicates a unique id field
+
 === Info ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
@@ -25,6 +28,9 @@ After which this header should be rewritten. :)
 | penalty ||  || string || 20
 |}
 
+Info is a singleton (i.e. no id field)
+
+
 Todo:
 default-clars:
   - No comment, read problem statement.
@@ -38,26 +44,18 @@ clar-categories:
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id || language id || string || 1
+| id (ID) || language id || integer || 1
 |-
 | name || language name || string || Java
-|-
-| compiler ||  || string || /user/bin/javac
-|-
-| compiler-args ||  || string || -encoding UTF-8 -sourcepath . -d . {files}
-|-
-| runner ||  || string || /user/bin/java
-|-
-| runner-args ||  || string || -client -Xss8m
 |}
 
 === Problems ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id || problem id || string || 1
+| id (ID) || problem id || integer || 1
 |-
-| letter || problem identifier || string || A
+| label || a 1-2 char label || string || A
 |-
 | name || problem name || string || The baggage problem
 |-
@@ -65,62 +63,84 @@ clar-categories:
 |-
 | color || a color name || string || purple
 |-
-| rgb || the color value in hex || string #FFFFFF || #60008C
+| rgb || the color value in hex || string (#FFFFFF) || #60008C
 |}
 
-Problem information is not available outside of blue until the contest has started.
+Problem information is not available until the contest has started.
 
-=== Regions ===
+=== Groups ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| external-id || an external id for the team || string || 7593
+| id (ID) || an id for the group || integer || 7
 |-
-| name || the region name || string || Africa and the Middle East
+| external-id || an external id for the group || string || 7593
+|-
+| name || the group name || string || Africa and the Middle East
 |}
 
 === Teams ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
 |-
-| id || team identifier || string || 72
+| id (ID) || team identifier || integer || 72
 |-
 | external-id || an external id for the team || string || 201433
 |-
-| name || the team name || string || Tokyo Titans
+| name || the team name || string || Shanghai Jiao Tong University
 |-
 | university || the team's university || string || The University of Tokyo
 |-
-| region || the team's region || string || Asia
+| group || the team's group || string || Asia
 |-
-| nationality || the team's nationality || string, 3 letter ISO || JPN
+| nationality || the team's nationality || string, 3 letter ISO country code || JPN
+|}
+
+=== Judgements ===
+
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id (ID) || an id for the judgement || integer || 15
+|-
+| acronym || a short acronym for the judgement || string || PE
+|-
+| name || the judgement name || string || Presentation Error
+|-
+| penalty || whether this judgement causes a penalty || boolean || true
 |}
 
 === Submissions ===
-To-do
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id (ID) || an unique id || integer || 187
+|-
+| language || the language used in the submission || string || C++
+|-
+| problem || the problem id || integer || 4
+|-
+| team || the team id that made the submission || integer|| 19
+|-
+| time || the contest time of this submission || double || 5042.406224
+|-
+| timestamp || the wall clock time of this submission || double || 1403673842.41
+|}
 
-<run>
-   <id>187</id>
-   <judged>False</judged>
-   <language>C++</language>
-   <problem>4</problem>
-   <status>fresh</status>
-   <team>19</team>
-   <time>5042.406224</time>
-   <timestamp>1403673842.41</timestamp>
-</run>
-
-=== Judgements ===
-To-do
-
-<judgement>
-   <acronym>PE</acronym>
-   <id>15</id>
-   <name>Presentation Error</name>
-</judgement>
-
-=== Submission Judgements ===
-To-do
+=== Submissions Judgements ===
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id (ID) || a unique id that matches a submission || integer || 187
+|-
+| solved || the language used in the submission || boolean || true
+|-
+| judgement || the judgement id || integer || 4
+|-
+| time || the contest time of this submission || double || 5042.406224
+|-
+| timestamp || the wall clock time of this submission || double || 1403673842.41
+|}
 
 Judgements are not visible outside of blue zone during the freeze.
 Judgements sent to balloons are currently different.
@@ -128,18 +148,23 @@ Judgements sent to balloons are currently different.
 === Clarifications ===
 To-do
 
-<clar>
-   <answer></answer>
-   <answered>False</answered>
-   <id>5</id>
-   <question>Problem H: Does bouncing up means bounce to the grid above the current one?</question>
-   <status>fresh</status>
-   <team>60</team>
-   <time>5043.942061</time>
-   <timestamp>1403673843.94</timestamp>
-   <to-all>False</to-all>
-</clar>
-
+{| class="wikitable"
+! Name !! Description !! Type !! Example
+|-
+| id (ID) || a unique id || integer || 5
+|-
+| question || the question || string || Problem H: Does bouncing up means bounce to the grid above the current one?
+|-
+| team || the team id that submitted the clarification || integer || 4
+|-
+| answer || the judgement id || integer || 4
+|-
+| to-all || true if the answer was sent to all teams || boolean || false
+|-
+| time || the contest time of this submission || double || 5042.406224
+|-
+| timestamp || the wall clock time of this submission || double || 1403673842.41
+|}
 
 === Testcases ===
 To-do
