@@ -127,9 +127,9 @@ Problem information is not available until the contest has started.
 |-
 | judgement || the judgement id || integer || 4
 |-
-| time || the contest time of this submission || double || 5042.406224
+| time || the contest time of this judgement || double || 5042.406224
 |-
-| timestamp || the wall clock time of this submission || double || 1403673842.41
+| timestamp || the wall clock time of this judgement || double || 1403673842.41
 |}
 
 Judgements are not visible outside of blue zone during the freeze.
