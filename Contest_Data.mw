@@ -30,16 +30,6 @@ Notes:
 
 Info is a singleton (i.e. no id field)
 
-
-Todo:
-default-clars:
-  - No comment, read problem statement.
-
-clar-categories:
-  - General
-  - SysOps
-  - Operations
-
 === Languages ===
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
@@ -146,7 +136,6 @@ Judgements are not visible outside of blue zone during the freeze.
 Judgements sent to balloons are currently different.
 
 === Clarifications ===
-To-do
 
 {| class="wikitable"
 ! Name !! Description !! Type !! Example
