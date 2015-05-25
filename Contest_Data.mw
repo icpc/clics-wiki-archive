@@ -19,13 +19,13 @@ Notes:
 |-
 | short-name || a shorter name || string || ACM-ICPC World Finals
 |-
-| start-time ||  || string || 2014-06-25 10:00 (or 1404998551?)
+| start-time || the start of the contest || string (local time with UTC timezone offset) || 2014-06-25 10:00+1
 |-
-| duration (or length) ||  || string HH:MM:SS || 5:00:00
+| duration || the length of contest || string (HH:MM:SS) || 05:00:00
 |-
-| scoreboard-freeze-length ||  || string HH:MM:SS || 01:00:00
+| scoreboard-freeze-length || how long the scoreboard freezes before the end of the contest || string (HH:MM:SS) || 01:00:00
 |-
-| penalty ||  || string || 20
+| penalty || the penalty time for an incorrect answer, in minutes || integer || 20
 |}
 
 Info is a singleton (i.e. no id field)
