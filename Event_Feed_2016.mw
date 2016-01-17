@@ -36,6 +36,7 @@ Sample events with inner element descriptions:
 === <info> ===
 
  <info>
+ <contest-id>398578</contest-id>
  <length>05:00:00</length>
  <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
  <penalty>20</penalty>
@@ -45,6 +46,7 @@ Sample events with inner element descriptions:
  <short-name>ACM ICPC World Finals</short-name>
  </info>
 
+;contest-id: Contest identifier.
 ;length: Length of contest in HH:MM:SS format.
 ;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
 ;penalty: Penalty time in minutes.
