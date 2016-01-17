@@ -28,9 +28,7 @@ Event types are:
 
 If nothing is specified, elements are instances identified by an 'id'.
 
-Timestamped events all have a timestamp element in decimal seconds.
-Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
-
+Time and timestamp elements are specified in seconds; time elements are in contest time (relative to contest start, corrected for removed time intervals) while timestamps are in Unix epoch. Both are specified with three decimal places, i.e. with millisecond resolution. Times are truncated, so in a 5 hour contest a submission at 18000 seconds is late.
 Events have time attributes identical to the timestamp element.
 
 Sample events with inner element descriptions:
