@@ -85,11 +85,17 @@ Sample events with inner element descriptions:
 
  <problem>
  <id>1</id>
- <name>A - APL Lives!</name>
+ <label>A</label>
+ <name>APL Lives!</name>
+ <color>red</color>
+ <rgb>FF0000</rgb>
  </problem>
 
 ;id: Problem identifier
+;label: problem label on the scoreboard
 ;name: descriptive name
+;color: problem color name (optional, from problemset.yaml)
+;rgb: problem color RGB hex value (optional, from problemset.yaml)
 
 === <team> ===
 
