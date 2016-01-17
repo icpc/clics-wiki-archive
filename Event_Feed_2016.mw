@@ -42,6 +42,7 @@ Sample events with inner element descriptions:
  <started>False</started>
  <starttime>1265335138.26</starttime>
  <title>The 2016 World Finals of the ACM International Collegiate Programming Contest</title>
+ <short-name>ACM ICPC World Finals</short-name>
  </info>
 
 ;length: Length of contest in HH:MM:SS format.
@@ -50,6 +51,7 @@ Sample events with inner element descriptions:
 ;started: Started flag.
 ;starttime: Starttime as a timestamp in decimal seconds, or <starttime>undefined</starttime> if the start time is not defined.
 ;title: Contest title string.
+;short-name: Shortened contest title (from contest.yaml)
 
 === <language> ===
 
@@ -102,6 +104,7 @@ Sample events with inner element descriptions:
  <team>
  <id>1</id>
  <name>American University of Beirut</name>
+ <short-name>U Beirut</short-name>
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
  <region>Europe</region> 
@@ -110,6 +113,7 @@ Sample events with inner element descriptions:
 
 ;id: Team identifier
 ;name: Team name
+;short-name: Shortened team name (from teams.csv)
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
 ;region: super region name. 
