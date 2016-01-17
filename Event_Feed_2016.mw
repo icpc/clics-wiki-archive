@@ -9,23 +9,26 @@ Connect to port 4714 and the entire feed for the contest will be sent to you, wi
 == File format ==
 The event feed is structured as an xml document within the root element <contest>.
 
-All events are separate elements at the top level.
+All events are separate elements at the top level. Elements are considered either ''static'' in which case only one such element occurs, or ''instances'' in which case different instances are distinguished by a unique id. When an element appears again in the feed, either static or an instance with the same id, it is considered to replace the previous occurence.
 
 Some extra tags beyond what is documented here may also be sent, these should be ignored.
 
 Event types are:
 
-;info: contest information and updates
+;info: contest information and updates (static)
 ;language: submission language information
-;region: super region information
-;judgement: judgement information
+;region: super region information (instance with id 'external-id')
+;judgement: judgement information (instance with id 'acronym')
 ;problem: problem information
 ;team: team information
 ;clar: submitted clarification information and updates
 ;run: submitted run information and updates
-;testcase: judgement of individual test cases for a run
+;testcase: judgement of individual test cases for a run (instance identified by 'i' and 'judgement_id')
+;finalized: contest finalization information (static)
 
-Most elements are identified by an id. Timestamped events all have a timestamp element in decimal seconds.
+If nothing is specified, elements are instances identified by an 'id'.
+
+Timestamped events all have a timestamp element in decimal seconds.
 Submission events have a time element in decimal seconds relative to the contest start when it was submitted.
 
 Events have time attributes identical to the timestamp element.
