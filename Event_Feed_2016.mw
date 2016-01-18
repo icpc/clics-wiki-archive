@@ -41,7 +41,7 @@ Sample events with inner element descriptions:
  <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
  <penalty>20</penalty>
  <started>False</started>
- <starttime>1265335138.26</starttime>
+ <starttime>1265335138.260</starttime>
  <title>The 2016 World Finals of the ACM International Collegiate Programming Contest</title>
  <short-name>ACM ICPC World Finals</short-name>
  </info>
@@ -133,7 +133,7 @@ Additional information may be provided.
  <team>0</team>
  <problem>1</problem>
  <time>118.480</time>
- <timestamp>1265335256.74</timestamp>
+ <timestamp>1265335256.480</timestamp>
  <to-all>True</to-all>
  </clar>
 
@@ -159,7 +159,7 @@ Additional information may be provided.
  <solved>False</solved>
  <team>74</team>
  <time>17960.749</time>
- <timestamp>1265353100.29</timestamp>
+ <timestamp>1265353100.749</timestamp>
  </run>
 
 ;id: Run identifier
@@ -183,7 +183,7 @@ Additional information may be provided.
  <run-id>1</run-id>
  <solved>False</solved>
  <time>939.752</time>
- <timestamp>1265336078.01</timestamp>
+ <timestamp>1265336078.752</timestamp>
  </testcase>
 
 ;i: testcase number
@@ -197,7 +197,7 @@ Additional information may be provided.
 
 === <finalized> ===
  <finalized>
- <timestamp>1265336078.01</timestamp>
+ <timestamp>1265336078.015</timestamp>
  <last-gold>4</last-gold>
  <last-silver>8</last-silver>
  <last-bronze>12</last-bronze>
