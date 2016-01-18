@@ -132,7 +132,7 @@ Additional information may be provided.
  <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
  <team>0</team>
  <problem>1</problem>
- <time>118.480356991</time>
+ <time>118.480</time>
  <timestamp>1265335256.74</timestamp>
  <to-all>True</to-all>
  </clar>
@@ -158,7 +158,7 @@ Additional information may be provided.
  <result>WA</result>
  <solved>False</solved>
  <team>74</team>
- <time>17960.749403</time>
+ <time>17960.749</time>
  <timestamp>1265353100.29</timestamp>
  </run>
 
@@ -182,7 +182,7 @@ Additional information may be provided.
  <n>1</n>
  <run-id>1</run-id>
  <solved>False</solved>
- <time>939.751724958</time>
+ <time>939.752</time>
  <timestamp>1265336078.01</timestamp>
  </testcase>
 
