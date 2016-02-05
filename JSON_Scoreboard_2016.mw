@@ -2,6 +2,7 @@
 
 This page describes a '''draft''' API for providing a scoreboard of an (ICPC) contest.
 It is based on the more encompassing [[Draft_CCS_REST_interface]].
+This draft is proposed for implementation and use in the ICPC 2016 World Finals.
 
 == General design principles ==
 
