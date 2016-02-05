@@ -25,12 +25,17 @@ Returns a JSON array, with each element an object describing a problem, with the
 ! Required?
 ! Description
 |-
+| id
+| integer
+| yes
+| numeric identifier, determines order of problems
+|-
 | label
 | string
 | yes
-| label of the problem in the contest, typically a single capitalized letter
+| label of the problem in the contest, typically a single capitalized letter; for WF2016: label='A'+(id-1)
 |-
-| shortname
+| short_name
 | string
 | yes
 | brief name of the problem (restrict to, say, 10 characters?)
@@ -40,10 +45,15 @@ Returns a JSON array, with each element an object describing a problem, with the
 | yes
 | name of the problem
 |-
+| rgb
+| string
+| no
+| hexadecimal RGB value of problem color as specified in [http://en.wikipedia.org/wiki/Web_colors#Hex_triplet HTML hexadecimal colors], e.g. '#AC00FF' or '#fff'
+|-
 | color
 | string
 | no
-| color of this problem (e.g. on the scoreboard), specified in [http://en.wikipedia.org/wiki/Web_colors HTML hexadecimal or HTML color name] 
+| human readable color description associated to the RGB value
 |}
 
 ==== Example ====
@@ -51,8 +61,8 @@ Returns a JSON array, with each element an object describing a problem, with the
 Request:
   GET http://example.com/problems
 Returned data:
-  [{"label":"A","shortname":"asteroids","name":"Asteroid Rangers","color":"blue"},
-   {"label":"B","shortname":"bottles","name":"Curvy Little Bottles","color":"#ffaa00"},
+  [{"label":"A","shortname":"asteroids","name":"Asteroid Rangers","rgb":"#00f,"color":"blue"},
+   {"label":"B","shortname":"bottles","name":"Curvy Little Bottles","rgb":"#808080","color":"gray"},
    ...
   ]
 
