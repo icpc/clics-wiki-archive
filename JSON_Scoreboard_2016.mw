@@ -146,7 +146,7 @@ Each row object contains:
 | problems
 | array
 | yes
-| array of problems with scoring data sorted on problem label, see below for the specification of each element
+| array of problems with scoring data sorted on problem id, see below for the specification of each element
 |}
 Each problem element within the scoreboard consists of:
 {| class="wikitable"
