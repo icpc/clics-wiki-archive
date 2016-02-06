@@ -109,10 +109,12 @@ Returns a JSON array, with each element an object describing a team, with the fo
 Request:
   GET http://example.com/teams
 Returned data:
-  [{"number":42,"name":"Shanghai Jiao Tong University","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
+  [{"number":42,"name":"Shanghai Tigers","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
    {"number":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","group":"North America"},
    ...
   ]
+
+Note that in the World Finals, the team name will be set to the university affiliation.
 
 === GET baseurl/scoreboard ===
 
