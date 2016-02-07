@@ -61,7 +61,7 @@ Returns a JSON array, with each element an object describing a problem, with the
 Request:
   GET http://example.com/problems
 Returned data:
-  [{"label":"A","shortname":"asteroids","name":"Asteroid Rangers","rgb":"#00f,"color":"blue"},
+  [{"label":"A","shortname":"asteroids","name":"Asteroid Rangers","rgb":"#00f","color":"blue"},
    {"label":"B","shortname":"bottles","name":"Curvy Little Bottles","rgb":"#808080","color":"gray"},
    ...
   ]
