@@ -43,17 +43,17 @@ Sample events with inner element descriptions:
  <started>False</started>
  <starttime>1265335138.260</starttime>
  <title>The 2016 World Finals of the ACM International Collegiate Programming Contest</title>
- <short-name>ACM ICPC World Finals</short-name>
+ <short-title>2016 World Finals</short-title>
  </info>
 
-;contest-id: Contest identifier.
+;contest-id: Contest identifier, which is of the form <code>[a-z0-9-]{1,36}</code>, i.e. lowercase letters, digits, and dashes with length at most 36 (this allows a UUID).
 ;length: Length of contest in HH:MM:SS format.
 ;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
 ;penalty: Penalty time in minutes.
 ;started: Started flag.
 ;starttime: Starttime as a timestamp in decimal seconds, or <starttime>undefined</starttime> if the start time is not defined.
 ;title: Contest title string.
-;short-name: Shortened contest title (from contest.yaml)
+;short-title: Shortened contest title (from contest.yaml)
 
 === <language> ===
 
