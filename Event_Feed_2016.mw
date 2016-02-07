@@ -106,22 +106,23 @@ Sample events with inner element descriptions:
  <team>
  <id>1</id>
  <name>American University of Beirut</name>
- <short-name>U Beirut</short-name>
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
+ <university-short-name>U Beirut</short-name>
  <region>Europe</region> 
  <external-id>23412</external-id>
  </team>
 
 ;id: Team identifier
 ;name: Team name
-;short-name: Shortened team name (from teams.csv)
 ;nationality: nationality as ISO 3166-1 alpha-3
 ;university: university affiliation. 
+;university-short-name: shortened university name (from teams.csv)
 ;region: super region name. 
 ;external-id: team id from registration system. 
 
 Additional information may be provided.
+Note that for the World Finals the team name is set to the university name, but this need not be the case at ICPC regionals or other contests.
 
 === <clar> ===
 
