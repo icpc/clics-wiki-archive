@@ -98,8 +98,8 @@ Sample events with inner element descriptions:
 ;id: Problem identifier
 ;label: problem label on the scoreboard
 ;name: descriptive name
-;color: problem color name (optional, from problemset.yaml)
-;rgb: problem color RGB hex value (optional, from problemset.yaml)
+;color: problem color name (optional, from [[Contest_Control_System#problemset.yaml|problemset.yaml]])
+;rgb: problem color [http://en.wikipedia.org/wiki/Web_colors#Hex_triplet RGB hex value] (optional, from [[Contest_Control_System#problemset.yaml|problemset.yaml]])
 
 === <team> ===
 
@@ -115,9 +115,9 @@ Sample events with inner element descriptions:
 
 ;id: Team identifier
 ;name: Team name
-;nationality: nationality as ISO 3166-1 alpha-3
+;nationality: nationality as [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 ISO 3166-1 alpha-3]
 ;university: university affiliation. 
-;university-short-name: shortened university name (from teams.csv)
+;university-short-name: shortened university name (from [[Contest_Control_System#teams.tsv|teams.csv]])
 ;region: super region name. 
 ;external-id: team id from registration system. 
 
