@@ -92,7 +92,7 @@ Sample events with inner element descriptions:
  <label>A</label>
  <name>APL Lives!</name>
  <color>red</color>
- <rgb>FF0000</rgb>
+ <rgb>#FF0000</rgb>
  </problem>
 
 ;id: Problem identifier
