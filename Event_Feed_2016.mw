@@ -104,7 +104,7 @@ Sample events with inner element descriptions:
 === <team> ===
 
  <team>
- <number>1</number>
+ <id>1</id>
  <name>American University of Beirut</name>
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
