@@ -104,7 +104,7 @@ Sample events with inner element descriptions:
 === <team> ===
 
  <team>
- <id>1</id>
+ <number>1</number>
  <name>American University of Beirut</name>
  <nationality>LBN</nationality>
  <university>American University of Beirut</university> 
@@ -113,7 +113,7 @@ Sample events with inner element descriptions:
  <external-id>23412</external-id>
  </team>
 
-;id: Team identifier
+;number: Team identifier and at World Finals the team seat number.
 ;name: Team name
 ;nationality: nationality as [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 ISO 3166-1 alpha-3]
 ;university: university affiliation. 
