@@ -33,7 +33,7 @@ Returns a JSON array, with each element an object describing a problem, with the
 | label
 | string
 | yes
-| label of the problem in the contest, typically a single capitalized letter; for WF2016: label='A'+(id-1)
+| label of the problem in the contest, typically a single capitalized letter; for WF2016: label for id 1='A', label for id 2='b'
 |-
 | short_name
 | string
