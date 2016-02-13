@@ -78,10 +78,10 @@ Returns a JSON array, with each element an object describing a team, with the fo
 ! Required?
 ! Description
 |-
-| number
+| id
 | integer
 | yes for WF2015
-| team number as used in the World Finals
+| team identifier; seat number in the World Finals
 |-
 | name
 | string
@@ -109,8 +109,8 @@ Returns a JSON array, with each element an object describing a team, with the fo
 Request:
   GET http://example.com/teams
 Returned data:
-  [{"number":42,"name":"Shanghai Tigers","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
-   {"number":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","group":"North America"},
+  [{"id":42,"name":"Shanghai Tigers","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
+   {"id":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","group":"North America"},
    ...
   ]
 
