@@ -42,7 +42,41 @@ message: Message from analyzer, in plain text
 ===Query interfaces===
 These interfaces provide current information through http access. Content is sent using gzip compression, and the Content-Encoding http header will therefore always be set to gzip. Repetitive json documents compress very well, and all modern browsers handle the decompression transparently.
 
-====HTTP GET /icat/api/Standings====
+====HTTP GET /icat/api/Scoreboard====
+Returns a JSON-document describing the current state of the scoreboard as specified in [[JSON_Scoreboard_2016]]. Moreover, it contains additional data on what the teams are working on and what rank teams would get when the next problem is solved. It is intended to be queried by ajax directly from the browser, but can of course also be fetched by a server process.
+
+The following additional elements are defined on top of the [[JSON_Scoreboard_2016|base specification]]:
+* Each scoreboard row can contain an element '''main_lang''', a string identifying the main programming language used by this team.
+* Each problem element in problems array in each scoreboard row can the following extra elements:
+** If '''solved''' is false, then an object '''potential''' containing an integer element '''rank''' describes to what rank the team would rise if it would solve this problem now; if additionally the integer element '''before''' is present, the problem must be solved within that many minutes from now to attain '''rank'''.
+** If the team has submissions for this problem, then the string '''lang''' describes the language used for their last submission.
+
+A sample team scoreboard row could look like this:
+ { "rank":7,
+   "team":56,
+   "score":{
+     "num_solved":4,
+     "total_time":302
+   },
+   "main_lang":"Java",
+   "problems":[
+     {"label":"A","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"B","solved":true, "num_judged":1,"time":20, "lang":"C++"},
+     {"label":"C","solved":true, "num_judged":1,"time":104,"lang":"Java"},
+     {"label":"D","solved":true, "num_judged":1,"time":66, "lang":"Java"},
+     {"label":"E","solved":true, "num_judged":1,"time":112,"lang":"Java"},
+     {"label":"F","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"G","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"H","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"I","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"J","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}},
+     {"label":"K","solved":false,"num_judged":3,"time":0,"potential":{"rank":6}, "lang":"Java"},
+     {"label":"L","solved":false,"num_judged":0,"time":0,"potential":{"rank":4,"before":5}}
+   ]
+ }
+
+
+====HTTP GET /icat/api/Standings '''*DEPRECATED*'''====
 Returns a json-document describing the current state of the scoreboard. It contains the information usually present in a scoreboard, along with additional data on what the teams are working on and what rank teams would get when the next problem is solved. It is intended to be queried by ajax directly from the browser, but can of course also be fetched by a server process.
 
  { "scoreboard": [teamScore1, teamscore2, teamscore3, ...],
