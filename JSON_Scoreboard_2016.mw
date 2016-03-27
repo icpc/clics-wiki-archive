@@ -109,7 +109,7 @@ Returns a JSON array, with each element an object describing a team, with the fo
 Request:
   GET http://example.com/teams
 Returned data:
-  [{"id":42,"name":"Shanghai Tigers","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia",},
+  [{"id":42,"name":"Shanghai Tigers","nationality":"CHN","affiliation":"Shanghai Jiao Tong University","group":"Asia"},
    {"id":11,"name":"CMU1","nationality":"USA","affiliation":"Carnegie Mellon University","group":"North America"},
    ...
   ]
