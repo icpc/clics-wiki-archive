@@ -182,6 +182,11 @@ Each problem element within the scoreboard consists of:
 | integer
 | yes
 | present if solved, minutes into the contest when solved by team
+|-
+| first_to_solve
+| boolean
+| yes
+| present if solved, indicates whether this team was the first to solve this problem
 |}
 
 ==== Example ====
@@ -192,10 +197,10 @@ Returned data:
   [{"rank":1,"team":42,"score":{"num_solved":3,"total_time":340},
     "problems":[
      {"label":"A","num_judged":3,"num_pending":1,"solved":false},
-     {"label":"B","num_judged":1,"num_pending":0,"solved":true,"time":20},
-     {"label":"C","num_judged":2,"num_pending":0,"solved":true,"time":55},
+     {"label":"B","num_judged":1,"num_pending":0,"solved":true,"time":20,"first_to_solve":true},
+     {"label":"C","num_judged":2,"num_pending":0,"solved":true,"time":55,"first_to_solve":false},
      {"label":"D","num_judged":0,"num_pending":0,"solved":false},
-     {"label":"E","num_judged":3,"num_pending":0,"solved":true,"time":205}
+     {"label":"E","num_judged":3,"num_pending":0,"solved":true,"time":205,"first_to_solve":false}
     ]},
    ...
   ]
