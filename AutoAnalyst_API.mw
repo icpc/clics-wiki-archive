@@ -1,5 +1,5 @@
 
-===Augmented event stream===
+===Augmented event stream (icat/api/EventFeed)===
 The stream produced by the AutoAnalyst contains all tags produced by Kattis, but adds analystmsg tags to the stream. The stream will initially be provided as a file that is appended to as the competition proceeds, that can be read by other processes. Other means of interfacing can also be provided, for instance a TCP connection similar to the one provided by the Contest Control System.
 
 Examples:
