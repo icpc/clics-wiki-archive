@@ -1,0 +1,28 @@
+This page describes a draft for a JSON event feed.
+
+== Getting the feed ==
+
+'''TODO'''
+
+== Feed format ==
+
+The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as it's own JSON object.
+
+The general format for events is:
+ {"event": "<event type>", "id": "<event id>", "timestamp": "<timestamp>", "data": { <event data> }}
+
+Every event has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint with the given "id".
+
+== Events ==
+
+=== Submission ===
+
+;Corresponding REST endpoint: baseurl/submissions
+
+=== Test Case Judgement ===
+
+;Corresponding REST endpoint: ?
+
+=== Clarification ===
+
+;Corresponding REST endpoint: baseurl/clarifications
