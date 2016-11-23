@@ -29,6 +29,7 @@
 
 == CCS REST interface ==
 * Draft general [[Draft_CCS_REST_interface|CCS REST interface]]
+* Associated proposal for a [[JSON_Event_Feed|JSON event feed]]
 
 == Submission Source Code REST interface ==
 [[Draft 2014 REST interface for source code fetching]]
