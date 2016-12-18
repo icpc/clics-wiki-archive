@@ -11,7 +11,16 @@ The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON]
 The general format for events is:
  {"event": "<event type>", "id": "<event id>", "timestamp": "<timestamp>", "data": { <event data> }}
 
-Every event has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint with the given "id".
+Every event has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint <tt>&lt;event type&gt;</tt> with the given "id".
+
+When "id" is not present, this indicates that there are updates to the element collection at the REST endpoint <tt>&lt;event type&gt;</tt>.
+
+== Restarting the feed ==
+
+When a client (re)connects to the feed, possibly after the start of the contest, he will receive all events with identical data, except for past events corresponding to so-called 'static elements', which are those from the [[Draft_CCS_REST_interface|REST interface]] that do not have a "time" and "contest_time" attribute.
+
+'''TODO''': we need to think better about this:
+* static objects are the ones that ''actually'' do get modified, while the others never do after creation, except for "submission_judgement" since it needs to be created before any dependent "test_case_judgement" elements. Also the "has time and contest_time attributes" does not exactly specify non-static elements, since "submission_file" has no time associated to it (that would be the submission time).
 
 == Events ==
 
