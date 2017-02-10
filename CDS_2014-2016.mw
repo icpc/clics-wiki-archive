@@ -1,3 +1,7 @@
+== 2014-2016 CDS ==
+
+This page documents the CDS as it was from 2014-2016. For 2017, please see [[2017 CDS]].
+
 == Introduction ==
 
 The Contest Data Server (or CDS) is a one-stop shop for external clients to obtain all contest related information. This document contains information on the services (URLs) that are available from the CDS, what content is returned, and links to specs for the format of some files.
