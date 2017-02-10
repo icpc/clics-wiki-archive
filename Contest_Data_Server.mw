@@ -32,19 +32,6 @@ Access builds somewhat logically, e.g. Blue users have access to everything that
 
 The following section describes all of the services that are available through the CDS.
 
-=== Configuration ===
-
-==== Contest Configuration ====
- <nowiki>https://cds/config/contest.yaml
-https://cds/config/problemset.yaml
-https://cds/config/groups.tsv
-https://cds/config/teams.tsv</nowiki>
-''Access: Authorized''
-
-Access to contest configuration files as specified in the CCS spec [[Contest Control System]].
-
-todo: potentially figure out how to pack up all problem files in archive and serve that to a client
-
 === Images ===
 
 ==== Team University Logos ====
