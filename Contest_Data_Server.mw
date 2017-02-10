@@ -72,13 +72,23 @@ Clients without Blue access rights will receive a filtered event feed not contai
 
 Returns a stream similar to the event feed, but merged with contest data from multiple sources: yamls, tsv, etc. Also supports filters/queries & JSON. Use at your own risk - this feed is being used to test future options.
 
-==== Contest Control System JSON Scoreboard ====
+==== JSON Scoreboard ====
  <nowiki>https://cds/scoreboard</nowiki>
 ''Access: Authorized''
 
-Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2014]]
+Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2016]]
 
 Clients without sufficient access rights will received a filtered scoreboard that does not contain submission judgments from the final hour.
+
+==== Optimistic JSON Scoreboard ====
+ <nowiki>https://cds/optimisticScoreboard</nowiki>
+''Access: Authorized''
+
+Returns a JSON scoreboard as defined here: [[JSON Scoreboard 2016]]
+
+The optimistic scoreboard assumes that the last submission made on any problem during the freeze is solved. e.g. if a team has submitted three times after the scoreboard freeze, this scoreboard will assume that the first two were wrong answers and the third was correct.
+
+This scoreboard may not be shown publicly unless it is clearly labelled as a possible projection! In reality the first submission might have been correct, or the third may still not be solved.
 
 ==== Contest RSS Feed (Draft) ====
  <nowiki>https://cds/rss</nowiki>
