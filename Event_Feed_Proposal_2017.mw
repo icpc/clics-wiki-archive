@@ -1,0 +1,212 @@
+This page describes the event feed format that will be used at WF 2017.
+
+== Getting the feed ==
+
+Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
+
+Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+
+== File format ==
+The event feed is structured as an xml document within the root element <contest>.
+
+All events are separate elements at the top level. Elements are considered either ''static'' in which case only one such element occurs, or ''instances'' in which case different instances are distinguished by a unique id. When an element appears again in the feed, either static or an instance with the same id, it is considered to replace the previous occurence.
+
+Some extra tags beyond what is documented here may also be sent, these should be ignored.
+
+Event types are:
+
+;info: contest information and updates (static)
+;language: submission language information
+;region: super region information (instance with id 'external-id')
+;judgement: judgement information (instance with id 'acronym')
+;problem: problem information
+;team: team information
+;clar: submitted clarification information and updates
+;run: submitted run information and updates
+;testcase: judgement of individual test cases for a run (instance identified by 'i' and 'judgement_id')
+;finalized: contest finalization information (static)
+
+If nothing is specified, elements are instances identified by an 'id'.
+
+Time and timestamp elements are specified in seconds; time elements are in contest time (relative to contest start, corrected for removed time intervals) while timestamps are in Unix epoch. Both are specified with three decimal places, i.e. with millisecond resolution. Times are truncated, so in a 5 hour contest a submission at 18000 seconds is late.
+Events have time and timestamp sub-elements that represent the same real moment in time.
+
+Sample events with inner element descriptions:
+
+=== <info> ===
+
+ <info>
+ <contest-id>398578</contest-id>
+ <length>05:00:00</length>
+ <scoreboard-freeze-length>01:00:00</scoreboard-freeze-length>
+ <penalty>20</penalty>
+ <started>False</started>
+ <starttime>1265335138.260</starttime>
+ <title>The 2016 World Finals of the ACM International Collegiate Programming Contest</title>
+ <short-title>2016 World Finals</short-title>
+ </info>
+
+;contest-id: Contest identifier, which is of the form <code>[a-z0-9-]{1,36}</code>, i.e. lowercase letters, digits, and dashes with length at most 36 (this allows a UUID).
+;length: Length of contest in HH:MM:SS format.
+;scoreboard-freeze-length: Length of time at the end of the contest when scoreboard is frozen in HH:MM:SS format.
+;penalty: Penalty time in minutes.
+;started: Started flag.
+;starttime: Scheduled starttime as a timestamp in decimal seconds, or <starttime>undefined</starttime> if the scheduled start time is not defined.
+;title: Contest title string.
+;short-title: Shortened contest title (from contest.yaml)
+
+=== <language> ===
+
+ <language>
+ <id>1</id>
+ <name>C++</name>
+ </language>
+
+;id: Language identifier.
+;name: Language name.
+
+=== <region> ===
+
+ <region>
+ <external-id>3012</external-id>
+ <name>Europe</name>
+ </region>
+
+;external-id: Identidier from the registration system. 
+;name: Super region name.
+
+=== <judgement> ===
+
+ <judgement>
+ <acronym>CE</acronym>
+ <name>Compile Error</name>
+ </judgement>
+
+;acronym: Short name
+;name: descriptive name
+
+=== <problem> ===
+
+ <problem>
+ <id>1</id>
+ <label>A</label>
+ <name>APL Lives!</name>
+ <color>red</color>
+ <rgb>#FF0000</rgb>
+ </problem>
+
+;id: Problem identifier
+;label: problem label on the scoreboard
+;name: descriptive name
+;color: problem color name (optional, from [[Contest_Control_System#problemset.yaml|problemset.yaml]])
+;rgb: problem color [http://en.wikipedia.org/wiki/Web_colors#Hex_triplet RGB hex value] (optional, from [[Contest_Control_System#problemset.yaml|problemset.yaml]])
+
+=== <team> ===
+
+ <team>
+ <id>1</id>
+ <name>American University of Beirut</name>
+ <nationality>LBN</nationality>
+ <university>American University of Beirut</university> 
+ <university-short-name>U Beirut</short-name>
+ <region>Europe</region> 
+ <external-id>23412</external-id>
+ </team>
+
+;id: Team identifier and at World Finals the team seat number.
+;name: Team name
+;nationality: nationality as [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 ISO 3166-1 alpha-3]
+;university: university affiliation. 
+;university-short-name: shortened university name (from [[Contest_Control_System#teams.tsv|teams.csv]])
+;region: super region name. 
+;external-id: team id from registration system. 
+
+Additional information may be provided.
+Note that for the World Finals the team name is set to the university name, but this need not be the case at ICPC regionals or other contests.
+
+=== <clar> ===
+
+ <clar>
+ <answer>The number of pieces will fit in a signed 32-bit integer.</answer>
+ <answered>True</answered>
+ <id>1</id>
+ <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
+ <team>0</team>
+ <problem>1</problem>
+ <time>118.480</time>
+ <timestamp>1265335256.480</timestamp>
+ <to-all>True</to-all>
+ </clar>
+
+;answer: 
+;answered: Answered flag
+;id: Clarification identifier
+;question:
+;team: Team ID
+;problem: Problem ID
+;time:
+;timestamp:
+;to-all: to-all flag
+
+=== <run> ===
+
+ <run>
+ <id>1410</id>
+ <judged>True</judged>
+ <language>C++</language>
+ <penalty>True</penalty>
+ <problem>4</problem>
+ <result>WA</result>
+ <solved>False</solved>
+ <team>74</team>
+ <time>17960.749</time>
+ <timestamp>1265353100.749</timestamp>
+ </run>
+
+;id: Run identifier
+;judged: Judged flag
+;language: language name
+;penalty: penalty flag
+;problem: problem ID
+;result: result short name
+;solved: solved flag
+;team: team ID
+;time: official submission time used for scoring.
+;timestamp:
+
+=== <testcase> ===
+
+ <testcase>
+ &lt;i&gt;1&lt;/i&gt;
+ <judged>True</judged>
+ <judgement>WA</judgement>
+ <n>1</n>
+ <run-id>1</run-id>
+ <solved>False</solved>
+ <time>939.752</time>
+ <timestamp>1265336078.752</timestamp>
+ </testcase>
+
+;i: testcase number
+;judged:
+;judgement: Judgement acronym
+;n: Total number of testcases
+;run-id:
+;solved:
+;time:
+;timestamp:
+
+=== <finalized> ===
+ <finalized>
+ <timestamp>1265336078.015</timestamp>
+ <last-gold>4</last-gold>
+ <last-silver>8</last-silver>
+ <last-bronze>12</last-bronze>
+ <comment>Finalized by John Doe and Jane Doe</comment>
+ </finalized>
+
+;timestamp:
+;last-gold:integer, last rank to receive a gold (should always be 4 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
+;last-silver:integer, last rank to receive a silver (should always be 8 for a [[Contest_Control_System#Scoring_Data_Generation|compliant system]])
+;last-bronze:integer, last rank to receive a bronze (should often be 12 but could very possibly be something else)
+;comment:text
