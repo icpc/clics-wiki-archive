@@ -80,10 +80,16 @@ Sample events with inner element descriptions:
  <judgement>
  <acronym>CE</acronym>
  <name>Compile Error</name>
+ <penalty>False</penalty>
+ <solved>False</solved>
  </judgement>
 
 ;acronym: Short name
 ;name: descriptive name
+;penalty: Whether this judgement type incurs penalty time
+;solved: Whether this judgement type solves the problem
+
+Note that the '''penalty''' and '''solved''' attributes should be identical to those in corresponding '''run''' elements.
 
 === <problem> ===
 
