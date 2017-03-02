@@ -167,6 +167,8 @@ Note that for the World Finals the team name is set to the university name, but 
  <team>74</team>
  <time>17960.749</time>
  <timestamp>1265353100.749</timestamp>
+ <judged-time>17969.143</judged-time>
+ <judged-timestamp>1265353109.143</judged-timestamp>
  </run>
 
 ;id: Run identifier
@@ -177,8 +179,10 @@ Note that for the World Finals the team name is set to the university name, but 
 ;result: result short name
 ;solved: solved flag
 ;team: team ID
-;time: official submission time used for scoring.
-;timestamp:
+;time: official submission (contest) time used for scoring.
+;timestamp: UNIX Epoch timestamp
+;judged-time: contest time when submission was judged.
+;judged-timestamp: UNIX Epoch timestamp when submission was judged.
 
 === <testcase> ===
 
