@@ -184,6 +184,8 @@ Note that for the World Finals the team name is set to the university name, but 
 ;judged-time: contest time when submission was judged.
 ;judged-timestamp: UNIX Epoch timestamp when submission was judged.
 
+Note: The '''judged-time''' and '''judged-timestamp''' attributes are only present if '''solved''' is true.
+
 === <testcase> ===
 
  <testcase>
