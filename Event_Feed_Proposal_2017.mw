@@ -1,4 +1,4 @@
-This page describes the event feed format that will be used at WF 2017.
+This page describes the event feed format that was proposed for use at the 2017 WF. In reality, the 2016 feed was used instead.
 
 The 2017 event feed only differs with respect to the [[Event_Feed_2016|feed used during WF 2016]] by adding the '''penalty''' and '''solved''' attributes from '''run''' also to '''judgement''', and adding judged time(stamp)s to '''run'''.
 
