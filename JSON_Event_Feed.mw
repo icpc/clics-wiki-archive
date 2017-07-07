@@ -11,11 +11,9 @@ Access control uses the same [[Draft_CCS_REST_interface#Roles | user roles]] as 
 The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as it's own JSON object.
 
 The general format for events is:
- {"event": "<event type>", "id": "<event id>", "timestamp": "<timestamp>", "data": { <event data> }}
+ {"event": "<event type>", "endpoint": "<API endpoint>", "timestamp": "<timestamp>", "data": { <event data> }}
 
-Every event has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint <tt>&lt;event type&gt;</tt> with the given "id".
-
-When "id" is not present, this indicates that there are updates to the element collection at the REST endpoint <tt>&lt;event type&gt;</tt>.
+Most events has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint.
 
 == Restarting the feed ==
 
