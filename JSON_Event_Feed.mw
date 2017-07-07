@@ -24,6 +24,50 @@ When a client (re)connects to the feed, possibly after the start of the contest,
 
 == Events ==
 
+=== Contest ===
+
+Note: since the contest endpoint returns an empty object when no current contest is running, an event will be sent at contest start and end. 
+
+Example:
+ {"event": "contest", "endpoint": "/contest", "timestamp": "2014-06-25T10:00:00+01", "data": {
+   {"id":"7b0dd4ea-19a1-4434-9034-529ebe55ab45","name":"2014 ICPC World Finals",
+   "formal_name":"38th Annual World Finals of the ACM International Collegiate Programming Contest",
+   "start_time":"2014-06-25T10:00:00+01","duration":"5:00:00","scoreboard_freeze_duration":"1:00:00","penalty_time":20}
+ }
+
+=== Languages ===
+
+Example:
+ {"event": "languages", "endpoint": "/languages", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"1-java","name":"Java"},
+  {"id":"cpp","name":"GNU C++"},
+  {"id":"4358281971166881160","name":"Python"}
+ ]}
+
+=== Problems ===
+
+Example:
+ {"event": "problems", "endpoint": "/problems", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"blue","rgb":"#00f"},
+  {"id":"B","label":"B","shortname":"bottles","name":"Curvy Little Bottles","ordinal":2,"color":"gray","rgb":"#808080"}
+ ]}
+
+=== Test cases ===
+
+Example:
+ {"event": "test-cases", "endpoint": "/problems/10-asteroids/test_cases", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"10-asteroids-28","problem_id":"10-asteroids","ordinal":28,"description":"Test corner case of zero input",
+   "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
+ ]}
+
+=== Teams ===
+
+Example:
+ {"event": "teams", "endpoint": "/teams", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"abc123","label":"123","icpc_id":"201433","name":"Shanghai Tigers","institution_id":"inst123"},
+  {"id":"11","label":"11","name":"CMU1","institution_id":"inst105"}
+ ]}
+
+=== ... ===
+
+...
+
 === Heartbeat ===
 
 The event feed is guaranteed to send some data at least every 120 seconds. If no other event is sent, a heartbeat will be.
