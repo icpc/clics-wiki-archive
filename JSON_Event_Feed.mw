@@ -15,6 +15,8 @@ The general format for events is:
 
 Most events has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint.
 
+Events are guaranteed to come in timestamp order. (Note though that this only applies to the event feed timestamp. Some events might have timestamps inside the "data" value, those might be different and specifically out of order).
+
 == Events ==
 
 === Contest ===
