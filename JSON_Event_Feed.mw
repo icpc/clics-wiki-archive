@@ -14,13 +14,13 @@ If a client only wants some events the feed can be filtered with the "events" UR
 
 If not specified all events will be sent. If specified only the listed events will be sent.
 
-If a client does not want the "data" part of events this can be removed with the "no-data" URL argument:
+If a client does not want the "data" part of events this can be removed with the "notification-only" URL argument:
 
- /event-feed?no-data=submissions,teams
+ /event-feed?notification-only=submissions,teams
 
 If not specified all events will include data. If specified the listed events will not include data but all others will.
 
-If an event is left out of "events" but included in "no-data" it will not be sent (and not include data) as expected.
+If an event is left out of "events" but included in "notification-only" it will not be sent (and not include data) as expected.
 
 If a client wants data from some point in time this can be done with the "timestamp" URL argument:
 
