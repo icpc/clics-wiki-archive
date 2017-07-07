@@ -47,15 +47,15 @@ Initial set up:
   {"id":"B","label":"B","shortname":"bottles","name":"Curvy Little Bottles","ordinal":2,"color":"gray","rgb":"#808080"}
  ]}
 Problem added:
- {"event": "problems", "endpoint": "/problems/circles", "timestamp": "2014-06-25T10:00:00+01", "data": 
+ {"event": "problems", "endpoint": "/problems", "id": "circles", "timestamp": "2014-06-25T10:00:00+01", "data": 
   {"id":"circles","label":"C","shortname":"circles","name":"Circles","ordinal":3,"color":"red","rgb":"#f00"}
  }
 Problem updated:
- {"event": "problems", "endpoint": "/problems/10-asteroids", "timestamp": "2014-06-25T10:00:00+01", "data": 
+ {"event": "problems", "endpoint": "/problems", "id": "10-asteroids", "timestamp": "2014-06-25T10:00:00+01", "data": 
   {"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"orange","rgb":"#f0b034"}
  }
 Problem deleted:
- {"event": "problems", "endpoint": "/problems/circles", "timestamp": "2014-06-25T10:00:00+01", "data": null}
+ {"event": "problems", "endpoint": "/problems", "id": "circles", "timestamp": "2014-06-25T10:00:00+01", "data": null}
 
 === Test cases ===
 
