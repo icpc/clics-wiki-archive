@@ -32,15 +32,3 @@ The heartbeat event does *not* have a corresponding API endpoint, so the endpoin
 
 Example:
  {"event": "heartbeat", "timestamp": "2014-06-25T10:00:00+01"}
-
-=== Submission ===
-
-;Corresponding REST endpoint: baseurl/submissions
-
-=== Test Case Judgement ===
-
-;Corresponding REST endpoint: ?
-
-=== Clarification ===
-
-;Corresponding REST endpoint: baseurl/clarifications
