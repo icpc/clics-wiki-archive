@@ -30,6 +30,7 @@ The event feed is guaranteed to send some data at least every 120 seconds. If no
 
 The heartbeat event does *not* have a corresponding API endpoint, so the endpoint and data keys are missing.
 
+Example:
  {"event": "heartbeat", "timestamp": "2014-06-25T10:00:00+01"}
 
 === Submission ===
