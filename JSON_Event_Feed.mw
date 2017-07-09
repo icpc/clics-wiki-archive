@@ -26,7 +26,7 @@ If a client wants data from some point in time this can be done with the "timest
 
  /event-feed?timestamp=2014-06-25T11%3A22%3A05.034%2B01
 
-If specified the event feed will include all events strictly *after* the specified timestamp. If not specified the event feed will include all events from the beginning of the feed.
+If specified the event feed will include all events strictly ''after'' the specified timestamp. If not specified the event feed will include all events from the beginning of the feed.
 
 == Feed format ==
 
