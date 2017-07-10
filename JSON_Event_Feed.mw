@@ -78,59 +78,256 @@ Every event with a corresponding API endpoint maps to either a collection or an 
 
 == Events ==
 
-=== Contest ===
+For all the examples below the base URL used is "https://example.com/contests/wf2017".
 
-Example:
- {"event": "contest", "endpoint": "/contest", "timestamp": "2014-06-25T10:00:00+01", "data":
+For many events '''data''' is listed as required. This does not change the fact that '''data''' will be omitted if the notification-only is used.
+
+=== Contests ===
+
+;Event ID: contests
+;Required elements: event, id, endpoint, timestamp, data
+;Examples:
+ {"event": "contests", "id": "wf2017", "endpoint": "https://example.com/contests/wf2017", "timestamp": "2017-07-18T10:00:00+01", "data":
    {"id":"7b0dd4ea-19a1-4434-9034-529ebe55ab45","name":"2014 ICPC World Finals",
    "formal_name":"38th Annual World Finals of the ACM International Collegiate Programming Contest",
-   "start_time":"2014-06-25T10:00:00+01","duration":"5:00:00","scoreboard_freeze_duration":"1:00:00","penalty_time":20}
+   "start_time":"2017-07-18T10:00:00+01","duration":"5:00:00","scoreboard_freeze_duration":"1:00:00","penalty_time":20}
  }
 
 === Languages ===
 
-Example:
- {"event": "languages", "endpoint": "/languages", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"1-java","name":"Java"},
-  {"id":"cpp","name":"GNU C++"},
-  {"id":"4358281971166881160","name":"Python"}
+;Event ID: languages
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Examples:
+Update all / initial set up:
+ {"event": "languages", "endpoint": "https://example.com/contests/wf2017/languages", "timestamp": "2017-07-18T10:01:01+01", "data": [
+   {"id":"1-java","name":"Java"},
+   {"id":"cpp","name":"GNU C++"},
+   {"id":"4358281971166881160","name":"Python"}
  ]}
+Add:
+ {"event": "languages", "id": "python3", "endpoint": "https://example.com/contests/wf2017/languages/python3", "timestamp": "2017-07-18T10:01:02+01", "data":
+   {"id":"python3","name":"Python 3"},
+ }
+Update:
+ {"event": "languages", "id": "4358281971166881160", "endpoint": "https://example.com/contests/wf2017/languages/4358281971166881160", "timestamp": "2017-07-18T10:01:03+01", "data":
+   {"id":"4358281971166881160","name":"Python 2"}
+ }
+Delete:
+ {"event": "languages", "id": "1-java", "endpoint": "https://example.com/contests/wf2017/languages/1-java", "timestamp": "2017-07-18T10:01:04+01", "data": null}
 
 === Problems ===
 
-==== Examples ====
-Initial set up:
- {"event": "problems", "endpoint": "/problems", "timestamp": "2014-06-25T10:00:00+01", "data": [
-  {"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"blue","rgb":"#00f"},
-  {"id":"B","label":"B","shortname":"bottles","name":"Curvy Little Bottles","ordinal":2,"color":"gray","rgb":"#808080"}
+;Event ID: problems
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "problems", "endpoint": "https://example.com/contests/wf2017/problems", "timestamp": "2017-07-18T10:02:01+01", "data": [
+   {"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"blue","rgb":"#00f"},
+   {"id":"B","label":"B","shortname":"bottles","name":"Curvy Little Bottles","ordinal":2,"color":"gray","rgb":"#808080"}
  ]}
-Problem added:
- {"event": "problems", "endpoint": "/problems", "id": "circles", "timestamp": "2014-06-25T10:00:00+01", "data": 
-  {"id":"circles","label":"C","shortname":"circles","name":"Circles","ordinal":3,"color":"red","rgb":"#f00"}
+Add:
+ {"event": "problems", "id": "circles", "endpoint": "https://example.com/contests/wf2017/problems", "timestamp": "2017-07-18T10:02:02+01", "data": 
+   {"id":"circles","label":"C","shortname":"circles","name":"Circles","ordinal":3,"color":"red","rgb":"#f00"}
  }
-Problem updated:
- {"event": "problems", "endpoint": "/problems", "id": "10-asteroids", "timestamp": "2014-06-25T10:00:00+01", "data": 
-  {"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"orange","rgb":"#f0b034"}
+Update:
+ {"event": "problems", "id": "10-asteroids", "endpoint": "https://example.com/contests/wf2017/problems", "timestamp": "2017-07-18T10:02:03+01", "data": 
+   {"id":"10-asteroids","label":"A","shortname":"asteroids","name":"Asteroid Rangers","ordinal":1,"color":"orange","rgb":"#f0b034"}
  }
-Problem deleted:
- {"event": "problems", "endpoint": "/problems", "id": "circles", "timestamp": "2014-06-25T10:00:00+01", "data": null}
+Delete:
+ {"event": "problems", "id": "circles", "endpoint": "https://example.com/contests/wf2017/problems", "timestamp": "2017-07-18T10:02:04+01", "data": null}
 
 === Test cases ===
 
-Example:
- {"event": "test-cases", "endpoint": "/problems/10-asteroids/test_cases", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"10-asteroids-28","problem_id":"10-asteroids","ordinal":28,"description":"Test corner case of zero input",
-   "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
+;Event ID: test-cases
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "test-cases", "endpoint": "https://example.com/contests/wf2017/problems/10-asteroids/test_cases", "timestamp": "2017-07-18T10:03:01+01", "data": [
+   {"id":"10-asteroids-1","problem_id":"10-asteroids","ordinal":1,"description":"Test corner case of zero input", "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
+   {"id":"10-asteroids-2","problem_id":"10-asteroids","ordinal":2,"description":"Test corner case of max input", "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
  ]}
+Add:
+ {"event": "test-cases", "id": "10-asteroids-3", "endpoint": "https://example.com/contests/wf2017/problems/10-asteroids/test_cases/10-asteroids-3", "timestamp": "2017-07-18T10:03:02+01", "data": 
+   {"id":"10-asteroids-3","problem_id":"10-asteroids","ordinal":3,"description":"Random large cases", "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
+ }
+Update:
+ {"event": "test-cases", "id": "10-asteroids-2", "endpoint": "https://example.com/contests/wf2017/problems/10-asteroids/test_cases/10-asteroids-2", "timestamp": "2017-07-18T10:03:03+01", "data": 
+   {"id":"10-asteroids-2","problem_id":"10-asteroids","ordinal":2,"description":"Test corner case of min input", "sample":false,"input":"<base64_string>","answer":"<base64_string>"}
+ }
+Delete:
+ {"event": "test-cases", "id": "10-asteroids-2", "endpoint": "https://example.com/contests/wf2017/problems/10-asteroids/test_cases/10-asteroids-2", "timestamp": "2017-07-18T10:03:04+01", "data": null}
 
 === Teams ===
 
-Example:
- {"event": "teams", "endpoint": "/teams", "timestamp": "2014-06-25T10:00:00+01", "data": [{"id":"abc123","label":"123","icpc_id":"201433","name":"Shanghai Tigers","institution_id":"inst123"},
-  {"id":"11","label":"11","name":"CMU1","institution_id":"inst105"}
+;Event ID: teams
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "teams", "endpoint": "https://example.com/contests/wf2017/teams", "timestamp": "2017-07-18T10:04:01+01", "data": [
+   {"id":"abc123","label":"123","icpc_id":"201433","name":"Shanghai Tigers","institution_id":"inst123"},
+   {"id":"11","label":"11","name":"CMU1","institution_id":"inst105"}
  ]}
+Add:
+ {"event": "teams", "id": "12", "endpoint": "https://example.com/contests/wf2017/teams/12", "timestamp": "2017-07-18T10:04:02+01", "data":
+   {"id":"12","label":"12","icpc_id":"65243","name":"Balloons'R'us","institution_id":"kth.se"}
+ }
+Update:
+ {"event": "teams", "id": "11", "endpoint": "https://example.com/contests/wf2017/teams/11", "timestamp": "2017-07-18T10:04:03+01", "data":
+   {"id":"11","label":"11","icpc_id":"1234","name":"CMU1","institution_id":"inst105"}
+ }
+Delete:
+ {"event": "teams", "id": "abc123", "endpoint": "https://example.com/contests/wf2017/teams/abc123", "timestamp": "2017-07-18T10:04:04+01", "data": null}
 
-=== ... ===
+=== Universities ===
 
-...
+;Event ID: universities
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "universities", "endpoint": "https://example.com/contests/wf2017/universities", "timestamp": "2017-07-18T10:05:01+01", "data": [
+   {"id":"inst123","icpc_id":"433","name":"Shanghai Jiao Tong U.","formal_name":"Shanghai Jiao Tong University","group_id":"asia-74324325532"},
+   {"id":"inst105","name":"Carnegie Mellon University","country":"USA","group_id":"8"}
+ ]}
+Add:
+ {"event": "universities", "id": "kth.se", "endpoint": "https://example.com/contests/wf2017/universities/kth.se", "timestamp": "2017-07-18T10:05:02+01", "data":
+   {"id":"kth.se","icpc_id":"360","name":"KTH","formal_name":"KTH Royal Institute of Technology","group_id":"europe"},
+ }
+Update:
+ {"event": "universities", "id": "inst123", "endpoint": "https://example.com/contests/wf2017/universities/inst123", "timestamp": "2017-07-18T10:05:03+01", "data":
+   {"id":"inst123","icpc_id":"433","name":"Shanghai Jiao Tong U.","formal_name":"Shanghai Jiao Tong University","country":"CHN","group_id":"asia-74324325532"},
+ }
+Delete:
+ {"event": "universities", "id": "inst105", "endpoint": "https://example.com/contests/wf2017/universities/inst105", "timestamp": "2017-07-18T10:05:03+01", "data": null}
+
+=== Groups ===
+
+;Event ID: groups
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "groups", "endpoint": "https://example.com/contests/wf2017/groups", "timestamp": "2017-07-18T10:06:01+01", "data": [
+   {"id":"asia-74324325532","icpc_id":"7593","name":"Asia"}
+   {"id":"europe","icpc_id":"7594","name":"Europe"}
+ ]}
+Add:
+ {"event": "groups", "id": "north-america", "endpoint": "https://example.com/contests/wf2017/groups/north-america", "timestamp": "2017-07-18T10:06:02+02", "data":
+   {"id":"north-america","name":"North America"}
+ }
+Update:
+ {"event": "groups", "id": "north-america", "endpoint": "https://example.com/contests/wf2017/groups/north-america", "timestamp": "2017-07-18T10:06:03+02", "data":
+   {"id":"north-america","icpc_id":"7595""name":"North America"}
+ }
+Delete:
+ {"event": "groups", "id": "asia-74324325532", "endpoint": "https://example.com/contests/wf2017/groups/asia-74324325532", "timestamp": "2017-07-18T10:06:03+02", "data": null}
+
+=== Judgement types ===
+
+;Event ID: judgement-types
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "judgement-types", "endpoint": "https://example.com/contests/wf2017/judgement-types", "timestamp": "2017-07-18T10:07:01+01", "data": [
+   {"id":"CE","label":"CE","name":"Compiler Error","penalty":false,"solved":false},
+   {"id":"0357c4a9-6983-45d7-8080-90d24c5511ea","label":"AC","name":"Accepted","penalty":false,"solved":true}
+ ]}
+Add:
+ {"event": "judgement-types", "id": "WA", "endpoint": "https://example.com/contests/wf2017/judgement-types/WA", "timestamp": "2017-07-18T10:07:02+01", "data": 
+   {"id":"WA","label":"WA","name":"Wrong Answer","penalty":true,"solved":false},
+Update:
+ {"event": "judgement-types", "id": "CE", "endpoint": "https://example.com/contests/wf2017/judgement-types/CE", "timestamp": "2017-07-18T10:07:03+01", "data": 
+   {"id":"CE","label":"CE","name":"Compile Error","penalty":true,"solved":false},
+ }
+Delete:
+ {"event": "judgement-types", "id": "0357c4a9-6983-45d7-8080-90d24c5511ea", "endpoint": "https://example.com/contests/wf2017/judgement-types/0357c4a9-6983-45d7-8080-90d24c5511ea", "timestamp": "2017-07-18T10:07:04+01", "data": null}
+
+=== Submissions ===
+
+;Event ID: submissions
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "submissions", "endpoint": "https://example.com/contests/wf2017/submissions", "timestamp": "2017-07-18T10:08:01+01", "data": [
+   {"id":"wf2017-32163123xz3132yy","label":"187","team_id":"abc123","problem_id":"10-asteroids",
+   "language_id":"1-java","time":"2014-06-25T11:22:05.034+01","contest_time":"1:22:05.034","entry_point":"Main"}
+ ]}
+Add:
+ {"event": "submissions", "id": "wf2017-32163123xz3132yy", "endpoint": "https://example.com/contests/wf2017/submissions/wf2017-32163123xz3132yy", "timestamp": "2017-07-18T10:08:02+01", "data": 
+   {"id":"wf2017-32163123xz3132yy","label":"187","team_id":"abc123","problem_id":"10-asteroids",
+   "language_id":"1-java","time":"2014-06-25T11:22:05.034+01","contest_time":"1:22:05.034","entry_point":"Main"}
+ }
+
+=== Submission files ===
+
+;Event ID: submission-files
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "submission-files", "endpoint": "https://example.com/contests/wf2017/submission-files", "timestamp": "2017-07-18T10:09:01+01", "data": [
+   {"id":"d079c12d-98ce-4bb7-8097-ae083b45feb4","submission_id":"wf2017-32163123xz3132yy","filename":"a.java","source":"<base64_string>","main":true},
+   {"id":"18e44041-8caf-4d77-8864-f5584f1ddfed","submission_id":"wf2017-32163123xz3132yy","filename":"helper.java","source":"<base64_string>","main":false}
+ ]}
+Add:
+ {"event": "submission-files", "id": "fc5344b2-657e-11e7-907b-a6006ad3dba0", "endpoint": "https://example.com/contests/wf2017/submission-files/fc5344b2-657e-11e7-907b-a6006ad3dba0", "timestamp": "2017-07-18T10:09:02+01", "data": 
+   {"id":"fc5344b2-657e-11e7-907b-a6006ad3dba0","submission_id":"wf2017-32163123xz3132yy","filename":"kattio.java","source":"<base64_string>","main":false}
+ }
+
+=== Judgements ===
+
+;Event ID: judgements
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "judgements", "endpoint": "https://example.com/contests/wf2017/judgements", "timestamp": "2017-07-18T10:10:01+01", "data": [
+   {"id":"189549","submission_id":"wf2017-32163123xz3132yy","judgement_type_id":"CE","time":"2014-06-25T11:22:48.427+01","contest_time":"1:22:48.427"}
+ ]}
+Add:
+ {"event": "judgements", "id": "189550", "endpoint": "https://example.com/contests/wf2017/judgements/189550", "timestamp": "2017-07-18T10:10:02+01", "data":
+   {"id":"189550","submission_id":"wf2017-32163123xz3132yy","judgement_type_id":"CE","time":"2014-06-25T11:22:48.427+01","contest_time":"1:22:48.427"}
+ }
+
+=== Runs ===
+
+;Event ID: runs
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "runs", "endpoint": "https://example.com/contests/wf2017/runs", "timestamp": "2017-07-18T10:11:01+01", "data": [
+   {"id":"1312","submission_judgement_id":"189549","test_case_id":"10-asteroids-28","judgement_type_id":"0357c4a9-6983-45d7-8080-90d24c5511ea",
+   "output":"<base64_string>","time":"2014-06-25T11:22:42.420+01","contest_time":"1:22:42.420"}
+ ]}
+Add:
+ {"event": "runs", "id": "1313", "endpoint": "https://example.com/contests/wf2017/runs/1313", "timestamp": "2017-07-18T10:11:01+01", "data": 
+   {"id":"1313","submission_judgement_id":"189549","test_case_id":"10-asteroids-28","judgement_type_id":"0357c4a9-6983-45d7-8080-90d24c5511ea",
+   "output":"<base64_string>","time":"2014-06-25T11:22:42.420+01","contest_time":"1:22:42.420"}
+ }
+
+=== Clarifications ===
+
+;Event ID: clarifications
+;Required elements: event, endpoint, timestamp, data
+;Optional elements: id
+;Example:
+Update all / initial set up:
+ {"event": "clarifications", "endpoint": "https://example.com/contests/wf2017/clarifications", "timestamp": "2017-07-18T10:12:01+01", "data": [
+   {"id":"wf2017-1","reply_to_id":null,"team_id":null,"problem_id":null,"text":"Do not touch anything before the contest starts!",
+   "from_jury":true,"to_all_teams":true,"time":"2014-06-25T11:59:27.543+01","contest_time":"-0:15:32.457"}
+ ]}
+Add:
+ {"event": "clarifications", "endpoint": "https://example.com/contests/wf2017/clarifications", "timestamp": "2017-07-18T10:12:02+01", "data":
+   {"id":"wf2017-8","reply_to_id":"wf2017-5","team_id":null,"problem_id":"10-asteroids","text":"Does bouncing means bounce to the grid above the current one? Yes",
+   "from_jury":true,"to_all_teams":true,"time":"2014-06-25T12:43:02.037+01","contest_time":"2:28:02.037"}
+ }
 
 === Heartbeat ===
 
@@ -138,5 +335,7 @@ The event feed is guaranteed to send some data at least every 120 seconds. If no
 
 The heartbeat event does *not* have a corresponding API endpoint, so the endpoint and data keys are missing.
 
-Example:
- {"event": "heartbeat", "timestamp": "2014-06-25T10:00:00+01"}
+;Event ID: heartbeat
+;Required elements: event, timestamp
+;Example:
+ {"event": "heartbeat", "timestamp": "2017-07-18T10:13:01+01"}
