@@ -68,7 +68,7 @@ The general format for events is:
 | [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] extended combined date/time format with timezone: <tt>yyyy-mm-ddThh:mm:ss(.uuu)?[+-]zz(:mm)?</tt> (or timezone <tt>Z</tt> for UTC).
 |-
 | data
-| Data for the event The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
+| The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
 | JSON object as defined by the [[Draft_CCS_REST_interface#Roles | REST API]].
 |}
 
