@@ -6,13 +6,17 @@ The event feed is served over HTTPS at the `/event-feed` endpoint.
 
 Access control uses the same [[Draft_CCS_REST_interface#Roles | user roles]] as defined for the REST API.
 
-=== Filtered feeds ===
+=== Feeds options ===
+
+==== Filtering events ====
 
 If a client only wants some events the feed can be filtered with the "events" URL argument:
 
  /event-feed?events=submissions,teams
 
 If not specified all events will be sent. If specified only the listed events will be sent.
+
+==== Notification only ====
 
 If a client does not want the "data" part of events this can be removed with the "notification-only" URL argument:
 
@@ -21,6 +25,8 @@ If a client does not want the "data" part of events this can be removed with the
 If not specified all events will include data. If specified the listed events will not include data but all others will.
 
 If an event is left out of "events" but included in "notification-only" it will not be sent (and not include data) as expected.
+
+==== Feed starting point ====
 
 If a client wants data from some point in time this can be done with the "timestamp" URL argument:
 
