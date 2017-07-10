@@ -86,7 +86,7 @@ For all the examples below the base URL used is "https://example.com/contests/wf
 
 Many of the examples below have newlines for readability. In an actual feed there would '''never''' be any newlines in an event, since the events are delivered as NDJSON.
 
-For many events '''data''' is listed as required. This does not change the fact that '''data''' will be omitted if the notification-only is used.
+For many events '''data''' is listed as required. This does not change the fact that '''data''' will be omitted if the <tt>notification-only</tt> setting is used.
 
 === Contests ===
 
