@@ -33,9 +33,36 @@ If specified the event feed will include all events strictly ''after'' the speci
 The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as it's own JSON object.
 
 The general format for events is:
- {"event": "<event type>", "endpoint": "<API endpoint>", "timestamp": "<timestamp>", "data": { <event data> }}
+ {"event": "<event type>", "id": "<id>, "endpoint": "<API endpoint>", "timestamp": "<timestamp>", "data": { <event data> }}
 
-Most events has a corresponding [[Draft_CCS_REST_interface | REST interface]] endpoint. The "data" key will, when available, contain exactly what would be returned when calling the corresponding REST endpoint.
+{| class="wikitable"
+|-
+! Name
+! Description
+! Comment
+|-
+| event
+| Name of the event
+| Used for filtering. All event types are described below 
+|-
+| id
+| ID for the object that's being updated. 
+| Will be missing if an entire collection is updated.
+|-
+| endpoint
+| URL for corresponding API endpoint
+|
+|-
+| timestamp
+| Time for the event
+| Some events will have internal timestamp in the data section. This timestamp might not agree with that timestamp. The semantics of this timestamp is simply when the event was sent on the feed. 
+|-
+| data
+| Data for the event
+| The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
+|}
+
+
 
 Events are guaranteed to come in timestamp order. (Note though that this only applies to the event feed timestamp. Some events might have timestamps inside the "data" value, those might be different and specifically out of order).
 
