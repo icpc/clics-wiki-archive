@@ -6,7 +6,7 @@ The event feed is served over HTTPS at the `/event-feed` endpoint.
 
 Access control uses the same [[Draft_CCS_REST_interface#Roles | user roles]] as defined for the REST API.
 
-=== Feeds options ===
+=== Feed options ===
 
 ==== Filtering events ====
 
