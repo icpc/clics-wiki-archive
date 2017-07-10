@@ -34,6 +34,8 @@ If a client wants data from some point in time this can be done with the "timest
 
 If specified the event feed will include all events strictly ''after'' the specified timestamp. If not specified the event feed will include all events from the beginning of the feed.
 
+Timestamps in the future are allowed.
+
 == Feed format ==
 
 The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as it's own JSON object.
