@@ -36,6 +36,8 @@ If specified the event feed will include all events strictly ''after'' the speci
 
 Timestamps in the future are allowed.
 
+Timestamps are given as  [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] extended combined date/time format with timezone: <tt>yyyy-mm-ddThh:mm:ss(.uuu)?[+-]zz(:mm)?</tt> (or timezone <tt>Z</tt> for UTC). Specifically, they are given in the same format as the '''timestamp'''s in the feed. This means that if a client copies the timestamp of an event and uses that for the timestamp URL argument it will get all events after that event. This is useful e.g. if a client is disconnected and want to continue where it left off.
+
 == Feed format ==
 
 The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as it's own JSON object.
