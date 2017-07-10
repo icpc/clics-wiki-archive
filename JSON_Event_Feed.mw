@@ -62,8 +62,6 @@ The general format for events is:
 | The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
 |}
 
-
-
 Events are guaranteed to come in timestamp order. (Note though that this only applies to the event feed timestamp. Some events might have timestamps inside the "data" value, those might be different and specifically out of order).
 
 == Events ==
