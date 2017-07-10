@@ -60,7 +60,7 @@ The general format for events is:
 | String consisting of characters <tt>[a-zA-Z0-9-_]</tt> of length at most 36 and not starting with a <tt>-</tt> (dash).
 |-
 | endpoint
-| URL for corresponding API endpoint. A GET from this URL would return exactly what's in the '''data''' element (given).
+| URL for corresponding API endpoint. A GET from this URL would return exactly what's in the '''data''' element.
 | URL
 |-
 | timestamp
@@ -68,7 +68,7 @@ The general format for events is:
 | [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] extended combined date/time format with timezone: <tt>yyyy-mm-ddThh:mm:ss(.uuu)?[+-]zz(:mm)?</tt> (or timezone <tt>Z</tt> for UTC).
 |-
 | data
-| The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
+| The exact data that would be returned if calling the corresponding API endpoint at this time.
 | JSON object as defined by the [[Draft_CCS_REST_interface#Roles | REST API]].
 |}
 
