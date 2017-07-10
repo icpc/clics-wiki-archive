@@ -49,27 +49,27 @@ The general format for events is:
 |-
 ! Name
 ! Description
-! Comment
+! Format
 |-
 | event
-| Name of the event
-| Used for filtering. All event types are described below 
+| Name of the event. Used for filtering. 
+| One of '''contests''', '''languages''', '''problems''', '''test-cases''', '''teams''', '''universities''', '''groups''', '''judgement-types''', '''submissions''', '''submission-files''', '''judgements''', '''runs''', '''clarifications'''.
 |-
 | id
-| ID for the object that's being updated. 
-| Always present if event relates to element, never present if event relates to collection.
+| ID for the object that's being updated. Always present if event relates to element, never present if event relates to collection.
+| String consisting of characters <tt>[a-zA-Z0-9-_]</tt> of length at most 36 and not starting with a <tt>-</tt> (dash).
 |-
 | endpoint
 | URL for corresponding API endpoint
-|
+| URL
 |-
 | timestamp
-| Time for the event
-| Some events will have internal timestamp in the data section. This timestamp might not agree with that timestamp. The semantics of this timestamp is simply when the event was sent on the feed. 
+| Time for the event Some events will have internal timestamp in the data section. This timestamp might not agree with that timestamp. The semantics of this timestamp is simply when the event was sent on the feed. 
+| [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] extended combined date/time format with timezone: <tt>yyyy-mm-ddThh:mm:ss(.uuu)?[+-]zz(:mm)?</tt> (or timezone <tt>Z</tt> for UTC).
 |-
 | data
-| Data for the event
-| The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
+| Data for the event The exact data that would be returned if calling the corresponding API endpoint (given) at this time.
+| JSON object as defined by the [[Draft_CCS_REST_interface#Roles | REST API]].
 |}
 
 Events are guaranteed to come in timestamp order and timestamps are guaranteed to be unique. (Note though that this only applies to the event feed timestamp. Some events might have timestamps inside the "data" value, those might be different and specifically out of order).
