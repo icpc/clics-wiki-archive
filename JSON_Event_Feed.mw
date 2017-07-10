@@ -43,7 +43,7 @@ Timestamps are given as  [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] exten
 The feed is served as [http://specs.okfnlabs.org/ndjson/ Newline delimited JSON], with every event as its own JSON object.
 
 The general format for events is:
- {"event": "<event type>", "id": "<id>, "endpoint": "<API endpoint>", "timestamp": "<timestamp>", "data": { <event data> }}
+ {"event": "<event type>", "id": "<id>, "endpoint": "<API endpoint>", "timestamp": "<timestamp>", "data": <data from endpoint> }
 
 This document uses the terms "element" and "collection". A collection is a list
 of elements. An element corresponds to a single object (run, judgement,
