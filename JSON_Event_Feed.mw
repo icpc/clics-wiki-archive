@@ -60,7 +60,7 @@ The general format for events is:
 | String consisting of characters <tt>[a-zA-Z0-9-_]</tt> of length at most 36 and not starting with a <tt>-</tt> (dash).
 |-
 | endpoint
-| URL for corresponding API endpoint
+| URL for corresponding API endpoint. A GET from this URL would return exactly what's in the '''data''' element (given).
 | URL
 |-
 | timestamp
