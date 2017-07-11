@@ -1,4 +1,6 @@
-This page describes the event feed format that was used at WF 2016
+This page describes the event feed format that was used at WF 2016.
+
+Note that as of early 2017 Kattis has not implemented the team "university-short-name" attribute but is otherwise compliant.
 
 == Getting the feed ==
 
