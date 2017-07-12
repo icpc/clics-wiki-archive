@@ -1,3 +1,6 @@
+NOTICE: This draft proposal is unlikely to ever be implemented. There is a new CCS REST interface proposal and JSON event feed in progress that has supplanted this draft as the new direction.
+
+
 The ''Event Feed'' is an externally-accessible XML feed of contest data supplied by a [[CCS|Contest Control System]]. The event feed is the primary way that external clients can get the state of a running contest. 
 
 == Getting the feed ==
