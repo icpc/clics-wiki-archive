@@ -38,7 +38,7 @@ Timestamps in the future are allowed.
 
 Timestamps are given as  [https://en.wikipedia.org/wiki/ISO_8601 ISO 8601] extended combined date/time format with timezone: <tt>yyyy-mm-ddThh:mm:ss(.uuu)?[+-]zz(:mm)?</tt> (or timezone <tt>Z</tt> for UTC). Specifically, they are given in the same format as the '''timestamp'''s in the feed. This means that if a client copies the timestamp of an event and uses that for the timestamp URL argument it will get all events after that event. This is useful e.g. if a client is disconnected and want to continue where it left off.
 
-Multiple requests of the event feed for the same period must be equal after removing heartbeat events. I.e. the system might contain the same heartbeat events every time, but it is not required to.
+Multiple requests of the event feed for the same period must return equivalent events (excluding heartbeat events), including historical timestamps and configuration changes. The system might contain the same heartbeat events every time, but it is not required to.
 
 == Feed format ==
 
