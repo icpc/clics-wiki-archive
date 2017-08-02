@@ -18,13 +18,11 @@ If not specified all events will be sent. If specified only the listed events wi
 
 ==== Notification only ====
 
-If a client does not want the "data" part of events this can be removed with the "notification-only" URL argument:
+If a client does not want the "data" part of events this can be removed with the "no-data" URL argument:
 
- /event-feed?notification-only=submissions,teams
+ /event-feed?no-data
 
-If not specified all events will include data. If specified the listed events will not include data but all others will.
-
-If an event is left out of "events" but included in "notification-only" it will not be sent (and not include data) as expected.
+If not specified all events will include data. If specified the <tt>data</tt> attribute and its contents will not be present for any event.
 
 ==== Feed starting point ====
 
