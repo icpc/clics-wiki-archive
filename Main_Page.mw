@@ -30,7 +30,9 @@ These are the current versions of the requirements documents for Contest Control
 
 * [[Contest Data Server 2017]] specification
 
-* [[CDS]] 2018 proposal
+* [[Contest Data Server 2018]] specification
+
+* [[CDS]] Orphaned doc
 
 == CCS REST interface ==
 * Draft general [[Draft_CCS_REST_interface|CCS REST interface]]
