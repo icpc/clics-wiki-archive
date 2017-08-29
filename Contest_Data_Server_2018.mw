@@ -53,7 +53,7 @@ Provided through REST interface now.
 Provided through REST interface now.
 
 ==== Team Overlay Images ====
- Provided through REST interface now.
+Provided through REST interface now.
 
 Returns a full HD (1920x1080) png containing the team logo and name, for use as an overlay graphic.
 
