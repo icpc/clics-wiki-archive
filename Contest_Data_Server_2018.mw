@@ -106,9 +106,7 @@ Returns a full HD (1920x1080) video of the given team, typically taken during re
 * Video codec: H.264
 
 ==== Team Webcam Stream ====
- Provided through REST interface now.
-
-Returns a video stream from the camera at the given team's workstation.
+Provided through REST interface now.
 
 * Video container: MPEG-TS
 * Video codec: H.264
