@@ -100,8 +100,6 @@ Clients without sufficient access rights will received a filtered RSS feed that 
 ==== Team Videos ====
 Provided through REST interface now.
 
-Returns a full HD (1920x1080) video of the given team, typically taken during registration.
-
 * Video container: MPEG-TS
 * Video codec: H.264
 
@@ -113,8 +111,6 @@ Provided through REST interface now.
 
 ==== Team Desktop Stream ====
 Provided through REST interface now.
-
-Returns a video stream of the given team's desktop.
 
 * Video container: MPEG-TS
 * Video codec: H.264
