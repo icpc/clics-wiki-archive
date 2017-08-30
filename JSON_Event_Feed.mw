@@ -94,7 +94,7 @@ For many events '''data''' is listed as required. This does not change the fact 
 ;Required elements: event, id, endpoint, timestamp, data
 ;Examples:
  {"event": "contests", "id": "wf2017", "endpoint": "https://example.com/contests/wf2017", "timestamp": "2017-07-18T10:00:00+01", "data":
-   {"id":"7b0dd4ea-19a1-4434-9034-529ebe55ab45","name":"2014 ICPC World Finals",
+   {"id":"wf2017","name":"2014 ICPC World Finals",
    "formal_name":"38th Annual World Finals of the ACM International Collegiate Programming Contest",
    "start_time":"2017-07-18T10:00:00+01","duration":"5:00:00","scoreboard_freeze_duration":"1:00:00","penalty_time":20}
  }
