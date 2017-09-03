@@ -1,5 +1,7 @@
 This page describes a draft for a JSON event feed.
 
+'''This page is deprecated, the JSON event feed is now included in the [[Draft_CCS_REST_interface#/event-feed | CSS REST interface]] specification.'''
+
 == Getting the feed ==
 
 The event feed is served over HTTPS at the `/event-feed` endpoint.
