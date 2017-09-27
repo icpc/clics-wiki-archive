@@ -1,17 +1,34 @@
-== Requirement documents ==
-
-These are the current versions of the requirements documents for Contest Control System (CCS) at the ICPC WF:
+== Draft Specification for 2018 ==
+These are the specifications that we expect will be in use by the 2018 World Finals.
 
 * [[Contest Control System]]
+* Draft general [[Draft_CCS_REST_interface|CCS REST interface]] including event feed
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
-* [[Event Feed]]
+* [[Contest Data Server 2018]] specification
 * [[Certification Schedule]]
 
-== Event Feed Documentation ==
+
+== Current Spec Versions in Use ==
+These are the current versions of the requirements documents:
+
+* [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
+* [[Contest Data Server 2017]] specification
+
+=== CCS Specifications ===
+* [[Contest Control System]]
+* [[Event Feed 2016]]
+* [[Draft 2014 REST interface for source code fetching]]
+* [[Contest Start Interface|Draft 2014 REST interface for contest start]]
+
+
+== Deprecated and Unused Specifications ==
+
+=== Event Feed Documentation ===
+* [[Event Feed]]
 * [[Event Feed 2011]] (was also used in 2012)
 * [[Event Feed 2013]]
 * [[Event Feed 2014]] (was also used in 2015)
-* [[Event Feed 2016]] <-- Current spec in use
+<-- Current spec in use
 * [[Event Feed Proposal 2017]]
 
 == JSON Scoreboard Documentation ==
@@ -25,23 +42,9 @@ These are the current versions of the requirements documents for Contest Control
 * Draft 2015 [[CDP]] specification
 
 == Contest Data Server ==
-
 * [[CDS 2014-2016]] specification
-
-* [[Contest Data Server 2017]] specification
-
-* [[Contest Data Server 2018]] specification
-
 * [[CDS]] Orphaned doc
 
-== CCS REST interface ==
-* Draft general [[Draft_CCS_REST_interface|CCS REST interface]] including event feed
-
-== Submission Source Code REST interface ==
-[[Draft 2014 REST interface for source code fetching]]
-
-== Contest Start REST interface ==
-[[Contest Start Interface|Draft 2014 REST interface for contest start]]
 
 == ICPC Contest Analysis Tool (iCAT) ==
 * [[iCAT]]
