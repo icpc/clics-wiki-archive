@@ -28,7 +28,6 @@ These are the current versions of the requirements documents:
 * [[Event Feed 2011]] (was also used in 2012)
 * [[Event Feed 2013]]
 * [[Event Feed 2014]] (was also used in 2015)
-<-- Current spec in use
 * [[Event Feed Proposal 2017]]
 
 === JSON Scoreboard Documentation ===
@@ -45,7 +44,6 @@ These are the current versions of the requirements documents:
 * [[CDS 2014-2016]] specification
 * [[CDS]] Orphaned doc
 
-
 === ICPC Contest Analysis Tool (iCAT) ===
 * [[iCAT]]
 * [[AutoAnalyst API]]
@@ -54,5 +52,6 @@ These are the current versions of the requirements documents:
 * [[Post mortem ICPC 2011]]
 * [[Post mortem ICPC 2010]]
 * [[Git homedirs repository]]
+
 == Pat's Test area ==
 * [[Testing Page]]
