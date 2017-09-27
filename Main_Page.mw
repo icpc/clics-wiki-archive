@@ -31,22 +31,22 @@ These are the current versions of the requirements documents:
 <-- Current spec in use
 * [[Event Feed Proposal 2017]]
 
-== JSON Scoreboard Documentation ==
+=== JSON Scoreboard Documentation ===
 * [[JSON Scoreboard 2014]]
 * [[JSON Scoreboard 2016]]
 
-== Run Submission Interface ==
+=== Run Submission Interface ===
 * [[Run Submission Interface 2014]]
 
-== Contest Data Package ==
+=== Contest Data Package ===
 * Draft 2015 [[CDP]] specification
 
-== Contest Data Server ==
+=== Contest Data Server ===
 * [[CDS 2014-2016]] specification
 * [[CDS]] Orphaned doc
 
 
-== ICPC Contest Analysis Tool (iCAT) ==
+=== ICPC Contest Analysis Tool (iCAT) ===
 * [[iCAT]]
 * [[AutoAnalyst API]]
 * [[Analytics ICPC 2012]]
