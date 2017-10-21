@@ -2,7 +2,7 @@
 These are the specifications that we expect will be in use by the 2018 World Finals.
 
 * [[Contest Control System Requirements]]
-* Draft general [[Draft_CCS_REST_interface|CCS REST interface]] including event feed
+* Draft general [[Contest REST API |Contest REST interface]] including event feed
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
 * [[Contest Data Server 2018]] specification
 * [[Certification Schedule]]
