@@ -1,15 +1,15 @@
-== Draft Specification for 2018 ==
-These are the specifications that we expect will be in use by the 2018 World Finals.
-
-* [[Contest Data Server 2018]] specification
-* [[Certification Schedule]]
-
 == Current Spec Versions in Use ==
 These are the current versions of the requirements documents:
 
 * General [[Contest API]] (including event feed)
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
 * [[Contest Data Server 2017]] specification
+
+== Draft Specification for 2018 ==
+These are the specifications that we expect will be in use by the 2018 World Finals.
+
+* [[Contest Data Server 2018]] specification
+* [[Certification Schedule]]
 
 === CCS Specifications ===
 * [[Contest Control System Requirements]]
