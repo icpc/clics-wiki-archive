@@ -9,11 +9,12 @@ These are the current versions of the requirements documents:
 * [[Contest Control System Requirements]]
 * [[Event Feed 2016]] (obsolete, only kept for backwards compatibility)
 
-== Draft Specification for 2018 ==
-These are the specifications that we expect will be in use by the 2018 World Finals.
+== Drafts ==
+These are the specifications that we are still working on but expect will be in use by the 2018 World Finals.
 
 * [[Contest Data Server 2018]] specification
 * [[Certification Schedule]]
+* [[Contest Archive Format]]
 
 == Deprecated and Unused Specifications ==
 
