@@ -1,12 +1,10 @@
 == Current Spec Versions in Use ==
 These are the current versions of the requirements documents:
 
+* [[Contest Control System Requirements]]
 * General [[Contest API]] (including event feed)
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
 * [[Contest Data Server 2017]] specification
-
-=== CCS Specifications ===
-* [[Contest Control System Requirements]]
 * [[Event Feed 2016]] (obsolete, only kept for backwards compatibility)
 
 == Drafts ==
