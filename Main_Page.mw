@@ -14,11 +14,12 @@ These are the current versions of the requirements documents:
 === CCS Specifications ===
 * [[Contest Control System Requirements]]
 * [[Event Feed 2016]]
-* [[Draft 2014 REST interface for source code fetching]]
-* [[Contest Start Interface|Draft 2014 REST interface for contest start]]
 
 
 == Deprecated and Unused Specifications ==
+
+* [[Draft 2014 REST interface for source code fetching]]
+* [[Contest Start Interface|Draft 2014 REST interface for contest start]]
 
 === Event Feed Documentation ===
 * [[Event Feed]]
