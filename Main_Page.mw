@@ -1,20 +1,19 @@
-== Current Versions in Use ==
-These are the current versions of the requirements documents:
+== Current Specifications ==
+These are the specifications that will be used at the 2018 World Finals:
 
 * [[Contest Control System Requirements]]
 * General [[Contest API]] (including event feed)
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
-* [[Contest Data Server 2017]] specification
-* [[Event Feed 2016]] (obsolete, only kept for backwards compatibility)
-
-== Drafts ==
-These are the specifications that we are still working on but expect will be in use by the 2018 World Finals.
-
 * [[Contest Data Server 2018]] specification
+* [[Event Feed 2016]] (deprecated, only kept for backwards compatibility)
+
+== Draft Specifications ==
+These specifications are still in draft, but we expect them to be released in time for use at the 2018 World Finals.
+
 * [[Certification Schedule]]
 * [[Contest Archive Format]]
 
-== Deprecated and Unused Specifications ==
+== Deprecated, Old, and Orphaned Specifications ==
 
 * [[Draft 2014 REST interface for source code fetching]]
 * [[Contest Start Interface|Draft 2014 REST interface for contest start]]
@@ -24,6 +23,7 @@ These are the specifications that we are still working on but expect will be in 
 * [[Event Feed 2011]] (was also used in 2012)
 * [[Event Feed 2013]]
 * [[Event Feed 2014]] (was also used in 2015)
+* [[Event Feed 2016]]
 * [[Event Feed Proposal 2017]]
 
 === JSON Scoreboard Documentation ===
@@ -38,6 +38,7 @@ These are the specifications that we are still working on but expect will be in 
 
 === Contest Data Server ===
 * [[CDS 2014-2016]] specification
+* [[Contest Data Server 2017]] specification
 * [[CDS]] Orphaned doc
 
 == ICPC Contest Analysis Tool (iCAT) ==
