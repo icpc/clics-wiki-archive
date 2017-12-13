@@ -1,8 +1,8 @@
 == Introduction ==
 
-This page documents the CDS version 2.0 that will be used at the 2018 World Finals. The primary change from previous years is support of the new [Contest API]. All services from past years are still available, but several have been removed from this page since they are now part of the official Contest API (see the complete list at the bottom of this page). If you find something 'missing' here, please check the API documentation first. If there is a previous endpoint that would be very hard for you to switch to the new interface in time for 2018 finals please ping John and Tim to discuss whether we can leave the old endpoint in place for one year.
+This page documents the CDS version 2.0 that will be used at the 2018 World Finals. The primary change from previous years is support of the new [[Contest API]]. All services from past years are still available, but several have been removed from this page since they are now part of the official Contest API (see the complete list at the bottom of this page). If you find something 'missing' here, please check the API documentation first. If there is a previous endpoint that would be very hard for you to switch to the new interface in time for 2018 finals please ping John and Tim to discuss whether we can leave the old endpoint in place for one year.
 
-Note that as part of the new [Contest API]'s multi-contest support, each contest (e.g. test contests, dress rehearsal, finals) will be hosted at a separate URL path! This will allow us to configure all of the contests in advance and leave test contests running longer than in past years, but each client will need to remember to switch to the next contest URL when they're ready.
+Note that as part of the new [[Contest API]]'s multi-contest support, each contest (e.g. test contests, dress rehearsal, finals) will be hosted at a separate URL path! For example, the dress rehearsal might be hosted at https://cds/api/contests/dress and the finals at https://cds/api/contests/final. This will allow us to configure all of the contests in advance and leave contests running longer than in past years to help clients test, but each client will need to remember to switch to the next contest URL when they're ready.
 
 The Contest Data Server (or CDS) is a one-stop shop for external clients to obtain all onsite contest related information. This document contains information on the services (URLs) that are available from the CDS, what content is returned, and links to specs for the format of some files.
 
@@ -87,7 +87,7 @@ Changes the given channel to output from the given team.
 
 === Contest API ===
 
-Previous endpoints now included as part of the new Contest API include the following:
+Previous endpoints that are now included as part [[Contest API]] include the following:
 
 = Data =
 * Submission Source (Draft 2014 REST interface for source code fetching)
