@@ -1,1 +1,86 @@
 '''This is an early draft of extensions to the [[Contest API]] to support analyst data'''
+
+== Endpoints ==
+
+=== Commentary ===
+
+Provides commentary on events in the current contest.
+
+The following endpoints are associated with commentary:
+{| class="wikitable"
+|-
+! Endpoint
+! Mime-type
+! Required?
+! Source @WF
+! Description
+|-
+| /contests/<id>/commentary-messages
+| application/json
+| no
+| Analysts
+| JSON array of all languages with elements as defined in the table below
+|-
+| /contests/<id>/commentary-messages/<id>
+| application/json
+| no
+| Analysts
+| JSON object of a single language with elements as defined in the table below
+|}
+
+JSON elements of language objects:
+{| class="wikitable"
+|-
+! Name
+! Type
+! Required?
+! Nullable?
+! Source @WF
+! Description
+|-
+| id
+| ID
+| yes
+| no
+| Analysts
+| identifier of the message
+|-
+| team_id
+| ID
+| yes
+| yes
+| Analysts
+| identifier of the [[Contest_API#Teams | team]] message is related to
+|-
+| problem_id
+| ID
+| yes
+| yes
+| Analysts
+| identifier of the [[Contest_API#Problems | problem]] message is related to
+|-
+| submission_id
+| ID
+| yes
+| yes
+| Analysts
+| identifier of the [[Contest_API#Submissions | submission]] message is related to
+|-
+| priority
+| ORDINAL
+| yes
+| no
+| Analysts
+| priority of the message. Lower values are higher priority
+|-
+| text
+| string
+| yes
+| no
+| Analysts
+| plain text message
+|}
+
+==== Access restrictions at WF ====
+
+No access restrictions apply to a GET on this endpoint.
