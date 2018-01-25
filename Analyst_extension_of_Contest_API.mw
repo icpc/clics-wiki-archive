@@ -98,3 +98,18 @@ JSON elements of language objects:
 ==== Access restrictions at WF ====
 
 No access restrictions apply to a GET on this endpoint.
+
+=== Event Feed ===
+
+==== Feed format ====
+
+'''As [[Contest_API#Event_feed | parent document]] but add this entry to API endpoint table'''
+
+{| class="wikitable"
+|-
+! Event
+! API Endpoint
+|-
+| commentary-messages
+| /contests/<id>/commentary-messages/<id>
+|}
