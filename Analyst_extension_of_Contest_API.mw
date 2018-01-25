@@ -1,12 +1,12 @@
 '''This is an early draft of extensions to the [[Contest API]] to support analyst data'''
 
-Section names match those in [[Contest API]]. To combine start with that document and add new sections and changes from this document.
+Section names match those in [[Contest API]]. New sections (i.e. sections that do not appear in parent document) should simply be added. Existing but empty sections are only there for structure (i.e. to properly place a subsection). If edits are needed in an existing section there will be a comment within square brackets ([, ]) describing the changes needed.
 
 == Interface specification ==
 
 === Types of endpoints ===
 
-'''Add commentary-messages to Live data list'''
+[ Add commentary-messages to Live data list ]
 
 === Commentary messages ===
 
@@ -109,7 +109,7 @@ No access restrictions apply to a GET on this endpoint.
 
 ==== Feed format ====
 
-'''As [[Contest_API#Event_feed | parent document]] but add this entry to API endpoint table'''
+[ As [[Contest_API#Event_feed | parent document]] but add this entry to API endpoint table ]
 
 {| class="wikitable"
 |-
