@@ -4,6 +4,10 @@ Section names match those in [[Contest API]]. To combine start with that documen
 
 == Interface specification ==
 
+=== Types of endpoints ===
+
+'''Add commentary-messages to Live data list'''
+
 === Commentary messages ===
 
 Provides commentary on events in the current contest.
