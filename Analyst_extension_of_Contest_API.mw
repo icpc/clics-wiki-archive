@@ -1,5 +1,7 @@
 '''This is an early draft of extensions to the [[Contest API]] to support analyst data'''
 
+Section names match those in [[Contest API]]. To combine start with that document and add new sections and changes from this document.
+
 == Interface specification ==
 
 === Commentary messages ===
