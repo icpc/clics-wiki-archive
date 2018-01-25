@@ -79,6 +79,20 @@ JSON elements of language objects:
 | no
 | Analysts
 | plain text message
+|-
+| time
+| TIME
+| yes
+| no
+| Analysts
+| time of when commentary was made
+|-
+| contest_time
+| RELTIME
+| yes
+| no
+| Analysts
+| contest time of when commentary was made
 |}
 
 ==== Access restrictions at WF ====
