@@ -244,6 +244,8 @@ JSON elements of edit activity objects:
 
 No access restrictions apply to a GET on this endpoint.
 
+=== Scoreboard ===
+
 === Event Feed ===
 
 ==== Feed format ====
