@@ -8,6 +8,8 @@ Section names match those in [[Contest API]]. New sections (i.e. sections that d
 
 [ Add commentary-messages to Live data list ]
 
+=== Teams ===
+
 === Commentary messages ===
 
 Provides commentary on events in the current contest.
