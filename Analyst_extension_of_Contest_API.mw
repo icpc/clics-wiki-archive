@@ -39,6 +39,7 @@ Section names match those in [[Contest API]]. New sections (i.e. sections that d
 | RELTIME
 | depends
 | depends
+| Analysts
 | contest time of latest edit on unsolved problem. Required (and not null) iff <tt>latest_problem</tt> is present (and not null)
 |}
 
