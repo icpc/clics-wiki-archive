@@ -240,6 +240,10 @@ JSON elements of edit activity objects:
 | contest time of when edit was made
 |}
 
+==== Access restrictions at WF ====
+
+No access restrictions apply to a GET on this endpoint.
+
 === Event Feed ===
 
 ==== Feed format ====
