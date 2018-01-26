@@ -140,7 +140,105 @@ JSON elements of language objects:
 
 No access restrictions apply to a GET on this endpoint.
 
-=== Edit Activities === 
+=== Edit Activities ===
+
+Provides information about what teams are editing which problems when.
+
+The following endpoints are associated with editing activities:
+{| class="wikitable"
+|-
+! Endpoint
+! Mime-type
+! Required?
+! Source @WF
+! Description
+|-
+| /contests/<id>/edit-activities
+| application/json
+| no
+| Analysts
+| JSON array of all edit activities with elements as defined in the table below
+|-
+| /contests/<id>/edit-activities/<id>
+| application/json
+| no
+| Analysts
+| JSON object of a single edit activity with elements as defined in the table below
+|}
+
+JSON elements of edit activity objects:
+{| class="wikitable"
+|-
+! Name
+! Type
+! Required?
+! Nullable?
+! Source @WF
+! Description
+|-
+| id
+| ID
+| yes
+| no
+| Analysts
+| identifier of the edit activity
+|-
+| team_id
+| ID
+| yes
+| no
+| Analysts
+| identifier of the [[Contest_API#Teams | team]] doing the edit
+|-
+| problem_id
+| ID
+| yes
+| yes
+| Analysts
+| identifier of the [[Contest_API#Problems | problem]] being edited. Null iff it's unknown what problem the edit was for
+|-
+| language_id
+| ID
+| yes
+| yes
+| Analysts
+| identifier of the [[Contest_API#Languages | languages]] being used in the edit. Null iff it's unknown what languages was user (or it is not one of the contest languages) 
+|-
+| line_count
+| integer
+| yes
+| no
+| Analyst
+| number of lines in file being edited
+|-
+| diff_line_count
+| integer
+| yes
+| no
+| Analyst
+| number of lines in diff of file being edited
+|-
+| file_size_bytes
+| integer
+| yes
+| no
+| Analyst
+| file size of file being edited in bytes
+|-
+| time
+| TIME
+| yes
+| no
+| Analysts
+| time of when edit was made
+|-
+| contest_time
+| RELTIME
+| yes
+| no
+| Analysts
+| contest time of when edit was made
+|}
 
 === Event Feed ===
 
