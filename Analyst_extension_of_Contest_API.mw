@@ -246,6 +246,46 @@ No access restrictions apply to a GET on this endpoint.
 
 === Scoreboard ===
 
+[ Add elements below to problem object ]
+
+{| class="wikitable"
+|-
+! Name
+! Type
+! Required?
+! Nullable?
+! Source @WF
+! Description
+|-
+| language_id
+| ID
+| no
+| yes
+| Analysts
+| identifier of [[Contest_API#Languges | language]] used for last submission
+|-
+| potential
+| object
+| no
+| yes
+| Analysts
+| JSON object as specified in the rows below
+|-
+| potential.rank
+| integer
+| no
+| yes
+| Analysts
+| rank that the team would get if they solved this problem now
+|-
+| potential.before
+| integer
+| no
+| yes
+| Analysts
+| how many more minutes the team would reach the rank above by solving this problem assuming no other problems are solved
+|}
+
 === Event Feed ===
 
 ==== Feed format ====
