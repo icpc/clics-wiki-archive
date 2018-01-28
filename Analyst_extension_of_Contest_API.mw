@@ -60,13 +60,13 @@ The following endpoints are associated with commentary:
 | application/json
 | no
 | Analysts
-| JSON array of all languages with elements as defined in the table below
+| JSON array of all messages with elements as defined in the table below
 |-
 | /contests/<id>/commentary-messages/<id>
 | application/json
 | no
 | Analysts
-| JSON object of a single language with elements as defined in the table below
+| JSON object of a single message with elements as defined in the table below
 |}
 
 JSON elements of language objects:
@@ -91,21 +91,21 @@ JSON elements of language objects:
 | yes
 | yes
 | Analysts
-| identifier of the [[Contest_API#Teams | team]] message is related to
+| identifier of the [[Contest_API#Teams | team]] the message is related to
 |-
 | problem_id
 | ID
 | yes
 | yes
 | Analysts
-| identifier of the [[Contest_API#Problems | problem]] message is related to
+| identifier of the [[Contest_API#Problems | problem]] the message is related to
 |-
 | submission_id
 | ID
 | yes
 | yes
 | Analysts
-| identifier of the [[Contest_API#Submissions | submission]] message is related to
+| identifier of the [[Contest_API#Submissions | submission]] the message is related to
 |-
 | priority
 | ORDINAL
@@ -126,14 +126,14 @@ JSON elements of language objects:
 | yes
 | no
 | Analysts
-| time of when commentary was made
+| time when commentary was made
 |-
 | contest_time
 | RELTIME
 | yes
 | no
 | Analysts
-| contest time of when commentary was made
+| contest time when commentary was made
 |}
 
 ==== Access restrictions at WF ====
