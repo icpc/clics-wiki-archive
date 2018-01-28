@@ -202,27 +202,27 @@ JSON elements of edit activity objects:
 | yes
 | yes
 | Analysts
-| identifier of the [[Contest_API#Languages | languages]] being used in the edit. Null iff it's unknown what languages was user (or it is not one of the contest languages) 
+| identifier of the [[Contest_API#Languages | language]] being used in the edit. Null iff it's unknown what languages was used (or it is not one of the contest languages) 
 |-
 | line_count
 | integer
 | yes
 | no
-| Analyst
+| Analysts
 | number of lines in file being edited
 |-
 | diff_line_count
 | integer
 | yes
 | no
-| Analyst
+| Analysts
 | number of lines in diff of file being edited
 |-
 | file_size_bytes
 | integer
 | yes
 | no
-| Analyst
+| Analysts
 | file size of file being edited in bytes
 |-
 | time
