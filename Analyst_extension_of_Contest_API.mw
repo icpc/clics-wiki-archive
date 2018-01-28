@@ -276,14 +276,14 @@ No access restrictions apply to a GET on this endpoint.
 | depends
 | no
 | Analysts
-| rank that the team would get if they solved this problem now. Required iff potention is present. 
+| rank that the team would get if they solved this problem now. Required iff potential is present. 
 |-
 | potential.before
 | integer
 | depends
 | no
 | Analysts
-| how many more minutes the team would reach the rank above by solving this problem assuming no other problems are solved. Required iff potention is present. 
+| how many more minutes the team would reach the rank above by solving this problem assuming no other problems are solved. Required iff potential is present. 
 |}
 
 === Event Feed ===
