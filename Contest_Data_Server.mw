@@ -1,5 +1,7 @@
 == Introduction ==
 
+*** This is an orphaned page. Please go to the current page at [CDS] ***
+
 The Contest Data Server (or CDS) is a one-stop shop for external clients to obtain all onsite contest related information. This document contains information on the services (URLs) that are available from the CDS, what content is returned, and links to specs for the format of some files.
 
 It's best to think of the CDS as an aggregator and gate keeper. It provides a single source for information and controls access, but most of the data is provided by sources on the blue network, including the Contest Control System and data extracted from the Baylor CMS. 
