@@ -75,52 +75,6 @@ A sample team scoreboard row could look like this:
    ]
  }
 
-
-====HTTP GET /icat/api/Standings '''*DEPRECATED*'''====
-Returns a json-document describing the current state of the scoreboard. It contains the information usually present in a scoreboard, along with additional data on what the teams are working on and what rank teams would get when the next problem is solved. It is intended to be queried by ajax directly from the browser, but can of course also be fetched by a server process.
-
- { "scoreboard": [teamScore1, teamscore2, teamscore3, ...],
-   "contestInfo": {
-     "length": 300,
-     "problems": [
-        {"tag":"A","name":"A - Asteroid Rangers"},
-        {"tag":"B","name":"B - Curvy Little Bottles"},
-        {"tag":"C","name":"C - Bus Tour"},
-           …
-     ],
-     "submissions": 1640
-   }
- }
-
-Sample teamscore structure
- { "rank":7,
-   "team":{"id":56,"tag":"#t56","name":"Shanghai Jiao Tong University"},
-   "nSolved":4,
-   "totalTime":302,
-   "mainLang":"Java",
-   "problems":[
-     {"id":"A","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"B","solved":true,"attempts":1,"time":20, "lang":"Java"},
-     {"id":"C","solved":true,"attempts":1,"time":104, "lang":"Java"},
-     {"id":"D","solved":true,"attempts":1,"time":66, "lang":"Java"},
-     {"id":"E","solved":true,"attempts":1,"time":112, "lang":"Java"},
-     {"id":"F","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"G","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"H","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"I","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"J","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}},
-     {"id":"K","solved":false,"attempts":3,"time":0,"potential":{"rank":6}, "lang":"Java"},
-     {"id":"L","solved":false,"attempts":0,"time":0,"potential":{"rank":4,"before":5}}
-   ]
- }
-
-
-The ''potential'' field might need some extra explanation. If this field exists, it means that if the team solves this problem within the number of minutes specified by the ”before” field, the team would reach a particular ranking. Of course this is under the assumption that no other teams solves any problems meanwhile... If the ”before” field is missing, the team will become the slowest team to solve this number of problems anyways, which means that there is no specific limit, apart from the contest itself ending.
-
-The "lang" field specifies, for each problem where the team has submitted a solution, which language the last submission for that problem was in. The "mainLang" field provides the language the teams uses, if the team consistently uses the same language. If the team has submitted solutions in several language, the field contains the string "Mixed".
-
-The full standings document is returned regardless of whether the user wants to see all teams or just one. This simplifies caching. Furthermore, the footprint of the full document will still be quite small thanks to the compression.
-
 ====HTTP GET /icat/api/TeamNotifications/<teamid>====
 Returns a json document containing all AutoAnalyst notifications relevant to this team, ordered chronologically. These are exactly the same notifications that have been published in the event stream, but made available in a query API and in json format.
 
