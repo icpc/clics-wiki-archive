@@ -1,15 +1,16 @@
 == Current Specifications ==
-These are the specifications that will be used at the 2018 World Finals:
+These are the specifications that were used at the 2018 World Finals:
 
 * [[Contest Control System Requirements]]
-* General [[Contest API]] (including event feed)
+* [[Contest API 2018]] (including event feed)
 * [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
 * [[Contest Data Server 2018]] specification
 * [[Event Feed 2016]] (deprecated, only kept for backwards compatibility)
 
 == Draft Specifications ==
-These specifications are still in draft, but we expect them to be released in time for use at the 2018 World Finals:
+These specifications are still in draft, but we expect them to be released in time for use at the 2019 World Finals:
 
+* General [[Contest API]]
 * [[Certification Schedule]]
 * [[Contest Archive Format]]
 
