@@ -3,7 +3,7 @@ These are the specifications that were used at the 2018 World Finals:
 
 * [[Contest Control System Requirements]]
 * [[Contest API 2018]] (including event feed)
-* [http://www.problemarchive.org/wiki/index.php/Problem_Format Problem Format]
+* [[Problem format]] specification (which is a subset of the [http://www.problemarchive.org/wiki/index.php/Problem_Format Kattis Problem Format])
 * [[Contest Data Server 2018]] specification
 * [[Event Feed 2016]] (deprecated, only kept for backwards compatibility)
 
