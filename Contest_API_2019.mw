@@ -21,11 +21,11 @@ This API is meant to be useful, not only at the ICPC World Finals, but more gene
 
 ==== Endpoint specific changes ====
 
-* [[#Contest|Contest]]
+* [[#Contests|Contests]]
 ** The attribute <tt>countdown_pause_time</tt> was added.
 
-* [[#State|State]]
-** The attribute <tt>started</tt> must be equal to [[#Contest|contest]] <tt>start_time</tt> if set.
+* [[#Contest_state|State]]
+** The attribute <tt>started</tt> must be equal to [[#Contests|contest]] <tt>start_time</tt> if set.
 ** The attribe <tt>end_of_updates</tt> was added.
 ** The order in which state changes can occur and are visible depending on client role were clarified.
 
