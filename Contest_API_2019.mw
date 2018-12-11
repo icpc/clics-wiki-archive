@@ -30,9 +30,8 @@ This API is meant to be useful, not only at the ICPC World Finals, but more gene
 ** The order in which state changes can occur and are visible depending on client role were clarified.
 
 * [[#Scoreboard|Scoreboard]]
-** The scoreboard <tt>rows</tt> were moved into a sub-object and attributes <tt>state</tt>, <tt>event</tt>, <tt>time</tt> containing metadata were added.
+** The scoreboard <tt>rows</tt> were moved into a sub-object and attributes <tt>state</tt>, <tt>event</tt>, <tt>time</tt>, and <tt>contest_time</tt> containing metadata were added.
 ** An option to request the scoreboard as of a specific event via the parameter <tt>after_event_id</tt> was added.
-
 
 == General design principles ==
 
