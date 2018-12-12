@@ -18,10 +18,15 @@ These specifications are still in draft, but we expect them to be released in ti
 
 These specifications are out of date, deprecated, or were never completed:
 
+=== Contest API ===
+
+[[Contest API 2018]] Contest API used at 2018 finals
+
+=== REST Interfaces ===
 * [[Draft 2014 REST interface for source code fetching]]
 * [[Contest Start Interface|Draft 2014 REST interface for contest start]]
 
-=== Event Feed Documentation ===
+=== XML Event Feed ===
 * [[Event Feed]]
 * [[Event Feed 2011]] (was also used in 2012)
 * [[Event Feed 2013]]
@@ -29,7 +34,7 @@ These specifications are out of date, deprecated, or were never completed:
 * [[Event Feed 2016]]
 * [[Event Feed Proposal 2017]]
 
-=== JSON Scoreboard Documentation ===
+=== JSON Scoreboard ===
 * [[JSON Scoreboard 2014]]
 * [[JSON Scoreboard 2016]]
 
