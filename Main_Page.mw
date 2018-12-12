@@ -1,16 +1,15 @@
 == Current Specifications ==
-These are the specifications that were used at the 2018 World Finals:
+These are the specifications that will be used at the 2019 World Finals:
 
 * [[Contest Control System Requirements]]
-* [[Contest API 2018]] (including event feed)
-* [[Problem format]] specification (which is a subset of the [http://www.problemarchive.org/wiki/index.php/Problem_Format Kattis Problem Format])
-* [[Contest Data Server 2018]] specification
-* [[Event Feed 2016]] (deprecated, only kept for backwards compatibility)
+* [[Contest API 2019]]
+* [[Problem format]] specification
+* [[Contest Data Server 2019]] specification
 
 == Draft Specifications ==
-These specifications are still in draft, but we expect them to be released in time for use at the 2019 World Finals:
+These specifications are still in draft.
 
-* General [[Contest API]]
+* Ongoing improvements to [[Contest API]]
 * [[Certification Schedule]]
 * [[Contest Archive Format]]
 
@@ -47,6 +46,7 @@ These specifications are out of date, deprecated, or were never completed:
 === Contest Data Server ===
 * [[CDS 2014-2016]] specification
 * [[Contest Data Server 2017]] specification
+* [[Contest Data Server 2018]] specification
 * [[CDS]] Orphaned doc
 
 == ICPC Contest Analysis Tool (iCAT) ==
