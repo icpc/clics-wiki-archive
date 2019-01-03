@@ -161,7 +161,7 @@ Note that for the World Finals the team name is set to the university name, but 
  <result>WA</result>
  <solved>False</solved>
  <team>74</team>
- <time>17960.749</time>
+ <nowiki><time>17960.749</time></nowiki>
  <timestamp>1265353100.749</timestamp>
  </run>
 
@@ -185,7 +185,7 @@ Note that for the World Finals the team name is set to the university name, but 
  <n>1</n>
  <run-id>1</run-id>
  <solved>False</solved>
- <time>939.752</time>
+ <nowiki><time>939.752</time></nowiki>
  <timestamp>1265336078.752</timestamp>
  </testcase>
 
