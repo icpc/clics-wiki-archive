@@ -1,6 +1,9 @@
-This page describes the event feed format that was used at WF 2016.
+This page describes the format of the CLICS ''XML Event Feed''. 
+The Event Feed consists of a series of XML elements which provide information on changes in the state of a contest.
 
-Note that as of early 2017 Kattis has not implemented the team "university-short-name" attribute but is otherwise compliant.
+The Event Feed described on this page was used at the ICPC World Finals in 2016.  
+It has subsequently been deprecated in favor of a JSON-based event feed which is part of a newer CLICS [[Contest_API|''Contest API'']]. 
+As a result, this page constitutes the specification for the final version of the CLICS XML Event Feed.
 
 == Getting the feed ==
 
@@ -9,11 +12,11 @@ Connect to port 4713 and the entire feed for the contest will be sent to you. Wh
 Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
 
 == File format ==
-The event feed is structured as an xml document within the root element <contest>.
+The event feed is structured as an XML document within the root element <contest>.
 
-All events are separate elements at the top level. Elements are considered either ''static'' in which case only one such element occurs, or ''instances'' in which case different instances are distinguished by a unique id. When an element appears again in the feed, either static or an instance with the same id, it is considered to replace the previous occurence.
+All events are separate elements at the top level. Elements are considered either ''static'', in which case only one such element occurs, or ''instances'', in which case different instances are distinguished by a unique id. When an element appears again in the feed, either static or an instance with the same id, it is considered to replace the previous occurrence.
 
-Some extra tags beyond what is documented here may also be sent, these should be ignored.
+Event feed sources may send extra tags beyond what is documented here; these may be ignored by clients reading the event feed but should not cause client errors.
 
 Event types are:
 
@@ -74,7 +77,7 @@ Sample events with inner element descriptions:
  <name>Europe</name>
  </region>
 
-;external-id: Identidier from the registration system. 
+;external-id: Identifier from the registration system. 
 ;name: Super region name.
 
 === <judgement> ===
