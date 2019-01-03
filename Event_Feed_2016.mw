@@ -135,7 +135,7 @@ Note that for the World Finals the team name is set to the university name, but 
  <question>What is the upper limit on the number of pieces of chocolate requested by the friends?</question>
  <team>0</team>
  <problem>1</problem>
- <time>118.480</time>
+ <nowiki><time>118.480</time></nowiki>
  <timestamp>1265335256.480</timestamp>
  <to-all>True</to-all>
  </clar>
