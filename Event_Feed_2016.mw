@@ -1,17 +1,18 @@
 This page describes the format of the CLICS ''XML Event Feed''. 
 The Event Feed consists of a series of XML elements which provide information on changes in the state of a contest.
 
-The Event Feed described on this page was used at the ICPC World Finals in 2016.  
+The Event Feed described on this page was used at the ICPC World Finals in 2016 (hence the page title, above).  
 It has subsequently been deprecated in favor of a JSON-based event feed which is part of a newer CLICS [[Contest_API|''Contest API'']]. 
 As a result, this page constitutes the specification for the final version of the CLICS XML Event Feed.
 
 == Getting the feed ==
 
-Connect to port 4713 and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and the connection closed.
+The Event Feed can come from any of a variety of different server sources;  for example, a Contest Control System or a Contest Data Server.  Regardless of the source, servers implementing the CLICS XML Event Feed do so by listening on port 4713 and sending the feed out to any client connecting to that port.  Thus, to obtain the feed, connect to port 4713 on a server (host) which provides the feed and the entire feed for the contest will be sent to you. When the contest is finalized, the contest tag will be closed and then the connection will be closed.
 
-Connect to port 4714 and the entire feed for the contest will be sent to you, with the exception that no judgement information will be sent for runs submitted during the last hour. When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for runs submitted the last hour).
+Typically, connecting to port 4713 requires "authentication credentials" proving that the client is authorized to obtain the complete contest event feed.
+An alternative is to connect to port 4714; this port provides what is known as a "frozen feed" -- that is, the event feed for the contest, with the exception that no judgement information will be sent for submissions which occurred during the last portion of the contest when the contest scoreboard is "frozen". When the contest is finalized, the contest tag will be closed and the connection closed (but you will still not get judgements for submissions which occurred during the scoreboard freeze period).
 
-== File format ==
+== Event Feed format ==
 The event feed is structured as an XML document within the root element <contest>.
 
 All events are separate elements at the top level. Elements are considered either ''static'', in which case only one such element occurs, or ''instances'', in which case different instances are distinguished by a unique id. When an element appears again in the feed, either static or an instance with the same id, it is considered to replace the previous occurrence.
@@ -21,19 +22,19 @@ Event feed sources may send extra tags beyond what is documented here; these may
 Event types are:
 
 ;info: contest information and updates (static)
-;language: submission language information
-;region: super region information (instance with id 'external-id')
-;judgement: judgement information (instance with id 'acronym')
-;problem: problem information
-;team: team information
-;clar: submitted clarification information and updates
-;run: submitted run information and updates
-;testcase: judgement of individual test cases for a run (instance identified by 'i' and 'judgement_id')
+;language: information regarding the programming languages which teams are allowed to use for submissions
+;region: information on the "groups" defined in the contest (in the ICPC World Finals, "groups" are referred to as "Super Regions", and events of this type are therefore referred to as "region" events).  Instances of these events are identified with id 'external-id'
+;judgement: information regarding a judgement which has been applied to a team submission (instanced with id 'acronym')
+;problem: information about problems defined in the contest
+;team: information about teams defined in the contest
+;clar: information about clarification requests submitted by teams during the contest, along with updates (such as answers from the judges)
+;run: information and updates about "runs" submitted by teams during the contest; known in other event feed formats as "submissions"
+;testcase: information about the results (including the judgement) applied to the execution of a submission (run) against an individual test case  (instance identified by 'i', the test case number) and contains the resulting 'judgement acronym'; "testcase" is known in other event feed formats as a "run" -- not to be confused with "run" in this XML event feed, which refers to a ''submission'' by a team
 ;finalized: contest finalization information (static)
 
 If nothing is specified, elements are instances identified by an 'id'.
 
-Time and timestamp elements are specified in seconds; time elements are in contest time (relative to contest start, corrected for removed time intervals) while timestamps are in Unix epoch. Both are specified with three decimal places, i.e. with millisecond resolution. Times are truncated, so in a 5 hour contest a submission at 18000 seconds is late.
+''Time'' and ''timestamp'' elements are specified in seconds; time elements are in contest time (relative to contest start, corrected for removed time intervals) while timestamps are in Unix epoch. Both are specified with three decimal places, i.e. with millisecond resolution. Times are truncated, so in a 5 hour contest a submission at 18000 seconds is late.
 Events have time and timestamp sub-elements that represent the same real moment in time.
 
 Sample events with inner element descriptions:
