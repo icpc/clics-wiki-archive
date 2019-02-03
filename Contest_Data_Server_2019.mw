@@ -37,10 +37,7 @@ The following section describes all of the services that are available through t
 This is the root of the [[Contest API 2019]] interface, e.g. /api/contests/dress will return information about the dress rehearsal contest. The format of video has not changed - it is still MPEG-TS with the H.264 codec.
 
 === XML Event Feed ===
- <nowiki>https://cds/api/contests/<id>/events</nowiki>
-''Access: Authorized''
-
-For backward compatibility the CDS will still support the [[Event Feed 2016]], although clients are highly recommended to move to the [[Contest API 2019]]. Clients without Blue access rights will receive a filtered event feed not containing submission judgments from the final hour.
+The XML event feed has been removed following a discussion with the systems team on clients that we expect at 2019 finals and moving forward with the Contest API. If you feel you still need the XML feed, please contact John Clevenger & Tim deBoer ASAP.
 
 === Optimistic JSON Scoreboard ===
  <nowiki>https://cds/api/contests/<id>/optimisticScoreboard</nowiki>
