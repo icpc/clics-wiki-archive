@@ -12,6 +12,12 @@ Such an API can be used by a multitude of clients:
 
 This API is meant to be useful, not only at the ICPC World Finals, but more generally in any ICPC-style contest setup. It is meant to incorporate and supersede the [[JSON_Scoreboard_2016|JSON Scoreboard]], the [[Draft_2014_REST_interface_for_source_code_fetching|REST interface for source code fetching]], and the [[Contest_Start_Interface|Contest start interface]]. This REST interface is specified in conjunction with a new [[#Event feed|NDJSON event feed]], which provides all changes to this interface as CRUD-style events and is meant to supersede the old XML [[Event Feed]].
 
+=== Changes within this document ===
+
+* [[#Contests|Contests]]
+** The attribute <tt>countdown_pause_time</tt> was changed to be positive instead of negative.
+
+
 === Changes from [[Contest API 2018]] ===
 
 ==== General changes ====
