@@ -76,6 +76,8 @@ The keys are defined as below. Keys are optional unless explicitly stated. Any u
 {| class="wikitable"
 ! Key !! Type !! Default !! Comments
 |-
+| name || String or map of strings || || Required. If a string this is the name of the problem in english. If a map the keys are language codes and the values are the name of the problem in that language. It is an error for a language to be missing if there exists a problem statement for that language.
+|-
 | author || String ||  || Who should get author credits. This would typically be the people that came up with the idea, wrote the problem specification and created the test data. This is sometimes omitted when authors choose to instead only give source credit, but both may be specified.
 |-
 | source || String ||  || Who should get source credit. This would typically be the name (and year) of the event where the problem was first used or created for.
