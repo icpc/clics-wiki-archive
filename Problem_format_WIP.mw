@@ -76,8 +76,6 @@ The keys are defined as below. Keys are optional unless explicitly stated. Any u
 {| class="wikitable"
 ! Key !! Type !! Default !! Comments
 |-
-| uuid || String || || UUID identifying the problem.
-|-
 | author || String ||  || Who should get author credits. This would typically be the people that came up with the idea, wrote the problem specification and created the test data. This is sometimes omitted when authors choose to instead only give source credit, but both may be specified.
 |-
 | source || String ||  || Who should get source credit. This would typically be the name (and year) of the event where the problem was first used or created for.
@@ -88,13 +86,15 @@ The keys are defined as below. Keys are optional unless explicitly stated. Any u
 |-
 | rights_owner || String || Value of author, if present, otherwise value of source. || Owner of the copyright of the problem. If not present, author is owner. If author is not present either, source is owner. Required if license is something other than "unknown" or "public domain". Forbidden if license is "public domain".
 |-
-| keywords || String or sequence of strings || || Set of keywords.
-|-
 | limits || Map with keys as defined below || see definition below ||
 |-
 | validation || String || default || One of "default" or "custom". 
 |-
 | validator_flags || String || || Will be passed as command-line arguments to each of the output validators.
+|-
+| keywords || String or sequence of strings || || Set of keywords.
+|-
+| uuid || String || || UUID identifying the problem.
 |}
 
 === license ===
