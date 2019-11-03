@@ -22,7 +22,7 @@ All floating point numbers must be given as the external character sequences def
 
 There are a number of different kinds of programs that may be provided in the problem package; submissions, input validators and output validators. All programs are always represented by a single file or directory. In other words, if a program consists of several files, these must be provided in a single directory. The name of the program, for the purpose of referring to it within the package is the base name of the file or the name of the directory. There can't be two programs of the same kind with the same name.
 
-Validators and graders, but not submissions, in the form of a directory may include two POSIX-compliant scripts "build" and "run". Either both or none of these scripts must be included.
+Validators, but not submissions, in the form of a directory may include two POSIX-compliant scripts "build" and "run". Either both or none of these scripts must be included.
 If the scripts are present, then:
 * the program will be compiled by executing the build script.
 * the program will be run by executing the run script.
@@ -190,8 +190,6 @@ Input, answer, description, hint and image files are matched by the base name.
 The test data for the problem can be organized into a tree-like structure.  Each node of this tree is represented by a directory and referred to as a test data group.  Each test data group may consist of zero or more test cases (i.e., input-answer files) and zero or more subgroups of test data (i.e., subdirectories).
 
 At the top level, the test data is divided into exactly two groups: <tt>sample</tt> and <tt>secret</tt>, but these two groups may be further split into subgroups as desired.
-
-The <em>result</em> of a test data group is computed by applying a <em>grader</em> to all of the sub-results (test cases and subgroups) in the group.  See [[#Graders|Graders]] for more details.
 
 Test files and groups will be used in lexicographical order on file base name. If a specific order is desired a numbered prefix such as 00, 01, 02, 03, and so on, can be used.
 
