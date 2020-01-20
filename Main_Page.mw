@@ -19,8 +19,8 @@ These specifications are out of date, deprecated, or were never completed:
 
 === Contest API ===
 
-[[Contest API 2018]] Contest API used at 2018 finals
-[[Contest API 2019]] Contest API used at 2019 finals
+* [[Contest API 2018]] Contest API used at 2018 finals
+* [[Contest API 2019]] Contest API used at 2019 finals
 
 === REST Interfaces ===
 * [[Draft 2014 REST interface for source code fetching]]
