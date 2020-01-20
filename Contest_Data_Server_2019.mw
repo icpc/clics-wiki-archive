@@ -1,6 +1,6 @@
 == Introduction ==
 
-This page documents the CDS that will be used at the 2019 World Finals. The Contest Data Server (or CDS) is a one-stop shop for external clients to obtain all onsite contest related information. This document contains information on the services (URLs) that are available from the CDS, what content is returned, and links to specs for the format of some files.
+This page documents the CDS that was used at the 2019 World Finals and will be used at the 2020 World Finals. The Contest Data Server (or CDS) is a one-stop shop for external clients to obtain all onsite contest related information. This document contains information on the services (URLs) that are available from the CDS, what content is returned, and links to specs for the format of some files.
 The [[Contest API 2020]] is fully supported.
 
 As in 2018, all of the contests (e.g. test, dress rehearsal, finals) will be hosted from the start, allowing clients to connect in advance or continue to use data from a finished contest while the next one is configured. The CDS will be restarted on the morning of each contest with the final configuration as per the master schedule.
@@ -37,7 +37,7 @@ The following section describes all of the services that are available through t
 This is the root of the [[Contest API 2020]] interface, e.g. /api/contests/dress will return information about the dress rehearsal contest. The format of video has not changed - it is still MPEG-TS with the H.264 codec.
 
 === XML Event Feed ===
-The XML event feed has been removed following a discussion with the systems team on clients that we expect at 2019 finals and moving forward with the Contest API. If you feel you still need the XML feed, please contact John Clevenger & Tim deBoer ASAP.
+The XML event feed was removed before the 2019 World Finals.
 
 === Optimistic JSON Scoreboard ===
  <nowiki>https://cds/api/contests/<id>/optimisticScoreboard</nowiki>
