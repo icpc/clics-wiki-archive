@@ -12,6 +12,21 @@ Such an API can be used by a multitude of clients:
 
 This API is meant to be useful, not only at the ICPC World Finals, but more generally in any ICPC-style contest setup. It is meant to incorporate and supersede the [[JSON_Scoreboard_2016|JSON Scoreboard]], the [[Draft_2014_REST_interface_for_source_code_fetching|REST interface for source code fetching]], and the [[Contest_Start_Interface|Contest start interface]]. This REST interface is specified in conjunction with a new [[#Event feed|NDJSON event feed]], which provides all changes to this interface as CRUD-style events and is meant to supersede the old XML [[Event Feed]].
 
+=== Changes from [[Contest API 2019]] ===
+
+==== General changes ====
+
+* For the [[#JSON_attribute_types|JSON attribute type]] <tt>File reference</tt> the sub-attribute <tt>mime</tt> is now required.
+* A few minor text reformulations were made to improve clarity, without changing any intended meaning of the specification.
+
+==== Endpoint specific changes ====
+
+* [[#Contests|Contests]]
+** The attribute <tt>scoreboard_freeze_duration</tt> was made optional. It will be present during the WFs, though.
+
+* [[#Teams|Teams]]
+** The attribute <tt>display_name</tt> was added. During the WFs this will contain the team name as displayed on the official scoreboards. The existing attribute <tt>name</tt> will contain the original team name as present in the ICPC CMS.
+
 == General design principles ==
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [https://www.ietf.org/rfc/rfc2119.txt RFC 2119].
