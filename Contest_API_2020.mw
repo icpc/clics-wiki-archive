@@ -1350,6 +1350,13 @@ JSON elements of team objects:
 | CDS
 | latest file backup of the team machine. Only allowed mime type is application/zip.
 |-
+| keylog
+| array of ARCHIVE
+| no
+| yes
+| CDS
+| latest key log file from the team machine. Only allowed mime type is text/plain.
+|-
 | desktop
 | array of STREAM
 | no
@@ -1363,6 +1370,13 @@ JSON elements of team objects:
 | yes
 | CDS
 | streaming video of the team webcam.
+|-
+| audio
+| array of STREAM
+| no
+| yes
+| CDS
+| streaming team audio.
 |}
 
 ==== Access restrictions at WF ====
