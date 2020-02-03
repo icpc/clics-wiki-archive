@@ -1351,7 +1351,7 @@ JSON elements of team objects:
 | latest file backup of the team machine. Only allowed mime type is application/zip.
 |-
 | keylog
-| array of ARCHIVE
+| array of FILE
 | no
 | yes
 | CDS
